@@ -28,43 +28,7 @@ const MODEL = process.env.MODEL || "granite3.1-dense:8b"
 const STORAGE = process.env.STORAGE || "default"
 const ENABLE_RERANK = process.env.ENABLE_RERANK !== "false"
 const CANDIDATE_K = Number(process.env.CANDIDATE_K || 40)
-const TOOL_STEPS = Number(process.env.TOOL_STEPS || 4)
-
-const TOOL_TAG_SYSTEM_PROMPT = `You are an AI assistant with XML-like tool tags.
-When a tool is needed, output ONLY tool tags and nothing else.
-When no tool is needed, answer normally in plain text.
-
-Tool tags you can call:
-
-File operations
-- <list, path="..." limit="20"></list>
-- <read, path="..."></read>
-- <write, path="...">content</write>
-- <append, path="...">content</append>
-- <copy, path="..." to="..."></copy>
-- <move, path="..." to="..."></move>
-- <delete, path="..."></delete>
-- <mkdir, path="..."></mkdir>
-- <stat, path="..."></stat>
-
-Zip operations
-- <zip, path="..." destination="..."></zip>
-- <unzip, path="..." destination="..."></unzip>
-
-Web operations
-- <search, query="..." limit="5"></search>
-- <scrape, url="..."></scrape>
-
-Git operations
-- <git_status, repo_path="..."></git_status>
-- <git_branches, repo_path="..."></git_branches>
-- <git_log, repo_path="..." limit="10"></git_log>
-
-Rules:
-- You may output multiple tool tags in one response.
-- Use exact closing tags.
-- Do not mix normal prose with tool tags in the same response.
-- After tool results are provided, decide whether more tools are needed or provide final answer.`
+const TOOL_STEPS = Number(process.env.TOOL_STEPS || 3)
 
 async function postJSON(url,body){
   const res = await fetch(url,{ method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body) })
@@ -91,7 +55,6 @@ async function generateStream(prompt,onToken){
     const t = await res.text()
     throw new Error(`${res.status} ${t}`)
   }
-
   if(!res.body){ return }
 
   const decoder = new TextDecoder()
@@ -107,9 +70,7 @@ async function generateStream(prompt,onToken){
       if(!trimmed) continue
       try{
         const obj = JSON.parse(trimmed)
-        if(typeof obj.response === "string" && obj.response){
-          onToken(obj.response)
-        }
+        if(typeof obj.response === "string" && obj.response){ onToken(obj.response) }
       }
       catch{}
     }
@@ -128,192 +89,219 @@ function contextText(docs){
   return docs.length ? docs.map((d,i)=>`[${i+1}] ${d.source}\n${d.chunk_text}`).join("\n\n") : "(no context)"
 }
 
-function parseAttrs(raw){
-  const attrs = {}
-  const re = /(\w+)="([^"]*)"/g
+function toolsTagGuide(){
+  return `Tool tags you can emit (exactly one tag when taking an action):
+
+File operations:
+<list path="/path" limit="20"></list>
+<read path="/path/file.txt"></read>
+<write path="/path/file.txt">new content here</write>
+<append path="/path/file.txt">content to append</append>
+<copy path="/from" to="/to"></copy>
+<move path="/from" to="/to"></move>
+<delete path="/path"></delete>
+<mkdir path="/path"></mkdir>
+<stat path="/path"></stat>
+
+Zip tool:
+<zip path="/source" destination="/out.zip"></zip>
+<unzip path="/archive.zip" destination="/output-dir"></unzip>
+
+Web tool:
+<search_web query="best js orm" limit="5"></search_web>
+<scrape_web url="https://example.com"></scrape_web>
+
+Git tool:
+<git_status repo_path="/repo"></git_status>
+<git_branches repo_path="/repo"></git_branches>
+<git_log repo_path="/repo" limit="10"></git_log>
+
+Also accepted legacy style with comma after tag name, e.g. <read, path="...">...</read>.
+If no tool is needed, answer normally without a tag.`
+}
+
+function toolHistoryText(events){
+  if(!events.length) return "none"
+  return events.map((e,i)=>[
+    `Step ${i+1}: ${e.summary}`,
+    `tool=${e.tool || "unknown"}`,
+    `args=${JSON.stringify(e.args || {})}`,
+    e.error ? `error=${e.error}` : `result=${JSON.stringify(e.result || {}).slice(0,1400)}`
+  ].join("\n")).join("\n\n")
+}
+
+function buildActionPrompt(question,docs,toolEvents){
+  return `You are an AI assistant with tools.
+
+${toolsTagGuide()}
+
+User query:
+${question}
+
+Retrieved context:
+${contextText(docs)}
+
+Previous tool execution history:
+${toolHistoryText(toolEvents)}
+
+Decide the next step:
+- If a tool is needed, output exactly one tool tag and nothing else.
+- If no tool is needed, respond with plain text answer (no tool tag).`
+}
+
+function buildFinalPrompt(question,docs,toolEvents,draftAnswer){
+  return `You are an AI assistant. Write the final user response.
+
+User query:
+${question}
+
+Retrieved context:
+${contextText(docs)}
+
+Tool results:
+${toolHistoryText(toolEvents)}
+
+Draft answer:
+${draftAnswer || "none"}
+
+Rules:
+- Give a direct final answer for the user.
+- If tools were run, summarize what was done and show concrete output.
+- Do not output tool tags.`
+}
+
+function parseAttributes(attrText){
+  const out = {}
+  const rx = /(\w+)\s*=\s*"([^"]*)"/g
   let m
-  while((m = re.exec(raw))){ attrs[m[1]] = m[2] }
-  return attrs
+  while((m = rx.exec(attrText)) !== null){ out[m[1]] = m[2] }
+  return out
 }
 
-function parseToolTags(text){
-  const normalized = text.replace(/<([a-zA-Z_][\w-]*)\s*,/g,"<$1 ")
-  const tags = []
+function mapTagToTool(tagName,attrs,innerText){
+  const name = tagName.toLowerCase()
+  const inner = String(innerText || "").trim()
 
-  const pairedRe = /<([a-zA-Z_][\w-]*)([^>]*)>([\s\S]*?)<\/\1>/g
-  let m
-  while((m = pairedRe.exec(normalized))){
-    tags.push({ name: m[1].toLowerCase(), attrs: parseAttrs(m[2] || ""), content: (m[3] || "").trim() })
+  const fileActions = new Set(["list","read","write","append","copy","move","delete","mkdir","stat"])
+  if(fileActions.has(name)){
+    const args = { action: name, ...attrs }
+    if((name === "write" || name === "append") && inner && !args.content){ args.content = inner }
+    return { type: "tool", tool_call: { tool: "file_operations", args } }
   }
 
-  const selfRe = /<([a-zA-Z_][\w-]*)([^>]*)\/>/g
-  while((m = selfRe.exec(normalized))){
-    tags.push({ name: m[1].toLowerCase(), attrs: parseAttrs(m[2] || ""), content: "" })
+  if(name === "zip" || name === "unzip"){
+    const source = attrs.path || attrs.source
+    const destination = attrs.destination || attrs.to || (name === "zip" ? `${source || "archive"}.zip` : ".")
+    return { type: "tool", tool_call: { tool: "zip_unzip", args: { action: name, source, destination } } }
   }
 
-  return tags
-}
-
-function asNumber(value,fallback){
-  const n = Number(value)
-  return Number.isFinite(n) ? n : fallback
-}
-
-function tagToCall(tag){
-  const a = tag.attrs || {}
-
-  if(["list","read","write","append","copy","move","delete","mkdir","stat"].includes(tag.name)){
-    const args = { action: tag.name, path: a.path }
-    if(a.to) args.to = a.to
-    if(a.limit) args.limit = asNumber(a.limit, 20)
-    if(tag.name === "write" || tag.name === "append") args.content = tag.content || ""
-    return { tool: "file_operations", args }
+  if(name === "search_web"){
+    return { type: "tool", tool_call: { tool: "web_search_scraper", args: { action: "search", query: attrs.query, limit: attrs.limit } } }
   }
 
-  if(tag.name === "zip"){
-    const source = a.source || a.path
-    const destination = a.destination || `${source}.zip`
-    return { tool: "zip_unzip", args: { action: "zip", source, destination } }
+  if(name === "scrape_web"){
+    return { type: "tool", tool_call: { tool: "web_search_scraper", args: { action: "scrape", url: attrs.url } } }
   }
 
-  if(tag.name === "unzip"){
-    const source = a.source || a.path
-    const destination = a.destination || path.dirname(source || ".")
-    return { tool: "zip_unzip", args: { action: "unzip", source, destination } }
+  if(name === "git_status"){
+    return { type: "tool", tool_call: { tool: "git_tool", args: { action: "status", repo_path: attrs.repo_path } } }
   }
 
-  if(tag.name === "search"){
-    return {
-      tool: "web_search_scraper",
-      args: { action: "search", query: a.query, limit: asNumber(a.limit, 5) }
-    }
+  if(name === "git_branches"){
+    return { type: "tool", tool_call: { tool: "git_tool", args: { action: "branches", repo_path: attrs.repo_path } } }
   }
 
-  if(tag.name === "scrape"){
-    return { tool: "web_search_scraper", args: { action: "scrape", url: a.url } }
-  }
-
-  if(tag.name === "git_status"){
-    return { tool: "git_tool", args: { action: "status", repo_path: a.repo_path || "." } }
-  }
-
-  if(tag.name === "git_branches"){
-    return { tool: "git_tool", args: { action: "branches", repo_path: a.repo_path || "." } }
-  }
-
-  if(tag.name === "git_log"){
-    return {
-      tool: "git_tool",
-      args: { action: "log", repo_path: a.repo_path || ".", limit: asNumber(a.limit, 10) }
-    }
+  if(name === "git_log"){
+    return { type: "tool", tool_call: { tool: "git_tool", args: { action: "log", repo_path: attrs.repo_path, limit: attrs.limit } } }
   }
 
   return null
 }
 
-function toolHistoryText(toolEvents){
-  if(!toolEvents.length) return "none"
+function parseToolTag(text){
+  const m = text.match(/<\s*([a-zA-Z_][\w-]*)\s*,?\s*([^>]*)>([\s\S]*?)<\s*\/\s*\1\s*>/)
+  if(!m) return null
 
-  return toolEvents.map((e,i)=>[
-    `Step ${i+1}`,
-    `tool: ${e.tool}`,
-    `args: ${JSON.stringify(e.args)}`,
-    `ok: ${e.ok}`,
-    `summary: ${e.summary}`,
-    e.ok ? `result: ${JSON.stringify(e.result).slice(0,1800)}` : `error: ${e.error}`
-  ].join("\n")).join("\n\n")
+  const [,tagName,attrText,innerText] = m
+  const attrs = parseAttributes(attrText || "")
+  return mapTagToTool(tagName,attrs,innerText)
 }
 
-function summarizeToolResult(tool,args,result,error){
-  if(error){ return `❌ ${tool} failed: ${error}` }
+function parseLegacyToolCall(text){
+  const m = text.match(/TOOL_CALL:\s*(\{[\s\S]*\})/)
+  if(!m) return null
+  try{ return { type: "tool", tool_call: JSON.parse(m[1]) } } catch{ return null }
+}
 
-  if(tool === "file_operations" && args.action === "list"){
+function normalizeToolCall(call){
+  if(!call || typeof call !== "object") return null
+  if(typeof call.tool !== "string" || !call.tool.trim()) return null
+  const clean = { tool: call.tool.trim(), args: {} }
+  if(call.args && typeof call.args === "object") clean.args = { ...call.args }
+  for(const [k,v] of Object.entries(call)){
+    if(k === "tool" || k === "args") continue
+    if(clean.args[k] === undefined){ clean.args[k] = v }
+  }
+  return clean
+}
+
+function detectDirective(output){
+  const tagDirective = parseToolTag(output)
+  if(tagDirective) return tagDirective
+
+  const legacy = parseLegacyToolCall(output)
+  if(legacy) return legacy
+
+  return { type: "final", answer: output.trim() }
+}
+
+function summarizeToolResult(toolName,args,result,error){
+  if(error){ return `❌ ${toolName} failed: ${error}` }
+
+  if(toolName === "file_operations" && args?.action === "list"){
     const items = Array.isArray(result?.items) ? result.items : []
     const preview = items.slice(0,5).map(i=>`${i.type === "dir" ? "[dir]" : "[file]"} ${i.name}`).join(", ")
-    return `✅ Listed ${items.length} item(s) from ${result?.path || args.path}. ${preview}`.trim()
+    return `✅ Listed ${items.length} item(s) in ${result?.path || args?.path}.${preview ? ` Preview: ${preview}` : ""}`
   }
 
-  if(tool === "web_search_scraper" && args.action === "search"){
+  if(toolName === "web_search_scraper" && args?.action === "search"){
     const items = Array.isArray(result?.results) ? result.results : []
-    const preview = items.slice(0,3).map(i=>i.title).join(" | ")
-    return `✅ Search returned ${items.length} result(s). ${preview}`.trim()
+    return `✅ Search returned ${items.length} result(s) for "${args?.query || ""}".`
   }
 
-  if(tool === "web_search_scraper" && args.action === "scrape"){
-    return `✅ Scraped ${result?.url || args.url} (${String(result?.content || "").length} chars).`
+  if(toolName === "web_search_scraper" && args?.action === "scrape"){
+    const len = String(result?.content || "").length
+    return `✅ Scraped ${args?.url || result?.url || "url"} (${len} chars).`
   }
 
-  return `✅ ${tool} executed.`
+  return `✅ ${toolName} executed successfully.`
 }
 
-async function executeTag(tag,toolEvents){
-  const call = tagToCall(tag)
+async function executeToolCall(rawCall,toolEvents){
+  const call = normalizeToolCall(rawCall)
   if(!call){
-    toolEvents.push({ ok:false, tool:`tag:${tag.name}`, args:tag.attrs || {}, error:"Unsupported tag", summary:`❌ Unsupported tag <${tag.name}>.` })
-    console.log(`\n[tool] ❌ Unsupported tag <${tag.name}>.`)
+    const summary = "❌ Invalid tool payload from model."
+    toolEvents.push({ summary })
+    console.log(`\n[tool] ${summary}`)
     return
   }
 
   try{
     const result = await runTool(call.tool,call.args)
     const summary = summarizeToolResult(call.tool,call.args,result)
-    toolEvents.push({ ok:true, tool:call.tool, args:call.args, result, summary })
+    toolEvents.push({ summary, tool: call.tool, args: call.args, result })
     console.log(`\n[tool] ${summary}`)
   }
   catch(err){
     const msg = err?.message || String(err)
     const summary = summarizeToolResult(call.tool,call.args,null,msg)
-    toolEvents.push({ ok:false, tool:call.tool, args:call.args, error:msg, summary })
+    toolEvents.push({ summary, tool: call.tool, args: call.args, error: msg })
     console.log(`\n[tool] ${summary}`)
   }
 }
 
-function buildAgentPrompt(question,docs,toolEvents){
-  return `${TOOL_TAG_SYSTEM_PROMPT}
-
-User query:
-${question}
-
-Retrieved context:
-${contextText(docs)}
-
-Tool execution history:
-${toolHistoryText(toolEvents)}
-
-Now decide next step.`
-}
-
-function buildFinalPrompt(question,docs,toolEvents,draft){
-  return `You are an AI assistant. Produce the final response to the user.
-
-User query:
-${question}
-
-Retrieved context:
-${contextText(docs)}
-
-Tool execution history:
-${toolHistoryText(toolEvents)}
-
-Draft model answer (if any):
-${draft || "none"}
-
-Instructions:
-- Give a clear, human-readable response.
-- If tools were used, include concrete outputs.
-- Mention failures briefly and suggest next action.
-- Do not output tool tags.`
-}
-
 async function ask(question){
-  const q = await postJSON(`${ENGINE_URL}/query`,{
-    query: question,
-    storage: STORAGE,
-    top_k: 6,
-    candidate_k: CANDIDATE_K,
-    enable_rerank: ENABLE_RERANK
-  })
-
+  const q = await postJSON(`${ENGINE_URL}/query`,{ query: question, storage: STORAGE, top_k: 6, candidate_k: CANDIDATE_K, enable_rerank: ENABLE_RERANK })
   const docs = q.results || []
   const toolEvents = []
   let draftAnswer = ""
@@ -322,21 +310,21 @@ async function ask(question){
   for(const r of docs) console.log(`- score=${Number(r.score).toFixed(4)} source=${r.source}`)
 
   for(let step=0; step<TOOL_STEPS; step++){
-    const out = await generate(buildAgentPrompt(question,docs,toolEvents))
-    const tags = parseToolTags(out)
+    const out = await generate(buildActionPrompt(question,docs,toolEvents))
+    const decision = detectDirective(out)
 
-    if(tags.length === 0){
-      draftAnswer = out.trim()
-      break
+    if(decision.type === "tool"){
+      await executeToolCall(decision.tool_call, toolEvents)
+      continue
     }
 
-    for(const tag of tags){
-      await executeTag(tag,toolEvents)
-    }
+    draftAnswer = decision.answer || ""
+    break
   }
 
+  const finalPrompt = buildFinalPrompt(question,docs,toolEvents,draftAnswer)
   process.stdout.write("\nAnswer:\n")
-  await generateStream(buildFinalPrompt(question,docs,toolEvents,draftAnswer), token => process.stdout.write(token))
+  await generateStream(finalPrompt,(token)=>process.stdout.write(token))
   process.stdout.write("\n\n")
 }
 
