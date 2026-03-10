@@ -59,12 +59,12 @@ Health check for engine + Postgres/pgvector readiness.
 
 ## Run
 
-### 1) Start Postgres and enable pgvector
-Example connection env:
+### 1) Start Postgres + pgvector (recommended script)
 ```bash
-export POSTGRES_URL='postgresql://postgres:postgres@127.0.0.1:5432/postgres'
+bash scripts/setup-pgvector.sh
+source .env.engine
 ```
-`engine.js` auto-runs: `CREATE EXTENSION IF NOT EXISTS vector`.
+This script launches PostgreSQL with pgvector in Docker, enables the `vector` extension, and writes `.env.engine`.
 
 ### 2) Start Ollama
 ```bash
@@ -76,6 +76,7 @@ ollama pull granite3.1-dense:8b
 
 ### 3) Start engine
 ```bash
+source .env.engine
 node engine.js
 ```
 
