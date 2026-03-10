@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node engine.js",
-    "app": "node app.js"
+    "app": "node app.js",
+    "engine": "node rag-search-engine/engine.js",
+    "chat": "node ai-chat/app.js",
+    "tools": "node tools/index.js"
   },
   "keywords": [],
   "author": "",

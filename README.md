@@ -1,31 +1,48 @@
-# AI Assistant Engine (pgvector + HNSW)
+# AI Assistant Platform
 
-Enterprise-ready local retrieval engine with API-first design.
+This repository is now arranged into clear product folders:
 
-## What changed
-- `engine.js` is now the retrieval engine (ingest + query APIs only).
-- `app.js` is a separate AI test client that calls the engine + Ollama.
-- Storage is moved to PostgreSQL + `pgvector` with **HNSW** index for fast large-scale retrieval.
-- Each logical vector DB is isolated by `storage` name (separate table + metadata in `dbs/`).
+- **`ai-chat/`** → AI Chat app (`app.js`) that uses the retrieval engine and can call tools.
+- **`tools/`** → Tooling runtime and tool implementations AI can call.
+- **`rag-search-engine/`** → Enterprise retrieval engine (`engine.js`) with Postgres + pgvector + HNSW + optional reranker.
+
+Compatibility launchers remain at root:
+- `node engine.js` → starts `rag-search-engine/engine.js`
+- `node app.js` → starts `ai-chat/app.js`
 
 ## Architecture
 ```mermaid
 flowchart LR
-  A[Sources: folder/file/github/text] --> B[/ingest API]
-  B --> C[Chunk + Embed]
-  C --> D[(Postgres + pgvector)]
-  D --> E[HNSW index]
-
-  U[Query text] --> F[/query API]
-  F --> D
-  D --> G[Top-k results + scores]
+  User --> Chat[AI Chat app]
+  Chat --> Engine[RAG Search Engine API]
+  Chat --> Tools[Tool Runtime]
+  Engine --> PG[(Postgres + pgvector HNSW)]
+  Engine --> OllamaEmbed[Ollama Embed / Rerank]
+  Chat --> OllamaGen[Ollama Generate]
 ```
 
-## Engine APIs
+## Folder layout
+
+```text
+ai-chat/
+  app.js
+rag-search-engine/
+  engine.js
+tools/
+  index.js
+  file-operations.js
+  zip-unzip.js
+  web-search-scraper.js
+  git-tool.js
+scripts/
+  setup-pgvector.sh
+```
+
+## RAG Search Engine APIs
+
 Base URL: `http://localhost:3001`
 
 ### `POST /ingest`
-Payload:
 ```json
 {
   "ingest_from": "folder-path | file-path | github-repo-url(.git) | direct text",
@@ -35,10 +52,7 @@ Payload:
 }
 ```
 
-Response includes inserted chunks, dimensions, and storage table.
-
 ### `POST /query`
-Payload:
 ```json
 {
   "query": "what is http 404",
@@ -49,24 +63,32 @@ Payload:
 }
 ```
 
-Returns top matches with similarity scores plus rerank metadata (`rerank_applied`, `rerank_model`, `rerank_error`).
+### Additional
+- `GET /storages`
+- `GET /health`
 
-### `GET /storages`
-Lists registered storages and dimensions.
+## AI-callable tools
 
-### `GET /health`
-Health check for engine + Postgres/pgvector readiness.
+AI Chat can call tools via tool-call loop (`TOOL_CALL:{...}`):
 
-## Run
+1. **`file_operations`**
+   - actions: `list`, `read`, `write`, `append`, `copy`, `move`, `delete`, `mkdir`, `stat`
+2. **`zip_unzip`**
+   - actions: `zip`, `unzip`
+3. **`web_search_scraper`**
+   - actions: `search`, `scrape`
+4. **`git_tool`**
+   - actions: `status`, `log`, `branches`
 
-### 1) Start Postgres + pgvector (recommended script)
+## Setup
+
+### 1) Bootstrap pgvector
 ```bash
 bash scripts/setup-pgvector.sh
 source .env.engine
 ```
-This script launches PostgreSQL with pgvector in Docker, enables the `vector` extension, and writes `.env.engine`.
 
-### 2) Start Ollama
+### 2) Start Ollama models
 ```bash
 ollama serve
 ollama pull nomic-embed-text
@@ -74,43 +96,16 @@ ollama pull bge-reranker-base
 ollama pull granite3.1-dense:8b
 ```
 
-### 3) Start engine
+### 3) Install and run
 ```bash
-source .env.engine
-node engine.js
+npm install
+npm run start      # engine
+npm run app        # chat app
 ```
-
-### 4) Ingest
-```bash
-curl -X POST http://127.0.0.1:3001/ingest \
-  -H 'Content-Type: application/json' \
-  -d '{"ingest_from":"datas/http","storage":"http_docs"}'
-```
-
-### 5) Query
-```bash
-curl -X POST http://127.0.0.1:3001/query \
-  -H 'Content-Type: application/json' \
-  -d '{"query":"what is http 404","storage":"http_docs","top_k":5}'
-```
-
-### 6) Test AI app (separate)
-```bash
-STORAGE=http_docs node app.js
-```
-
-## Enterprise notes
-- HNSW indexing on each storage table for scalable approximate nearest-neighbor search.
-- Optional reranking via `bge-reranker-base` (`/query` uses Ollama `/rerank`) for higher precision on top candidates.
-- Storage isolation by table (`vectors_<storage>`), plus metadata registry table.
-- `dbs/` contains storage manifests for local operational visibility.
-- API-first design allows independent AI app(s) to consume retrieval engine.
-
 
 ## Troubleshooting
 
-- If you see `password authentication failed for user "postgres"`, your running engine likely uses stale or wrong DB credentials.
-  - Re-run setup and restart engine:
+If you get `password authentication failed for user "postgres"`:
 
 ```bash
 bash scripts/setup-pgvector.sh
@@ -118,4 +113,4 @@ source .env.engine
 npm run start
 ```
 
-- `app.js` and `engine.js` now auto-load `.env.engine` when present.
+Both `rag-search-engine/engine.js` and `ai-chat/app.js` auto-load `.env.engine` when present.
