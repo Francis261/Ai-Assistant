@@ -5,6 +5,7 @@ A local retrieval-augmented generation (RAG) assistant that:
 - creates vector embeddings
 - stores vectors in `vectors.db`
 - retrieves relevant chunks for queries
+- runs hybrid retrieval (vector + keyword) for better semantic recall
 - sends grounded prompts to a local Ollama model
 
 ---
@@ -61,10 +62,11 @@ sequenceDiagram
 5. Insert rows into SQLite table `vectors(file, chunk, embedding)`.
 
 ### 2) Search
-1. Embed the query.
-2. Compare against all stored vectors using cosine similarity.
-3. Return top matches.
-4. If embedding is unavailable, fallback to keyword scoring so search still returns useful hits.
+1. Compute keyword candidates from chunks.
+2. Embed the query and compute vector similarity candidates.
+3. Normalize and blend both signals into a hybrid score (vector-weighted with keyword support).
+4. Return top matches.
+5. If embedding is unavailable, fallback to keyword scoring so search still returns useful hits.
 
 ### 3) RAG Answering
 1. Build a grounded prompt from:
@@ -128,6 +130,8 @@ node ai.js ingest-all --reset --strict
 ```bash
 node ai.js search "what is http 404"
 ```
+
+Search output now includes retrieval method and component scores (hybrid/vector/keyword).
 
 ### Chat
 ```bash

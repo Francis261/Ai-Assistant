@@ -17,6 +17,9 @@ const DATA_DIR = "./datas"
 const CHUNK_SIZE = 800
 const TOP_K = 6
 const CHAT_HISTORY_LIMIT = 6
+const HYBRID_VECTOR_WEIGHT = 0.75
+const HYBRID_KEYWORD_WEIGHT = 0.25
+const CANDIDATE_POOL_MULTIPLIER = 8
 
 const limit = pLimit(5)
 const db = new Database("vectors.db")
@@ -126,6 +129,19 @@ function keywordScore(query,text){
     if(lower.includes(token)){ hits++ }
   }
   return hits / qTokens.length
+}
+
+function normalizeScores(items,key="score") {
+  if(items.length===0){ return [] }
+  const vals = items.map(i=>i[key])
+  const max = Math.max(...vals)
+  const min = Math.min(...vals)
+
+  if(max===min){
+    return items.map(i=>({ ...i, normalized: 1 }))
+  }
+
+  return items.map(i=>({ ...i, normalized: (i[key]-min)/(max-min) }))
 }
 
 /* -------------------------
@@ -240,7 +256,7 @@ async function ingestAll({reset=false,strict=false}={}){
 
   for(const folder of f){
     console.log(chalk.cyan(`\nIngesting folder: ${folder}`))
-    await ingest(folder)
+    await ingest(folder,{strict})
   }
 }
 
@@ -248,26 +264,44 @@ async function ingestAll({reset=false,strict=false}={}){
  SEARCH
 ------------------------- */
 function keywordSearch(query,k=4){
-  const rows = db.prepare(`SELECT file,chunk FROM vectors`).all()
+  const rows = db.prepare(`SELECT id,file,chunk FROM vectors`).all()
   const scored = rows.map(r=>({
+    id:r.id,
     file:r.file,
     chunk:r.chunk,
-    score: keywordScore(query,r.chunk)
+    keywordScore: keywordScore(query,r.chunk)
   }))
-  .filter(r=>r.score>0)
-  .sort((a,b)=>b.score-a.score)
-  return scored.slice(0,k)
+  .filter(r=>r.keywordScore>0)
+  .sort((a,b)=>b.keywordScore-a.keywordScore)
+  .slice(0,k)
+
+  return scored.map(r=>({
+    id:r.id,
+    file:r.file,
+    chunk:r.chunk,
+    score:r.keywordScore,
+    vectorScore:0,
+    keywordScore:r.keywordScore,
+    method:"keyword"
+  }))
 }
 
 async function search(query,k=4){
-  const rows = db.prepare(`SELECT file,chunk,embedding FROM vectors`).all()
+  const rows = db.prepare(`SELECT id,file,chunk,embedding FROM vectors`).all()
   if(rows.length===0){
     return []
   }
 
+  const candidatePool = Math.max(k * CANDIDATE_POOL_MULTIPLIER, k)
+  const keywordCandidates = rows
+    .map(r=>({ ...r, keywordScore: keywordScore(query,r.chunk) }))
+    .filter(r=>r.keywordScore>0)
+    .sort((a,b)=>b.keywordScore-a.keywordScore)
+    .slice(0,candidatePool)
+
   try{
     const qEmb = await embed(query)
-    const scored = rows.map(r=>{
+    const vectorCandidates = rows.map(r=>{
       let emb
       try{
         emb = JSON.parse(r.embedding)
@@ -276,23 +310,68 @@ async function search(query,k=4){
         return null
       }
 
-      const score = similarity(qEmb,emb)
-      if(score<0){
+      if(!isValidEmbedding(emb)){
         return null
       }
 
-      return { file: r.file, chunk: r.chunk, score }
-    }).filter(Boolean)
+      const vectorScore = similarity(qEmb,emb)
+      if(vectorScore<0){
+        return null
+      }
 
-    scored.sort((a,b)=>b.score - a.score)
-    const top = scored.slice(0,k)
+      return { ...r, vectorScore }
+    })
+    .filter(Boolean)
+    .sort((a,b)=>b.vectorScore-a.vectorScore)
+    .slice(0,candidatePool)
 
-    if(top.length===0){
+    if(vectorCandidates.length===0){
       console.log(chalk.yellow("Vector search returned no matches. Falling back to keyword search."))
       return keywordSearch(query,k)
     }
 
-    return top
+    const normalizedVector = normalizeScores(vectorCandidates,"vectorScore")
+    const normalizedKeyword = normalizeScores(keywordCandidates,"keywordScore")
+
+    const byId = new Map()
+
+    for(const item of normalizedVector){
+      byId.set(item.id,{
+        id:item.id,
+        file:item.file,
+        chunk:item.chunk,
+        vectorScore:item.vectorScore,
+        vectorNorm:item.normalized,
+        keywordScore:0,
+        keywordNorm:0
+      })
+    }
+
+    for(const item of normalizedKeyword){
+      const existing = byId.get(item.id)
+      if(existing){
+        existing.keywordScore = item.keywordScore
+        existing.keywordNorm = item.normalized
+      }
+      else{
+        byId.set(item.id,{
+          id:item.id,
+          file:item.file,
+          chunk:item.chunk,
+          vectorScore:0,
+          vectorNorm:0,
+          keywordScore:item.keywordScore,
+          keywordNorm:item.normalized
+        })
+      }
+    }
+
+    const hybrid = [...byId.values()].map(item=>{
+      const score = (item.vectorNorm * HYBRID_VECTOR_WEIGHT) + (item.keywordNorm * HYBRID_KEYWORD_WEIGHT)
+      return { ...item, score, method:"hybrid" }
+    }).sort((a,b)=>b.score-a.score)
+
+    return hybrid.slice(0,k)
   }
   catch(err){
     console.log(chalk.yellow(`Vector search unavailable (${err.message}). Falling back to keyword search.`))
@@ -415,6 +494,7 @@ async function searchCLI(q){
     console.log("\nFile:",chalk.yellow(r.file))
     console.log(r.chunk.slice(0,300))
     console.log("Score:",r.score)
+    console.log("Method:",r.method, "| Vector:", r.vectorScore ?? 0, "| Keyword:", r.keywordScore ?? 0)
   }
 }
 
@@ -494,7 +574,7 @@ async function ingestCLI(){
   rl.question("\nEnter number: ", async(n)=>{
     const folder = f[parseInt(n)-1]
     if(!folder){ console.log("Invalid selection"); rl.close(); return }
-    await ingest(folder)
+    await ingest(folder,{strict})
     rl.close()
   })
 }
