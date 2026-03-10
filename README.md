@@ -43,11 +43,13 @@ Payload:
 {
   "query": "what is http 404",
   "storage": "tenant_or_project_name",
-  "top_k": 8
+  "top_k": 8,
+  "candidate_k": 48,
+  "enable_rerank": true
 }
 ```
 
-Returns top matches with similarity scores.
+Returns top matches with similarity scores plus rerank metadata (`rerank_applied`, `rerank_model`, `rerank_error`).
 
 ### `GET /storages`
 Lists registered storages and dimensions.
@@ -68,6 +70,7 @@ export POSTGRES_URL='postgresql://postgres:postgres@127.0.0.1:5432/postgres'
 ```bash
 ollama serve
 ollama pull nomic-embed-text
+ollama pull bge-reranker-base
 ollama pull granite3.1-dense:8b
 ```
 
@@ -97,6 +100,7 @@ STORAGE=http_docs node app.js
 
 ## Enterprise notes
 - HNSW indexing on each storage table for scalable approximate nearest-neighbor search.
+- Optional reranking via `bge-reranker-base` (`/query` uses Ollama `/rerank`) for higher precision on top candidates.
 - Storage isolation by table (`vectors_<storage>`), plus metadata registry table.
 - `dbs/` contains storage manifests for local operational visibility.
 - API-first design allows independent AI app(s) to consume retrieval engine.

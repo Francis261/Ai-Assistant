@@ -21,6 +21,20 @@ const DBS_DIR = path.resolve("./dbs")
 const DEFAULT_CHUNK_SIZE = 900
 const DEFAULT_CHUNK_OVERLAP = 150
 const DEFAULT_TOP_K = 8
+const DEFAULT_CANDIDATE_MULTIPLIER = 6
+const RERANK_MODEL = process.env.RERANK_MODEL || "bge-reranker-base"
+const ENABLE_RERANK_DEFAULT = process.env.ENABLE_RERANK_DEFAULT !== "false"
+
+function parseBool(value,defaultValue){
+  if(value === undefined || value === null){ return defaultValue }
+  if(typeof value === "boolean"){ return value }
+  if(typeof value === "string"){
+    const v = value.trim().toLowerCase()
+    if(v === "true") return true
+    if(v === "false") return false
+  }
+  return defaultValue
+}
 
 const pool = new Pool({ connectionString: POSTGRES_URL })
 const app = express()
@@ -85,6 +99,37 @@ async function embed(text){
   const modern = await postJSON(`${OLLAMA}/embed`,{ model: EMBED_MODEL, input: text })
   if(Array.isArray(modern.embeddings) && Array.isArray(modern.embeddings[0])) return modern.embeddings[0]
   throw new Error("Embedding response missing vector")
+}
+
+async function rerank(query,candidates,topN){
+  if(candidates.length===0){ return [] }
+
+  const docs = candidates.map(c=>c.chunk_text)
+  const payload = {
+    model: RERANK_MODEL,
+    query,
+    documents: docs,
+    top_n: Math.min(topN,candidates.length)
+  }
+
+  const out = await postJSON(`${OLLAMA}/rerank`,payload)
+  if(!Array.isArray(out.results)){
+    throw new Error("Rerank response missing results")
+  }
+
+  const ranked = []
+  for(const item of out.results){
+    if(typeof item.index !== "number"){ continue }
+    const base = candidates[item.index]
+    if(!base){ continue }
+    ranked.push({
+      ...base,
+      rerank_score: Number(item.relevance_score ?? item.score ?? 0),
+      retrieval_method: "vector_hnsw+rerank"
+    })
+  }
+
+  return ranked
 }
 
 function vectorLiteral(arr){
@@ -222,7 +267,10 @@ async function queryPayload(payload){
   const storage = sanitizeStorage(payload.storage)
   const query = payload.query
   assert(typeof query === "string" && query.trim().length>0,"query is required")
+
   const topK = Math.max(1,Math.min(Number(payload.top_k || DEFAULT_TOP_K),100))
+  const candidateK = Math.max(topK, Math.min(1000, Number(payload.candidate_k || (topK * DEFAULT_CANDIDATE_MULTIPLIER))))
+  const rerankEnabled = parseBool(payload.enable_rerank, ENABLE_RERANK_DEFAULT)
 
   const tName = tableName(storage)
   const emb = await embed(query)
@@ -231,14 +279,40 @@ async function queryPayload(payload){
      FROM ${tName}
      ORDER BY embedding <=> $1::vector
      LIMIT $2`,
-    [vectorLiteral(emb), topK]
+    [vectorLiteral(emb), candidateK]
   )
+
+  let results = rows.rows.slice(0,topK).map(r=>({
+    ...r,
+    rerank_score: null,
+    retrieval_method: "vector_hnsw"
+  }))
+  let rerankApplied = false
+  let rerankError = null
+
+  if(rerankEnabled && rows.rowCount>1){
+    try{
+      const reranked = await rerank(query,rows.rows,topK)
+      if(reranked.length>0){
+        results = reranked
+        rerankApplied = true
+      }
+    }
+    catch(err){
+      rerankError = err.message
+    }
+  }
 
   return {
     storage,
     top_k: topK,
-    count: rows.rowCount,
-    results: rows.rows
+    candidate_k: candidateK,
+    rerank_model: RERANK_MODEL,
+    rerank_enabled: rerankEnabled,
+    rerank_applied: rerankApplied,
+    rerank_error: rerankError,
+    count: results.length,
+    results
   }
 }
 

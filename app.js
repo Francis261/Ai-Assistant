@@ -7,6 +7,8 @@ const ENGINE_URL = process.env.ENGINE_URL || "http://127.0.0.1:3001"
 const OLLAMA = process.env.OLLAMA_URL || "http://127.0.0.1:11434/api"
 const MODEL = process.env.MODEL || "granite3.1-dense:8b"
 const STORAGE = process.env.STORAGE || "default"
+const ENABLE_RERANK = process.env.ENABLE_RERANK !== "false"
+const CANDIDATE_K = Number(process.env.CANDIDATE_K || 40)
 
 async function postJSON(url,body){
   const res = await fetch(url,{ method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body) })
@@ -31,11 +33,11 @@ function buildPrompt(question,docs){
 }
 
 async function ask(question){
-  const q = await postJSON(`${ENGINE_URL}/query`,{ query: question, storage: STORAGE, top_k: 6 })
+  const q = await postJSON(`${ENGINE_URL}/query`,{ query: question, storage: STORAGE, top_k: 6, candidate_k: CANDIDATE_K, enable_rerank: ENABLE_RERANK })
   const prompt = buildPrompt(question,q.results || [])
   const answer = await generate(prompt)
 
-  console.log("\nRetrieved:")
+  console.log(`\nRetrieved (rerank_applied=${q.rerank_applied}, model=${q.rerank_model}):`)
   for(const r of q.results || []){
     console.log(`- score=${Number(r.score).toFixed(4)} source=${r.source}`)
   }
