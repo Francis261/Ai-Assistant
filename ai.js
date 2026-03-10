@@ -272,7 +272,14 @@ async function search(query,k=4){
     }).filter(Boolean)
 
     scored.sort((a,b)=>b.score - a.score)
-    return scored.slice(0,k)
+    const top = scored.slice(0,k)
+
+    if(top.length===0){
+      console.log(chalk.yellow("Vector search returned no matches. Falling back to keyword search."))
+      return keywordSearch(query,k)
+    }
+
+    return top
   }
   catch(err){
     console.log(chalk.yellow(`Vector search unavailable (${err.message}). Falling back to keyword search.`))
