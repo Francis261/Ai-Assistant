@@ -1,169 +1,102 @@
-# AI Assistant (Local RAG with Ollama + SQLite)
+# AI Assistant Engine (pgvector + HNSW)
 
-A local retrieval-augmented generation (RAG) assistant that:
-- ingests files from `datas/`
-- creates vector embeddings
-- stores vectors in `vectors.db`
-- retrieves relevant chunks for queries
-- runs hybrid retrieval (vector + keyword) for better semantic recall
-- sends grounded prompts to a local Ollama model
+Enterprise-ready local retrieval engine with API-first design.
 
----
+## What changed
+- `engine.js` is now the retrieval engine (ingest + query APIs only).
+- `app.js` is a separate AI test client that calls the engine + Ollama.
+- Storage is moved to PostgreSQL + `pgvector` with **HNSW** index for fast large-scale retrieval.
+- Each logical vector DB is isolated by `storage` name (separate table + metadata in `dbs/`).
 
 ## Architecture
-
 ```mermaid
 flowchart LR
-  A[datas/ files] --> B[Ingestion Engine]
-  B --> C[Chunking]
-  C --> D[Ollama Embeddings]
-  D --> E[(vectors.db)]
+  A[Sources: folder/file/github/text] --> B[/ingest API]
+  B --> C[Chunk + Embed]
+  C --> D[(Postgres + pgvector)]
+  D --> E[HNSW index]
 
-  U[User Query] --> F[Search]
-  E --> F
-  F --> G[Top-K Context]
-  G --> H[Prompt Builder]
-  U --> H
-  H --> I[Ollama Generate]
-  I --> J[Answer]
+  U[Query text] --> F[/query API]
+  F --> D
+  D --> G[Top-k results + scores]
 ```
 
----
+## Engine APIs
+Base URL: `http://localhost:3001`
 
-## RAG Flow (Chat Mode)
-
-```mermaid
-sequenceDiagram
-  participant User
-  participant CLI as ai.js chat
-  participant DB as vectors.db
-  participant Ollama as Ollama API
-
-  User->>CLI: Ask question
-  CLI->>DB: Retrieve candidate chunks
-  CLI->>Ollama: Embed question
-  Ollama-->>CLI: Query embedding
-  CLI->>CLI: Similarity ranking (Top-K)
-  CLI->>CLI: Build prompt (history + context)
-  CLI->>Ollama: Generate response
-  Ollama-->>CLI: Final answer
-  CLI-->>User: Show prompt, context, and answer
+### `POST /ingest`
+Payload:
+```json
+{
+  "ingest_from": "folder-path | file-path | github-repo-url(.git) | direct text",
+  "storage": "tenant_or_project_name",
+  "chunk_size": 900,
+  "chunk_overlap": 150
+}
 ```
 
----
+Response includes inserted chunks, dimensions, and storage table.
 
-## How It Works
+### `POST /query`
+Payload:
+```json
+{
+  "query": "what is http 404",
+  "storage": "tenant_or_project_name",
+  "top_k": 8
+}
+```
 
-### 1) Ingestion
-1. Scan files under a selected folder in `datas/` (or all folders).
-2. Filter to supported file types (`.md`, `.txt`, `.js`, `.ts`, `.py`, `.json`, `.html`, `.css`, `.yaml`, `.yml`).
-3. Chunk each file into ~800 char pieces.
-4. Request embeddings from Ollama (`nomic-embed-text`).
-5. Insert rows into SQLite table `vectors(file, chunk, embedding)`.
+Returns top matches with similarity scores.
 
-### 2) Search
-1. Compute keyword candidates from chunks.
-2. Embed the query and compute vector similarity candidates.
-3. Normalize and blend both signals into a hybrid score (vector-weighted with keyword support).
-4. Return top matches.
-5. If embedding is unavailable, fallback to keyword scoring so search still returns useful hits.
+### `GET /storages`
+Lists registered storages and dimensions.
 
-### 3) RAG Answering
-1. Build a grounded prompt from:
-   - top retrieved chunks
-   - recent conversation history
-   - current user question
-2. Send prompt to generation model (`granite3.1-dense:8b`).
-3. Return model answer.
-4. In `chat` mode, also show:
-   - exact prompt sent to the model
-   - retrieved context snippets and scores
+### `GET /health`
+Health check for engine + Postgres/pgvector readiness.
 
----
+## Run
 
-## Setup
-
-## 1. Install dependencies
+### 1) Start Postgres and enable pgvector
+Example connection env:
 ```bash
-npm install
+export POSTGRES_URL='postgresql://postgres:postgres@127.0.0.1:5432/postgres'
 ```
+`engine.js` auto-runs: `CREATE EXTENSION IF NOT EXISTS vector`.
 
-## 2. Install and run Ollama
+### 2) Start Ollama
 ```bash
-curl -fsSL https://ollama.com/install.sh | sh
 ollama serve
-```
-
-## 3. Pull models
-```bash
 ollama pull nomic-embed-text
 ollama pull granite3.1-dense:8b
 ```
 
----
-
-## Usage
-
-### Ingest one folder
+### 3) Start engine
 ```bash
-node ai.js ingest <folder>
+node engine.js
 ```
 
-### Ingest one folder and reset DB first
+### 4) Ingest
 ```bash
-node ai.js ingest <folder> --reset
-node ai.js ingest <folder> --reset --strict
+curl -X POST http://127.0.0.1:3001/ingest \
+  -H 'Content-Type: application/json' \
+  -d '{"ingest_from":"datas/http","storage":"http_docs"}'
 ```
 
-### Ingest all folders in `datas/`
+### 5) Query
 ```bash
-node ai.js ingest-all
+curl -X POST http://127.0.0.1:3001/query \
+  -H 'Content-Type: application/json' \
+  -d '{"query":"what is http 404","storage":"http_docs","top_k":5}'
 ```
 
-### Ingest all folders and reset DB first
+### 6) Test AI app (separate)
 ```bash
-node ai.js ingest-all --reset
-node ai.js ingest-all --reset --strict
+STORAGE=http_docs node app.js
 ```
 
-### Search
-```bash
-node ai.js search "what is http 404"
-```
-
-Search output now includes retrieval method and component scores (hybrid/vector/keyword).
-
-### Chat
-```bash
-node ai.js chat
-```
-
-### Stats
-```bash
-node ai.js stats
-```
-
-### Verify vector integrity
-```bash
-node ai.js verify-vectors
-```
-
----
-
-## Data Model
-
-SQLite file: `vectors.db`
-
-Table:
-- `id` (INTEGER PRIMARY KEY)
-- `file` (TEXT)
-- `chunk` (TEXT)
-- `embedding` (TEXT as JSON array)
-
----
-
-## Notes
-
-- This project is fully local-first (Ollama + SQLite).
-- For large datasets, ingestion can take time depending on CPU/RAM.
-- If generation/embedding model loading fails due memory pressure, search falls back to keyword retrieval.
+## Enterprise notes
+- HNSW indexing on each storage table for scalable approximate nearest-neighbor search.
+- Storage isolation by table (`vectors_<storage>`), plus metadata registry table.
+- `dbs/` contains storage manifests for local operational visibility.
+- API-first design allows independent AI app(s) to consume retrieval engine.
