@@ -111,6 +111,11 @@ function similarity(a,b){
   return dot/(magA*magB)
 }
 
+
+function isValidEmbedding(emb){
+  return Array.isArray(emb) && emb.length>0 && emb.every(v=>typeof v==="number" && Number.isFinite(v))
+}
+
 function keywordScore(query,text){
   const qTokens = query.toLowerCase().split(/\W+/).filter(t=>t.length>2)
   if(qTokens.length===0){ return 0 }
@@ -179,7 +184,7 @@ function scanFiles(folder){
 /* -------------------------
  INGEST
 ------------------------- */
-async function ingest(folder,{reset=false}={}){
+async function ingest(folder,{reset=false,strict=false}={}){
   if(reset){
     db.exec(`DELETE FROM vectors`)
     console.log(chalk.yellow("Existing vectors cleared"))
@@ -197,6 +202,11 @@ async function ingest(folder,{reset=false}={}){
         limit(async()=>{
           try{
             const emb = await embed(chunk)
+
+            if(!isValidEmbedding(emb)){
+              throw new Error("Invalid embedding payload")
+            }
+
             db.prepare(`
               INSERT INTO vectors(file,chunk,embedding)
               VALUES(?,?,?)
@@ -204,6 +214,9 @@ async function ingest(folder,{reset=false}={}){
           }
           catch(err){
             console.log(chalk.red(`Embedding failed for ${file}: ${err.message}`))
+            if(strict){
+              throw err
+            }
           }
         })
       )
@@ -213,7 +226,7 @@ async function ingest(folder,{reset=false}={}){
   console.log(chalk.green("Ingestion finished"))
 }
 
-async function ingestAll({reset=false}={}){
+async function ingestAll({reset=false,strict=false}={}){
   if(reset){
     db.exec(`DELETE FROM vectors`)
     console.log(chalk.yellow("Existing vectors cleared"))
@@ -422,6 +435,42 @@ function stats(){
   console.log("Total chunks:",count.c)
 }
 
+
+/* -------------------------
+ VERIFY VECTORS
+------------------------- */
+function verifyVectors(){
+  const rows = db.prepare(`SELECT embedding FROM vectors`).all()
+
+  let valid = 0
+  let invalidJSON = 0
+  let invalidVector = 0
+
+  for(const r of rows){
+    let emb
+    try{
+      emb = JSON.parse(r.embedding)
+    }
+    catch{
+      invalidJSON++
+      continue
+    }
+
+    if(isValidEmbedding(emb)){
+      valid++
+    }
+    else{
+      invalidVector++
+    }
+  }
+
+  const total = rows.length
+  console.log(`Total vectors: ${total}`)
+  console.log(`Valid vectors: ${valid}`)
+  console.log(`Invalid JSON embeddings: ${invalidJSON}`)
+  console.log(`Invalid vector payloads: ${invalidVector}`)
+}
+
 /* -------------------------
  LIST FOLDERS
 ------------------------- */
@@ -475,9 +524,10 @@ if(cmd==="clone"){
 else if(cmd==="ingest"){
   const folder = process.argv[3]
   const reset = process.argv.includes("--reset")
+  const strict = process.argv.includes("--strict")
 
   if(folder){
-    ingest(folder,{reset})
+    ingest(folder,{reset,strict})
   }
   else{
     ingestCLI()
@@ -485,7 +535,8 @@ else if(cmd==="ingest"){
 }
 else if(cmd==="ingest-all"){
   const reset = process.argv.includes("--reset")
-  ingestAll({reset})
+  const strict = process.argv.includes("--strict")
+  ingestAll({reset,strict})
 }
 else if(cmd==="chat"){
   chat()
@@ -500,17 +551,21 @@ else if(cmd==="open"){
 else if(cmd==="stats"){
   stats()
 }
+else if(cmd==="verify-vectors"){
+  verifyVectors()
+}
 else{
   console.log(`
 Commands:
 
 node ai.js clone <repo_url>
 node ai.js ingest
-node ai.js ingest <folder> [--reset]
-node ai.js ingest-all [--reset]
+node ai.js ingest <folder> [--reset] [--strict]
+node ai.js ingest-all [--reset] [--strict]
 node ai.js chat
 node ai.js search "query"
 node ai.js open <file>
 node ai.js stats
+node ai.js verify-vectors
   `)
 }

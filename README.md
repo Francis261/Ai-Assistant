@@ -110,6 +110,7 @@ node ai.js ingest <folder>
 ### Ingest one folder and reset DB first
 ```bash
 node ai.js ingest <folder> --reset
+node ai.js ingest <folder> --reset --strict
 ```
 
 ### Ingest all folders in `datas/`
@@ -120,6 +121,7 @@ node ai.js ingest-all
 ### Ingest all folders and reset DB first
 ```bash
 node ai.js ingest-all --reset
+node ai.js ingest-all --reset --strict
 ```
 
 ### Search
@@ -135,6 +137,11 @@ node ai.js chat
 ### Stats
 ```bash
 node ai.js stats
+```
+
+### Verify vector integrity
+```bash
+node ai.js verify-vectors
 ```
 
 ---
