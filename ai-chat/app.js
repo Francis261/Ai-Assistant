@@ -29,6 +29,7 @@ const STORAGE = process.env.STORAGE || "default"
 const ENABLE_RERANK = process.env.ENABLE_RERANK !== "false"
 const CANDIDATE_K = Number(process.env.CANDIDATE_K || 40)
 const TOOL_STEPS = Number(process.env.TOOL_STEPS || 3)
+const TOOL_CALL_CONFIDENCE = Number(process.env.TOOL_CALL_CONFIDENCE || 0.65)
 
 async function postJSON(url,body){
   const res = await fetch(url,{ method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body) })
@@ -51,10 +52,64 @@ function buildPrompt(question,docs,toolContext){
   return `You are an AI assistant.\n\nAvailable tools (JSON schema):\n${tools}\n\nIf needed, output EXACTLY one line with:\nTOOL_CALL:{"tool":"tool_name","args":{...}}\n\nIf no tool needed, answer normally.\n\nContext:\n${ctx}\n\nTool context:\n${toolContext || "none"}\n\nQuestion: ${question}\nAnswer:`
 }
 
+function buildToolDecisionPrompt(question,docs){
+  const ctx = docs.length ? docs.map((d,i)=>`[${i+1}] ${d.source}\n${d.chunk_text}`).join("\n\n") : "(no context)"
+  const tools = JSON.stringify(getToolsManifest(),null,2)
+
+  return `You are a strict tool router for a chat assistant.
+
+Available tools (JSON schema):
+${tools}
+
+Decide whether calling a tool is required for the user message.
+Return ONLY JSON in one line:
+{"needs_tool":boolean,"confidence":number,"reason":"...","tool_call":{"tool":"...","args":{...}}}
+
+Rules:
+- needs_tool=true ONLY when a tool is explicitly needed to complete the request.
+- For greetings, chit-chat, explanations, brainstorming, writing, coding advice, or questions answerable from context, set needs_tool=false.
+- If unsure, set needs_tool=false.
+- confidence must be 0..1.
+- If needs_tool=false then tool_call must be null.
+
+Context:
+${ctx}
+
+User message: ${question}`
+}
+
 function parseToolCall(text){
   const m = text.match(/TOOL_CALL:(\{[\s\S]*\})/)
   if(!m) return null
   try{ return JSON.parse(m[1]) } catch{ return null }
+}
+
+function parseToolDecision(text){
+  const firstJson = text.match(/\{[\s\S]*\}/)
+  if(!firstJson) return null
+
+  try{
+    const parsed = JSON.parse(firstJson[0])
+    if(typeof parsed?.needs_tool !== "boolean") return null
+    if(typeof parsed?.confidence !== "number") return null
+    if(parsed.needs_tool && (!parsed.tool_call || typeof parsed.tool_call.tool !== "string")) return null
+    return parsed
+  }
+  catch{
+    return null
+  }
+}
+
+function shouldForceNoTool(question){
+  const q = question.trim().toLowerCase()
+  if(!q) return true
+
+  const smallTalk = [
+    "hi","hello","hey","yo","sup","good morning","good afternoon","good evening",
+    "how are you","thanks","thank you","ok","okay","cool","nice"
+  ]
+
+  return smallTalk.some(s => q === s || q.startsWith(`${s} `))
 }
 
 async function ask(question){
@@ -62,10 +117,33 @@ async function ask(question){
 
   let toolContext = ""
   let finalAnswer = ""
+  let allowToolCalls = !shouldForceNoTool(question)
+
+  if(allowToolCalls){
+    const decisionRaw = await generate(buildToolDecisionPrompt(question,q.results || []))
+    const decision = parseToolDecision(decisionRaw)
+    if(!decision || !decision.needs_tool || decision.confidence < TOOL_CALL_CONFIDENCE || !decision.tool_call){
+      allowToolCalls = false
+    }
+    else{
+      try{
+        const result = await runTool(decision.tool_call.tool, decision.tool_call.args)
+        toolContext += `\nTool ${decision.tool_call.tool} result: ${JSON.stringify(result).slice(0,4000)}`
+      }
+      catch(err){
+        toolContext += `\nTool ${decision.tool_call.tool} error: ${err.message}`
+      }
+    }
+  }
 
   for(let step=0; step<TOOL_STEPS; step++){
     const prompt = buildPrompt(question,q.results || [],toolContext)
     const out = await generate(prompt)
+    if(!allowToolCalls){
+      finalAnswer = out.replace(/TOOL_CALL:[\s\S]*/m,"").trim() || out
+      break
+    }
+
     const toolCall = parseToolCall(out)
 
     if(!toolCall){
