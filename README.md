@@ -105,3 +105,17 @@ STORAGE=http_docs node app.js
 - Storage isolation by table (`vectors_<storage>`), plus metadata registry table.
 - `dbs/` contains storage manifests for local operational visibility.
 - API-first design allows independent AI app(s) to consume retrieval engine.
+
+
+## Troubleshooting
+
+- If you see `password authentication failed for user "postgres"`, your running engine likely uses stale or wrong DB credentials.
+  - Re-run setup and restart engine:
+
+```bash
+bash scripts/setup-pgvector.sh
+source .env.engine
+npm run start
+```
+
+- `app.js` and `engine.js` now auto-load `.env.engine` when present.

@@ -12,6 +12,24 @@ import pg from "pg"
 
 const { Pool } = pg
 
+function loadEnvFile(filePath){
+  if(!fs.existsSync(filePath)){ return }
+  const lines = fs.readFileSync(filePath,"utf8").split(/\r?\n/)
+  for(const line of lines){
+    const trimmed = line.trim()
+    if(!trimmed || trimmed.startsWith("#")){ continue }
+    const idx = trimmed.indexOf("=")
+    if(idx<=0){ continue }
+    const key = trimmed.slice(0,idx).trim()
+    const val = trimmed.slice(idx+1).trim()
+    if(!(key in process.env)){
+      process.env[key] = val
+    }
+  }
+}
+
+loadEnvFile(path.resolve(".env.engine"))
+
 const PORT = Number(process.env.ENGINE_PORT || 3001)
 const OLLAMA = process.env.OLLAMA_URL || "http://127.0.0.1:11434/api"
 const EMBED_MODEL = process.env.EMBED_MODEL || "nomic-embed-text"
@@ -355,7 +373,9 @@ app.post("/query", async(req,res,next)=>{
 })
 
 app.use((err,_req,res,_next)=>{
-  res.status(400).json({ ok:false, error: err.message })
+  const msg = err?.message || "Unknown error"
+  const status = msg.includes("password authentication failed") ? 503 : 400
+  res.status(status).json({ ok:false, error: msg })
 })
 
 app.listen(PORT,()=>{
