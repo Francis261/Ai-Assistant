@@ -37,7 +37,17 @@ async function embed(text){
     headers:{"Content-Type":"application/json"},
     body: JSON.stringify({model: EMBED_MODEL, prompt: text})
   })
+
+  if(!res.ok){
+    const body = await res.text()
+    throw new Error(`Embedding request failed: ${res.status} ${body}`)
+  }
+
   const data = await res.json()
+  if(!Array.isArray(data.embedding)){
+    throw new Error("Embedding response missing vector")
+  }
+
   return data.embedding
 }
 
@@ -58,14 +68,24 @@ async function generate(prompt){
  SIMILARITY
 ------------------------- */
 function similarity(a,b){
+  if(!Array.isArray(a) || !Array.isArray(b) || a.length===0 || b.length===0){
+    return -1
+  }
+
+  const size = Math.min(a.length,b.length)
   let dot=0, magA=0, magB=0
-  for(let i=0;i<a.length;i++){
+  for(let i=0;i<size;i++){
     dot+=a[i]*b[i]
     magA+=a[i]*a[i]
     magB+=b[i]*b[i]
   }
+
   magA=Math.sqrt(magA)
   magB=Math.sqrt(magB)
+  if(magA===0 || magB===0){
+    return -1
+  }
+
   return dot/(magA*magB)
 }
 
@@ -127,7 +147,12 @@ function scanFiles(folder){
 /* -------------------------
  INGEST
 ------------------------- */
-async function ingest(folder){
+async function ingest(folder,{reset=false}={}){
+  if(reset){
+    db.exec(`DELETE FROM vectors`)
+    console.log(chalk.yellow("Existing vectors cleared"))
+  }
+
   const files = scanFiles(folder)
 
   for(const file of files){
@@ -138,16 +163,39 @@ async function ingest(folder){
     await Promise.all(
       chunks.map(chunk =>
         limit(async()=>{
-          const emb = await embed(chunk)
-          db.prepare(`
-            INSERT INTO vectors(file,chunk,embedding)
-            VALUES(?,?,?)
-          `).run(file,chunk,JSON.stringify(emb))
+          try{
+            const emb = await embed(chunk)
+            db.prepare(`
+              INSERT INTO vectors(file,chunk,embedding)
+              VALUES(?,?,?)
+            `).run(file,chunk,JSON.stringify(emb))
+          }
+          catch(err){
+            console.log(chalk.red(`Embedding failed for ${file}: ${err.message}`))
+          }
         })
       )
     )
   }
   console.log(chalk.green("Ingestion finished"))
+}
+
+async function ingestAll({reset=false}={}){
+  if(reset){
+    db.exec(`DELETE FROM vectors`)
+    console.log(chalk.yellow("Existing vectors cleared"))
+  }
+
+  const f = folders()
+  if(f.length===0){
+    console.log("No folders inside datas")
+    return
+  }
+
+  for(const folder of f){
+    console.log(chalk.cyan(`\nIngesting folder: ${folder}`))
+    await ingest(folder)
+  }
 }
 
 /* -------------------------
@@ -158,9 +206,21 @@ async function search(query,k=4){
   const rows = db.prepare(`SELECT file,chunk,embedding FROM vectors`).all()
 
   const scored = rows.map(r=>{
-    const emb = JSON.parse(r.embedding)
-    return { file: r.file, chunk: r.chunk, score: similarity(qEmb,emb) }
-  })
+    let emb
+    try{
+      emb = JSON.parse(r.embedding)
+    }
+    catch{
+      return null
+    }
+
+    const score = similarity(qEmb,emb)
+    if(score<0){
+      return null
+    }
+
+    return { file: r.file, chunk: r.chunk, score }
+  }).filter(Boolean)
 
   scored.sort((a,b)=>b.score - a.score)
   return scored.slice(0,k)
@@ -289,7 +349,19 @@ if(cmd==="clone"){
   cloneRepo(url)
 }
 else if(cmd==="ingest"){
-  ingestCLI()
+  const folder = process.argv[3]
+  const reset = process.argv.includes("--reset")
+
+  if(folder){
+    ingest(folder,{reset})
+  }
+  else{
+    ingestCLI()
+  }
+}
+else if(cmd==="ingest-all"){
+  const reset = process.argv.includes("--reset")
+  ingestAll({reset})
 }
 else if(cmd==="chat"){
   chat()
@@ -310,6 +382,8 @@ Commands:
 
 node ai.js clone <repo_url>
 node ai.js ingest
+node ai.js ingest <folder> [--reset]
+node ai.js ingest-all [--reset]
 node ai.js chat
 node ai.js search "query"
 node ai.js open <file>
