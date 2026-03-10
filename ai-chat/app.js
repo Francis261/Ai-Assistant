@@ -45,43 +45,128 @@ async function generate(prompt){
   return out.response || ""
 }
 
-function buildPrompt(question,docs,toolContext){
-  const ctx = docs.length ? docs.map((d,i)=>`[${i+1}] ${d.source}\n${d.chunk_text}`).join("\n\n") : "(no context)"
-  const tools = JSON.stringify(getToolsManifest(),null,2)
+async function generateStream(prompt,onToken){
+  const res = await fetch(`${OLLAMA}/generate`,{
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ model: MODEL, prompt, stream: true })
+  })
 
-  return `You are an AI assistant.\n\nAvailable tools (JSON schema):\n${tools}\n\nIf needed, output EXACTLY one line with:\nTOOL_CALL:{"tool":"tool_name","args":{...}}\n\nIf no tool needed, answer normally.\nWhen tool context is present, summarize key outputs clearly for the user.\n\nContext:\n${ctx}\n\nTool context:\n${toolContext || "none"}\n\nQuestion: ${question}\nAnswer:`
+  if(!res.ok){
+    const t = await res.text()
+    throw new Error(`${res.status} ${t}`)
+  }
+
+  if(!res.body){ return }
+
+  const decoder = new TextDecoder()
+  let buffer = ""
+
+  for await (const chunk of res.body){
+    buffer += decoder.decode(chunk,{ stream:true })
+    const lines = buffer.split("\n")
+    buffer = lines.pop() || ""
+
+    for(const line of lines){
+      const trimmed = line.trim()
+      if(!trimmed) continue
+      try{
+        const obj = JSON.parse(trimmed)
+        if(typeof obj.response === "string" && obj.response){
+          onToken(obj.response)
+        }
+      }
+      catch{}
+    }
+  }
+
+  if(buffer.trim()){
+    try{
+      const obj = JSON.parse(buffer)
+      if(typeof obj.response === "string" && obj.response){
+        onToken(obj.response)
+      }
+    }
+    catch{}
+  }
 }
 
-function buildToolDecisionPrompt(question,docs){
-  const ctx = docs.length ? docs.map((d,i)=>`[${i+1}] ${d.source}\n${d.chunk_text}`).join("\n\n") : "(no context)"
+function contextText(docs){
+  return docs.length ? docs.map((d,i)=>`[${i+1}] ${d.source}\n${d.chunk_text}`).join("\n\n") : "(no context)"
+}
+
+function toolHistoryText(toolEvents){
+  if(!toolEvents.length) return "none"
+  return toolEvents.map((e,i)=>[
+    `Step ${i+1}`,
+    `tool: ${e.tool || "unknown"}`,
+    `args: ${JSON.stringify(e.args || {})}`,
+    `summary: ${e.summary}`,
+    e.error ? `error: ${e.error}` : `result: ${JSON.stringify(e.result || {}).slice(0,1500)}`
+  ].join("\n")).join("\n\n")
+}
+
+function buildPlannerPrompt(question,docs,toolEvents){
   const tools = JSON.stringify(getToolsManifest(),null,2)
 
-  return `You are a strict tool router for a chat assistant.
+  return `You are a tool planner for an AI assistant.
 
 Available tools (JSON schema):
 ${tools}
 
-Decide whether calling a tool is required for the user message.
-Return ONLY JSON in one line:
-{"needs_tool":boolean,"confidence":number,"reason":"...","tool_call":{"tool":"...","args":{...}}}
+User request:
+${question}
+
+Retrieved context:
+${contextText(docs)}
+
+Previous tool executions:
+${toolHistoryText(toolEvents)}
+
+Decide exactly one next action and return ONLY JSON in one line:
+{"type":"tool"|"final","confidence":number,"tool":"name","args":{},"answer":"text"}
 
 Rules:
-- needs_tool=true ONLY when a tool is explicitly needed to complete the request.
-- For greetings, chit-chat, explanations, brainstorming, writing, coding advice, or questions answerable from context, set needs_tool=false.
-- If unsure, set needs_tool=false.
+- If a tool is needed, return type="tool" with tool+args.
+- If no more tools are needed, return type="final" with answer.
 - confidence must be 0..1.
-- If needs_tool=false then tool_call must be null.
-
-Context:
-${ctx}
-
-User message: ${question}`
+- For type="final", tool/args can be omitted.
+- For type="tool", answer can be omitted.
+- Do not include markdown or explanation outside JSON.`
 }
 
-function parseToolCall(text){
-  const m = text.match(/TOOL_CALL:\s*(\{[\s\S]*\})/)
+function buildFinalPrompt(question,docs,toolEvents,draftAnswer){
+  const summaryBlock = toolEvents.length
+    ? `Tool execution summary:\n${toolEvents.map((e,i)=>`${i+1}. ${e.summary}`).join("\n")}`
+    : "Tool execution summary:\nnone"
+
+  return `You are an AI assistant. Provide the final response to the user.
+
+User request:
+${question}
+
+Retrieved context:
+${contextText(docs)}
+
+${summaryBlock}
+
+Detailed tool outputs:
+${toolHistoryText(toolEvents)}
+
+Draft answer (optional):
+${draftAnswer || "none"}
+
+Instructions:
+- Answer naturally and directly for the user.
+- If tools were used, explain what was done and show concrete results.
+- If a tool failed, mention the failure and best next step.
+- Do not output TOOL_CALL or JSON.`
+}
+
+function parseFirstJson(text){
+  const m = text.match(/\{[\s\S]*\}/)
   if(!m) return null
-  try{ return JSON.parse(m[1]) } catch{ return null }
+  try{ return JSON.parse(m[0]) } catch{ return null }
 }
 
 function normalizeToolCall(call){
@@ -98,21 +183,24 @@ function normalizeToolCall(call){
   return clean
 }
 
-function parseToolDecision(text){
-  const firstJson = text.match(/\{[\s\S]*\}/)
-  if(!firstJson) return null
+function parsePlannerDecision(text){
+  const parsed = parseFirstJson(text)
+  if(!parsed || typeof parsed.type !== "string") return null
 
-  try{
-    const parsed = JSON.parse(firstJson[0])
-    if(typeof parsed?.needs_tool !== "boolean") return null
-    if(typeof parsed?.confidence !== "number") return null
-    const normalized = normalizeToolCall(parsed.tool_call)
-    if(parsed.needs_tool && !normalized) return null
-    return { ...parsed, tool_call: normalized }
+  const type = parsed.type.trim().toLowerCase()
+  const confidence = typeof parsed.confidence === "number" ? parsed.confidence : 0.5
+
+  if(type === "tool"){
+    const normalized = normalizeToolCall({ tool: parsed.tool, args: parsed.args })
+    if(!normalized) return null
+    return { type, confidence, tool_call: normalized, answer: "" }
   }
-  catch{
-    return null
+
+  if(type === "final"){
+    return { type, confidence, answer: String(parsed.answer || "").trim(), tool_call: null }
   }
+
+  return null
 }
 
 function shouldForceNoTool(question){
@@ -151,87 +239,58 @@ function summarizeToolResult(toolName,args,result,error){
   return `✅ ${toolName} executed successfully.`
 }
 
-function formatToolResultBlock(toolEvents){
-  if(!toolEvents.length) return ""
-  const lines = toolEvents.map((e,i)=>`${i+1}. ${e.summary}`)
-  return `Tool execution summary:\n${lines.join("\n")}`
-}
-
 async function executeToolCall(rawCall,toolEvents){
   const call = normalizeToolCall(rawCall)
   if(!call){
     const summary = "❌ Invalid tool call payload from model."
     toolEvents.push({ summary })
-    return { context: `\n${summary}` }
+    return
   }
 
   try{
     const result = await runTool(call.tool,call.args)
-    const summary = summarizeToolResult(call.tool, call.args, result)
+    const summary = summarizeToolResult(call.tool,call.args,result)
     toolEvents.push({ summary, tool: call.tool, args: call.args, result })
-    return {
-      context: `\nTool ${call.tool} call: ${JSON.stringify(call.args)}\nTool ${call.tool} result: ${JSON.stringify(result).slice(0,6000)}\n${summary}`
-    }
+    console.log(`\n[tool] ${summary}`)
   }
   catch(err){
     const msg = err?.message || String(err)
     const summary = summarizeToolResult(call.tool, call.args, null, msg)
     toolEvents.push({ summary, tool: call.tool, args: call.args, error: msg })
-    return { context: `\nTool ${call.tool} error: ${msg}\n${summary}` }
+    console.log(`\n[tool] ${summary}`)
   }
 }
 
 async function ask(question){
   const q = await postJSON(`${ENGINE_URL}/query`,{ query: question, storage: STORAGE, top_k: 6, candidate_k: CANDIDATE_K, enable_rerank: ENABLE_RERANK })
-
-  let toolContext = ""
-  let finalAnswer = ""
-  let allowToolCalls = !shouldForceNoTool(question)
+  const docs = q.results || []
   const toolEvents = []
-
-  if(allowToolCalls){
-    const decisionRaw = await generate(buildToolDecisionPrompt(question,q.results || []))
-    const decision = parseToolDecision(decisionRaw)
-    if(!decision || !decision.needs_tool || decision.confidence < TOOL_CALL_CONFIDENCE || !decision.tool_call){
-      allowToolCalls = false
-    }
-    else{
-      const executed = await executeToolCall(decision.tool_call, toolEvents)
-      toolContext += executed.context
-    }
-  }
-
-  for(let step=0; step<TOOL_STEPS; step++){
-    const prompt = buildPrompt(question,q.results || [],toolContext)
-    const out = await generate(prompt)
-
-    if(!allowToolCalls){
-      finalAnswer = out.replace(/TOOL_CALL:[\s\S]*/m,"").trim() || out
-      break
-    }
-
-    const toolCall = parseToolCall(out)
-    if(!toolCall){
-      finalAnswer = out
-      break
-    }
-
-    const executed = await executeToolCall(toolCall, toolEvents)
-    toolContext += executed.context
-  }
-
-  if(!finalAnswer){
-    finalAnswer = toolEvents.length
-      ? "I executed the requested tool(s). See the summary below."
-      : "I could not finalize a response in tool-call loop."
-  }
-
-  const toolSummaryBlock = formatToolResultBlock(toolEvents)
-  const combined = toolSummaryBlock ? `${toolSummaryBlock}\n\n${finalAnswer}` : finalAnswer
+  let draftAnswer = ""
 
   console.log(`\nRetrieved (rerank_applied=${q.rerank_applied}, model=${q.rerank_model}):`)
-  for(const r of q.results || []) console.log(`- score=${Number(r.score).toFixed(4)} source=${r.source}`)
-  console.log("\nAnswer:\n"+combined+"\n")
+  for(const r of docs) console.log(`- score=${Number(r.score).toFixed(4)} source=${r.source}`)
+
+  if(!shouldForceNoTool(question)){
+    for(let step=0; step<TOOL_STEPS; step++){
+      const decisionRaw = await generate(buildPlannerPrompt(question,docs,toolEvents))
+      const decision = parsePlannerDecision(decisionRaw)
+      if(!decision){ break }
+
+      if(decision.type === "tool"){
+        if(decision.confidence < TOOL_CALL_CONFIDENCE){ break }
+        await executeToolCall(decision.tool_call, toolEvents)
+        continue
+      }
+
+      draftAnswer = decision.answer || ""
+      break
+    }
+  }
+
+  const finalPrompt = buildFinalPrompt(question,docs,toolEvents,draftAnswer)
+  process.stdout.write("\nAnswer:\n")
+  await generateStream(finalPrompt,(token)=>process.stdout.write(token))
+  process.stdout.write("\n\n")
 }
 
 const rl = readline.createInterface({ input:process.stdin, output:process.stdout })
