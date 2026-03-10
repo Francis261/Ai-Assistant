@@ -49,7 +49,7 @@ function buildPrompt(question,docs,toolContext){
   const ctx = docs.length ? docs.map((d,i)=>`[${i+1}] ${d.source}\n${d.chunk_text}`).join("\n\n") : "(no context)"
   const tools = JSON.stringify(getToolsManifest(),null,2)
 
-  return `You are an AI assistant.\n\nAvailable tools (JSON schema):\n${tools}\n\nIf needed, output EXACTLY one line with:\nTOOL_CALL:{"tool":"tool_name","args":{...}}\n\nIf no tool needed, answer normally.\n\nContext:\n${ctx}\n\nTool context:\n${toolContext || "none"}\n\nQuestion: ${question}\nAnswer:`
+  return `You are an AI assistant.\n\nAvailable tools (JSON schema):\n${tools}\n\nIf needed, output EXACTLY one line with:\nTOOL_CALL:{"tool":"tool_name","args":{...}}\n\nIf no tool needed, answer normally.\nWhen tool context is present, summarize key outputs clearly for the user.\n\nContext:\n${ctx}\n\nTool context:\n${toolContext || "none"}\n\nQuestion: ${question}\nAnswer:`
 }
 
 function buildToolDecisionPrompt(question,docs){
@@ -79,9 +79,23 @@ User message: ${question}`
 }
 
 function parseToolCall(text){
-  const m = text.match(/TOOL_CALL:(\{[\s\S]*\})/)
+  const m = text.match(/TOOL_CALL:\s*(\{[\s\S]*\})/)
   if(!m) return null
   try{ return JSON.parse(m[1]) } catch{ return null }
+}
+
+function normalizeToolCall(call){
+  if(!call || typeof call !== "object") return null
+  if(typeof call.tool !== "string" || !call.tool.trim()) return null
+
+  const clean = { tool: call.tool.trim(), args: {} }
+  if(call.args && typeof call.args === "object") clean.args = { ...call.args }
+
+  for(const [k,v] of Object.entries(call)){
+    if(k === "tool" || k === "args") continue
+    if(clean.args[k] === undefined){ clean.args[k] = v }
+  }
+  return clean
 }
 
 function parseToolDecision(text){
@@ -92,8 +106,9 @@ function parseToolDecision(text){
     const parsed = JSON.parse(firstJson[0])
     if(typeof parsed?.needs_tool !== "boolean") return null
     if(typeof parsed?.confidence !== "number") return null
-    if(parsed.needs_tool && (!parsed.tool_call || typeof parsed.tool_call.tool !== "string")) return null
-    return parsed
+    const normalized = normalizeToolCall(parsed.tool_call)
+    if(parsed.needs_tool && !normalized) return null
+    return { ...parsed, tool_call: normalized }
   }
   catch{
     return null
@@ -112,12 +127,67 @@ function shouldForceNoTool(question){
   return smallTalk.some(s => q === s || q.startsWith(`${s} `))
 }
 
+function summarizeToolResult(toolName,args,result,error){
+  if(error){
+    return `❌ ${toolName} failed: ${error}`
+  }
+
+  if(toolName === "file_operations" && args?.action === "list"){
+    const items = Array.isArray(result?.items) ? result.items : []
+    const preview = items.slice(0,3).map(i=>`${i.type === "dir" ? "[dir]" : "[file]"} ${i.name}`).join(", ")
+    return `✅ Listed ${items.length} item(s) in ${result?.path || args?.path}.${preview ? ` Preview: ${preview}` : ""}`
+  }
+
+  if(toolName === "web_search_scraper" && args?.action === "search"){
+    const items = Array.isArray(result?.results) ? result.results : []
+    return `✅ Found ${items.length} search result(s) for "${args?.query || ""}".`
+  }
+
+  if(toolName === "web_search_scraper" && args?.action === "scrape"){
+    const len = String(result?.content || "").length
+    return `✅ Scraped ${args?.url || result?.url || "url"} (${len} chars extracted).`
+  }
+
+  return `✅ ${toolName} executed successfully.`
+}
+
+function formatToolResultBlock(toolEvents){
+  if(!toolEvents.length) return ""
+  const lines = toolEvents.map((e,i)=>`${i+1}. ${e.summary}`)
+  return `Tool execution summary:\n${lines.join("\n")}`
+}
+
+async function executeToolCall(rawCall,toolEvents){
+  const call = normalizeToolCall(rawCall)
+  if(!call){
+    const summary = "❌ Invalid tool call payload from model."
+    toolEvents.push({ summary })
+    return { context: `\n${summary}` }
+  }
+
+  try{
+    const result = await runTool(call.tool,call.args)
+    const summary = summarizeToolResult(call.tool, call.args, result)
+    toolEvents.push({ summary, tool: call.tool, args: call.args, result })
+    return {
+      context: `\nTool ${call.tool} call: ${JSON.stringify(call.args)}\nTool ${call.tool} result: ${JSON.stringify(result).slice(0,6000)}\n${summary}`
+    }
+  }
+  catch(err){
+    const msg = err?.message || String(err)
+    const summary = summarizeToolResult(call.tool, call.args, null, msg)
+    toolEvents.push({ summary, tool: call.tool, args: call.args, error: msg })
+    return { context: `\nTool ${call.tool} error: ${msg}\n${summary}` }
+  }
+}
+
 async function ask(question){
   const q = await postJSON(`${ENGINE_URL}/query`,{ query: question, storage: STORAGE, top_k: 6, candidate_k: CANDIDATE_K, enable_rerank: ENABLE_RERANK })
 
   let toolContext = ""
   let finalAnswer = ""
   let allowToolCalls = !shouldForceNoTool(question)
+  const toolEvents = []
 
   if(allowToolCalls){
     const decisionRaw = await generate(buildToolDecisionPrompt(question,q.results || []))
@@ -126,47 +196,42 @@ async function ask(question){
       allowToolCalls = false
     }
     else{
-      try{
-        const result = await runTool(decision.tool_call.tool, decision.tool_call.args)
-        toolContext += `\nTool ${decision.tool_call.tool} result: ${JSON.stringify(result).slice(0,4000)}`
-      }
-      catch(err){
-        toolContext += `\nTool ${decision.tool_call.tool} error: ${err.message}`
-      }
+      const executed = await executeToolCall(decision.tool_call, toolEvents)
+      toolContext += executed.context
     }
   }
 
   for(let step=0; step<TOOL_STEPS; step++){
     const prompt = buildPrompt(question,q.results || [],toolContext)
     const out = await generate(prompt)
+
     if(!allowToolCalls){
       finalAnswer = out.replace(/TOOL_CALL:[\s\S]*/m,"").trim() || out
       break
     }
 
     const toolCall = parseToolCall(out)
-
     if(!toolCall){
       finalAnswer = out
       break
     }
 
-    try{
-      const result = await runTool(toolCall.tool,toolCall.args)
-      toolContext += `\nTool ${toolCall.tool} result: ${JSON.stringify(result).slice(0,4000)}`
-    }
-    catch(err){
-      toolContext += `\nTool ${toolCall.tool} error: ${err.message}`
-    }
+    const executed = await executeToolCall(toolCall, toolEvents)
+    toolContext += executed.context
   }
 
   if(!finalAnswer){
-    finalAnswer = "I could not finalize a response in tool-call loop." 
+    finalAnswer = toolEvents.length
+      ? "I executed the requested tool(s). See the summary below."
+      : "I could not finalize a response in tool-call loop."
   }
+
+  const toolSummaryBlock = formatToolResultBlock(toolEvents)
+  const combined = toolSummaryBlock ? `${toolSummaryBlock}\n\n${finalAnswer}` : finalAnswer
 
   console.log(`\nRetrieved (rerank_applied=${q.rerank_applied}, model=${q.rerank_model}):`)
   for(const r of q.results || []) console.log(`- score=${Number(r.score).toFixed(4)} source=${r.source}`)
-  console.log("\nAnswer:\n"+finalAnswer+"\n")
+  console.log("\nAnswer:\n"+combined+"\n")
 }
 
 const rl = readline.createInterface({ input:process.stdin, output:process.stdout })

@@ -1,9 +1,26 @@
 import fs from "fs"
 import path from "path"
 
+function candidatePaths(p){
+  const normalized = String(p || "").trim()
+  if(!normalized) return []
+  if(path.isAbsolute(normalized)) return [path.resolve(normalized)]
+
+  const cwd = process.cwd()
+  return [
+    path.resolve(cwd, normalized),
+    path.resolve(cwd, "..", normalized),
+    path.resolve(cwd, "..", "..", normalized)
+  ]
+}
+
 function resolveSafe(p){
-  if(typeof p !== "string" || !p.trim()) throw new Error("path is required")
-  return path.resolve(p)
+  const candidates = candidatePaths(p)
+  if(candidates.length===0) throw new Error("path is required")
+
+  const existing = candidates.find(fs.existsSync)
+  if(existing) return existing
+  return candidates[0]
 }
 
 export const fileOperationsTool = {
@@ -13,19 +30,21 @@ export const fileOperationsTool = {
     action: "list|read|write|append|copy|move|delete|mkdir|stat",
     path: "target path",
     to: "destination path for copy/move",
-    content: "content for write/append"
+    content: "content for write/append",
+    limit: "optional max items for list"
   },
   async run(args){
     const action = args?.action
     const target = resolveSafe(args?.path)
 
     if(action === "list"){
-      const items = fs.readdirSync(target).map(name=>{
+      const limit = Math.max(1, Number(args?.limit || 200))
+      const items = fs.readdirSync(target).slice(0,limit).map(name=>{
         const full = path.join(target,name)
         const st = fs.statSync(full)
         return { name, type: st.isDirectory()?"dir":"file", size: st.size }
       })
-      return { path: target, items }
+      return { path: target, count: items.length, items }
     }
 
     if(action === "read"){

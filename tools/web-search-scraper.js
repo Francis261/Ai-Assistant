@@ -10,17 +10,25 @@ function stripHtml(html){
 }
 
 async function webSearch(query,limit=5){
-  const url = `https://duckduckgo.com/html/?q=${encodeURIComponent(query)}`
-  const res = await fetch(url)
+  const url = `https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}`
+  const res = await fetch(url,{ headers:{"User-Agent":"Mozilla/5.0"} })
   const html = await res.text()
   const matches = [...html.matchAll(/<a[^>]*class="result__a"[^>]*href="([^"]+)"[^>]*>(.*?)<\/a>/g)]
   return matches.slice(0,limit).map(m=>({ url: m[1], title: stripHtml(m[2]) }))
 }
 
 async function scrapeUrl(url){
-  const res = await fetch(url,{ headers:{"User-Agent":"Mozilla/5.0"} })
-  const html = await res.text()
-  return { url, content: stripHtml(html).slice(0,12000) }
+  try{
+    const res = await fetch(url,{ headers:{"User-Agent":"Mozilla/5.0"} })
+    const html = await res.text()
+    return { url, content: stripHtml(html).slice(0,12000) }
+  }
+  catch{
+    const proxy = `https://r.jina.ai/http://${url.replace(/^https?:\/\//,"")}`
+    const res = await fetch(proxy,{ headers:{"User-Agent":"Mozilla/5.0"} })
+    const text = await res.text()
+    return { url, content: text.slice(0,12000), via: "jina_ai_proxy" }
+  }
 }
 
 export const webSearchScraperTool = {
