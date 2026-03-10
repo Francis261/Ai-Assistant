@@ -1,0 +1,275 @@
+# preg_match
+
+Source: https://devdocs.io/php/function.preg-match
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+preg_match — Perform a regular expression match
+
+### Description
+
+```
+preg_match(
+ string $pattern,
+ string $subject,
+ array &$matches = null,
+ int $flags = 0,
+ int $offset = 0
+): int|false
+```
+
+Searches subject for a match to the regular expression given in pattern.
+
+### Parameters
+
+The pattern to search for, as a string.
+
+The input string.
+
+If matches is provided, then it is filled with the results of search. $matches[0] will contain the text that matched the full pattern, $matches[1] will have the text that matched the first captured parenthesized subpattern, and so on.
+
+flags can be a combination of the following flags:
+
+If this flag is passed, for every occurring match the appendant string offset (in bytes) will also be returned. Note that this changes the value of matches into an array where every element is an array consisting of the matched string at offset 0 and its string offset into subject at offset 1.
+
+```
+<?php
+preg_match('/(foo)(bar)(baz)/', 'foobarbaz', $matches, PREG_OFFSET_CAPTURE);
+print_r($matches);
+?>
+```
+
+The above example will output:
+
+```
+Array
+(
+    [0] => Array
+        (
+            [0] => foobarbaz
+            [1] => 0
+        )
+
+    [1] => Array
+        (
+            [0] => foo
+            [1] => 0
+        )
+
+    [2] => Array
+        (
+            [0] => bar
+            [1] => 3
+        )
+
+    [3] => Array
+        (
+            [0] => baz
+            [1] => 6
+        )
+
+)
+```
+
+If this flag is passed, unmatched subpatterns are reported as null; otherwise they are reported as an empty string.
+
+```
+<?php
+preg_match('/(a)(b)*(c)/', 'ac', $matches);
+var_dump($matches);
+preg_match('/(a)(b)*(c)/', 'ac', $matches, PREG_UNMATCHED_AS_NULL);
+var_dump($matches);
+?>
+```
+
+The above example will output:
+
+```
+array(4) {
+  [0]=>
+  string(2) "ac"
+  [1]=>
+  string(1) "a"
+  [2]=>
+  string(0) ""
+  [3]=>
+  string(1) "c"
+}
+array(4) {
+  [0]=>
+  string(2) "ac"
+  [1]=>
+  string(1) "a"
+  [2]=>
+  NULL
+  [3]=>
+  string(1) "c"
+}
+```
+
+Normally, the search starts from the beginning of the subject string. The optional parameter offset can be used to specify the alternate place from which to start the search (in bytes).
+
+Note:
+
+Using offset is not equivalent to passing substr($subject, $offset) to preg_match() in place of the subject string, because pattern can contain assertions such as ^, $ or (?<=x). Compare:
+
+```
+<?php
+$subject = "abcdef";
+$pattern = '/^def/';
+preg_match($pattern, $subject, $matches, PREG_OFFSET_CAPTURE, 3);
+print_r($matches);
+?>
+```
+
+The above example will output:
+
+```
+Array
+(
+)
+```
+
+while this example
+
+```
+<?php
+$subject = "abcdef";
+$pattern = '/^def/';
+preg_match($pattern, substr($subject,3), $matches, PREG_OFFSET_CAPTURE);
+print_r($matches);
+?>
+```
+
+will produce
+
+```
+Array
+(
+    [0] => Array
+        (
+            [0] => def
+            [1] => 0
+        )
+
+)
+```
+
+Alternatively, to avoid using substr(), use the \G assertion rather than the ^ anchor, or the A modifier instead, both of which work with the offset parameter.
+
+### Return Values
+
+preg_match() returns 1 if the pattern matches given subject, 0 if it does not, or false on failure.
+
+This function may return Boolean false, but may also return a non-Boolean value which evaluates to false. Please read the section on Booleans for more information. Use the === operator for testing the return value of this function.
+
+### Errors/Exceptions
+
+If the regex pattern passed does not compile to a valid regex, an E_WARNING is emitted.
+
+### Changelog
+
+### Examples
+
+Example #1 Find the string of text "php"
+
+```
+<?php
+// The "i" after the pattern delimiter indicates a case-insensitive search
+if (preg_match("/php/i", "PHP is the web scripting language of choice.")) {
+    echo "A match was found.";
+} else {
+    echo "A match was not found.";
+}
+?>
+```
+
+Example #2 Find the word "web"
+
+```
+<?php
+/* The \b in the pattern indicates a word boundary, so only the distinct
+ * word "web" is matched, and not a word partial like "webbing" or "cobweb" */
+if (preg_match("/\bweb\b/i", "PHP is the web scripting language of choice.")) {
+    echo "A match was found.";
+} else {
+    echo "A match was not found.";
+}
+
+echo "\n";
+
+if (preg_match("/\bweb\b/i", "PHP is the website scripting language of choice.")) {
+    echo "A match was found.";
+} else {
+    echo "A match was not found.";
+}
+?>
+```
+
+Example #3 Getting the domain name out of a URL
+
+```
+<?php
+// get host name from URL
+preg_match('@^(?:http://)?([^/]+)@i',
+    "http://www.php.net/index.html", $matches);
+$host = $matches[1];
+
+// get last two segments of host name
+preg_match('/[^.]+\.[^.]+$/', $host, $matches);
+echo "domain name is: {$matches[0]}\n";
+?>
+```
+
+The above example will output:
+
+```
+domain name is: php.net
+```
+
+Example #4 Using named subpattern
+
+```
+<?php
+
+$str = 'foobar: 2008';
+
+preg_match('/(?P<name>\w+): (?P<digit>\d+)/', $str, $matches);
+
+/* Alternative */
+// preg_match('/(?<name>\w+): (?<digit>\d+)/', $str, $matches);
+
+print_r($matches);
+
+?>
+```
+
+The above example will output:
+
+```
+Array
+(
+    [0] => foobar: 2008
+    [name] => foobar
+    [1] => foobar
+    [digit] => 2008
+    [2] => 2008
+)
+```
+
+### Notes
+
+Do not use preg_match() if you only want to check if one string is contained in another string. Use strpos() instead as it will be faster.
+
+### See Also
+
+- PCRE Patterns
+- preg_quote() - Quote regular expression characters
+- preg_match_all() - Perform a global regular expression match
+- preg_replace() - Perform a regular expression search and replace
+- preg_split() - Split string by a regular expression
+- preg_last_error() - Returns the error code of the last PCRE regex execution
+- preg_last_error_msg() - Returns the error message of the last PCRE regex execution
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.preg-match.php

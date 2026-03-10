@@ -1,0 +1,103 @@
+# Greater than (>)
+
+Source: https://devdocs.io/javascript/operators/greater_than
+
+The > operator returns true if the left operand is greater than the right operand, and false otherwise.
+
+## Try it
+
+```
+console.log(5 > 3);
+// Expected output: true
+
+console.log(3 > 3);
+// Expected output: false
+
+// Compare bigint to number
+console.log(3n > 5);
+// Expected output: false
+
+console.log("ab" > "aa");
+// Expected output: true
+```
+
+## Syntax
+
+```
+x > y
+```
+
+## Description
+
+The operands are compared using the same algorithm as the Less than operator, except the two operands are swapped. x > y is generally equivalent to y < x, except that x > y coerces x to a primitive before y, while y < x coerces y to a primitive before x. Because coercion may have side effects, the order of the operands may matter.
+
+## Examples
+
+### String to string comparison
+
+```
+"a" > "b"; // false
+"a" > "a"; // false
+"a" > "3"; // true
+```
+
+### String to number comparison
+
+```
+"5" > 3; // true
+"3" > 3; // false
+"3" > 5; // false
+
+"hello" > 5; // false
+5 > "hello"; // false
+
+"5" > 3n; // true
+"3" > 5n; // false
+```
+
+### Number to Number comparison
+
+```
+5 > 3; // true
+3 > 3; // false
+3 > 5; // false
+```
+
+### Number to BigInt comparison
+
+```
+5n > 3; // true
+3 > 5n; // false
+```
+
+### Comparing Boolean, null, undefined, NaN
+
+```
+true > false; // true
+false > true; // false
+
+true > 0; // true
+true > 1; // false
+
+null > 0; // false
+1 > null; // true
+
+undefined > 3; // false
+3 > undefined; // false
+
+3 > NaN; // false
+NaN > 3; // false
+```
+
+## Specifications
+
+## Browser compatibility
+
+## See also
+
+- Greater than or equal (>=)
+- Less than (<)
+- Less than or equal (<=)
+
+© 2005–2025 MDN contributors.Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than

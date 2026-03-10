@@ -1,0 +1,275 @@
+# SoapClient::__construct
+
+Source: https://devdocs.io/php/soapclient.construct
+
+(PHP 5, PHP 7, PHP 8)
+
+SoapClient::__construct — SoapClient constructor
+
+### Description
+
+Creates a SoapClient object to connect to a SOAP service.
+
+### Parameters
+
+URI of a WSDL file describing the service, which is used to automatically configure the client. If not provided, the client will operate in non-WSDL mode.
+
+Note:
+
+By default, the WSDL file will be cached for performance. To disable or configure this caching, see SOAP Configure Options and the cache_wsdl option.
+
+An associative array specifying additional options for the SOAP client. If wsdl is provided, this is optional; otherwise, at least location and url must be provided.
+
+The URL of the SOAP server to send the request to.
+
+Required if the wsdl parameter is not provided. If both a wsdl parameter and location option are provided, the location option will over-ride any location specified in the WSDL file.
+
+The target namespace of the SOAP service.
+
+Required if the wsdl parameter is not provided; ignored otherwise.
+
+Specifies the binding style to use for this client, using the constants SOAP_RPC and SOAP_DOCUMENT. SOAP_RPC indicates RPC-style binding, where the SOAP request body contains a standard encoding of a function call. SOAP_DOCUMENT indicates document-style binding, where the SOAP request body contains an XML document with service-defined meaning.
+
+If the wsdl parameter is provided, this option is ignored, and the style is read from the WSDL file.
+
+If neither this option nor the wsdl parameter is provided, RPC-style is used.
+
+Specifies the encoding style to use for this client, using the constants SOAP_ENCODED or SOAP_LITERAL. SOAP_ENCODED indicates encoding using the types defined in the SOAP specification. SOAP_LITERAL indicates encoding using a schema defined by the service.
+
+If the wsdl parameter is provided, this option is ignored, and the encoding is read from the WSDL file.
+
+If neither this option nor the wsdl parameter is provided, the "encoded" style is used.
+
+Specifies the version of the SOAP protocol to use: SOAP_1_1 for SOAP 1.1, or SOAP_1_2 for SOAP 1.2.
+
+If omitted, SOAP 1.1 is used.
+
+Specifies the authentication method when using HTTP authentication in requests. The value may be either SOAP_AUTHENTICATION_BASIC or SOAP_AUTHENTICATION_DIGEST.
+
+If omitted, and the login option is provided, Basic Authentication is used.
+
+Username to use with HTTP Basic or Digest Authentication.
+
+Password to use with HTTP Basic or Digest Authentication.
+
+Not to be confused with passphrase, which is used with HTTPS Client Certificate authentication.
+
+Path to a client certificate for use with HTTPS authentication. It must be a PEM encoded file which contains the certificate and private key.
+
+The file can also include a chain of issuers, which must come after the client certificate.
+
+Can also be set via stream_context, which also supports specifying a separate private key file.
+
+Passphrase for the client certificate specified in the local_cert option.
+
+Not to be confused with password, which is used for Basic or Digest Authentication.
+
+Can also be set via stream_context.
+
+Hostname to use as a proxy server for HTTP requests.
+
+The proxy_port option must also be specified.
+
+TCP port to use when connecting to the proxy server specified in proxy_host.
+
+Optional username to authenticate with the proxy server specified in proxy_host, using HTTP Basic Authentication.
+
+Optional password to authenticate with the proxy server specified in proxy_host, using HTTP Basic Authentication.
+
+Enables compression of HTTP SOAP requests and responses.
+
+The value should be the bitwise OR of three parts: an optional SOAP_COMPRESSION_ACCEPT, to send an "Accept-Encoding" header; either SOAP_COMPRESSION_GZIP or SOAP_COMPRESSION_DEFLATE to indicate the compression algorithm to use; and a number between 1 and 9 to indicate the level of compression to use in the request. For example, to enable two-way gzip compression with the maximum compression level, use SOAP_COMPRESSION_ACCEPT | SOAP_COMPRESSION_GZIP | 9.
+
+Defines the internal character encoding. Requests are always sent in UTF-8, and converted to and from this encoding.
+
+Captures request and response information, which can then be accessed with the methods SoapClient::__getLastRequest(), SoapClient::__getLastRequestHeaders(), SoapClient::__getLastResponse(), and SoapClient::__getLastResponseHeaders().
+
+If omitted, defaults to false
+
+Used to map types defined in the WSDL to PHP classes. It should be specified as an associative array with type names from the WSDL as keys and names of PHP classes as values. Note that the type name of an element is not necessarily the same as the element (tag) name.
+
+The provided class names should always be fully qualified with any namespaces, and never start with a leading \. The correct form can be generated by using ::class.
+
+Note that when creating a class, the constructor will not be called, but magic __set() and __get() methods for individual properties will be.
+
+Used to define type mappings using user-defined callback functions. Each type mapping should be an array with keys type_name (string specifying the XML element type); type_ns (string containing namespace URI); from_xml (callable accepting one string parameter and returning an object) and to_xml (callable accepting one object parameter and returning a string).
+
+Defines whether errors throw exceptions of type SoapFault.
+
+Defaults to true
+
+Defines a timeout in seconds for the connection to the SOAP service. This option does not define a timeout for services with slow responses. To limit the time to wait for calls to finish the default_socket_timeout configuration option is available.
+
+If the wsdl parameter is provided, and the soap.wsdl_cache_enabled configuration option is on, this option determines the type of caching. One of WSDL_CACHE_NONE, WSDL_CACHE_DISK, WSDL_CACHE_MEMORY or WSDL_CACHE_BOTH.
+
+Two types of cache are available: in-memory caching, which caches the WSDL in the memory of the current process; and disk caching, which caches the WSDL in a file on disk, shared between all processes. The directory to use for the disk cache is determined by the soap.wsdl_cache_dir configuration option. Both caches use the same lifetime, determined by the soap.wsdl_cache_ttl configuration option. The in-memory cache also has a maximum number of entries determined by the soap.wsdl_cache_limit configuration option.
+
+If not specified, the soap.wsdl_cache configuration option will be used.
+
+The value to use in the User-Agent HTTP header when making requests.
+
+Can also be set via stream_context.
+
+If not specified, the user agent will be "PHP-SOAP/" followed by the value of PHP_VERSION.
+
+A stream context created by stream_context_create(), which allows additional options to be set.
+
+The context may include socket context options, SSL context options, plus selected HTTP context options: content_type, header, max_redirects, protocol_version, and user_agent.
+
+Note that the following HTTP headers are generated automatically or from other options, and will be ignored if specified in the 'header' context option: host, connection, user-agent, content-length, content-type, cookie, authorization, and proxy-authorization
+
+A bitmask to enable one or more of the following features:
+
+When decoding a response to an array, the default behaviour is to detect whether an element name appears once or multiple times in a particular parent element. For elements which appear only once, an object property allows direct access to the content; for elements which appear more than once, the property contains an array with the content of each matching element.
+
+If the SOAP_SINGLE_ELEMENT_ARRAYS feature is enabled, elements which appear only once are placed in a single-element array, so that access is consistent for all elements. This only has an effect when using a WSDL containing a schema for the response. See Examples section for an illustration.
+
+When the use option or WSDL property is set to encoded, force arrays to use a type of SOAP-ENC:Array, rather than a schema-specific type.
+
+Wait for a response even if the WSDL indicates a one-way request.
+
+a boolean value defining whether to send the Connection: Keep-Alive header or Connection: close.
+
+Defaults to true
+
+Specifies the SSL or TLS protocol version to use with secure HTTP connections, instead of the default negotiation. Specifying SOAP_SSL_METHOD_SSLv2 or SOAP_SSL_METHOD_SSLv3 will force use of SSL 2 or SSL 3, respectively. Specifying SOAP_SSL_METHOD_SSLv23 has no effect; the constant exists only for backwards compatibility. As of PHP 7.2.0, specifying SOAP_SSL_METHOD_TLS also has no effect; in earlier versions, it forced use of TLS 1.0.
+
+Note that SSL versions 2 and 3 are considered insecure, and may not be supported by the installed OpenSSL library.
+
+This option is deprecated as of PHP 8.1.0. A more flexible alternative, which allows specifying individual versions of TLS, is to use the stream_context option with the 'crypto_method' context parameter.
+
+```
+<?php
+// Specifying use of TLS 1.3 only
+$context = stream_context_create([
+    'ssl' => [
+        'crypto_method' => STREAM_CRYPTO_METHOD_TLSv1_3_CLIENT
+     ]
+]);
+$client = new SoapClient("some.wsdl", ['context' => $context]);
+```
+
+### Errors/Exceptions
+
+SoapClient::__construct() will generate an E_ERROR error if the location and uri options aren't provided in non-WSDL mode.
+
+A SoapFault exception will be thrown if the wsdl URI cannot be loaded.
+
+### Examples
+
+Example #1 SoapClient::__construct() example
+
+```
+<?php
+
+$client = new SoapClient("some.wsdl");
+
+$client = new SoapClient("some.wsdl", array('soap_version'   => SOAP_1_2));
+
+$client = new SoapClient("some.wsdl", array('login'          => "some_name",
+                                            'password'       => "some_password"));
+
+$client = new SoapClient("some.wsdl", array('proxy_host'     => "localhost",
+                                            'proxy_port'     => 8080));
+
+$client = new SoapClient("some.wsdl", array('proxy_host'     => "localhost",
+                                            'proxy_port'     => 8080,
+                                            'proxy_login'    => "some_name",
+                                            'proxy_password' => "some_password"));
+
+$client = new SoapClient("some.wsdl", array('local_cert'     => "cert_key.pem"));
+
+$client = new SoapClient(null, array('location' => "http://localhost/soap.php",
+                                     'uri'      => "http://test-uri/"));
+
+$client = new SoapClient(null, array('location' => "http://localhost/soap.php",
+                                     'uri'      => "http://test-uri/",
+                                     'style'    => SOAP_DOCUMENT,
+                                     'use'      => SOAP_LITERAL));
+
+$client = new SoapClient("some.wsdl",
+  array('compression' => SOAP_COMPRESSION_ACCEPT | SOAP_COMPRESSION_GZIP | 9));
+
+$client = new SoapClient("some.wsdl", array('encoding'=>'ISO-8859-1'));
+
+class MyBook {
+    public $title;
+    public $author;
+}
+
+$client = new SoapClient("books.wsdl", array('classmap' => array('book' => "MyBook")));
+
+$typemap = array(
+    array("type_ns"  => "http://schemas.example.com",
+         "type_name" => "book",
+         "from_xml"  => "unserialize_book",
+         "to_xml"    => "serialize_book")
+);
+$client = new SoapClient("books.wsdl", array('typemap' => $typemap));
+
+?>
+```
+
+Example #2 Using the SOAP_SINGLE_ELEMENT_ARRAYS feature
+
+```
+<?php
+/* Assuming a response like this, and an appropriate WSDL:
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="urn:example">
+    <SOAP-ENV:Body>
+        <response>
+            <collection>
+                <item>Single</item>
+            </collection>
+            <collection>
+                <item>First</item>
+                <item>Second</item>
+            </collection>
+        </response>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+*/
+
+echo "Default:\n";
+
+$client = new TestSoapClient(__DIR__ . '/temp.wsdl');
+$response = $client->exampleRequest();
+var_dump( $response->collection[0]->item );
+var_dump( $response->collection[1]->item );
+
+echo "\nWith SOAP_SINGLE_ELEMENT_ARRAYS:\n";
+
+$client = new TestSoapClient(__DIR__ . '/temp.wsdl', ['features' => SOAP_SINGLE_ELEMENT_ARRAYS]);
+$response = $client->exampleRequest();
+var_dump( $response->collection[0]->item );
+var_dump( $response->collection[1]->item );
+```
+
+The above example will output:
+
+```
+Default:
+string(6) "Single"
+array(2) {
+  [0] =>
+  string(5) "First"
+  [1] =>
+  string(6) "Second"
+}
+
+With SOAP_SINGLE_ELEMENT_ARRAYS:
+array(1) {
+  [0] =>
+  string(6) "Single"
+}
+array(2) {
+  [0] =>
+  string(5) "First"
+  [1] =>
+  string(6) "Second"
+}
+```
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/soapclient.construct.php

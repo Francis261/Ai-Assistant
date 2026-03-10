@@ -1,0 +1,55 @@
+# gmp_intval
+
+Source: https://devdocs.io/php/function.gmp-intval
+
+(PHP 4 >= 4.0.4, PHP 5, PHP 7, PHP 8)
+
+gmp_intval — Convert GMP number to integer
+
+### Description
+
+```
+gmp_intval(GMP|int|string $num): int
+```
+
+This function converts GMP number into native PHP ints.
+
+### Parameters
+
+A GMP object, an int, or a string that can be interpreted as a number following the same logic as if the string was used in gmp_init() with automatic base detection (i.e. when base is equal to 0).
+
+### Return Values
+
+The int value of num.
+
+### Examples
+
+Example #1 gmp_intval() example
+
+```
+<?php
+// displays correct result
+echo gmp_intval("2147483647") . "\n";
+
+// displays wrong result, above PHP integer limit
+echo gmp_intval("2147483648") . "\n";
+
+// displays correct result
+echo gmp_strval("2147483648") . "\n";
+?>
+```
+
+The above example will output:
+
+```
+2147483647
+2147483647
+2147483648
+```
+
+### Notes
+
+This function returns a useful result only if the number actually fits the PHP integer (i.e., signed long type). To simply print the GMP number, use gmp_strval().
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.gmp-intval.php

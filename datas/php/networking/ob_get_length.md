@@ -1,0 +1,60 @@
+# ob_get_length
+
+Source: https://devdocs.io/php/function.ob-get-length
+
+(PHP 4 >= 4.0.2, PHP 5, PHP 7, PHP 8)
+
+ob_get_length — Return the length of the output buffer
+
+### Description
+
+```
+ob_get_length(): int|false
+```
+
+This will return the length of the contents in the output buffer, in bytes.
+
+### Parameters
+
+This function has no parameters.
+
+### Return Values
+
+Returns the length of the output buffer contents, in bytes, or false if no buffering is active.
+
+### Examples
+
+Example #1 A simple ob_get_length() example
+
+```
+<?php
+
+ob_start();
+
+echo "Hello ";
+
+$len1 = ob_get_length();
+
+echo "World";
+
+$len2 = ob_get_length();
+
+ob_end_clean();
+
+echo $len1 . ", " . $len2;
+?>
+```
+
+The above example will output:
+
+```
+6, 11
+```
+
+### See Also
+
+- ob_start() - Turn on output buffering
+- ob_get_contents() - Return the contents of the output buffer
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.ob-get-length.php

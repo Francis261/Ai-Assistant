@@ -1,0 +1,62 @@
+# RPOPLPUSH
+
+Source: https://devdocs.io/redis/rpoplpush/index
+
+```
+RPOPLPUSH (deprecated)
+```
+
+As of Redis version 6.2.0, this command is regarded as deprecated.
+
+It can be replaced by LMOVE with the RIGHT and LEFT arguments when migrating or writing new code.
+
+```
+RPOPLPUSH source destination
+```
+
+Atomically returns and removes the last element (tail) of the list stored at source, and pushes the element at the first element (head) of the list stored at destination.
+
+For example: consider source holding the list a,b,c, and destination holding the list x,y,z. Executing RPOPLPUSH results in source holding a,b and destination holding c,x,y,z.
+
+If source does not exist, the value nil is returned and no operation is performed. If source and destination are the same, the operation is equivalent to removing the last element from the list and pushing it as first element of the list, so it can be considered as a list rotation command.
+
+## Return
+
+Bulk string reply: the element being popped and pushed.
+
+## Examples
+
+```
+RPUSH mylist "one"
+RPUSH mylist "two"
+RPUSH mylist "three"
+RPOPLPUSH mylist myotherlist
+LRANGE mylist 0 -1
+LRANGE myotherlist 0 -1
+```
+
+## Pattern: Reliable queue
+
+Redis is often used as a messaging server to implement processing of background jobs or other kinds of messaging tasks. A simple form of queue is often obtained pushing values into a list in the producer side, and waiting for this values in the consumer side using RPOP (using polling), or BRPOP if the client is better served by a blocking operation.
+
+However in this context the obtained queue is not reliable as messages can be lost, for example in the case there is a network problem or if the consumer crashes just after the message is received but before it can be processed.
+
+RPOPLPUSH (or BRPOPLPUSH for the blocking variant) offers a way to avoid this problem: the consumer fetches the message and at the same time pushes it into a processing list. It will use the LREM command in order to remove the message from the processing list once the message has been processed.
+
+An additional client may monitor the processing list for items that remain there for too much time, pushing timed out items into the queue again if needed.
+
+## Pattern: Circular list
+
+Using RPOPLPUSH with the same source and destination key, a client can visit all the elements of an N-elements list, one after the other, in O(N) without transferring the full list from the server to the client using a single LRANGE operation.
+
+The above pattern works even if one or both of the following conditions occur:
+
+- There are multiple clients rotating the list: they'll fetch different elements, until all the elements of the list are visited, and the process restarts.
+- Other clients are actively pushing new items at the end of the list.
+
+The above makes it very simple to implement a system where a set of items must be processed by N workers continuously as fast as possible. An example is a monitoring system that must check that a set of web sites are reachable, with the smallest delay possible, using a number of parallel workers.
+
+Note that this implementation of workers is trivially scalable and reliable, because even if a message is lost the item is still in the queue and will be processed at the next iteration.
+
+© 2006–2022 Salvatore SanfilippoLicensed under the Creative Commons Attribution-ShareAlike License 4.0.
+ https://redis.io/commands/rpoplpush/

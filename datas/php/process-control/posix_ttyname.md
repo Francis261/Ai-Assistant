@@ -1,0 +1,37 @@
+# posix_ttyname
+
+Source: https://devdocs.io/php/function.posix-ttyname
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+posix_ttyname — Determine terminal device name
+
+### Description
+
+```
+posix_ttyname(resource|int $file_descriptor): string|false
+```
+
+Returns a string for the absolute path to the current terminal device that is open on the file descriptor file_descriptor.
+
+### Parameters
+
+The file descriptor, which is expected to be either a file resource or an int. An int will be assumed to be a file descriptor that can be passed directly to the underlying system call.
+
+### Return Values
+
+On success, returns a string of the absolute path of the file_descriptor. On failure, returns false
+
+### Errors/Exceptions
+
+On invalid file_descriptor integer values an E_WARNING is raised.
+
+### Changelog
+
+### See Also
+
+- posix_isatty() - Determine if a file descriptor is an interactive terminal
+- stream_isatty() - Check if a stream is a TTY
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.posix-ttyname.php

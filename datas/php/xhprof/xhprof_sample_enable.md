@@ -1,0 +1,33 @@
+# xhprof_sample_enable
+
+Source: https://devdocs.io/php/function.xhprof-sample-enable
+
+(PECL xhprof >= 0.9.0)
+
+xhprof_sample_enable — Start XHProf profiling in sampling mode
+
+### Description
+
+```
+xhprof_sample_enable(): void
+```
+
+Starts profiling in sample mode, which is a lighter weight version of xhprof_enable(). The sampling interval is 0.1 seconds, and samples record the full function call stack. The main use case is when lower overhead is required when doing performance monitoring and diagnostics.
+
+### Parameters
+
+This function has no parameters.
+
+### Return Values
+
+null
+
+### See Also
+
+- xhprof_sample_disable() - Stops xhprof sample profiler
+- xhprof_enable() - Start xhprof profiler
+- memory_get_usage() - Returns the amount of memory allocated to PHP
+- getrusage() - Gets the current resource usages
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.xhprof-sample-enable.php

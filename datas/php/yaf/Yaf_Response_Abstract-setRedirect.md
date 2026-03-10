@@ -1,0 +1,22 @@
+# Yaf_Response_Abstract::setRedirect
+
+Source: https://devdocs.io/php/yaf-response-abstract.setredirect
+
+(Yaf >=1.0.0)
+
+Yaf_Response_Abstract::setRedirect — The setRedirect purpose
+
+### Description
+
+```
+public Yaf_Response_Abstract::setRedirect(string $url): bool
+```
+
+### Parameters
+
+address redircted to
+
+### Return Values
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/yaf-response-abstract.setredirect.php

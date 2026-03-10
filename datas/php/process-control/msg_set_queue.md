@@ -1,0 +1,39 @@
+# msg_set_queue
+
+Source: https://devdocs.io/php/function.msg-set-queue
+
+(PHP 4 >= 4.3.0, PHP 5, PHP 7, PHP 8)
+
+msg_set_queue — Set information in the message queue data structure
+
+### Description
+
+```
+msg_set_queue(SysvMessageQueue $queue, array $data): bool
+```
+
+msg_set_queue() allows you to change the values of the msg_perm.uid, msg_perm.gid, msg_perm.mode and msg_qbytes fields of the underlying message queue data structure.
+
+Changing the data structure will require that PHP be running as the same user that created the queue, owns the queue (as determined by the existing msg_perm.xxx fields), or be running with root privileges. root privileges are required to raise the msg_qbytes values above the system defined limit.
+
+### Parameters
+
+The message queue.
+
+You specify the values you require by setting the value of the keys that you require in the data array.
+
+### Return Values
+
+Returns true on success or false on failure.
+
+### Changelog
+
+### See Also
+
+- msg_remove_queue() - Destroy a message queue
+- msg_receive() - Receive a message from a message queue
+- msg_stat_queue() - Returns information from the message queue data structure
+- msg_get_queue() - Create or attach to a message queue
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.msg-set-queue.php

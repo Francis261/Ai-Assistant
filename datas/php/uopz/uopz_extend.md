@@ -1,0 +1,56 @@
+# uopz_extend
+
+Source: https://devdocs.io/php/function.uopz-extend
+
+(PECL uopz 1, PECL uopz 2, PECL uopz 5, PECL uopz 6, PECL uopz 7 < 7.1.0)
+
+uopz_extend — Extend a class at runtime
+
+### Description
+
+```
+uopz_extend(string $class, string $parent): bool
+```
+
+Makes class extend parent
+
+### Parameters
+
+The name of the class to extend
+
+The name of the class to inherit
+
+### Return Values
+
+Returns true on success or false on failure.
+
+### Errors/Exceptions
+
+As of PHP 7.4.0, uopz_extends() throws a RuntimeException, if OPcache is enabled, and the class entry of either class or parent (if it is a trait) is immutable.
+
+### Examples
+
+Example #1 uopz_extend() example
+
+```
+<?php
+class A {}
+class B {}
+
+uopz_extend(A::class, B::class);
+
+var_dump(class_parents(A::class));
+?>
+```
+
+The above example will output:
+
+```
+array(1) {
+  ["B"]=>
+  string(1) "B"
+}
+```
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.uopz-extend.php

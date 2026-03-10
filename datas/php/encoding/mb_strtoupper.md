@@ -1,0 +1,62 @@
+# mb_strtoupper
+
+Source: https://devdocs.io/php/function.mb-strtoupper
+
+(PHP 4 >= 4.3.0, PHP 5, PHP 7, PHP 8)
+
+mb_strtoupper — Make a string uppercase
+
+### Description
+
+```
+mb_strtoupper(string $string, ?string $encoding = null): string
+```
+
+Returns string with all alphabetic characters converted to uppercase.
+
+### Parameters
+
+The string being uppercased.
+
+The encoding parameter is the character encoding. If it is omitted or null, the internal character encoding value will be used.
+
+### Return Values
+
+string with all alphabetic characters converted to uppercase.
+
+### Examples
+
+Example #1 mb_strtoupper() example
+
+```
+<?php
+$str = "Mary Had A Little Lamb and She LOVED It So";
+$str = mb_strtoupper($str);
+echo $str; // Prints MARY HAD A LITTLE LAMB AND SHE LOVED IT SO
+?>
+```
+
+Example #2 mb_strtoupper() example with non-Latin UTF-8 text
+
+```
+<?php
+$str = "Τάχιστη αλώπηξ βαφής ψημένη γη, δρασκελίζει υπέρ νωθρού κυνός";
+$str = mb_strtoupper($str, 'UTF-8');
+echo $str; // Prints ΤΆΧΙΣΤΗ ΑΛΏΠΗΞ ΒΑΦΉΣ ΨΗΜΈΝΗ ΓΗ, ΔΡΑΣΚΕΛΊΖΕΙ ΥΠΈΡ ΝΩΘΡΟΎ ΚΥΝΌΣ
+?>
+```
+
+### Notes
+
+By contrast to strtoupper(), 'alphabetic' is determined by the Unicode character properties. Thus the behaviour of this function is not affected by locale settings and it can convert any characters that have 'alphabetic' property, such as a-umlaut (ä).
+
+For more information about the Unicode properties, please see » http://www.unicode.org/reports/tr21/.
+
+### See Also
+
+- mb_strtolower() - Make a string lowercase
+- mb_convert_case() - Perform case folding on a string
+- strtoupper() - Make a string uppercase
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.mb-strtoupper.php

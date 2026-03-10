@@ -1,0 +1,952 @@
+{
+  "category": "npm",
+  "docMtime": 1704535397,
+  "generatedAt": "2026-03-10T08:48:46.516Z",
+  "entries": {
+    "about-access-tokens": {
+      "hash": "5cb9ed49",
+      "file": "datas/devdocs/npm/integrations/About access tokens.md",
+      "updatedAt": "2026-03-10T08:48:46.520Z"
+    },
+    "about-audit-reports": {
+      "hash": "75834915",
+      "file": "datas/devdocs/npm/packages-and-modules/About audit reports.md",
+      "updatedAt": "2026-03-10T08:48:46.549Z"
+    },
+    "about-registry-signatures": {
+      "hash": "c297533d",
+      "file": "datas/devdocs/npm/packages-and-modules/About ECDSA registry signatures.md",
+      "updatedAt": "2026-03-10T08:48:46.558Z"
+    },
+    "about-npm-versions": {
+      "hash": "88a5bfaa",
+      "file": "datas/devdocs/npm/getting-started/About npm CLI versions.md",
+      "updatedAt": "2026-03-10T08:48:46.571Z"
+    },
+    "about-organization-scopes-and-packages": {
+      "hash": "294a3a3",
+      "file": "datas/devdocs/npm/organizations/About organization scopes and packages.md",
+      "updatedAt": "2026-03-10T08:48:46.574Z"
+    },
+    "about-package-readme-files": {
+      "hash": "308827cb",
+      "file": "datas/devdocs/npm/packages-and-modules/About package README files.md",
+      "updatedAt": "2026-03-10T08:48:46.577Z"
+    },
+    "about-packages-and-modules": {
+      "hash": "36038f2b",
+      "file": "datas/devdocs/npm/packages-and-modules/About packages and modules.md",
+      "updatedAt": "2026-03-10T08:48:46.584Z"
+    },
+    "about-private-packages": {
+      "hash": "9fee334d",
+      "file": "datas/devdocs/npm/packages-and-modules/About private packages.md",
+      "updatedAt": "2026-03-10T08:48:46.592Z"
+    },
+    "about-public-packages": {
+      "hash": "e5a9d91e",
+      "file": "datas/devdocs/npm/packages-and-modules/About public packages.md",
+      "updatedAt": "2026-03-10T08:48:46.598Z"
+    },
+    "about-scopes": {
+      "hash": "5850902e",
+      "file": "datas/devdocs/npm/packages-and-modules/About scopes.md",
+      "updatedAt": "2026-03-10T08:48:46.603Z"
+    },
+    "about-semantic-versioning": {
+      "hash": "de7c12a7",
+      "file": "datas/devdocs/npm/packages-and-modules/About semantic versioning.md",
+      "updatedAt": "2026-03-10T08:48:46.609Z"
+    },
+    "about-developers-team": {
+      "hash": "cd72a015",
+      "file": "datas/devdocs/npm/organizations/About the developers team.md",
+      "updatedAt": "2026-03-10T08:48:46.616Z"
+    },
+    "about-the-public-npm-registry": {
+      "hash": "c074683d",
+      "file": "datas/devdocs/npm/packages-and-modules/About the public npm registry.md",
+      "updatedAt": "2026-03-10T08:48:46.623Z"
+    },
+    "about-two-factor-authentication": {
+      "hash": "3bdf42d5",
+      "file": "datas/devdocs/npm/getting-started/About two-factor authentication.md",
+      "updatedAt": "2026-03-10T08:48:46.625Z"
+    },
+    "accepting-or-rejecting-an-organization-invitation": {
+      "hash": "66633fba",
+      "file": "datas/devdocs/npm/organizations/Accepting or rejecting an organization invitation.md",
+      "updatedAt": "2026-03-10T08:48:46.632Z"
+    },
+    "accessing-npm-using-2fa": {
+      "hash": "fccdaea3",
+      "file": "datas/devdocs/npm/getting-started/Accessing npm using two-factor authentication.md",
+      "updatedAt": "2026-03-10T08:48:46.636Z"
+    },
+    "adding-collaborators-to-private-packages-owned-by-a-user-account": {
+      "hash": "974535b9",
+      "file": "datas/devdocs/npm/packages-and-modules/Adding collaborators to private packages owned by a user account.md",
+      "updatedAt": "2026-03-10T08:48:46.648Z"
+    },
+    "adding-dist-tags-to-packages": {
+      "hash": "33567f11",
+      "file": "datas/devdocs/npm/packages-and-modules/Adding dist-tags to packages.md",
+      "updatedAt": "2026-03-10T08:48:46.652Z"
+    },
+    "adding-members-to-your-organization": {
+      "hash": "9a2df234",
+      "file": "datas/devdocs/npm/organizations/Adding members to your organization.md",
+      "updatedAt": "2026-03-10T08:48:46.656Z"
+    },
+    "adding-organization-members-to-teams": {
+      "hash": "77fa8e4e",
+      "file": "datas/devdocs/npm/organizations/Adding organization members to teams.md",
+      "updatedAt": "2026-03-10T08:48:46.661Z"
+    },
+    "auditing-package-dependencies-for-security-vulnerabilities": {
+      "hash": "7e53e987",
+      "file": "datas/devdocs/npm/packages-and-modules/Auditing package dependencies for security vulnerabilities.md",
+      "updatedAt": "2026-03-10T08:48:46.664Z"
+    },
+    "cli/v10/using-npm/changelog": {
+      "hash": "9c15184f",
+      "file": "datas/devdocs/npm/cli/Changelog.md",
+      "updatedAt": "2026-03-10T08:48:46.674Z"
+    },
+    "changing-package-visibility": {
+      "hash": "1a5ba6f0",
+      "file": "datas/devdocs/npm/packages-and-modules/Changing package visibility.md",
+      "updatedAt": "2026-03-10T08:48:46.727Z"
+    },
+    "changing-your-npm-username": {
+      "hash": "9bf66b98",
+      "file": "datas/devdocs/npm/getting-started/Changing your npm username.md",
+      "updatedAt": "2026-03-10T08:48:46.731Z"
+    },
+    "cli/v10/commands": {
+      "hash": "c382f4b9",
+      "file": "datas/devdocs/npm/cli/CLI Commands.md",
+      "updatedAt": "2026-03-10T08:48:46.734Z"
+    },
+    "common-errors": {
+      "hash": "a12badd0",
+      "file": "datas/devdocs/npm/getting-started/Common errors.md",
+      "updatedAt": "2026-03-10T08:48:46.755Z"
+    },
+    "cli/v10/using-npm/config": {
+      "hash": "cd7328a1",
+      "file": "datas/devdocs/npm/cli/config.md",
+      "updatedAt": "2026-03-10T08:48:46.772Z"
+    },
+    "cli/v10/configuring-npm": {
+      "hash": "a375f057",
+      "file": "datas/devdocs/npm/cli/Configuring npm.md",
+      "updatedAt": "2026-03-10T08:48:46.843Z"
+    },
+    "configuring-two-factor-authentication": {
+      "hash": "6210dad8",
+      "file": "datas/devdocs/npm/getting-started/Configuring two-factor authentication.md",
+      "updatedAt": "2026-03-10T08:48:46.846Z"
+    },
+    "getting-started/configuring-your-local-environment": {
+      "hash": "d5c69449",
+      "file": "datas/devdocs/npm/getting-started/Configuring your local environment.md",
+      "updatedAt": "2026-03-10T08:48:46.860Z"
+    },
+    "configuring-your-npm-client-with-your-organization-settings": {
+      "hash": "dcb46a18",
+      "file": "datas/devdocs/npm/organizations/Configuring your npm client with your organization settings.md",
+      "updatedAt": "2026-03-10T08:48:46.874Z"
+    },
+    "packages-and-modules/contributing-packages-to-the-registry": {
+      "hash": "512c1eb6",
+      "file": "datas/devdocs/npm/packages-and-modules/Contributing packages to the registry.md",
+      "updatedAt": "2026-03-10T08:48:46.877Z"
+    },
+    "converting-your-user-account-to-an-organization": {
+      "hash": "17f0e8d8",
+      "file": "datas/devdocs/npm/organizations/Converting your user account to an organization.md",
+      "updatedAt": "2026-03-10T08:48:46.879Z"
+    },
+    "creating-a-new-npm-user-account": {
+      "hash": "68002ed7",
+      "file": "datas/devdocs/npm/getting-started/Creating a new user account on the public registry.md",
+      "updatedAt": "2026-03-10T08:48:46.881Z"
+    },
+    "creating-a-package-json-file": {
+      "hash": "7d78de2c",
+      "file": "datas/devdocs/npm/packages-and-modules/Creating a package.json file.md",
+      "updatedAt": "2026-03-10T08:48:46.883Z"
+    },
+    "creating-a-strong-password": {
+      "hash": "b694e78d",
+      "file": "datas/devdocs/npm/getting-started/Creating a strong password.md",
+      "updatedAt": "2026-03-10T08:48:46.887Z"
+    },
+    "creating-an-organization": {
+      "hash": "fe8547fe",
+      "file": "datas/devdocs/npm/organizations/Creating an organization.md",
+      "updatedAt": "2026-03-10T08:48:46.890Z"
+    },
+    "organizations/creating-and-managing-organizations": {
+      "hash": "b27492ac",
+      "file": "datas/devdocs/npm/organizations/Creating and managing organizations.md",
+      "updatedAt": "2026-03-10T08:48:46.892Z"
+    },
+    "creating-and-publishing-an-organization-scoped-package": {
+      "hash": "ad7683e1",
+      "file": "datas/devdocs/npm/organizations/Creating and publishing an organization scoped package.md",
+      "updatedAt": "2026-03-10T08:48:46.893Z"
+    },
+    "creating-and-publishing-private-packages": {
+      "hash": "1720081b",
+      "file": "datas/devdocs/npm/packages-and-modules/Creating and publishing private packages.md",
+      "updatedAt": "2026-03-10T08:48:46.895Z"
+    },
+    "creating-and-publishing-scoped-public-packages": {
+      "hash": "8ce656c5",
+      "file": "datas/devdocs/npm/packages-and-modules/Creating and publishing scoped public packages.md",
+      "updatedAt": "2026-03-10T08:48:46.899Z"
+    },
+    "creating-and-publishing-unscoped-public-packages": {
+      "hash": "3e3ef311",
+      "file": "datas/devdocs/npm/packages-and-modules/Creating and publishing unscoped public packages.md",
+      "updatedAt": "2026-03-10T08:48:46.907Z"
+    },
+    "creating-and-viewing-access-tokens": {
+      "hash": "98e9a3a9",
+      "file": "datas/devdocs/npm/integrations/Creating and viewing access tokens.md",
+      "updatedAt": "2026-03-10T08:48:46.911Z"
+    },
+    "creating-node-js-modules": {
+      "hash": "8f3c4bf",
+      "file": "datas/devdocs/npm/packages-and-modules/Creating Node.js modules.md",
+      "updatedAt": "2026-03-10T08:48:46.918Z"
+    },
+    "creating-teams": {
+      "hash": "244a44d9",
+      "file": "datas/devdocs/npm/organizations/Creating teams.md",
+      "updatedAt": "2026-03-10T08:48:46.922Z"
+    },
+    "deleting-an-organization": {
+      "hash": "d6b59d6e",
+      "file": "datas/devdocs/npm/organizations/Deleting an organization.md",
+      "updatedAt": "2026-03-10T08:48:46.924Z"
+    },
+    "deleting-your-npm-user-account": {
+      "hash": "16f3d680",
+      "file": "datas/devdocs/npm/getting-started/Deleting your npm user account.md",
+      "updatedAt": "2026-03-10T08:48:46.925Z"
+    },
+    "cli/v10/using-npm/dependency-selectors": {
+      "hash": "b59c5d9c",
+      "file": "datas/devdocs/npm/cli/Dependency Selector Syntax & Querying.md",
+      "updatedAt": "2026-03-10T08:48:46.927Z"
+    },
+    "deprecating-and-undeprecating-packages-or-package-versions": {
+      "hash": "2b76c4ce",
+      "file": "datas/devdocs/npm/packages-and-modules/Deprecating and undeprecating packages or package versions.md",
+      "updatedAt": "2026-03-10T08:48:46.938Z"
+    },
+    "cli/v10/using-npm/developers": {
+      "hash": "315b9d89",
+      "file": "datas/devdocs/npm/cli/developers.md",
+      "updatedAt": "2026-03-10T08:48:46.942Z"
+    },
+    "docker-and-private-modules": {
+      "hash": "b7e792aa",
+      "file": "datas/devdocs/npm/integrations/Docker and private modules.md",
+      "updatedAt": "2026-03-10T08:48:46.953Z"
+    },
+    "downgrading-to-a-free-organization-plan": {
+      "hash": "4f574661",
+      "file": "datas/devdocs/npm/organizations/Downgrading to a free organization plan.md",
+      "updatedAt": "2026-03-10T08:48:46.954Z"
+    },
+    "downgrading-to-a-free-user-account-plan": {
+      "hash": "9c798190",
+      "file": "datas/devdocs/npm/getting-started/Downgrading to a free user account plan.md",
+      "updatedAt": "2026-03-10T08:48:46.956Z"
+    },
+    "downloading-and-installing-node-js-and-npm": {
+      "hash": "226eaeb8",
+      "file": "datas/devdocs/npm/getting-started/Downloading and installing Node.js and npm.md",
+      "updatedAt": "2026-03-10T08:48:46.957Z"
+    },
+    "downloading-and-installing-packages-globally": {
+      "hash": "668adc0e",
+      "file": "datas/devdocs/npm/packages-and-modules/Downloading and installing packages globally.md",
+      "updatedAt": "2026-03-10T08:48:46.959Z"
+    },
+    "downloading-and-installing-packages-locally": {
+      "hash": "69436f9d",
+      "file": "datas/devdocs/npm/packages-and-modules/Downloading and installing packages locally.md",
+      "updatedAt": "2026-03-10T08:48:46.960Z"
+    },
+    "cli/v10/configuring-npm/folders": {
+      "hash": "4f3d1fb8",
+      "file": "datas/devdocs/npm/cli/folders.md",
+      "updatedAt": "2026-03-10T08:48:46.963Z"
+    },
+    "generating-and-locating-npm-debug.log-files": {
+      "hash": "31bd6689",
+      "file": "datas/devdocs/npm/getting-started/Generating and locating npm-debug.log files.md",
+      "updatedAt": "2026-03-10T08:48:46.966Z"
+    },
+    "generating-provenance-statements": {
+      "hash": "5ee27457",
+      "file": "datas/devdocs/npm/packages-and-modules/Generating provenance statements.md",
+      "updatedAt": "2026-03-10T08:48:46.968Z"
+    },
+    "packages-and-modules/getting-packages-from-the-registry": {
+      "hash": "91d24794",
+      "file": "datas/devdocs/npm/packages-and-modules/Getting packages from the registry.md",
+      "updatedAt": "2026-03-10T08:48:46.971Z"
+    },
+    "cli/v10/configuring-npm/install": {
+      "hash": "16cc9a8d",
+      "file": "datas/devdocs/npm/cli/install.md",
+      "updatedAt": "2026-03-10T08:48:46.975Z"
+    },
+    "integrations/integrating-npm-with-external-services": {
+      "hash": "dd7f839c",
+      "file": "datas/devdocs/npm/integrations/Integrating npm with external services.md",
+      "updatedAt": "2026-03-10T08:48:46.977Z"
+    },
+    "packages-and-modules/introduction-to-packages-and-modules": {
+      "hash": "693288ab",
+      "file": "datas/devdocs/npm/packages-and-modules/Introduction to packages and modules.md",
+      "updatedAt": "2026-03-10T08:48:46.978Z"
+    },
+    "cli/v10/using-npm/logging": {
+      "hash": "b877b55c",
+      "file": "datas/devdocs/npm/cli/Logging.md",
+      "updatedAt": "2026-03-10T08:48:46.979Z"
+    },
+    "organizations/managing-organization-members": {
+      "hash": "cd6867bb",
+      "file": "datas/devdocs/npm/organizations/Managing organization members.md",
+      "updatedAt": "2026-03-10T08:48:46.982Z"
+    },
+    "organizations/managing-organization-packages": {
+      "hash": "2e5c9a9c",
+      "file": "datas/devdocs/npm/organizations/Managing organization packages.md",
+      "updatedAt": "2026-03-10T08:48:46.983Z"
+    },
+    "managing-organization-permissions": {
+      "hash": "3f19c0ed",
+      "file": "datas/devdocs/npm/organizations/Managing organization permissions.md",
+      "updatedAt": "2026-03-10T08:48:46.985Z"
+    },
+    "managing-team-access-to-organization-packages": {
+      "hash": "baa9cd83",
+      "file": "datas/devdocs/npm/organizations/Managing team access to organization packages.md",
+      "updatedAt": "2026-03-10T08:48:46.986Z"
+    },
+    "organizations/managing-teams": {
+      "hash": "a3a4f7db",
+      "file": "datas/devdocs/npm/organizations/Managing teams.md",
+      "updatedAt": "2026-03-10T08:48:46.990Z"
+    },
+    "getting-started/managing-your-npm-user-account": {
+      "hash": "7c228ec9",
+      "file": "datas/devdocs/npm/getting-started/Managing your npm user account.md",
+      "updatedAt": "2026-03-10T08:48:46.991Z"
+    },
+    "managing-your-profile-settings": {
+      "hash": "7d3f2712",
+      "file": "datas/devdocs/npm/getting-started/Managing your profile settings.md",
+      "updatedAt": "2026-03-10T08:48:46.992Z"
+    },
+    "cli/v10/commands/npm": {
+      "hash": "5c6c4df0",
+      "file": "datas/devdocs/npm/cli/npm.md",
+      "updatedAt": "2026-03-10T08:48:47.003Z"
+    },
+    "package-scope-access-level-and-visibility": {
+      "hash": "c88f21b7",
+      "file": "datas/devdocs/npm/packages-and-modules/npm package scope, access level, and visibility.md",
+      "updatedAt": "2026-03-10T08:48:47.008Z"
+    },
+    "cli/v10/commands/npm-access": {
+      "hash": "b9e3fac4",
+      "file": "datas/devdocs/npm/cli/npm-access.md",
+      "updatedAt": "2026-03-10T08:48:47.009Z"
+    },
+    "cli/v10/commands/npm-adduser": {
+      "hash": "86bcc28",
+      "file": "datas/devdocs/npm/cli/npm-adduser.md",
+      "updatedAt": "2026-03-10T08:48:47.012Z"
+    },
+    "cli/v10/commands/npm-audit": {
+      "hash": "f0e9d091",
+      "file": "datas/devdocs/npm/cli/npm-audit.md",
+      "updatedAt": "2026-03-10T08:48:47.015Z"
+    },
+    "cli/v10/commands/npm-bugs": {
+      "hash": "f6cfae30",
+      "file": "datas/devdocs/npm/cli/npm-bugs.md",
+      "updatedAt": "2026-03-10T08:48:47.027Z"
+    },
+    "cli/v10/commands/npm-cache": {
+      "hash": "7490dd1a",
+      "file": "datas/devdocs/npm/cli/npm-cache.md",
+      "updatedAt": "2026-03-10T08:48:47.031Z"
+    },
+    "cli/v10/commands/npm-ci": {
+      "hash": "53417ede",
+      "file": "datas/devdocs/npm/cli/npm-ci.md",
+      "updatedAt": "2026-03-10T08:48:47.036Z"
+    },
+    "cli/v10/commands/npm-completion": {
+      "hash": "c7a33b85",
+      "file": "datas/devdocs/npm/cli/npm-completion.md",
+      "updatedAt": "2026-03-10T08:48:47.042Z"
+    },
+    "cli/v10/commands/npm-config": {
+      "hash": "d316be0a",
+      "file": "datas/devdocs/npm/cli/npm-config.md",
+      "updatedAt": "2026-03-10T08:48:47.044Z"
+    },
+    "cli/v10/commands/npm-dedupe": {
+      "hash": "ac40ae68",
+      "file": "datas/devdocs/npm/cli/npm-dedupe.md",
+      "updatedAt": "2026-03-10T08:48:47.049Z"
+    },
+    "cli/v10/commands/npm-deprecate": {
+      "hash": "c6bd9685",
+      "file": "datas/devdocs/npm/cli/npm-deprecate.md",
+      "updatedAt": "2026-03-10T08:48:47.055Z"
+    },
+    "cli/v10/commands/npm-diff": {
+      "hash": "343748c0",
+      "file": "datas/devdocs/npm/cli/npm-diff.md",
+      "updatedAt": "2026-03-10T08:48:47.063Z"
+    },
+    "cli/v10/commands/npm-dist-tag": {
+      "hash": "24b243c8",
+      "file": "datas/devdocs/npm/cli/npm-dist-tag.md",
+      "updatedAt": "2026-03-10T08:48:47.072Z"
+    },
+    "cli/v10/commands/npm-docs": {
+      "hash": "19bdf1c6",
+      "file": "datas/devdocs/npm/cli/npm-docs.md",
+      "updatedAt": "2026-03-10T08:48:47.077Z"
+    },
+    "cli/v10/commands/npm-doctor": {
+      "hash": "d2abfb77",
+      "file": "datas/devdocs/npm/cli/npm-doctor.md",
+      "updatedAt": "2026-03-10T08:48:47.080Z"
+    },
+    "cli/v10/commands/npm-edit": {
+      "hash": "c1fd5281",
+      "file": "datas/devdocs/npm/cli/npm-edit.md",
+      "updatedAt": "2026-03-10T08:48:47.083Z"
+    },
+    "cli/v10/commands/npm-exec": {
+      "hash": "a8813964",
+      "file": "datas/devdocs/npm/cli/npm-exec.md",
+      "updatedAt": "2026-03-10T08:48:47.085Z"
+    },
+    "cli/v10/commands/npm-explain": {
+      "hash": "fec6d353",
+      "file": "datas/devdocs/npm/cli/npm-explain.md",
+      "updatedAt": "2026-03-10T08:48:47.092Z"
+    },
+    "cli/v10/commands/npm-explore": {
+      "hash": "b36e2f81",
+      "file": "datas/devdocs/npm/cli/npm-explore.md",
+      "updatedAt": "2026-03-10T08:48:47.096Z"
+    },
+    "cli/v10/commands/npm-find-dupes": {
+      "hash": "53abe86f",
+      "file": "datas/devdocs/npm/cli/npm-find-dupes.md",
+      "updatedAt": "2026-03-10T08:48:47.098Z"
+    },
+    "cli/v10/commands/npm-fund": {
+      "hash": "e061374d",
+      "file": "datas/devdocs/npm/cli/npm-fund.md",
+      "updatedAt": "2026-03-10T08:48:47.103Z"
+    },
+    "cli/v10/commands/npm-help": {
+      "hash": "b8133752",
+      "file": "datas/devdocs/npm/cli/npm-help.md",
+      "updatedAt": "2026-03-10T08:48:47.107Z"
+    },
+    "cli/v10/commands/npm-help-search": {
+      "hash": "61133dc2",
+      "file": "datas/devdocs/npm/cli/npm-help-search.md",
+      "updatedAt": "2026-03-10T08:48:47.113Z"
+    },
+    "cli/v10/commands/npm-hook": {
+      "hash": "20099bef",
+      "file": "datas/devdocs/npm/cli/npm-hook.md",
+      "updatedAt": "2026-03-10T08:48:47.115Z"
+    },
+    "cli/v10/commands/npm-init": {
+      "hash": "dd344402",
+      "file": "datas/devdocs/npm/cli/npm-init.md",
+      "updatedAt": "2026-03-10T08:48:47.117Z"
+    },
+    "cli/v10/commands/npm-install": {
+      "hash": "ed577750",
+      "file": "datas/devdocs/npm/cli/npm-install.md",
+      "updatedAt": "2026-03-10T08:48:47.124Z"
+    },
+    "cli/v10/commands/npm-install-ci-test": {
+      "hash": "f5163d71",
+      "file": "datas/devdocs/npm/cli/npm-install-ci-test.md",
+      "updatedAt": "2026-03-10T08:48:47.144Z"
+    },
+    "cli/v10/commands/npm-install-test": {
+      "hash": "a231f537",
+      "file": "datas/devdocs/npm/cli/npm-install-test.md",
+      "updatedAt": "2026-03-10T08:48:47.148Z"
+    },
+    "cli/v10/commands/npm-link": {
+      "hash": "e5665706",
+      "file": "datas/devdocs/npm/cli/npm-link.md",
+      "updatedAt": "2026-03-10T08:48:47.154Z"
+    },
+    "cli/v10/commands/npm-login": {
+      "hash": "a9b3fb09",
+      "file": "datas/devdocs/npm/cli/npm-login.md",
+      "updatedAt": "2026-03-10T08:48:47.166Z"
+    },
+    "cli/v10/commands/npm-logout": {
+      "hash": "67a9c5a7",
+      "file": "datas/devdocs/npm/cli/npm-logout.md",
+      "updatedAt": "2026-03-10T08:48:47.170Z"
+    },
+    "cli/v10/commands/npm-ls": {
+      "hash": "b70b14c6",
+      "file": "datas/devdocs/npm/cli/npm-ls.md",
+      "updatedAt": "2026-03-10T08:48:47.172Z"
+    },
+    "cli/v10/commands/npm-org": {
+      "hash": "cf287762",
+      "file": "datas/devdocs/npm/cli/npm-org.md",
+      "updatedAt": "2026-03-10T08:48:47.177Z"
+    },
+    "cli/v10/commands/npm-outdated": {
+      "hash": "91ea6a0c",
+      "file": "datas/devdocs/npm/cli/npm-outdated.md",
+      "updatedAt": "2026-03-10T08:48:47.180Z"
+    },
+    "cli/v10/commands/npm-owner": {
+      "hash": "7bbd3832",
+      "file": "datas/devdocs/npm/cli/npm-owner.md",
+      "updatedAt": "2026-03-10T08:48:47.185Z"
+    },
+    "cli/v10/commands/npm-pack": {
+      "hash": "d76cb75f",
+      "file": "datas/devdocs/npm/cli/npm-pack.md",
+      "updatedAt": "2026-03-10T08:48:47.188Z"
+    },
+    "cli/v10/commands/npm-ping": {
+      "hash": "5b60e493",
+      "file": "datas/devdocs/npm/cli/npm-ping.md",
+      "updatedAt": "2026-03-10T08:48:47.191Z"
+    },
+    "cli/v10/commands/npm-pkg": {
+      "hash": "75c9c25f",
+      "file": "datas/devdocs/npm/cli/npm-pkg.md",
+      "updatedAt": "2026-03-10T08:48:47.192Z"
+    },
+    "cli/v10/commands/npm-prefix": {
+      "hash": "cf5420a7",
+      "file": "datas/devdocs/npm/cli/npm-prefix.md",
+      "updatedAt": "2026-03-10T08:48:47.197Z"
+    },
+    "cli/v10/commands/npm-profile": {
+      "hash": "4a58abb0",
+      "file": "datas/devdocs/npm/cli/npm-profile.md",
+      "updatedAt": "2026-03-10T08:48:47.199Z"
+    },
+    "cli/v10/commands/npm-prune": {
+      "hash": "15f81925",
+      "file": "datas/devdocs/npm/cli/npm-prune.md",
+      "updatedAt": "2026-03-10T08:48:47.208Z"
+    },
+    "cli/v10/commands/npm-publish": {
+      "hash": "85b89708",
+      "file": "datas/devdocs/npm/cli/npm-publish.md",
+      "updatedAt": "2026-03-10T08:48:47.212Z"
+    },
+    "cli/v10/commands/npm-query": {
+      "hash": "416dba72",
+      "file": "datas/devdocs/npm/cli/npm-query.md",
+      "updatedAt": "2026-03-10T08:48:47.217Z"
+    },
+    "cli/v10/commands/npm-rebuild": {
+      "hash": "6e630100",
+      "file": "datas/devdocs/npm/cli/npm-rebuild.md",
+      "updatedAt": "2026-03-10T08:48:47.220Z"
+    },
+    "cli/v10/commands/npm-repo": {
+      "hash": "79e06f52",
+      "file": "datas/devdocs/npm/cli/npm-repo.md",
+      "updatedAt": "2026-03-10T08:48:47.223Z"
+    },
+    "cli/v10/commands/npm-restart": {
+      "hash": "80a0c363",
+      "file": "datas/devdocs/npm/cli/npm-restart.md",
+      "updatedAt": "2026-03-10T08:48:47.225Z"
+    },
+    "cli/v10/commands/npm-root": {
+      "hash": "9abf36bd",
+      "file": "datas/devdocs/npm/cli/npm-root.md",
+      "updatedAt": "2026-03-10T08:48:47.227Z"
+    },
+    "cli/v10/commands/npm-run-script": {
+      "hash": "e06516ca",
+      "file": "datas/devdocs/npm/cli/npm-run-script.md",
+      "updatedAt": "2026-03-10T08:48:47.229Z"
+    },
+    "cli/v10/commands/npm-sbom": {
+      "hash": "210f66e1",
+      "file": "datas/devdocs/npm/cli/npm-sbom.md",
+      "updatedAt": "2026-03-10T08:48:47.235Z"
+    },
+    "cli/v10/commands/npm-search": {
+      "hash": "228b3816",
+      "file": "datas/devdocs/npm/cli/npm-search.md",
+      "updatedAt": "2026-03-10T08:48:47.239Z"
+    },
+    "cli/v10/commands/npm-shrinkwrap": {
+      "hash": "846c1520",
+      "file": "datas/devdocs/npm/cli/npm-shrinkwrap.md",
+      "updatedAt": "2026-03-10T08:48:47.242Z"
+    },
+    "cli/v10/configuring-npm/npm-shrinkwrap-json": {
+      "hash": "638b485e",
+      "file": "datas/devdocs/npm/cli/npm-shrinkwrap.json.md",
+      "updatedAt": "2026-03-10T08:48:47.248Z"
+    },
+    "cli/v10/commands/npm-star": {
+      "hash": "7849dec4",
+      "file": "datas/devdocs/npm/cli/npm-star.md",
+      "updatedAt": "2026-03-10T08:48:47.250Z"
+    },
+    "cli/v10/commands/npm-stars": {
+      "hash": "e7a1013b",
+      "file": "datas/devdocs/npm/cli/npm-stars.md",
+      "updatedAt": "2026-03-10T08:48:47.252Z"
+    },
+    "cli/v10/commands/npm-start": {
+      "hash": "abddc2a7",
+      "file": "datas/devdocs/npm/cli/npm-start.md",
+      "updatedAt": "2026-03-10T08:48:47.253Z"
+    },
+    "cli/v10/commands/npm-stop": {
+      "hash": "95d96d47",
+      "file": "datas/devdocs/npm/cli/npm-stop.md",
+      "updatedAt": "2026-03-10T08:48:47.255Z"
+    },
+    "cli/v10/commands/npm-team": {
+      "hash": "ce09a79a",
+      "file": "datas/devdocs/npm/cli/npm-team.md",
+      "updatedAt": "2026-03-10T08:48:47.256Z"
+    },
+    "cli/v10/commands/npm-test": {
+      "hash": "b867eafe",
+      "file": "datas/devdocs/npm/cli/npm-test.md",
+      "updatedAt": "2026-03-10T08:48:47.259Z"
+    },
+    "cli/v10/commands/npm-token": {
+      "hash": "faec9e3f",
+      "file": "datas/devdocs/npm/cli/npm-token.md",
+      "updatedAt": "2026-03-10T08:48:47.261Z"
+    },
+    "cli/v10/commands/npm-uninstall": {
+      "hash": "c7978dbc",
+      "file": "datas/devdocs/npm/cli/npm-uninstall.md",
+      "updatedAt": "2026-03-10T08:48:47.264Z"
+    },
+    "cli/v10/commands/npm-unpublish": {
+      "hash": "6a1f82e5",
+      "file": "datas/devdocs/npm/cli/npm-unpublish.md",
+      "updatedAt": "2026-03-10T08:48:47.267Z"
+    },
+    "cli/v10/commands/npm-unstar": {
+      "hash": "353a87f3",
+      "file": "datas/devdocs/npm/cli/npm-unstar.md",
+      "updatedAt": "2026-03-10T08:48:47.270Z"
+    },
+    "cli/v10/commands/npm-update": {
+      "hash": "65953327",
+      "file": "datas/devdocs/npm/cli/npm-update.md",
+      "updatedAt": "2026-03-10T08:48:47.272Z"
+    },
+    "cli/v10/commands/npm-version": {
+      "hash": "4de1b7ac",
+      "file": "datas/devdocs/npm/cli/npm-version.md",
+      "updatedAt": "2026-03-10T08:48:47.279Z"
+    },
+    "cli/v10/commands/npm-view": {
+      "hash": "1770e665",
+      "file": "datas/devdocs/npm/cli/npm-view.md",
+      "updatedAt": "2026-03-10T08:48:47.288Z"
+    },
+    "cli/v10/commands/npm-whoami": {
+      "hash": "283c664c",
+      "file": "datas/devdocs/npm/cli/npm-whoami.md",
+      "updatedAt": "2026-03-10T08:48:47.292Z"
+    },
+    "cli/v10/configuring-npm/npmrc": {
+      "hash": "dabc7f4b",
+      "file": "datas/devdocs/npm/cli/npmrc.md",
+      "updatedAt": "2026-03-10T08:48:47.293Z"
+    },
+    "cli/v10/commands/npx": {
+      "hash": "d3dc274c",
+      "file": "datas/devdocs/npm/cli/npx.md",
+      "updatedAt": "2026-03-10T08:48:47.296Z"
+    },
+    "organization-roles-and-permissions": {
+      "hash": "8b1cfaf5",
+      "file": "datas/devdocs/npm/organizations/Organization roles and permissions.md",
+      "updatedAt": "2026-03-10T08:48:47.299Z"
+    },
+    "cli/v10/using-npm/orgs": {
+      "hash": "14e0dfdd",
+      "file": "datas/devdocs/npm/cli/orgs.md",
+      "updatedAt": "2026-03-10T08:48:47.301Z"
+    },
+    "package-name-guidelines": {
+      "hash": "b07d212e",
+      "file": "datas/devdocs/npm/packages-and-modules/Package name guidelines.md",
+      "updatedAt": "2026-03-10T08:48:47.304Z"
+    },
+    "cli/v10/configuring-npm/package-lock-json": {
+      "hash": "9dc61bd2",
+      "file": "datas/devdocs/npm/cli/package-lock.json.md",
+      "updatedAt": "2026-03-10T08:48:47.305Z"
+    },
+    "cli/v10/using-npm/package-spec": {
+      "hash": "93e7b9fd",
+      "file": "datas/devdocs/npm/cli/package-spec.md",
+      "updatedAt": "2026-03-10T08:48:47.310Z"
+    },
+    "cli/v10/configuring-npm/package-json": {
+      "hash": "5b3c6ce6",
+      "file": "datas/devdocs/npm/cli/package.json.md",
+      "updatedAt": "2026-03-10T08:48:47.313Z"
+    },
+    "getting-started/paying-for-your-npm-user-account": {
+      "hash": "89b955d7",
+      "file": "datas/devdocs/npm/getting-started/Paying for your npm user account.md",
+      "updatedAt": "2026-03-10T08:48:47.327Z"
+    },
+    "organizations/paying-for-your-organization": {
+      "hash": "c2238a3c",
+      "file": "datas/devdocs/npm/organizations/Paying for your organization.md",
+      "updatedAt": "2026-03-10T08:48:47.335Z"
+    },
+    "receiving-a-one-time-password-over-email": {
+      "hash": "ed847b6c",
+      "file": "datas/devdocs/npm/getting-started/Receiving a one-time password over email.md",
+      "updatedAt": "2026-03-10T08:48:47.339Z"
+    },
+    "recovering-your-2fa-enabled-account": {
+      "hash": "c1f23f74",
+      "file": "datas/devdocs/npm/getting-started/Recovering your 2FA-enabled account.md",
+      "updatedAt": "2026-03-10T08:48:47.343Z"
+    },
+    "cli/v10/using-npm/registry": {
+      "hash": "7174dc15",
+      "file": "datas/devdocs/npm/cli/registry.md",
+      "updatedAt": "2026-03-10T08:48:47.350Z"
+    },
+    "cli/v10/using-npm/removal": {
+      "hash": "99e42138",
+      "file": "datas/devdocs/npm/cli/removal.md",
+      "updatedAt": "2026-03-10T08:48:47.353Z"
+    },
+    "removing-members-from-your-organization": {
+      "hash": "3edd6298",
+      "file": "datas/devdocs/npm/organizations/Removing members from your organization.md",
+      "updatedAt": "2026-03-10T08:48:47.356Z"
+    },
+    "removing-organization-members-from-teams": {
+      "hash": "e9c7bf64",
+      "file": "datas/devdocs/npm/organizations/Removing organization members from teams.md",
+      "updatedAt": "2026-03-10T08:48:47.359Z"
+    },
+    "removing-teams": {
+      "hash": "6f27eb32",
+      "file": "datas/devdocs/npm/organizations/Removing teams.md",
+      "updatedAt": "2026-03-10T08:48:47.362Z"
+    },
+    "renaming-an-organization": {
+      "hash": "f6e3eb1a",
+      "file": "datas/devdocs/npm/organizations/Renaming an organization.md",
+      "updatedAt": "2026-03-10T08:48:47.365Z"
+    },
+    "reporting-malware-in-an-npm-package": {
+      "hash": "315f909f",
+      "file": "datas/devdocs/npm/packages-and-modules/Reporting malware in an npm package.md",
+      "updatedAt": "2026-03-10T08:48:47.367Z"
+    },
+    "requesting-your-data": {
+      "hash": "c2f68bbd",
+      "file": "datas/devdocs/npm/getting-started/Requesting an export of your personal data.md",
+      "updatedAt": "2026-03-10T08:48:47.370Z"
+    },
+    "requiring-2fa-for-package-publishing-and-settings-modification": {
+      "hash": "47356e8a",
+      "file": "datas/devdocs/npm/packages-and-modules/Requiring 2FA for package publishing and settings modification.md",
+      "updatedAt": "2026-03-10T08:48:47.372Z"
+    },
+    "requiring-two-factor-authentication-in-your-organization": {
+      "hash": "d171aa8f",
+      "file": "datas/devdocs/npm/organizations/Requiring two-factor authentication in your organization.md",
+      "updatedAt": "2026-03-10T08:48:47.376Z"
+    },
+    "resolving-eacces-permissions-errors-when-installing-packages-globally": {
+      "hash": "9d100c1b",
+      "file": "datas/devdocs/npm/packages-and-modules/Resolving EACCES permissions errors when installing packages globally.md",
+      "updatedAt": "2026-03-10T08:48:47.381Z"
+    },
+    "revoking-access-tokens": {
+      "hash": "a730f6cf",
+      "file": "datas/devdocs/npm/integrations/Revoking access tokens.md",
+      "updatedAt": "2026-03-10T08:48:47.384Z"
+    },
+    "cli/v10/using-npm/scope": {
+      "hash": "694b519b",
+      "file": "datas/devdocs/npm/cli/scope.md",
+      "updatedAt": "2026-03-10T08:48:47.386Z"
+    },
+    "cli/v10/using-npm/scripts": {
+      "hash": "8c994aaa",
+      "file": "datas/devdocs/npm/cli/scripts.md",
+      "updatedAt": "2026-03-10T08:48:47.390Z"
+    },
+    "searching-for-and-choosing-packages-to-download": {
+      "hash": "5702caf6",
+      "file": "datas/devdocs/npm/packages-and-modules/Searching for and choosing packages to download.md",
+      "updatedAt": "2026-03-10T08:48:47.401Z"
+    },
+    "packages-and-modules/securing-your-code": {
+      "hash": "be24ae64",
+      "file": "datas/devdocs/npm/packages-and-modules/Securing your code.md",
+      "updatedAt": "2026-03-10T08:48:47.410Z"
+    },
+    "getting-started/setting-up-your-npm-user-account": {
+      "hash": "ff1bb86d",
+      "file": "datas/devdocs/npm/getting-started/Setting up your npm user account.md",
+      "updatedAt": "2026-03-10T08:48:47.412Z"
+    },
+    "specifying-dependencies-and-devdependencies-in-a-package-json-file": {
+      "hash": "b999b824",
+      "file": "datas/devdocs/npm/packages-and-modules/Specifying dependencies and devDependencies in a package.json file.md",
+      "updatedAt": "2026-03-10T08:48:47.414Z"
+    },
+    "transferring-a-package-from-a-user-account-to-another-user-account": {
+      "hash": "96977c6a",
+      "file": "datas/devdocs/npm/packages-and-modules/Transferring a package from a user account to another user account.md",
+      "updatedAt": "2026-03-10T08:48:47.416Z"
+    },
+    "getting-started/troubleshooting": {
+      "hash": "8d7fd430",
+      "file": "datas/devdocs/npm/getting-started/Troubleshooting.md",
+      "updatedAt": "2026-03-10T08:48:47.419Z"
+    },
+    "try-the-latest-stable-version-of-node": {
+      "hash": "9752a566",
+      "file": "datas/devdocs/npm/getting-started/Try the latest stable version of node.md",
+      "updatedAt": "2026-03-10T08:48:47.421Z"
+    },
+    "try-the-latest-stable-version-of-npm": {
+      "hash": "476b7e4d",
+      "file": "datas/devdocs/npm/getting-started/Try the latest stable version of npm.md",
+      "updatedAt": "2026-03-10T08:48:47.424Z"
+    },
+    "uninstalling-packages-and-dependencies": {
+      "hash": "e878e5fc",
+      "file": "datas/devdocs/npm/packages-and-modules/Uninstalling packages and dependencies.md",
+      "updatedAt": "2026-03-10T08:48:47.428Z"
+    },
+    "unpublishing-packages-from-the-registry": {
+      "hash": "f68744f7",
+      "file": "datas/devdocs/npm/packages-and-modules/Unpublishing packages from the registry.md",
+      "updatedAt": "2026-03-10T08:48:47.431Z"
+    },
+    "packages-and-modules/updating-and-managing-your-published-packages": {
+      "hash": "b00ec89e",
+      "file": "datas/devdocs/npm/packages-and-modules/Updating and managing your published packages.md",
+      "updatedAt": "2026-03-10T08:48:47.435Z"
+    },
+    "updating-organization-billing-settings": {
+      "hash": "c0868b6c",
+      "file": "datas/devdocs/npm/organizations/Updating organization billing settings.md",
+      "updatedAt": "2026-03-10T08:48:47.436Z"
+    },
+    "updating-packages-downloaded-from-the-registry": {
+      "hash": "271b246",
+      "file": "datas/devdocs/npm/packages-and-modules/Updating packages downloaded from the registry.md",
+      "updatedAt": "2026-03-10T08:48:47.439Z"
+    },
+    "updating-user-account-billing-settings": {
+      "hash": "3f066de3",
+      "file": "datas/devdocs/npm/getting-started/Updating user account billing settings.md",
+      "updatedAt": "2026-03-10T08:48:47.442Z"
+    },
+    "updating-your-published-package-version-number": {
+      "hash": "f989af61",
+      "file": "datas/devdocs/npm/packages-and-modules/Updating your published package version number.md",
+      "updatedAt": "2026-03-10T08:48:47.445Z"
+    },
+    "upgrading-to-a-paid-organization-plan": {
+      "hash": "c4e687fb",
+      "file": "datas/devdocs/npm/organizations/Upgrading to a paid organization plan.md",
+      "updatedAt": "2026-03-10T08:48:47.446Z"
+    },
+    "upgrading-to-a-paid-user-account-plan": {
+      "hash": "c68e1656",
+      "file": "datas/devdocs/npm/getting-started/Upgrading to a paid user account plan.md",
+      "updatedAt": "2026-03-10T08:48:47.448Z"
+    },
+    "using-deprecated-packages": {
+      "hash": "6b1c767b",
+      "file": "datas/devdocs/npm/packages-and-modules/Using deprecated packages.md",
+      "updatedAt": "2026-03-10T08:48:47.451Z"
+    },
+    "cli/v10/using-npm": {
+      "hash": "e1f0b577",
+      "file": "datas/devdocs/npm/cli/Using npm.md",
+      "updatedAt": "2026-03-10T08:48:47.451Z"
+    },
+    "using-npm-packages-in-your-projects": {
+      "hash": "cf295e68",
+      "file": "datas/devdocs/npm/packages-and-modules/Using npm packages in your projects.md",
+      "updatedAt": "2026-03-10T08:48:47.454Z"
+    },
+    "using-private-packages-in-a-ci-cd-workflow": {
+      "hash": "34c5fa1d",
+      "file": "datas/devdocs/npm/integrations/Using private packages in a CI-CD workflow.md",
+      "updatedAt": "2026-03-10T08:48:47.457Z"
+    },
+    "verifying-registry-signatures": {
+      "hash": "e865b8de",
+      "file": "datas/devdocs/npm/packages-and-modules/Verifying ECDSA registry signatures.md",
+      "updatedAt": "2026-03-10T08:48:47.462Z"
+    },
+    "viewing-downloading-and-emailing-receipts-for-your-user-account": {
+      "hash": "53337027",
+      "file": "datas/devdocs/npm/getting-started/Viewing, downloading, and emailing receipts for your npm user account.md",
+      "updatedAt": "2026-03-10T08:48:47.465Z"
+    },
+    "viewing-downloading-and-emailing-receipts-for-your-organization": {
+      "hash": "ac982656",
+      "file": "datas/devdocs/npm/organizations/Viewing, downloading, and emailing receipts for your organization.md",
+      "updatedAt": "2026-03-10T08:48:47.468Z"
+    },
+    "cli/v10/using-npm/workspaces": {
+      "hash": "ec63f162",
+      "file": "datas/devdocs/npm/cli/workspaces.md",
+      "updatedAt": "2026-03-10T08:48:47.470Z"
+    }
+  }
+}

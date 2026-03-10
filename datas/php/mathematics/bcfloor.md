@@ -1,0 +1,54 @@
+# bcfloor
+
+Source: https://devdocs.io/php/function.bcfloor
+
+(PHP 8 >= 8.4.0)
+
+bcfloor — Round down arbitrary precision number
+
+### Description
+
+```
+bcfloor(string $num): string
+```
+
+Returns the next lowest integer value by rounding down num if necessary.
+
+### Parameters
+
+### Return Values
+
+Returns a numeric string representing num rounded down to the nearest integer.
+
+### Errors/Exceptions
+
+This function throws a ValueError if num is not a well-formed BCMath numeric string.
+
+### Examples
+
+Example #1 bcfloor() example
+
+```
+<?php
+var_dump(bcfloor('4.3'));
+var_dump(bcfloor('9.999'));
+var_dump(bcfloor('-3.14'));
+?>
+```
+
+The above example will output:
+
+```
+string(1) "4"
+string(1) "9"
+string(2) "-4"
+```
+
+### See Also
+
+- bcceil() - Round up arbitrary precision number
+- bcround() - Round arbitrary precision number
+- BcMath\Number::floor() - Rounds down an arbitrary precision number
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.bcfloor.php

@@ -1,0 +1,122 @@
+# array_walk
+
+Source: https://devdocs.io/php/function.array-walk
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+array_walk — Apply a user supplied function to every member of an array
+
+### Description
+
+```
+array_walk(array|object &$array, callable $callback, mixed $arg = null): true
+```
+
+Applies the user-defined callback function to each element of the array array.
+
+array_walk() is not affected by the internal array pointer of array. array_walk() will walk through the entire array regardless of pointer position.
+
+### Parameters
+
+The input array.
+
+Typically, callback takes on two parameters. The array parameter's value being the first, and the key/index second.
+
+Note:
+
+If callback needs to be working with the actual values of the array, specify the first parameter of callback as a reference. Then, any changes made to those elements will be made in the original array itself.
+
+Note:
+
+Many internal functions (for example strtolower()) will throw if more than the expected number of arguments are passed in and are not usable directly as a callback.
+
+Only the values of the array may potentially be changed; its structure cannot be altered, i.e., the programmer cannot add, unset or reorder elements. If the callback does not respect this requirement, the behavior of this function is undefined, and unpredictable.
+
+If the optional arg parameter is supplied, it will be passed as the third parameter to the callback.
+
+### Return Values
+
+Always returns true.
+
+### Errors/Exceptions
+
+As of PHP 7.1.0, an ArgumentCountError will be thrown if the callback function requires more than 2 parameters (the value and key of the array member), or more than 3 parameters if the arg is also passed. Previously, in this case an error of level E_WARNING would be generated each time array_walk() calls callback.
+
+### Changelog
+
+### Examples
+
+Example #1 array_walk() example
+
+```
+<?php
+$fruits = array("d" => "lemon", "a" => "orange", "b" => "banana", "c" => "apple");
+
+function test_alter(&$item1, $key, $prefix)
+{
+    $item1 = "$prefix: $item1";
+}
+
+function test_print($item2, $key)
+{
+    echo "$key. $item2\n";
+}
+
+echo "Before ...:\n";
+array_walk($fruits, 'test_print');
+
+array_walk($fruits, 'test_alter', 'fruit');
+echo "... and after:\n";
+
+array_walk($fruits, 'test_print');
+?>
+```
+
+The above example will output:
+
+```
+Before ...:
+d. lemon
+a. orange
+b. banana
+c. apple
+... and after:
+d. fruit: lemon
+a. fruit: orange
+b. fruit: banana
+c. fruit: apple
+```
+
+Example #2 array_walk() example using anonymous function
+
+```
+<?php
+$elements = ['a', 'b', 'c'];
+
+array_walk($elements, function ($value, $key) {
+  echo "{$key} => {$value}\n";
+});
+
+?>
+```
+
+The above example will output:
+
+```
+0 => a
+1 => b
+2 => c
+```
+
+### See Also
+
+- array_walk_recursive() - Apply a user function recursively to every member of an array
+- iterator_apply() - Call a function for every element in an iterator
+- list() - Assign variables as if they were an array
+- each() - Return the current key and value pair from an array and advance the array cursor
+- call_user_func_array() - Call a callback with an array of parameters
+- array_map() - Applies the callback to the elements of the given arrays
+- foreach
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.array-walk.php

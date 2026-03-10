@@ -1,0 +1,38 @@
+# openssl_error_string
+
+Source: https://devdocs.io/php/function.openssl-error-string
+
+(PHP 4 >= 4.0.6, PHP 5, PHP 7, PHP 8)
+
+openssl_error_string — Return openSSL error message
+
+### Description
+
+```
+openssl_error_string(): string|false
+```
+
+openssl_error_string() returns the last error from the openSSL library. Error messages are queued, so this function should be called multiple times to collect all of the information. The last error will be the most recent one.
+
+### Parameters
+
+This function has no parameters.
+
+### Return Values
+
+Returns an error message string, or false if there are no more error messages to return.
+
+### Examples
+
+Example #1 openssl_error_string() example
+
+```
+<?php
+// lets assume you just called an openssl function that failed
+while ($msg = openssl_error_string())
+    echo $msg . "<br />\n";
+?>
+```
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.openssl-error-string.php

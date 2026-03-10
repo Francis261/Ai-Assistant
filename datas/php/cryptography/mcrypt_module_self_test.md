@@ -1,0 +1,48 @@
+# mcrypt_module_self_test
+
+Source: https://devdocs.io/php/function.mcrypt-module-self-test
+
+(PHP 4 >= 4.0.2, PHP 5, PHP 7 < 7.2.0, PECL mcrypt >= 1.0.0)
+
+mcrypt_module_self_test — This function runs a self test on the specified module
+
+This function has been DEPRECATED as of PHP 7.1.0 and REMOVED as of PHP 7.2.0. Relying on this function is highly discouraged.
+
+### Description
+
+```
+mcrypt_module_self_test(string $algorithm, string $lib_dir = ?): bool
+```
+
+This function runs the self test on the algorithm specified.
+
+### Parameters
+
+One of the MCRYPT_ciphername constants, or the name of the algorithm as string.
+
+The optional lib_dir parameter can contain the location where the algorithm module is on the system.
+
+### Return Values
+
+The function returns true if the self test succeeds, or false when it fails.
+
+### Examples
+
+Example #1 mcrypt_module_self_test() example
+
+```
+<?php
+var_dump(mcrypt_module_self_test(MCRYPT_RIJNDAEL_128)) . "\n";
+var_dump(mcrypt_module_self_test(MCRYPT_BOGUS_CYPHER));
+?>
+```
+
+The above example will output:
+
+```
+bool(true)
+bool(false)
+```
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.mcrypt-module-self-test.php

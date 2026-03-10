@@ -1,0 +1,47 @@
+# yaml_parse_file
+
+Source: https://devdocs.io/php/function.yaml-parse-file
+
+(PECL yaml >= 0.4.0)
+
+yaml_parse_file — Parse a YAML stream from a file
+
+### Description
+
+```
+yaml_parse_file(
+ string $filename,
+ int $pos = 0,
+ int &$ndocs = ?,
+ array $callbacks = null
+): mixed
+```
+
+Convert all or part of a YAML document stream read from a file to a PHP variable.
+
+### Parameters
+
+Path to the file.
+
+Document to extract from stream (-1 for all documents, 0 for first document, ...).
+
+If ndocs is provided, then it is filled with the number of documents found in stream.
+
+Content handlers for YAML nodes. Associative array of YAML tag => callable mappings. See parse callbacks for more details.
+
+### Return Values
+
+Returns the value encoded in filename in appropriate PHP type or false on failure. If pos is -1 an array will be returned with one entry for each document found in the stream.
+
+### Notes
+
+Processing untrusted user input with yaml_parse_file() is dangerous if the use of unserialize() is enabled for nodes using the !php/object tag. This behavior can be disabled by using the yaml.decode_php ini setting.
+
+### See Also
+
+- yaml_parse() - Parse a YAML stream
+- yaml_parse_url() - Parse a Yaml stream from a URL
+- yaml_emit() - Returns the YAML representation of a value
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.yaml-parse-file.php

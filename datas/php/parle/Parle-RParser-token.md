@@ -1,0 +1,26 @@
+# Parle\RParser::token
+
+Source: https://devdocs.io/php/parle-rparser.token
+
+(PECL parle >= 0.7.0)
+
+Parle\RParser::token — Declare a token
+
+### Description
+
+```
+public Parle\RParser::token(string $tok): void
+```
+
+Declare a terminal to be used in the grammar.
+
+### Parameters
+
+Token name.
+
+### Return Values
+
+No value is returned.
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/parle-rparser.token.php

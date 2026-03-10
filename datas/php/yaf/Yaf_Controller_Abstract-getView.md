@@ -1,0 +1,24 @@
+# Yaf_Controller_Abstract::getView
+
+Source: https://devdocs.io/php/yaf-controller-abstract.getview
+
+(Yaf >=1.0.0)
+
+Yaf_Controller_Abstract::getView — Retrieve the view engine
+
+### Description
+
+```
+public Yaf_Controller_Abstract::getView(): Yaf_View_Interface
+```
+
+retrieve view engine
+
+### Parameters
+
+This function has no parameters.
+
+### Return Values
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/yaf-controller-abstract.getview.php

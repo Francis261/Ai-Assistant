@@ -1,0 +1,1662 @@
+[
+  {
+    "path": "changes/index#considering",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "changes/index#past",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "changes/index#planned",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-assetsdir",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-assetsinlinelimit",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-chunksizewarninglimit",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-commonjsoptions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-copypublicdir",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-csscodesplit",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-cssminify",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-csstarget",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-dynamicimportvarsoptions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-emitassets",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-emptyoutdir",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-lib",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-license",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-manifest",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-minify",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-modulepreload",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-outdir",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-polyfillmodulepreload",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-reportcompressedsize",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-rollupoptions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-sourcemap",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-ssr",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-ssremitassets",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-ssrmanifest",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-target",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-terseroptions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-watch",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/build-options#build-write",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/build#advanced-base-options",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/build#browser-compatibility",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/build#chunking-strategy",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/build#css-support",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/build#customizing-the-build",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/build#library-mode",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/build#load-error-handling",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/build#multi-page-app",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/build#public-base-path",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/build#rebuild-on-files-changes",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/build#relative-base",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/cli#build",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/cli#dev-server",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/cli#others",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/cli#vite",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/cli#vite-build",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/cli#vite-optimize",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/cli#vite-preview",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/index#async-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/index#conditional-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/index#config-intellisense",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/index#debugging-the-config-file-on-vs-code",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/index#using-environment-variables-in-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/dep-optimization-options#optimizedeps-disabled",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/dep-optimization-options#optimizedeps-entries",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/dep-optimization-options#optimizedeps-esbuildoptions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/dep-optimization-options#optimizedeps-exclude",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/dep-optimization-options#optimizedeps-force",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/dep-optimization-options#optimizedeps-holduntilcrawlend",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/dep-optimization-options#optimizedeps-include",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/dep-optimization-options#optimizedeps-needsinterop",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/dep-optimization-options#optimizedeps-nodiscovery",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/dep-pre-bundling#automatic-dependency-discovery",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/dep-pre-bundling#browser-cache",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/dep-pre-bundling#caching",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/dep-pre-bundling#customizing-the-behavior",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/dep-pre-bundling#file-system-cache",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/dep-pre-bundling#monorepos-and-linked-dependencies",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/dep-pre-bundling#the-why",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#azure-static-web-apps",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#building-the-app",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#cloudflare-pages",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#cloudflare-pages-via-wrangler",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#cloudflare-pages-with-git",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#flightcontrol",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#github-pages",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#gitlab-pages-and-gitlab-ci",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#google-firebase",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#kinsta-static-site-hosting",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#netlify",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#netlify-cli",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#netlify-with-git",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#render",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#surge",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#testing-the-app-locally",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#vercel",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#vercel-cli",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#vercel-for-git",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#xmit-static-site-hosting",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/static-deploy#zephyr-cloud",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/env-and-mode#env-files",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/env-and-mode#built-in-constants",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/env-and-mode#env-variables",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/env-and-mode#html-constant-replacement",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/env-and-mode#intellisense-for-typescript",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/env-and-mode#modes",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/env-and-mode#node-env-and-modes",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-frameworks#devenvironment-communication-levels",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-frameworks#environment-agnostic-code",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-frameworks#environments-during-build",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-frameworks#fetchabledevenvironment",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-frameworks#raw-devenvironment",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-frameworks#runnabledevenvironment",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-plugins#accessing-the-current-environment-in-hooks",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-plugins#application-plugin-communication",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-plugins#configuring-environment-using-hooks",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-plugins#environment-in-build-hooks",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-plugins#example-usage",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-plugins#managing-the-application-instances",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-plugins#per-environment-plugins",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-plugins#per-environment-state-in-plugins",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-plugins#registering-new-environments-using-hooks",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-plugins#shared-plugins-during-build",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-plugins#the-hotupdate-hook",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-runtimes#creating-a-new-environment-factory",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-runtimes#environment-factories",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-runtimes#moduleevaluator",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-runtimes#modulerunner",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-runtimes#modulerunneroptions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-runtimes#modulerunnertransport",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment#backward-compatibility",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment#closing-the-gap-between-build-and-dev",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment#custom-environment-instances",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment#environments-configuration",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment#formalizing-environments",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment#target-users",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#nonce-random",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#import-inlining-and-rebasing",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#accessing-the-webassembly-module",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#async-chunk-loading-optimization",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#build-optimizations",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#client-types",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#content-security-policy-csp",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#css",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#css-code-splitting",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#css-modules",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#css-pre-processors",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#data",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#disabling-css-injection-into-the-page",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#dynamic-import",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#fetching-the-module-in-node-js",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#frameworks",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#glob-import",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#glob-import-caveats",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#hot-module-replacement",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#html",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#import-with-constructors",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#import-with-query-suffixes",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#json",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#jsx",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#license",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#lightning-css",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#multiple-patterns",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#negative-patterns",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#npm-dependency-resolving-and-pre-bundling",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#postcss",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#preload-directives-generation",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#static-assets",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#transpile-only",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#typescript",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#typescript-compiler-options",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#web-workers",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/features#webassembly",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/index#browser-support",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/index#command-line-interface",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/index#community",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/index#community-templates",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/index#index-html-and-project-root",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/index#manual-installation",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/index#overview",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/index#scaffolding-your-first-vite-project",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/index#trying-vite-online",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/index#using-unreleased-commits",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-hmr#further-reading",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-hmr#hot-accept-cb",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-hmr#hot-accept-deps-cb",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-hmr#hot-data",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-hmr#hot-decline",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-hmr#hot-dispose-cb",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-hmr#hot-invalidate-message-string",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-hmr#hot-off-event-cb",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-hmr#hot-on-event-cb",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-hmr#hot-prune-cb",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-hmr#hot-send-event-data",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-hmr#intellisense-for-typescript",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-hmr#required-conditional-guard",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "changes/hotupdate-hook#migration-guide",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "changes/hotupdate-hook#motivation",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-javascript#build",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-javascript#createserver",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-javascript#inlineconfig",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-javascript#loadconfigfromfile",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-javascript#loadenv",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-javascript#mergeconfig",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-javascript#normalizepath",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-javascript#preprocesscss",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-javascript#preview",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-javascript#previewserver",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-javascript#resolveconfig",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-javascript#resolvedconfig",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-javascript#searchforworkspaceroot",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-javascript#transformwithesbuild",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-javascript#vitedevserver",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/migration#advanced",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/migration#default-browser-target-change",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/migration#general-changes",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/migration#migration-from-v5",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/migration#node-js-support",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/migration#removed-deprecated-features",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/migration#removed-sass-legacy-api-support",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "changes/per-environment-apis#migration-guide",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "changes/per-environment-apis#motivation",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/performance#audit-configured-vite-plugins",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/performance#avoid-barrel-files",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/performance#reduce-resolve-operations",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/performance#review-your-browser-setup",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/performance#use-lesser-or-native-tooling",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/performance#warm-up-frequently-used-files",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#authoring-a-plugin",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#client-to-server",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#client-server-communication",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#conditional-application",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#configresolved",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#configurepreviewserver",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#configureserver",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#conventions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#filtering-include-exclude-pattern",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#handlehotupdate",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#hook-filters",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#importing-a-virtual-file",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#path-normalization",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#plugin-ordering",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#plugins-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#rollup-plugin-compatibility",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#server-to-client",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#simple-examples",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#transformindexhtml",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#transforming-custom-file-types",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#typescript-for-custom-events",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#universal-hooks",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#virtual-modules-convention",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-plugin#vite-specific-hooks",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/preview-options#preview-allowedhosts",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/preview-options#preview-cors",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/preview-options#preview-headers",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/preview-options#preview-host",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/preview-options#preview-https",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/preview-options#preview-open",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/preview-options#preview-port",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/preview-options#preview-proxy",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/preview-options#preview-strictport",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/philosophy#a-pragmatic-approach-to-performance",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/philosophy#an-active-ecosystem",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/philosophy#building-frameworks-on-top-of-vite",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/philosophy#lean-extendable-core",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/philosophy#pushing-the-modern-web",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "releases#deprecations",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "releases#esbuild",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "releases#experimental-features",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "releases#node-js-non-lts-versions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "releases#pre-releases",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "releases#release-cycle",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "releases#semantic-versioning-edge-cases",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "releases#supported-versions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "releases#typescript-definitions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#api-differences",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#benefits-of-trying-rolldown-vite",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#compatibility-layer-for-esbuild-options",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#converting-content-to-javascript-in-load-or-transform-hooks",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#detecting-rolldown-vite",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#enabling-native-plugins",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#future-plans",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#hook-filter-feature",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#how-to-try-rolldown",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#ignoring-option-validation-in-rolldown",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#known-limitations",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#option-validation-warnings",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#overview-of-major-changes",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#performance",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#plugin-framework-authors-guide",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#reporting-issues",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#transformwithesbuild-requires-esbuild-to-be-installed-separately",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#utilizing-oxc-s-react-refresh-transform",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#versioning-policy",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#what-is-rolldown",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#why-introducing-a-full-bundle-mode",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#why-vite-is-migrating-to-rolldown",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/rolldown#withfilter-wrapper",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-allowedhosts",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-cors",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-fs-allow",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-fs-deny",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-fs-strict",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-headers",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-hmr",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-host",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-https",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-middlewaremode",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-open",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-origin",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-port",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-proxy",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-sourcemapignorelist",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-strictport",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-warmup",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/server-options#server-watch",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/ssr#building-for-production",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/ssr#conditional-logic",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/ssr#example-projects",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/ssr#generating-preload-directives",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/ssr#pre-rendering-ssg",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/ssr#setting-up-the-dev-server",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/ssr#source-structure",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/ssr#ssr-bundle",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/ssr#ssr-externals",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/ssr#ssr-resolve-conditions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/ssr#ssr-target",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/ssr#ssr-specific-plugin-logic",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/ssr#vite-cli",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#apptype",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#assetsinclude",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#base",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#cachedir",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#clearscreen",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#css-devsourcemap",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#css-lightningcss",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#css-modules",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#css-postcss",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#css-preprocessormaxworkers",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#css-preprocessoroptions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#css-preprocessoroptions-extension-additionaldata",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#css-transformer",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#customlogger",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#define",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#envdir",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#envprefix",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#esbuild",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#future",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#html-cspnonce",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#json-namedexports",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#json-stringify",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#loglevel",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#mode",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#plugins",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#publicdir",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#resolve-alias",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#resolve-conditions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#resolve-dedupe",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#resolve-extensions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#resolve-mainfields",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#resolve-preservesymlinks",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/shared-options#root",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "changes/shared-plugins-during-build#migration-guide",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "changes/shared-plugins-during-build#motivation",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/ssr-options#ssr-external",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/ssr-options#ssr-noexternal",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/ssr-options#ssr-resolve-conditions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/ssr-options#ssr-resolve-externalconditions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/ssr-options#ssr-resolve-mainfields",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/ssr-options#ssr-target",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "changes/ssr-using-modulerunner#migration-guide",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "changes/ssr-using-modulerunner#motivation",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/assets#explicit-inline-handling",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/assets#explicit-url-imports",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/assets#importing-asset-as-string",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/assets#importing-asset-as-url",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/assets#importing-script-as-a-worker",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/assets#new-url-url-import-meta-url",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/assets#the-public-directory",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "changes/this-environment-in-hooks#migration-guide",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "changes/this-environment-in-hooks#motivation",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#_431-request-header-fields-too-large",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#a-full-reload-happens-instead-of-hmr",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#browser-extensions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#build",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#built-file-does-not-work-because-of-cors-error",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#cli",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#cross-drive-links-on-windows",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#dev-containers-vs-code-port-forwarding",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#dev-server",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#error-cannot-find-module-c-foo-bar-baz-vite-bin-vite-js",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#failed-to-fetch-dynamically-imported-module-error",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#hmr",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#module-externalized-for-browser-compatibility",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#network-requests-stop-loading",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#no-such-file-or-directory-error-due-to-case-sensitivity",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#optimized-dependencies",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#others",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#outdated-pre-bundled-deps-when-linking-to-a-local-package",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#performance-bottlenecks",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#requests-are-stalled-forever",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#syntax-error-type-error-happens",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#this-package-is-esm-only",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#vite-detects-a-file-change-but-the-hmr-is-not-working",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/troubleshooting#vite-does-not-detect-a-file-change",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-instances#accessing-the-environments",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-instances#devenvironment-class",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/api-environment-instances#separate-module-graphs",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/using-plugins#adding-a-plugin",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/using-plugins#building-plugins",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/using-plugins#conditional-application",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/using-plugins#enforcing-plugin-ordering",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/using-plugins#finding-plugins",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/why#how-vite-relates-to-other-unbundled-build-tools",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/why#slow-server-start",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/why#slow-updates",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/why#the-problems",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/why#why-bundle-for-production",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "guide/why#why-not-bundle-with-esbuild",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/worker-options#worker-format",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/worker-options#worker-plugins",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "config/worker-options#worker-rollupoptions",
+    "error": "content missing from db.json"
+  }
+]

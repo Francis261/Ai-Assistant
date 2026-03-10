@@ -1,0 +1,56 @@
+# fgetc
+
+Source: https://devdocs.io/php/function.fgetc
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+fgetc — Gets character from file pointer
+
+### Description
+
+```
+fgetc(resource $stream): string|false
+```
+
+Gets a character from the given file pointer.
+
+### Parameters
+
+The file pointer must be valid, and must point to a file successfully opened by fopen() or fsockopen() (and not yet closed by fclose()).
+
+### Return Values
+
+Returns a string containing a single character read from the file pointed to by stream. Returns false on EOF.
+
+This function may return Boolean false, but may also return a non-Boolean value which evaluates to false. Please read the section on Booleans for more information. Use the === operator for testing the return value of this function.
+
+### Examples
+
+Example #1 A fgetc() example
+
+```
+<?php
+$fp = fopen('somefile.txt', 'r');
+if (!$fp) {
+    echo 'Could not open file somefile.txt';
+}
+while (false !== ($char = fgetc($fp))) {
+    echo "$char\n";
+}
+?>
+```
+
+### Notes
+
+Note: This function is binary-safe.
+
+### See Also
+
+- fread() - Binary-safe file read
+- fopen() - Opens file or URL
+- popen() - Opens process file pointer
+- fsockopen() - Open Internet or Unix domain socket connection
+- fgets() - Gets line from file pointer
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.fgetc.php

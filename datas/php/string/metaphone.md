@@ -1,0 +1,90 @@
+# metaphone
+
+Source: https://devdocs.io/php/function.metaphone
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+metaphone — Calculate the metaphone key of a string
+
+### Description
+
+```
+metaphone(string $string, int $max_phonemes = 0): string
+```
+
+Calculates the metaphone key of string.
+
+Similar to soundex() metaphone creates the same key for similar sounding words. It's more accurate than soundex() as it knows the basic rules of English pronunciation. The metaphone generated keys are of variable length.
+
+Metaphone was developed by Lawrence Philips <lphilips at verity dot com>. It is described in ["Practical Algorithms for Programmers", Binstock & Rex, Addison Wesley, 1995].
+
+### Parameters
+
+The input string.
+
+This parameter restricts the returned metaphone key to max_phonemes characters in length. However, the resulting phonemes are always transcribed completely, so the resulting string length may be slightly longer than max_phonemes. The default value of 0 means no restriction.
+
+### Return Values
+
+Returns the metaphone key as a string.
+
+### Changelog
+
+### Examples
+
+Example #1 metaphone() basic example
+
+```
+<?php
+var_dump(metaphone('programming'));
+var_dump(metaphone('programmer'));
+?>
+```
+
+The above example will output:
+
+```
+string(7) "PRKRMNK"
+string(6) "PRKRMR"
+```
+
+Example #2 Using the max_phonemes parameter
+
+```
+<?php
+var_dump(metaphone('programming', 5));
+var_dump(metaphone('programmer', 5));
+?>
+```
+
+The above example will output:
+
+```
+string(5) "PRKRM"
+string(5) "PRKRM"
+```
+
+Example #3 Using the max_phonemes parameter
+
+In this example, metaphone() is advised to produce a string of five characters, but that would require to split the final phoneme ('x' is supposed to be transcribed to 'KS'), so the function returns a string with six characters.
+
+```
+<?php
+var_dump(metaphone('Asterix', 5));
+?>
+```
+
+The above example will output:
+
+```
+string(6) "ASTRKS"
+```
+
+### See Also
+
+- levenshtein() - Calculate Levenshtein distance between two strings
+- similar_text() - Calculate the similarity between two strings
+- soundex() - Calculate the soundex key of a string
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.metaphone.php

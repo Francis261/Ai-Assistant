@@ -1,0 +1,44 @@
+# snmp_get_valueretrieval
+
+Source: https://devdocs.io/php/function.snmp-get-valueretrieval
+
+(PHP 4 >= 4.3.3, PHP 5, PHP 7, PHP 8)
+
+snmp_get_valueretrieval — Return the method how the SNMP values will be returned
+
+### Description
+
+```
+snmp_get_valueretrieval(): int
+```
+
+### Parameters
+
+This function has no parameters.
+
+### Return Values
+
+OR-ed combitantion of constants ( SNMP_VALUE_LIBRARY or SNMP_VALUE_PLAIN ) with possible SNMP_VALUE_OBJECT set.
+
+### Examples
+
+Example #1 Using snmp_get_valueretrieval()
+
+```
+<?php
+ $ret = snmpget('localhost', 'public', 'IF-MIB::ifName.1');
+ if (snmp_get_valueretrieval() & SNMP_VALUE_OBJECT) {
+   echo $ret->value;
+ } else {
+   echo $ret;
+ }
+?>
+```
+
+### See Also
+
+- snmp_set_valueretrieval() - Specify the method how the SNMP values will be returned
+- Predefined Constants
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.snmp-get-valueretrieval.php

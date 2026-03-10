@@ -1,0 +1,54 @@
+# bcceil
+
+Source: https://devdocs.io/php/function.bcceil
+
+(PHP 8 >= 8.4.0)
+
+bcceil — Round up arbitrary precision number
+
+### Description
+
+```
+bcceil(string $num): string
+```
+
+Returns the next highest integer value by rounding up num if necessary.
+
+### Parameters
+
+### Return Values
+
+Returns a numeric string representing num rounded up to the nearest integer.
+
+### Errors/Exceptions
+
+This function throws a ValueError if num is not a well-formed BCMath numeric string.
+
+### Examples
+
+Example #1 bcceil() example
+
+```
+<?php
+var_dump(bcceil('4.3'));
+var_dump(bcceil('9.999'));
+var_dump(bcceil('-3.14'));
+?>
+```
+
+The above example will output:
+
+```
+string(1) "5"
+string(2) "10"
+string(2) "-3"
+```
+
+### See Also
+
+- bcfloor() - Round down arbitrary precision number
+- bcround() - Round arbitrary precision number
+- BcMath\Number::ceil() - Rounds up an arbitrary precision number
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.bcceil.php

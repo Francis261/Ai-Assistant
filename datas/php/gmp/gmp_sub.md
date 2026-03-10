@@ -1,0 +1,49 @@
+# gmp_sub
+
+Source: https://devdocs.io/php/function.gmp-sub
+
+(PHP 4 >= 4.0.4, PHP 5, PHP 7, PHP 8)
+
+gmp_sub — Subtract numbers
+
+### Description
+
+```
+gmp_sub(GMP|int|string $num1, GMP|int|string $num2): GMP
+```
+
+Subtracts num2 from num1 and returns the result.
+
+### Parameters
+
+The number being subtracted from.
+
+A GMP object, an int, or a string that can be interpreted as a number following the same logic as if the string was used in gmp_init() with automatic base detection (i.e. when base is equal to 0).
+
+The number subtracted from num1.
+
+A GMP object, an int, or a string that can be interpreted as a number following the same logic as if the string was used in gmp_init() with automatic base detection (i.e. when base is equal to 0).
+
+### Return Values
+
+A GMP object.
+
+### Examples
+
+Example #1 gmp_sub() example
+
+```
+<?php
+$sub = gmp_sub("281474976710656", "4294967296"); // 2^48 - 2^32
+echo gmp_strval($sub) . "\n";
+?>
+```
+
+The above example will output:
+
+```
+281470681743360
+```
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.gmp-sub.php

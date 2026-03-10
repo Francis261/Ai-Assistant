@@ -1,0 +1,53 @@
+# Date.prototype.getUTCMilliseconds()
+
+Source: https://devdocs.io/javascript/global_objects/date/getutcmilliseconds
+
+The getUTCMilliseconds() method of Date instances returns the milliseconds for this date according to universal time.
+
+## Try it
+
+```
+const exampleDate = new Date("2018-01-02T03:04:05.678Z"); // 2 January 2018, 03:04:05.678 (UTC)
+
+console.log(exampleDate.getUTCMilliseconds());
+// Expected output: 678
+```
+
+## Syntax
+
+```
+getUTCMilliseconds()
+```
+
+### Parameters
+
+None.
+
+### Return value
+
+An integer, between 0 and 999, representing the milliseconds for the given date according to universal time. Returns NaN if the date is invalid.
+
+Not to be confused with the timestamp. To get the total milliseconds since the epoch, use the getTime() method.
+
+## Examples
+
+### Using getUTCMilliseconds()
+
+The following example assigns the milliseconds portion of the current time to the variable milliseconds.
+
+```
+const today = new Date();
+const milliseconds = today.getUTCMilliseconds();
+```
+
+## Specifications
+
+## Browser compatibility
+
+## See also
+
+- Date.prototype.getMilliseconds()
+- Date.prototype.setUTCMilliseconds()
+
+© 2005–2025 MDN contributors.Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCMilliseconds

@@ -1,0 +1,117 @@
+# get_class_vars
+
+Source: https://devdocs.io/php/function.get-class-vars
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+get_class_vars — Get the default properties of the class
+
+### Description
+
+```
+get_class_vars(string $class): array
+```
+
+Get the default properties of the given class.
+
+### Parameters
+
+The class name
+
+### Return Values
+
+Returns an associative array of declared properties visible from the current scope, with their default value. The resulting array elements are in the form of varname => value. In case of an error, it returns false.
+
+### Examples
+
+Example #1 get_class_vars() example
+
+```
+<?php
+
+class MyClass
+{
+    public $var1; // This has no explicit default value (technically it has NULL as a default)...
+    public $var2 = "xyz";
+    public $var3 = 100;
+    private $var4;
+
+    public function __construct()
+    {
+        // Change some properties
+        $this->var1 = "foo";
+        $this->var2 = "bar";
+        return true;
+    }
+}
+
+$my_class = new MyClass();
+
+$class_vars = get_class_vars(get_class($my_class));
+
+foreach ($class_vars as $name => $value) {
+    echo "{$name}: ", var_export($value, true), "\n";
+}
+
+?>
+```
+
+The above example will output:
+
+```
+var1: NULL
+var2: 'xyz'
+var3: 100
+```
+
+Example #2 get_class_vars() and scoping behaviour
+
+```
+<?php
+
+function format($array)
+{
+    return implode('|', array_keys($array)) . "\r\n";
+}
+
+class TestCase
+{
+    public $a    = 1;
+    protected $b = 2;
+    private $c   = 3;
+
+    public static function expose()
+    {
+        echo format(get_class_vars(__CLASS__));
+    }
+}
+
+TestCase::expose();
+echo format(get_class_vars('TestCase'));
+
+?>
+```
+
+The above example will output:
+
+```
+// 5.0.0
+a| * b| TestCase c
+a| * b| TestCase c
+
+// 5.0.1 - 5.0.2
+a|b|c
+a|b|c
+
+// 5.0.3 +
+a|b|c
+a
+```
+
+### See Also
+
+- get_class_methods() - Gets the class methods' names
+- get_object_vars() - Gets the properties of the given object
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.get-class-vars.php

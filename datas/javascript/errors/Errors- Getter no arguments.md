@@ -1,0 +1,59 @@
+# SyntaxError: getter functions must have no arguments
+
+Source: https://devdocs.io/javascript/errors/getter_no_arguments
+
+The JavaScript exception "getter functions must have no arguments" occurs when a getter is declared and the parameter list is non-empty.
+
+## Message
+
+```
+SyntaxError: Getter must not have any formal parameters. (V8-based)
+SyntaxError: getter functions must have no arguments (Firefox)
+SyntaxError: Unexpected identifier 'x'. getter functions must have no parameters. (Safari)
+```
+
+## Error type
+
+## What went wrong?
+
+The get property syntax looks like a function, but it is stricter and not all function syntax is allowed. A getter is always invoked with no arguments, so defining it with any parameter is likely an error.
+
+Note that this error only applies to property getters using the get syntax. If you define the getter using Object.defineProperty(), etc., the getter is defined as a normal function, although it's likely still an error if the getter expects any arguments, as it will be called without any.
+
+## Examples
+
+### Invalid cases
+
+```
+const obj = {
+  get value(type) {
+    return type === "string" ? String(Math.random()) : Math.random();
+  },
+};
+```
+
+### Valid cases
+
+```
+// Remove the parameter
+const obj = {
+  get value() {
+    return Math.random();
+  },
+};
+
+// Use a normal method, if you need a parameter
+const obj = {
+  getValue(type) {
+    return type === "string" ? String(Math.random()) : Math.random();
+  },
+};
+```
+
+## See also
+
+- Functions
+- get
+
+© 2005–2025 MDN contributors.Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Getter_no_arguments

@@ -1,0 +1,32 @@
+# msg_queue_exists
+
+Source: https://devdocs.io/php/function.msg-queue-exists
+
+(PHP 5 >= 5.3.0, PHP 7, PHP 8)
+
+msg_queue_exists — Check whether a message queue exists
+
+### Description
+
+```
+msg_queue_exists(int $key): bool
+```
+
+Checks whether the message queue key exists.
+
+### Parameters
+
+Queue key.
+
+### Return Values
+
+Returns true on success or false on failure.
+
+### See Also
+
+- msg_remove_queue() - Destroy a message queue
+- msg_receive() - Receive a message from a message queue
+- msg_stat_queue() - Returns information from the message queue data structure
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.msg-queue-exists.php

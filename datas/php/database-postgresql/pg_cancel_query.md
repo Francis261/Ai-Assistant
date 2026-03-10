@@ -1,0 +1,63 @@
+# pg_cancel_query
+
+Source: https://devdocs.io/php/function.pg-cancel-query
+
+(PHP 4 >= 4.2.0, PHP 5, PHP 7, PHP 8)
+
+pg_cancel_query — Cancel an asynchronous query
+
+### Description
+
+```
+pg_cancel_query(PgSql\Connection $connection): bool
+```
+
+pg_cancel_query() cancels an asynchronous query sent with pg_send_query(), pg_send_query_params() or pg_send_execute(). You cannot cancel a query executed using pg_query().
+
+### Parameters
+
+An PgSql\Connection instance.
+
+### Return Values
+
+Returns true on success or false on failure.
+
+### Changelog
+
+### Examples
+
+Example #1 pg_cancel_query() example
+
+```
+<?php
+  $dbconn = pg_connect("dbname=publisher") or die("Could not connect");
+
+  if (!pg_connection_busy($dbconn)) {
+      pg_send_query($dbconn, "select * from authors; select count(*) from authors;");
+  }
+  
+  $res1 = pg_get_result($dbconn);
+  echo "First call to pg_get_result(): $res1\n";
+  $rows1 = pg_num_rows($res1);
+  echo "$res1 has $rows1 records\n\n";
+  
+  // Cancel the currently running query.  Will be the second query if it is
+  // still running.
+  pg_cancel_query($dbconn);
+?>
+```
+
+The above example will output:
+
+```
+First call to pg_get_result(): Resource id #3
+Resource id #3 has 3 records
+```
+
+### See Also
+
+- pg_send_query() - Sends asynchronous query
+- pg_connection_busy() - Get connection is busy or not
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.pg-cancel-query.php

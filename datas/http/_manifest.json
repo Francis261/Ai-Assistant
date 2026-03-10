@@ -1,0 +1,1472 @@
+{
+  "category": "http",
+  "docMtime": 1668720049,
+  "generatedAt": "2026-03-10T08:47:27.297Z",
+  "entries": {
+    "rfc9112": {
+      "hash": "406d5d6a",
+      "file": "datas/devdocs/http/rfc-9112-http-1.1/RFC 9112- HTTP-1.1.md",
+      "updatedAt": "2026-03-10T08:47:27.304Z"
+    },
+    "status/100": {
+      "hash": "9a37d33d",
+      "file": "datas/devdocs/http/status/100 Continue.md",
+      "updatedAt": "2026-03-10T08:47:27.403Z"
+    },
+    "status/101": {
+      "hash": "e2157200",
+      "file": "datas/devdocs/http/status/101 Switching Protocols.md",
+      "updatedAt": "2026-03-10T08:47:27.412Z"
+    },
+    "status/103": {
+      "hash": "8f2eafc3",
+      "file": "datas/devdocs/http/status/103 Early Hints.md",
+      "updatedAt": "2026-03-10T08:47:27.426Z"
+    },
+    "status/200": {
+      "hash": "44e1e615",
+      "file": "datas/devdocs/http/status/200 OK.md",
+      "updatedAt": "2026-03-10T08:47:27.431Z"
+    },
+    "status/201": {
+      "hash": "7fcd7f08",
+      "file": "datas/devdocs/http/status/201 Created.md",
+      "updatedAt": "2026-03-10T08:47:27.436Z"
+    },
+    "status/202": {
+      "hash": "44487ba2",
+      "file": "datas/devdocs/http/status/202 Accepted.md",
+      "updatedAt": "2026-03-10T08:47:27.449Z"
+    },
+    "status/203": {
+      "hash": "16d7ca69",
+      "file": "datas/devdocs/http/status/203 Non-Authoritative Information.md",
+      "updatedAt": "2026-03-10T08:47:27.453Z"
+    },
+    "status/204": {
+      "hash": "d6f42958",
+      "file": "datas/devdocs/http/status/204 No Content.md",
+      "updatedAt": "2026-03-10T08:47:27.465Z"
+    },
+    "status/205": {
+      "hash": "40b3f0d6",
+      "file": "datas/devdocs/http/status/205 Reset Content.md",
+      "updatedAt": "2026-03-10T08:47:27.470Z"
+    },
+    "status/206": {
+      "hash": "b82e9ce8",
+      "file": "datas/devdocs/http/status/206 Partial Content.md",
+      "updatedAt": "2026-03-10T08:47:27.473Z"
+    },
+    "status/300": {
+      "hash": "6eb68db2",
+      "file": "datas/devdocs/http/status/300 Multiple Choices.md",
+      "updatedAt": "2026-03-10T08:47:27.479Z"
+    },
+    "status/301": {
+      "hash": "7f687cc3",
+      "file": "datas/devdocs/http/status/301 Moved Permanently.md",
+      "updatedAt": "2026-03-10T08:47:27.483Z"
+    },
+    "status/302": {
+      "hash": "be2f04db",
+      "file": "datas/devdocs/http/status/302 Found.md",
+      "updatedAt": "2026-03-10T08:47:27.488Z"
+    },
+    "status/303": {
+      "hash": "f3f00f8d",
+      "file": "datas/devdocs/http/status/303 See Other.md",
+      "updatedAt": "2026-03-10T08:47:27.492Z"
+    },
+    "status/304": {
+      "hash": "9aff9864",
+      "file": "datas/devdocs/http/status/304 Not Modified.md",
+      "updatedAt": "2026-03-10T08:47:27.495Z"
+    },
+    "status/307": {
+      "hash": "1bcf30a9",
+      "file": "datas/devdocs/http/status/307 Temporary Redirect.md",
+      "updatedAt": "2026-03-10T08:47:27.498Z"
+    },
+    "status/308": {
+      "hash": "1570e7b5",
+      "file": "datas/devdocs/http/status/308 Permanent Redirect.md",
+      "updatedAt": "2026-03-10T08:47:27.502Z"
+    },
+    "status/400": {
+      "hash": "1b8fdd3c",
+      "file": "datas/devdocs/http/status/400 Bad Request.md",
+      "updatedAt": "2026-03-10T08:47:27.505Z"
+    },
+    "status/401": {
+      "hash": "7234a07f",
+      "file": "datas/devdocs/http/status/401 Unauthorized.md",
+      "updatedAt": "2026-03-10T08:47:27.507Z"
+    },
+    "status/402": {
+      "hash": "31aaa0c6",
+      "file": "datas/devdocs/http/status/402 Payment Required.md",
+      "updatedAt": "2026-03-10T08:47:27.511Z"
+    },
+    "status/403": {
+      "hash": "4d14cd47",
+      "file": "datas/devdocs/http/status/403 Forbidden.md",
+      "updatedAt": "2026-03-10T08:47:27.513Z"
+    },
+    "status/404": {
+      "hash": "611ef0cd",
+      "file": "datas/devdocs/http/status/404 Not Found.md",
+      "updatedAt": "2026-03-10T08:47:27.516Z"
+    },
+    "status/405": {
+      "hash": "7321b71d",
+      "file": "datas/devdocs/http/status/405 Method Not Allowed.md",
+      "updatedAt": "2026-03-10T08:47:27.519Z"
+    },
+    "status/406": {
+      "hash": "8d4dbe42",
+      "file": "datas/devdocs/http/status/406 Not Acceptable.md",
+      "updatedAt": "2026-03-10T08:47:27.523Z"
+    },
+    "status/407": {
+      "hash": "e98d15c2",
+      "file": "datas/devdocs/http/status/407 Proxy Authentication Required.md",
+      "updatedAt": "2026-03-10T08:47:27.527Z"
+    },
+    "status/408": {
+      "hash": "1eb50450",
+      "file": "datas/devdocs/http/status/408 Request Timeout.md",
+      "updatedAt": "2026-03-10T08:47:27.531Z"
+    },
+    "status/409": {
+      "hash": "44076fe0",
+      "file": "datas/devdocs/http/status/409 Conflict.md",
+      "updatedAt": "2026-03-10T08:47:27.533Z"
+    },
+    "status/410": {
+      "hash": "aef952f7",
+      "file": "datas/devdocs/http/status/410 Gone.md",
+      "updatedAt": "2026-03-10T08:47:27.537Z"
+    },
+    "status/411": {
+      "hash": "28f4227c",
+      "file": "datas/devdocs/http/status/411 Length Required.md",
+      "updatedAt": "2026-03-10T08:47:27.541Z"
+    },
+    "status/412": {
+      "hash": "857648f8",
+      "file": "datas/devdocs/http/status/412 Precondition Failed.md",
+      "updatedAt": "2026-03-10T08:47:27.545Z"
+    },
+    "status/413": {
+      "hash": "678183cf",
+      "file": "datas/devdocs/http/status/413 Payload Too Large.md",
+      "updatedAt": "2026-03-10T08:47:27.552Z"
+    },
+    "status/414": {
+      "hash": "4ad90608",
+      "file": "datas/devdocs/http/status/414 URI Too Long.md",
+      "updatedAt": "2026-03-10T08:47:27.555Z"
+    },
+    "status/415": {
+      "hash": "2335a115",
+      "file": "datas/devdocs/http/status/415 Unsupported Media Type.md",
+      "updatedAt": "2026-03-10T08:47:27.559Z"
+    },
+    "status/416": {
+      "hash": "6ef93fad",
+      "file": "datas/devdocs/http/status/416 Range Not Satisfiable.md",
+      "updatedAt": "2026-03-10T08:47:27.564Z"
+    },
+    "status/417": {
+      "hash": "e4bfabb8",
+      "file": "datas/devdocs/http/status/417 Expectation Failed.md",
+      "updatedAt": "2026-03-10T08:47:27.567Z"
+    },
+    "status/418": {
+      "hash": "37328a7b",
+      "file": "datas/devdocs/http/status/418 I'm a teapot.md",
+      "updatedAt": "2026-03-10T08:47:27.571Z"
+    },
+    "status/422": {
+      "hash": "8a266106",
+      "file": "datas/devdocs/http/status/422 Unprocessable Entity.md",
+      "updatedAt": "2026-03-10T08:47:27.575Z"
+    },
+    "status/425": {
+      "hash": "9b3853e8",
+      "file": "datas/devdocs/http/status/425 Too Early.md",
+      "updatedAt": "2026-03-10T08:47:27.577Z"
+    },
+    "status/426": {
+      "hash": "2ad55df6",
+      "file": "datas/devdocs/http/status/426 Upgrade Required.md",
+      "updatedAt": "2026-03-10T08:47:27.579Z"
+    },
+    "status/428": {
+      "hash": "8c9cfced",
+      "file": "datas/devdocs/http/status/428 Precondition Required.md",
+      "updatedAt": "2026-03-10T08:47:27.582Z"
+    },
+    "status/429": {
+      "hash": "e9ae8d1e",
+      "file": "datas/devdocs/http/status/429 Too Many Requests.md",
+      "updatedAt": "2026-03-10T08:47:27.584Z"
+    },
+    "status/431": {
+      "hash": "e5695d0e",
+      "file": "datas/devdocs/http/status/431 Request Header Fields Too Large.md",
+      "updatedAt": "2026-03-10T08:47:27.590Z"
+    },
+    "status/451": {
+      "hash": "b655abfb",
+      "file": "datas/devdocs/http/status/451 Unavailable For Legal Reasons.md",
+      "updatedAt": "2026-03-10T08:47:27.593Z"
+    },
+    "status/500": {
+      "hash": "a7eb551e",
+      "file": "datas/devdocs/http/status/500 Internal Server Error.md",
+      "updatedAt": "2026-03-10T08:47:27.597Z"
+    },
+    "status/501": {
+      "hash": "159469e",
+      "file": "datas/devdocs/http/status/501 Not Implemented.md",
+      "updatedAt": "2026-03-10T08:47:27.600Z"
+    },
+    "status/502": {
+      "hash": "9e97113",
+      "file": "datas/devdocs/http/status/502 Bad Gateway.md",
+      "updatedAt": "2026-03-10T08:47:27.602Z"
+    },
+    "status/503": {
+      "hash": "dd4dd235",
+      "file": "datas/devdocs/http/status/503 Service Unavailable.md",
+      "updatedAt": "2026-03-10T08:47:27.606Z"
+    },
+    "status/504": {
+      "hash": "6c190c17",
+      "file": "datas/devdocs/http/status/504 Gateway Timeout.md",
+      "updatedAt": "2026-03-10T08:47:27.609Z"
+    },
+    "status/505": {
+      "hash": "209bc644",
+      "file": "datas/devdocs/http/status/505 HTTP Version Not Supported.md",
+      "updatedAt": "2026-03-10T08:47:27.612Z"
+    },
+    "status/506": {
+      "hash": "d8d0a1f9",
+      "file": "datas/devdocs/http/status/506 Variant Also Negotiates.md",
+      "updatedAt": "2026-03-10T08:47:27.614Z"
+    },
+    "status/507": {
+      "hash": "35ecdd32",
+      "file": "datas/devdocs/http/status/507 Insufficient Storage.md",
+      "updatedAt": "2026-03-10T08:47:27.615Z"
+    },
+    "status/508": {
+      "hash": "79b9e068",
+      "file": "datas/devdocs/http/status/508 Loop Detected.md",
+      "updatedAt": "2026-03-10T08:47:27.617Z"
+    },
+    "status/510": {
+      "hash": "f65cc5dd",
+      "file": "datas/devdocs/http/status/510 Not Extended.md",
+      "updatedAt": "2026-03-10T08:47:27.618Z"
+    },
+    "status/511": {
+      "hash": "8a005525",
+      "file": "datas/devdocs/http/status/511 Network Authentication Required.md",
+      "updatedAt": "2026-03-10T08:47:27.620Z"
+    },
+    "headers/accept": {
+      "hash": "6e51688d",
+      "file": "datas/devdocs/http/headers/Accept.md",
+      "updatedAt": "2026-03-10T08:47:27.623Z"
+    },
+    "headers/accept-ch": {
+      "hash": "df23e02d",
+      "file": "datas/devdocs/http/headers/Accept-CH.md",
+      "updatedAt": "2026-03-10T08:47:27.628Z"
+    },
+    "headers/accept-ch-lifetime": {
+      "hash": "d3fc0e90",
+      "file": "datas/devdocs/http/headers/Accept-CH-Lifetime.md",
+      "updatedAt": "2026-03-10T08:47:27.644Z"
+    },
+    "headers/accept-encoding": {
+      "hash": "78ad105d",
+      "file": "datas/devdocs/http/headers/Accept-Encoding.md",
+      "updatedAt": "2026-03-10T08:47:27.648Z"
+    },
+    "headers/accept-language": {
+      "hash": "87cf6f65",
+      "file": "datas/devdocs/http/headers/Accept-Language.md",
+      "updatedAt": "2026-03-10T08:47:27.653Z"
+    },
+    "headers/accept-patch": {
+      "hash": "e57e2395",
+      "file": "datas/devdocs/http/headers/Accept-Patch.md",
+      "updatedAt": "2026-03-10T08:47:27.658Z"
+    },
+    "headers/accept-post": {
+      "hash": "8aa7a7d6",
+      "file": "datas/devdocs/http/headers/Accept-Post.md",
+      "updatedAt": "2026-03-10T08:47:27.661Z"
+    },
+    "headers/accept-ranges": {
+      "hash": "94d91240",
+      "file": "datas/devdocs/http/headers/Accept-Ranges.md",
+      "updatedAt": "2026-03-10T08:47:27.665Z"
+    },
+    "headers/access-control-allow-credentials": {
+      "hash": "f4def257",
+      "file": "datas/devdocs/http/headers/Access-Control-Allow-Credentials.md",
+      "updatedAt": "2026-03-10T08:47:27.668Z"
+    },
+    "headers/access-control-allow-headers": {
+      "hash": "90cbf83a",
+      "file": "datas/devdocs/http/headers/Access-Control-Allow-Headers.md",
+      "updatedAt": "2026-03-10T08:47:27.671Z"
+    },
+    "headers/access-control-allow-methods": {
+      "hash": "6b913d79",
+      "file": "datas/devdocs/http/headers/Access-Control-Allow-Methods.md",
+      "updatedAt": "2026-03-10T08:47:27.677Z"
+    },
+    "headers/access-control-allow-origin": {
+      "hash": "f53483b6",
+      "file": "datas/devdocs/http/headers/Access-Control-Allow-Origin.md",
+      "updatedAt": "2026-03-10T08:47:27.682Z"
+    },
+    "headers/access-control-expose-headers": {
+      "hash": "33325688",
+      "file": "datas/devdocs/http/headers/Access-Control-Expose-Headers.md",
+      "updatedAt": "2026-03-10T08:47:27.688Z"
+    },
+    "headers/access-control-max-age": {
+      "hash": "e61bdb9b",
+      "file": "datas/devdocs/http/headers/Access-Control-Max-Age.md",
+      "updatedAt": "2026-03-10T08:47:27.696Z"
+    },
+    "headers/access-control-request-headers": {
+      "hash": "5d269f57",
+      "file": "datas/devdocs/http/headers/Access-Control-Request-Headers.md",
+      "updatedAt": "2026-03-10T08:47:27.700Z"
+    },
+    "headers/access-control-request-method": {
+      "hash": "c2d16b55",
+      "file": "datas/devdocs/http/headers/Access-Control-Request-Method.md",
+      "updatedAt": "2026-03-10T08:47:27.703Z"
+    },
+    "headers/age": {
+      "hash": "76e07533",
+      "file": "datas/devdocs/http/headers/Age.md",
+      "updatedAt": "2026-03-10T08:47:27.707Z"
+    },
+    "headers/allow": {
+      "hash": "94c67992",
+      "file": "datas/devdocs/http/headers/Allow.md",
+      "updatedAt": "2026-03-10T08:47:27.711Z"
+    },
+    "headers/alt-svc": {
+      "hash": "25b7b524",
+      "file": "datas/devdocs/http/headers/Alt-Svc.md",
+      "updatedAt": "2026-03-10T08:47:27.714Z"
+    },
+    "authentication": {
+      "hash": "f1672bc8",
+      "file": "datas/devdocs/http/guides/Authentication.md",
+      "updatedAt": "2026-03-10T08:47:27.725Z"
+    },
+    "headers/authorization": {
+      "hash": "ae724dbf",
+      "file": "datas/devdocs/http/headers/Authorization.md",
+      "updatedAt": "2026-03-10T08:47:27.734Z"
+    },
+    "browser_detection_using_the_user_agent": {
+      "hash": "3b0ce835",
+      "file": "datas/devdocs/http/guides/Browser detection using the user agent.md",
+      "updatedAt": "2026-03-10T08:47:27.742Z"
+    },
+    "headers/cache-control": {
+      "hash": "e1afbc38",
+      "file": "datas/devdocs/http/headers/Cache-Control.md",
+      "updatedAt": "2026-03-10T08:47:27.757Z"
+    },
+    "caching": {
+      "hash": "8ac77c3e",
+      "file": "datas/devdocs/http/guides/Caching.md",
+      "updatedAt": "2026-03-10T08:47:27.777Z"
+    },
+    "headers/clear-site-data": {
+      "hash": "2e2bf7fc",
+      "file": "datas/devdocs/http/headers/Clear-Site-Data.md",
+      "updatedAt": "2026-03-10T08:47:27.811Z"
+    },
+    "client_hints": {
+      "hash": "5ff800d",
+      "file": "datas/devdocs/http/guides/Client hints.md",
+      "updatedAt": "2026-03-10T08:47:27.819Z"
+    },
+    "compression": {
+      "hash": "956781ac",
+      "file": "datas/devdocs/http/guides/Compression.md",
+      "updatedAt": "2026-03-10T08:47:27.824Z"
+    },
+    "conditional_requests": {
+      "hash": "b13ed9d1",
+      "file": "datas/devdocs/http/guides/Conditional requests.md",
+      "updatedAt": "2026-03-10T08:47:27.833Z"
+    },
+    "methods/connect": {
+      "hash": "67f43e6e",
+      "file": "datas/devdocs/http/methods/CONNECT.md",
+      "updatedAt": "2026-03-10T08:47:27.863Z"
+    },
+    "headers/connection": {
+      "hash": "8919367d",
+      "file": "datas/devdocs/http/headers/Connection.md",
+      "updatedAt": "2026-03-10T08:47:27.884Z"
+    },
+    "connection_management_in_http_1.x": {
+      "hash": "4ffc7c9f",
+      "file": "datas/devdocs/http/guides/Connection management in HTTP 1.x.md",
+      "updatedAt": "2026-03-10T08:47:27.887Z"
+    },
+    "content_negotiation": {
+      "hash": "d07b658e",
+      "file": "datas/devdocs/http/guides/Content negotiation.md",
+      "updatedAt": "2026-03-10T08:47:27.895Z"
+    },
+    "content_negotiation/list_of_default_accept_values": {
+      "hash": "59b01115",
+      "file": "datas/devdocs/http/guides/Content negotiation- List of default Accept values.md",
+      "updatedAt": "2026-03-10T08:47:27.925Z"
+    },
+    "headers/content-disposition": {
+      "hash": "e77e239f",
+      "file": "datas/devdocs/http/headers/Content-Disposition.md",
+      "updatedAt": "2026-03-10T08:47:27.931Z"
+    },
+    "headers/content-dpr": {
+      "hash": "f7729ca5",
+      "file": "datas/devdocs/http/headers/Content-DPR.md",
+      "updatedAt": "2026-03-10T08:47:27.938Z"
+    },
+    "headers/content-encoding": {
+      "hash": "70277d65",
+      "file": "datas/devdocs/http/headers/Content-Encoding.md",
+      "updatedAt": "2026-03-10T08:47:27.944Z"
+    },
+    "headers/content-language": {
+      "hash": "cdc6b79c",
+      "file": "datas/devdocs/http/headers/Content-Language.md",
+      "updatedAt": "2026-03-10T08:47:27.950Z"
+    },
+    "headers/content-length": {
+      "hash": "19059ec",
+      "file": "datas/devdocs/http/headers/Content-Length.md",
+      "updatedAt": "2026-03-10T08:47:27.954Z"
+    },
+    "headers/content-location": {
+      "hash": "31081f91",
+      "file": "datas/devdocs/http/headers/Content-Location.md",
+      "updatedAt": "2026-03-10T08:47:27.958Z"
+    },
+    "headers/content-range": {
+      "hash": "16a612c",
+      "file": "datas/devdocs/http/headers/Content-Range.md",
+      "updatedAt": "2026-03-10T08:47:27.963Z"
+    },
+    "headers/content-security-policy": {
+      "hash": "7818b850",
+      "file": "datas/devdocs/http/csp/Content-Security-Policy.md",
+      "updatedAt": "2026-03-10T08:47:27.966Z"
+    },
+    "headers/content-security-policy-report-only": {
+      "hash": "80287de",
+      "file": "datas/devdocs/http/csp/Content-Security-Policy-Report-Only.md",
+      "updatedAt": "2026-03-10T08:47:27.995Z"
+    },
+    "headers/content-type": {
+      "hash": "b841c3f7",
+      "file": "datas/devdocs/http/headers/Content-Type.md",
+      "updatedAt": "2026-03-10T08:47:28.001Z"
+    },
+    "headers/cookie": {
+      "hash": "29f76293",
+      "file": "datas/devdocs/http/headers/Cookie.md",
+      "updatedAt": "2026-03-10T08:47:28.007Z"
+    },
+    "cookies": {
+      "hash": "8af06a8c",
+      "file": "datas/devdocs/http/guides/Cookies.md",
+      "updatedAt": "2026-03-10T08:47:28.010Z"
+    },
+    "cors": {
+      "hash": "2a5edf54",
+      "file": "datas/devdocs/http/guides/CORS.md",
+      "updatedAt": "2026-03-10T08:47:28.019Z"
+    },
+    "cross-origin_resource_policy_(corp)": {
+      "hash": "71e65a8e",
+      "file": "datas/devdocs/http/guides/Cross-Origin Resource Policy (CORP).md",
+      "updatedAt": "2026-03-10T08:47:28.058Z"
+    },
+    "headers/cross-origin-embedder-policy": {
+      "hash": "f1087125",
+      "file": "datas/devdocs/http/headers/Cross-Origin-Embedder-Policy.md",
+      "updatedAt": "2026-03-10T08:47:28.062Z"
+    },
+    "headers/cross-origin-opener-policy": {
+      "hash": "db615f08",
+      "file": "datas/devdocs/http/headers/Cross-Origin-Opener-Policy.md",
+      "updatedAt": "2026-03-10T08:47:28.067Z"
+    },
+    "headers/cross-origin-resource-policy": {
+      "hash": "2842f350",
+      "file": "datas/devdocs/http/headers/Cross-Origin-Resource-Policy.md",
+      "updatedAt": "2026-03-10T08:47:28.071Z"
+    },
+    "csp": {
+      "hash": "cd412278",
+      "file": "datas/devdocs/http/guides/CSP.md",
+      "updatedAt": "2026-03-10T08:47:28.075Z"
+    },
+    "headers/content-security-policy/base-uri": {
+      "hash": "63f79301",
+      "file": "datas/devdocs/http/csp/CSP- base-uri.md",
+      "updatedAt": "2026-03-10T08:47:28.101Z"
+    },
+    "headers/content-security-policy/block-all-mixed-content": {
+      "hash": "454669fc",
+      "file": "datas/devdocs/http/csp/CSP- block-all-mixed-content.md",
+      "updatedAt": "2026-03-10T08:47:28.104Z"
+    },
+    "headers/content-security-policy/child-src": {
+      "hash": "5ccaf2f9",
+      "file": "datas/devdocs/http/csp/CSP- child-src.md",
+      "updatedAt": "2026-03-10T08:47:28.108Z"
+    },
+    "headers/content-security-policy/connect-src": {
+      "hash": "2db2fc74",
+      "file": "datas/devdocs/http/csp/CSP- connect-src.md",
+      "updatedAt": "2026-03-10T08:47:28.112Z"
+    },
+    "headers/content-security-policy/default-src": {
+      "hash": "f6ef447d",
+      "file": "datas/devdocs/http/csp/CSP- default-src.md",
+      "updatedAt": "2026-03-10T08:47:28.116Z"
+    },
+    "headers/content-security-policy/font-src": {
+      "hash": "f0928508",
+      "file": "datas/devdocs/http/csp/CSP- font-src.md",
+      "updatedAt": "2026-03-10T08:47:28.120Z"
+    },
+    "headers/content-security-policy/form-action": {
+      "hash": "b96cdc3c",
+      "file": "datas/devdocs/http/csp/CSP- form-action.md",
+      "updatedAt": "2026-03-10T08:47:28.122Z"
+    },
+    "headers/content-security-policy/frame-ancestors": {
+      "hash": "45de936a",
+      "file": "datas/devdocs/http/csp/CSP- frame-ancestors.md",
+      "updatedAt": "2026-03-10T08:47:28.126Z"
+    },
+    "headers/content-security-policy/frame-src": {
+      "hash": "ba06bc36",
+      "file": "datas/devdocs/http/csp/CSP- frame-src.md",
+      "updatedAt": "2026-03-10T08:47:28.131Z"
+    },
+    "headers/content-security-policy/img-src": {
+      "hash": "23ee7fb8",
+      "file": "datas/devdocs/http/csp/CSP- img-src.md",
+      "updatedAt": "2026-03-10T08:47:28.133Z"
+    },
+    "headers/content-security-policy/manifest-src": {
+      "hash": "571c2d81",
+      "file": "datas/devdocs/http/csp/CSP- manifest-src.md",
+      "updatedAt": "2026-03-10T08:47:28.136Z"
+    },
+    "headers/content-security-policy/media-src": {
+      "hash": "c7aa4fac",
+      "file": "datas/devdocs/http/csp/CSP- media-src.md",
+      "updatedAt": "2026-03-10T08:47:28.140Z"
+    },
+    "headers/content-security-policy/object-src": {
+      "hash": "c7356ae3",
+      "file": "datas/devdocs/http/csp/CSP- object-src.md",
+      "updatedAt": "2026-03-10T08:47:28.144Z"
+    },
+    "headers/content-security-policy/plugin-types": {
+      "hash": "1988727a",
+      "file": "datas/devdocs/http/csp/CSP- plugin-types.md",
+      "updatedAt": "2026-03-10T08:47:28.147Z"
+    },
+    "headers/content-security-policy/prefetch-src": {
+      "hash": "a726b73d",
+      "file": "datas/devdocs/http/csp/CSP- prefetch-src.md",
+      "updatedAt": "2026-03-10T08:47:28.150Z"
+    },
+    "headers/content-security-policy/referrer": {
+      "hash": "6d327e50",
+      "file": "datas/devdocs/http/csp/CSP- referrer.md",
+      "updatedAt": "2026-03-10T08:47:28.161Z"
+    },
+    "headers/content-security-policy/report-to": {
+      "hash": "6dd1cda4",
+      "file": "datas/devdocs/http/csp/CSP- report-to.md",
+      "updatedAt": "2026-03-10T08:47:28.164Z"
+    },
+    "headers/content-security-policy/report-uri": {
+      "hash": "fd02857d",
+      "file": "datas/devdocs/http/csp/CSP- report-uri.md",
+      "updatedAt": "2026-03-10T08:47:28.167Z"
+    },
+    "headers/content-security-policy/require-sri-for": {
+      "hash": "a5f10449",
+      "file": "datas/devdocs/http/csp/CSP- require-sri-for.md",
+      "updatedAt": "2026-03-10T08:47:28.172Z"
+    },
+    "headers/content-security-policy/require-trusted-types-for": {
+      "hash": "ddace664",
+      "file": "datas/devdocs/http/csp/CSP- require-trusted-types-for.md",
+      "updatedAt": "2026-03-10T08:47:28.175Z"
+    },
+    "headers/content-security-policy/sandbox": {
+      "hash": "3088cd1c",
+      "file": "datas/devdocs/http/csp/CSP- sandbox.md",
+      "updatedAt": "2026-03-10T08:47:28.178Z"
+    },
+    "headers/content-security-policy/script-src": {
+      "hash": "2adf6cb9",
+      "file": "datas/devdocs/http/csp/CSP- script-src.md",
+      "updatedAt": "2026-03-10T08:47:28.182Z"
+    },
+    "headers/content-security-policy/script-src-attr": {
+      "hash": "2470a5fe",
+      "file": "datas/devdocs/http/csp/CSP- script-src-attr.md",
+      "updatedAt": "2026-03-10T08:47:28.187Z"
+    },
+    "headers/content-security-policy/script-src-elem": {
+      "hash": "4688d5a",
+      "file": "datas/devdocs/http/csp/CSP- script-src-elem.md",
+      "updatedAt": "2026-03-10T08:47:28.191Z"
+    },
+    "headers/content-security-policy/sources": {
+      "hash": "d60a457f",
+      "file": "datas/devdocs/http/csp/CSP- Sources.md",
+      "updatedAt": "2026-03-10T08:47:28.194Z"
+    },
+    "headers/content-security-policy/style-src": {
+      "hash": "365084ae",
+      "file": "datas/devdocs/http/csp/CSP- style-src.md",
+      "updatedAt": "2026-03-10T08:47:28.199Z"
+    },
+    "headers/content-security-policy/style-src-attr": {
+      "hash": "eb411d65",
+      "file": "datas/devdocs/http/csp/CSP- style-src-attr.md",
+      "updatedAt": "2026-03-10T08:47:28.205Z"
+    },
+    "headers/content-security-policy/style-src-elem": {
+      "hash": "ef8f6ca7",
+      "file": "datas/devdocs/http/csp/CSP- style-src-elem.md",
+      "updatedAt": "2026-03-10T08:47:28.218Z"
+    },
+    "headers/content-security-policy/trusted-types": {
+      "hash": "e14a7a70",
+      "file": "datas/devdocs/http/csp/CSP- trusted-types.md",
+      "updatedAt": "2026-03-10T08:47:28.223Z"
+    },
+    "headers/content-security-policy/upgrade-insecure-requests": {
+      "hash": "7317e026",
+      "file": "datas/devdocs/http/csp/CSP- upgrade-insecure-requests.md",
+      "updatedAt": "2026-03-10T08:47:28.228Z"
+    },
+    "headers/content-security-policy/worker-src": {
+      "hash": "70cf9048",
+      "file": "datas/devdocs/http/csp/CSP- worker-src.md",
+      "updatedAt": "2026-03-10T08:47:28.232Z"
+    },
+    "basics_of_http/data_urls": {
+      "hash": "17ef1951",
+      "file": "datas/devdocs/http/guides-basics/Data URLs.md",
+      "updatedAt": "2026-03-10T08:47:28.234Z"
+    },
+    "headers/date": {
+      "hash": "ff83f419",
+      "file": "datas/devdocs/http/headers/Date.md",
+      "updatedAt": "2026-03-10T08:47:28.239Z"
+    },
+    "methods/delete": {
+      "hash": "3aae2a5c",
+      "file": "datas/devdocs/http/methods/DELETE.md",
+      "updatedAt": "2026-03-10T08:47:28.242Z"
+    },
+    "headers/device-memory": {
+      "hash": "89a61a6d",
+      "file": "datas/devdocs/http/headers/Device-Memory.md",
+      "updatedAt": "2026-03-10T08:47:28.245Z"
+    },
+    "headers/dnt": {
+      "hash": "1197e17",
+      "file": "datas/devdocs/http/headers/DNT.md",
+      "updatedAt": "2026-03-10T08:47:28.249Z"
+    },
+    "headers/downlink": {
+      "hash": "ac5f8673",
+      "file": "datas/devdocs/http/headers/Downlink.md",
+      "updatedAt": "2026-03-10T08:47:28.251Z"
+    },
+    "headers/dpr": {
+      "hash": "93a6b01",
+      "file": "datas/devdocs/http/headers/DPR.md",
+      "updatedAt": "2026-03-10T08:47:28.255Z"
+    },
+    "headers/early-data": {
+      "hash": "dd89faa4",
+      "file": "datas/devdocs/http/headers/Early-Data.md",
+      "updatedAt": "2026-03-10T08:47:28.258Z"
+    },
+    "headers/ect": {
+      "hash": "b62ec7cb",
+      "file": "datas/devdocs/http/headers/ECT.md",
+      "updatedAt": "2026-03-10T08:47:28.260Z"
+    },
+    "cors/errors": {
+      "hash": "41614a48",
+      "file": "datas/devdocs/http/guides/Errors.md",
+      "updatedAt": "2026-03-10T08:47:28.263Z"
+    },
+    "cors/errors/corsalloworiginnotmatchingorigin": {
+      "hash": "c2fe70d6",
+      "file": "datas/devdocs/http/guides/Errors- CORSAllowOriginNotMatchingOrigin.md",
+      "updatedAt": "2026-03-10T08:47:28.273Z"
+    },
+    "cors/errors/corsdidnotsucceed": {
+      "hash": "e143fb08",
+      "file": "datas/devdocs/http/guides/Errors- CORSDidNotSucceed.md",
+      "updatedAt": "2026-03-10T08:47:28.275Z"
+    },
+    "cors/errors/corsdisabled": {
+      "hash": "5a24283e",
+      "file": "datas/devdocs/http/guides/Errors- CORSDisabled.md",
+      "updatedAt": "2026-03-10T08:47:28.276Z"
+    },
+    "cors/errors/corsexternalredirectnotallowed": {
+      "hash": "6dd0b3a0",
+      "file": "datas/devdocs/http/guides/Errors- CORSExternalRedirectNotAllowed.md",
+      "updatedAt": "2026-03-10T08:47:28.279Z"
+    },
+    "cors/errors/corsinvalidallowheader": {
+      "hash": "7a0fc76f",
+      "file": "datas/devdocs/http/guides/Errors- CORSInvalidAllowHeader.md",
+      "updatedAt": "2026-03-10T08:47:28.280Z"
+    },
+    "cors/errors/corsinvalidallowmethod": {
+      "hash": "94f8320b",
+      "file": "datas/devdocs/http/guides/Errors- CORSInvalidAllowMethod.md",
+      "updatedAt": "2026-03-10T08:47:28.282Z"
+    },
+    "cors/errors/corsmethodnotfound": {
+      "hash": "14df2474",
+      "file": "datas/devdocs/http/guides/Errors- CORSMethodNotFound.md",
+      "updatedAt": "2026-03-10T08:47:28.285Z"
+    },
+    "cors/errors/corsmissingallowcredentials": {
+      "hash": "e9b0ec67",
+      "file": "datas/devdocs/http/guides/Errors- CORSMIssingAllowCredentials.md",
+      "updatedAt": "2026-03-10T08:47:28.287Z"
+    },
+    "cors/errors/corsmissingallowheaderfrompreflight": {
+      "hash": "fcdd959b",
+      "file": "datas/devdocs/http/guides/Errors- CORSMissingAllowHeaderFromPreflight.md",
+      "updatedAt": "2026-03-10T08:47:28.290Z"
+    },
+    "cors/errors/corsmissingalloworigin": {
+      "hash": "16d9cd83",
+      "file": "datas/devdocs/http/guides/Errors- CORSMissingAllowOrigin.md",
+      "updatedAt": "2026-03-10T08:47:28.292Z"
+    },
+    "cors/errors/corsmultiplealloworiginnotallowed": {
+      "hash": "f2354a58",
+      "file": "datas/devdocs/http/guides/Errors- CORSMultipleAllowOriginNotAllowed.md",
+      "updatedAt": "2026-03-10T08:47:28.294Z"
+    },
+    "cors/errors/corsnotsupportingcredentials": {
+      "hash": "5804b3cc",
+      "file": "datas/devdocs/http/guides/Errors- CORSNotSupportingCredentials.md",
+      "updatedAt": "2026-03-10T08:47:28.296Z"
+    },
+    "cors/errors/corsoriginheadernotadded": {
+      "hash": "b27fc22e",
+      "file": "datas/devdocs/http/guides/Errors- CORSOriginHeaderNotAdded.md",
+      "updatedAt": "2026-03-10T08:47:28.299Z"
+    },
+    "cors/errors/corspreflightdidnotsucceed": {
+      "hash": "d2b41ed6",
+      "file": "datas/devdocs/http/guides/Errors- CORSPreflightDidNotSucceed.md",
+      "updatedAt": "2026-03-10T08:47:28.301Z"
+    },
+    "cors/errors/corsrequestnothttp": {
+      "hash": "85ce638b",
+      "file": "datas/devdocs/http/guides/Errors- CORSRequestNotHttp.md",
+      "updatedAt": "2026-03-10T08:47:28.303Z"
+    },
+    "headers/etag": {
+      "hash": "4ee1b779",
+      "file": "datas/devdocs/http/headers/ETag.md",
+      "updatedAt": "2026-03-10T08:47:28.304Z"
+    },
+    "basics_of_http/evolution_of_http": {
+      "hash": "2420be33",
+      "file": "datas/devdocs/http/guides-basics/Evolution of HTTP.md",
+      "updatedAt": "2026-03-10T08:47:28.307Z"
+    },
+    "headers/expect": {
+      "hash": "4891dd6",
+      "file": "datas/devdocs/http/headers/Expect.md",
+      "updatedAt": "2026-03-10T08:47:28.315Z"
+    },
+    "headers/expect-ct": {
+      "hash": "4aa0917c",
+      "file": "datas/devdocs/http/headers/Expect-CT.md",
+      "updatedAt": "2026-03-10T08:47:28.319Z"
+    },
+    "headers/expires": {
+      "hash": "fb8b714",
+      "file": "datas/devdocs/http/headers/Expires.md",
+      "updatedAt": "2026-03-10T08:47:28.323Z"
+    },
+    "feature_policy": {
+      "hash": "477e11d3",
+      "file": "datas/devdocs/http/guides/Feature Policy.md",
+      "updatedAt": "2026-03-10T08:47:28.325Z"
+    },
+    "feature_policy/using_feature_policy": {
+      "hash": "2553bf3b",
+      "file": "datas/devdocs/http/guides/Feature Policy- Using Feature Policy.md",
+      "updatedAt": "2026-03-10T08:47:28.347Z"
+    },
+    "headers/feature-policy": {
+      "hash": "8e1eff06",
+      "file": "datas/devdocs/http/headers/Feature-Policy.md",
+      "updatedAt": "2026-03-10T08:47:28.353Z"
+    },
+    "headers/feature-policy/accelerometer": {
+      "hash": "2d9e8801",
+      "file": "datas/devdocs/http/headers/Feature-Policy- accelerometer.md",
+      "updatedAt": "2026-03-10T08:47:28.367Z"
+    },
+    "headers/feature-policy/ambient-light-sensor": {
+      "hash": "7aff4543",
+      "file": "datas/devdocs/http/headers/Feature-Policy- ambient-light-sensor.md",
+      "updatedAt": "2026-03-10T08:47:28.369Z"
+    },
+    "headers/feature-policy/autoplay": {
+      "hash": "172fbc47",
+      "file": "datas/devdocs/http/headers/Feature-Policy- autoplay.md",
+      "updatedAt": "2026-03-10T08:47:28.371Z"
+    },
+    "headers/feature-policy/battery": {
+      "hash": "f66b0761",
+      "file": "datas/devdocs/http/headers/Feature-Policy- battery.md",
+      "updatedAt": "2026-03-10T08:47:28.373Z"
+    },
+    "headers/feature-policy/camera": {
+      "hash": "e4a22132",
+      "file": "datas/devdocs/http/headers/Feature-Policy- camera.md",
+      "updatedAt": "2026-03-10T08:47:28.377Z"
+    },
+    "headers/feature-policy/display-capture": {
+      "hash": "ff904512",
+      "file": "datas/devdocs/http/headers/Feature-Policy- display-capture.md",
+      "updatedAt": "2026-03-10T08:47:28.379Z"
+    },
+    "headers/feature-policy/document-domain": {
+      "hash": "61de1cf",
+      "file": "datas/devdocs/http/headers/Feature-Policy- document-domain.md",
+      "updatedAt": "2026-03-10T08:47:28.382Z"
+    },
+    "headers/feature-policy/encrypted-media": {
+      "hash": "1afffa00",
+      "file": "datas/devdocs/http/headers/Feature-Policy- encrypted-media.md",
+      "updatedAt": "2026-03-10T08:47:28.385Z"
+    },
+    "headers/feature-policy/fullscreen": {
+      "hash": "f8eee0ae",
+      "file": "datas/devdocs/http/headers/Feature-Policy- fullscreen.md",
+      "updatedAt": "2026-03-10T08:47:28.387Z"
+    },
+    "headers/feature-policy/gamepad": {
+      "hash": "9497cf51",
+      "file": "datas/devdocs/http/headers/Feature-Policy- gamepad.md",
+      "updatedAt": "2026-03-10T08:47:28.390Z"
+    },
+    "headers/feature-policy/geolocation": {
+      "hash": "6be2fcc1",
+      "file": "datas/devdocs/http/headers/Feature-Policy- geolocation.md",
+      "updatedAt": "2026-03-10T08:47:28.393Z"
+    },
+    "headers/feature-policy/gyroscope": {
+      "hash": "95bb7374",
+      "file": "datas/devdocs/http/headers/Feature-Policy- gyroscope.md",
+      "updatedAt": "2026-03-10T08:47:28.408Z"
+    },
+    "headers/feature-policy/layout-animations": {
+      "hash": "9899df7b",
+      "file": "datas/devdocs/http/headers/Feature-Policy- layout-animations.md",
+      "updatedAt": "2026-03-10T08:47:28.412Z"
+    },
+    "headers/feature-policy/legacy-image-formats": {
+      "hash": "ef05660b",
+      "file": "datas/devdocs/http/headers/Feature-Policy- legacy-image-formats.md",
+      "updatedAt": "2026-03-10T08:47:28.414Z"
+    },
+    "headers/feature-policy/magnetometer": {
+      "hash": "60e0dbfa",
+      "file": "datas/devdocs/http/headers/Feature-Policy- magnetometer.md",
+      "updatedAt": "2026-03-10T08:47:28.416Z"
+    },
+    "headers/feature-policy/microphone": {
+      "hash": "30efad60",
+      "file": "datas/devdocs/http/headers/Feature-Policy- microphone.md",
+      "updatedAt": "2026-03-10T08:47:28.419Z"
+    },
+    "headers/feature-policy/midi": {
+      "hash": "e05c193f",
+      "file": "datas/devdocs/http/headers/Feature-Policy- midi.md",
+      "updatedAt": "2026-03-10T08:47:28.421Z"
+    },
+    "headers/feature-policy/oversized-images": {
+      "hash": "9439ee9d",
+      "file": "datas/devdocs/http/headers/Feature-Policy- oversized-images.md",
+      "updatedAt": "2026-03-10T08:47:28.423Z"
+    },
+    "headers/feature-policy/payment": {
+      "hash": "fe10ab92",
+      "file": "datas/devdocs/http/headers/Feature-Policy- payment.md",
+      "updatedAt": "2026-03-10T08:47:28.426Z"
+    },
+    "headers/feature-policy/picture-in-picture": {
+      "hash": "2717115c",
+      "file": "datas/devdocs/http/headers/Feature-Policy- picture-in-picture.md",
+      "updatedAt": "2026-03-10T08:47:28.428Z"
+    },
+    "headers/feature-policy/publickey-credentials-get": {
+      "hash": "e6a7baa6",
+      "file": "datas/devdocs/http/headers/Feature-Policy- publickey-credentials-get.md",
+      "updatedAt": "2026-03-10T08:47:28.430Z"
+    },
+    "headers/feature-policy/screen-wake-lock": {
+      "hash": "d2e5558c",
+      "file": "datas/devdocs/http/headers/Feature-Policy- screen-wake-lock.md",
+      "updatedAt": "2026-03-10T08:47:28.432Z"
+    },
+    "headers/feature-policy/speaker-selection": {
+      "hash": "a1852e53",
+      "file": "datas/devdocs/http/headers/Feature-Policy- speaker-selection.md",
+      "updatedAt": "2026-03-10T08:47:28.435Z"
+    },
+    "headers/feature-policy/sync-xhr": {
+      "hash": "f7317949",
+      "file": "datas/devdocs/http/headers/Feature-Policy- sync-xhr.md",
+      "updatedAt": "2026-03-10T08:47:28.437Z"
+    },
+    "headers/feature-policy/unoptimized-images": {
+      "hash": "eb21b050",
+      "file": "datas/devdocs/http/headers/Feature-Policy- unoptimized-images.md",
+      "updatedAt": "2026-03-10T08:47:28.440Z"
+    },
+    "headers/feature-policy/unsized-media": {
+      "hash": "7d8b328c",
+      "file": "datas/devdocs/http/headers/Feature-Policy- unsized-media.md",
+      "updatedAt": "2026-03-10T08:47:28.442Z"
+    },
+    "headers/feature-policy/usb": {
+      "hash": "16042e66",
+      "file": "datas/devdocs/http/headers/Feature-Policy- usb.md",
+      "updatedAt": "2026-03-10T08:47:28.444Z"
+    },
+    "headers/feature-policy/web-share": {
+      "hash": "358750a0",
+      "file": "datas/devdocs/http/headers/Feature-Policy- web-share.md",
+      "updatedAt": "2026-03-10T08:47:28.446Z"
+    },
+    "headers/feature-policy/xr-spatial-tracking": {
+      "hash": "f73b6182",
+      "file": "datas/devdocs/http/headers/Feature-Policy- xr-spatial-tracking.md",
+      "updatedAt": "2026-03-10T08:47:28.448Z"
+    },
+    "headers/forwarded": {
+      "hash": "d0d4f7b3",
+      "file": "datas/devdocs/http/headers/Forwarded.md",
+      "updatedAt": "2026-03-10T08:47:28.451Z"
+    },
+    "headers/from": {
+      "hash": "86325a4b",
+      "file": "datas/devdocs/http/headers/From.md",
+      "updatedAt": "2026-03-10T08:47:28.455Z"
+    },
+    "methods/get": {
+      "hash": "91fe263d",
+      "file": "datas/devdocs/http/methods/GET.md",
+      "updatedAt": "2026-03-10T08:47:28.458Z"
+    },
+    "methods/head": {
+      "hash": "1b781054",
+      "file": "datas/devdocs/http/methods/HEAD.md",
+      "updatedAt": "2026-03-10T08:47:28.460Z"
+    },
+    "headers": {
+      "hash": "82c45ca9",
+      "file": "datas/devdocs/http/headers/Headers.md",
+      "updatedAt": "2026-03-10T08:47:28.461Z"
+    },
+    "headers/host": {
+      "hash": "9c7fb170",
+      "file": "datas/devdocs/http/headers/Host.md",
+      "updatedAt": "2026-03-10T08:47:28.486Z"
+    },
+    "basics_of_http/identifying_resources_on_the_web": {
+      "hash": "f666b5d1",
+      "file": "datas/devdocs/http/guides-basics/Identifying resources on the Web.md",
+      "updatedAt": "2026-03-10T08:47:28.493Z"
+    },
+    "headers/if-match": {
+      "hash": "25725833",
+      "file": "datas/devdocs/http/headers/If-Match.md",
+      "updatedAt": "2026-03-10T08:47:28.516Z"
+    },
+    "headers/if-modified-since": {
+      "hash": "3ef9563a",
+      "file": "datas/devdocs/http/headers/If-Modified-Since.md",
+      "updatedAt": "2026-03-10T08:47:28.521Z"
+    },
+    "headers/if-none-match": {
+      "hash": "74066730",
+      "file": "datas/devdocs/http/headers/If-None-Match.md",
+      "updatedAt": "2026-03-10T08:47:28.524Z"
+    },
+    "headers/if-range": {
+      "hash": "3f74a46b",
+      "file": "datas/devdocs/http/headers/If-Range.md",
+      "updatedAt": "2026-03-10T08:47:28.527Z"
+    },
+    "headers/if-unmodified-since": {
+      "hash": "eb290a00",
+      "file": "datas/devdocs/http/headers/If-Unmodified-Since.md",
+      "updatedAt": "2026-03-10T08:47:28.531Z"
+    },
+    "headers/keep-alive": {
+      "hash": "12e8b13a",
+      "file": "datas/devdocs/http/headers/Keep-Alive.md",
+      "updatedAt": "2026-03-10T08:47:28.534Z"
+    },
+    "headers/large-allocation": {
+      "hash": "4c588b3a",
+      "file": "datas/devdocs/http/headers/Large-Allocation.md",
+      "updatedAt": "2026-03-10T08:47:28.539Z"
+    },
+    "headers/last-modified": {
+      "hash": "b31a2021",
+      "file": "datas/devdocs/http/headers/Last-Modified.md",
+      "updatedAt": "2026-03-10T08:47:28.542Z"
+    },
+    "headers/link": {
+      "hash": "b2231838",
+      "file": "datas/devdocs/http/headers/Link.md",
+      "updatedAt": "2026-03-10T08:47:28.544Z"
+    },
+    "headers/location": {
+      "hash": "1a96c23d",
+      "file": "datas/devdocs/http/headers/Location.md",
+      "updatedAt": "2026-03-10T08:47:28.546Z"
+    },
+    "headers/max-forwards": {
+      "hash": "9d323948",
+      "file": "datas/devdocs/http/headers/Max-Forwards.md",
+      "updatedAt": "2026-03-10T08:47:28.548Z"
+    },
+    "messages": {
+      "hash": "ac151db6",
+      "file": "datas/devdocs/http/guides/Messages.md",
+      "updatedAt": "2026-03-10T08:47:28.551Z"
+    },
+    "methods": {
+      "hash": "c9b0738",
+      "file": "datas/devdocs/http/methods/Methods.md",
+      "updatedAt": "2026-03-10T08:47:28.564Z"
+    },
+    "basics_of_http/mime_types": {
+      "hash": "68d0201d",
+      "file": "datas/devdocs/http/guides-basics/MIME types.md",
+      "updatedAt": "2026-03-10T08:47:28.569Z"
+    },
+    "basics_of_http/mime_types/common_types": {
+      "hash": "d313db4b",
+      "file": "datas/devdocs/http/guides-basics/MIME types- Common types.md",
+      "updatedAt": "2026-03-10T08:47:28.587Z"
+    },
+    "headers/nel": {
+      "hash": "dffc914b",
+      "file": "datas/devdocs/http/headers/NEL.md",
+      "updatedAt": "2026-03-10T08:47:28.591Z"
+    },
+    "network_error_logging": {
+      "hash": "5ab973bf",
+      "file": "datas/devdocs/http/guides/Network Error Logging.md",
+      "updatedAt": "2026-03-10T08:47:28.594Z"
+    },
+    "methods/options": {
+      "hash": "e0f21f3c",
+      "file": "datas/devdocs/http/methods/OPTIONS.md",
+      "updatedAt": "2026-03-10T08:47:28.598Z"
+    },
+    "headers/origin": {
+      "hash": "811cba8",
+      "file": "datas/devdocs/http/headers/Origin.md",
+      "updatedAt": "2026-03-10T08:47:28.601Z"
+    },
+    "overview": {
+      "hash": "28ef9fd7",
+      "file": "datas/devdocs/http/guides/Overview.md",
+      "updatedAt": "2026-03-10T08:47:28.605Z"
+    },
+    "methods/patch": {
+      "hash": "9364b774",
+      "file": "datas/devdocs/http/methods/PATCH.md",
+      "updatedAt": "2026-03-10T08:47:28.631Z"
+    },
+    "methods/post": {
+      "hash": "73aba201",
+      "file": "datas/devdocs/http/methods/POST.md",
+      "updatedAt": "2026-03-10T08:47:28.634Z"
+    },
+    "headers/pragma": {
+      "hash": "fddc8699",
+      "file": "datas/devdocs/http/headers/Pragma.md",
+      "updatedAt": "2026-03-10T08:47:28.639Z"
+    },
+    "protocol_upgrade_mechanism": {
+      "hash": "9091db2b",
+      "file": "datas/devdocs/http/guides/Protocol upgrade mechanism.md",
+      "updatedAt": "2026-03-10T08:47:28.643Z"
+    },
+    "proxy_servers_and_tunneling": {
+      "hash": "209e60a4",
+      "file": "datas/devdocs/http/guides/Proxy servers and tunneling.md",
+      "updatedAt": "2026-03-10T08:47:28.648Z"
+    },
+    "proxy_servers_and_tunneling/proxy_auto-configuration_pac_file": {
+      "hash": "e38ce216",
+      "file": "datas/devdocs/http/guides/Proxy servers and tunneling- Proxy Auto-Configuration PAC file.md",
+      "updatedAt": "2026-03-10T08:47:28.653Z"
+    },
+    "headers/proxy-authenticate": {
+      "hash": "b90fff5d",
+      "file": "datas/devdocs/http/headers/Proxy-Authenticate.md",
+      "updatedAt": "2026-03-10T08:47:28.681Z"
+    },
+    "headers/proxy-authorization": {
+      "hash": "8c694f41",
+      "file": "datas/devdocs/http/headers/Proxy-Authorization.md",
+      "updatedAt": "2026-03-10T08:47:28.683Z"
+    },
+    "methods/put": {
+      "hash": "20ab1f32",
+      "file": "datas/devdocs/http/methods/PUT.md",
+      "updatedAt": "2026-03-10T08:47:28.686Z"
+    },
+    "headers/range": {
+      "hash": "a6bdfa3f",
+      "file": "datas/devdocs/http/headers/Range.md",
+      "updatedAt": "2026-03-10T08:47:28.689Z"
+    },
+    "headers/referer": {
+      "hash": "684e750f",
+      "file": "datas/devdocs/http/headers/Referer.md",
+      "updatedAt": "2026-03-10T08:47:28.691Z"
+    },
+    "headers/referrer-policy": {
+      "hash": "8d815891",
+      "file": "datas/devdocs/http/headers/Referrer-Policy.md",
+      "updatedAt": "2026-03-10T08:47:28.694Z"
+    },
+    "headers/retry-after": {
+      "hash": "5eb65730",
+      "file": "datas/devdocs/http/headers/Retry-After.md",
+      "updatedAt": "2026-03-10T08:47:28.701Z"
+    },
+    "rfc4918": {
+      "hash": "54de2987",
+      "file": "datas/devdocs/http/rfc-4918-webdav/RFC 4918- WebDAV.md",
+      "updatedAt": "2026-03-10T08:47:28.704Z"
+    },
+    "rfc5023": {
+      "hash": "35cd1c64",
+      "file": "datas/devdocs/http/rfc-5023-the-atom-publishing-protocol/RFC 5023- The Atom Publishing Protocol.md",
+      "updatedAt": "2026-03-10T08:47:28.751Z"
+    },
+    "rfc9110": {
+      "hash": "fbe97e76",
+      "file": "datas/devdocs/http/rfc-9110-http-semantics/RFC 9110- HTTP Semantics.md",
+      "updatedAt": "2026-03-10T08:47:28.766Z"
+    },
+    "rfc9111": {
+      "hash": "668477d9",
+      "file": "datas/devdocs/http/rfc-9111-http-caching/RFC 9111- HTTP Caching.md",
+      "updatedAt": "2026-03-10T08:47:28.855Z"
+    },
+    "rfc9113": {
+      "hash": "596d4c35",
+      "file": "datas/devdocs/http/rfc-9113-http-2/RFC 9113- HTTP-2.md",
+      "updatedAt": "2026-03-10T08:47:28.868Z"
+    },
+    "rfc9114": {
+      "hash": "593a092",
+      "file": "datas/devdocs/http/rfc-9114-http-3/RFC 9114- HTTP-3.md",
+      "updatedAt": "2026-03-10T08:47:28.905Z"
+    },
+    "headers/rtt": {
+      "hash": "8b74744f",
+      "file": "datas/devdocs/http/headers/RTT.md",
+      "updatedAt": "2026-03-10T08:47:28.941Z"
+    },
+    "headers/save-data": {
+      "hash": "be436d41",
+      "file": "datas/devdocs/http/headers/Save-Data.md",
+      "updatedAt": "2026-03-10T08:47:28.946Z"
+    },
+    "headers/sec-ch-ua": {
+      "hash": "bc8552fb",
+      "file": "datas/devdocs/http/headers/Sec-CH-UA.md",
+      "updatedAt": "2026-03-10T08:47:28.953Z"
+    },
+    "headers/sec-ch-ua-arch": {
+      "hash": "e2a48307",
+      "file": "datas/devdocs/http/headers/Sec-CH-UA-Arch.md",
+      "updatedAt": "2026-03-10T08:47:28.956Z"
+    },
+    "headers/sec-ch-ua-bitness": {
+      "hash": "4511f4d6",
+      "file": "datas/devdocs/http/headers/Sec-CH-UA-Bitness.md",
+      "updatedAt": "2026-03-10T08:47:28.960Z"
+    },
+    "headers/sec-ch-ua-full-version": {
+      "hash": "c06a011d",
+      "file": "datas/devdocs/http/headers/Sec-CH-UA-Full-Version.md",
+      "updatedAt": "2026-03-10T08:47:28.963Z"
+    },
+    "headers/sec-ch-ua-full-version-list": {
+      "hash": "892fd5cb",
+      "file": "datas/devdocs/http/headers/Sec-CH-UA-Full-Version-List.md",
+      "updatedAt": "2026-03-10T08:47:28.965Z"
+    },
+    "headers/sec-ch-ua-mobile": {
+      "hash": "434bd6c9",
+      "file": "datas/devdocs/http/headers/Sec-CH-UA-Mobile.md",
+      "updatedAt": "2026-03-10T08:47:28.970Z"
+    },
+    "headers/sec-ch-ua-model": {
+      "hash": "995bb2f6",
+      "file": "datas/devdocs/http/headers/Sec-CH-UA-Model.md",
+      "updatedAt": "2026-03-10T08:47:28.973Z"
+    },
+    "headers/sec-ch-ua-platform": {
+      "hash": "9c1c0301",
+      "file": "datas/devdocs/http/headers/Sec-CH-UA-Platform.md",
+      "updatedAt": "2026-03-10T08:47:28.977Z"
+    },
+    "headers/sec-ch-ua-platform-version": {
+      "hash": "2ba27c24",
+      "file": "datas/devdocs/http/headers/Sec-CH-UA-Platform-Version.md",
+      "updatedAt": "2026-03-10T08:47:28.981Z"
+    },
+    "headers/sec-fetch-dest": {
+      "hash": "4b8d462e",
+      "file": "datas/devdocs/http/headers/Sec-Fetch-Dest.md",
+      "updatedAt": "2026-03-10T08:47:28.985Z"
+    },
+    "headers/sec-fetch-mode": {
+      "hash": "29a24e3d",
+      "file": "datas/devdocs/http/headers/Sec-Fetch-Mode.md",
+      "updatedAt": "2026-03-10T08:47:29.014Z"
+    },
+    "headers/sec-fetch-site": {
+      "hash": "1f37c337",
+      "file": "datas/devdocs/http/headers/Sec-Fetch-Site.md",
+      "updatedAt": "2026-03-10T08:47:29.018Z"
+    },
+    "headers/sec-fetch-user": {
+      "hash": "682f3c33",
+      "file": "datas/devdocs/http/headers/Sec-Fetch-User.md",
+      "updatedAt": "2026-03-10T08:47:29.022Z"
+    },
+    "headers/sec-websocket-accept": {
+      "hash": "d5445d5",
+      "file": "datas/devdocs/http/headers/Sec-WebSocket-Accept.md",
+      "updatedAt": "2026-03-10T08:47:29.024Z"
+    },
+    "headers/server": {
+      "hash": "55e0db8d",
+      "file": "datas/devdocs/http/headers/Server.md",
+      "updatedAt": "2026-03-10T08:47:29.028Z"
+    },
+    "headers/server-timing": {
+      "hash": "2d9a6f9",
+      "file": "datas/devdocs/http/headers/Server-Timing.md",
+      "updatedAt": "2026-03-10T08:47:29.030Z"
+    },
+    "headers/service-worker-navigation-preload": {
+      "hash": "5e4a10cd",
+      "file": "datas/devdocs/http/headers/Service-Worker-Navigation-Preload.md",
+      "updatedAt": "2026-03-10T08:47:29.033Z"
+    },
+    "session": {
+      "hash": "b38c139c",
+      "file": "datas/devdocs/http/guides/Session.md",
+      "updatedAt": "2026-03-10T08:47:29.035Z"
+    },
+    "headers/set-cookie": {
+      "hash": "e8c60e5a",
+      "file": "datas/devdocs/http/headers/Set-Cookie.md",
+      "updatedAt": "2026-03-10T08:47:29.039Z"
+    },
+    "headers/set-cookie/samesite": {
+      "hash": "2cf651b7",
+      "file": "datas/devdocs/http/headers/Set-Cookie- SameSite.md",
+      "updatedAt": "2026-03-10T08:47:29.045Z"
+    },
+    "headers/sourcemap": {
+      "hash": "2841af6",
+      "file": "datas/devdocs/http/headers/SourceMap.md",
+      "updatedAt": "2026-03-10T08:47:29.051Z"
+    },
+    "status": {
+      "hash": "be17f044",
+      "file": "datas/devdocs/http/status/Status.md",
+      "updatedAt": "2026-03-10T08:47:29.054Z"
+    },
+    "headers/strict-transport-security": {
+      "hash": "5e084e2e",
+      "file": "datas/devdocs/http/headers/Strict-Transport-Security.md",
+      "updatedAt": "2026-03-10T08:47:29.076Z"
+    },
+    "headers/te": {
+      "hash": "617076ef",
+      "file": "datas/devdocs/http/headers/TE.md",
+      "updatedAt": "2026-03-10T08:47:29.081Z"
+    },
+    "headers/timing-allow-origin": {
+      "hash": "98abc35f",
+      "file": "datas/devdocs/http/headers/Timing-Allow-Origin.md",
+      "updatedAt": "2026-03-10T08:47:29.084Z"
+    },
+    "headers/tk": {
+      "hash": "d2a2a079",
+      "file": "datas/devdocs/http/headers/Tk.md",
+      "updatedAt": "2026-03-10T08:47:29.087Z"
+    },
+    "methods/trace": {
+      "hash": "ec29dab8",
+      "file": "datas/devdocs/http/methods/TRACE.md",
+      "updatedAt": "2026-03-10T08:47:29.091Z"
+    },
+    "headers/trailer": {
+      "hash": "939f1e77",
+      "file": "datas/devdocs/http/headers/Trailer.md",
+      "updatedAt": "2026-03-10T08:47:29.093Z"
+    },
+    "headers/transfer-encoding": {
+      "hash": "ae80cbde",
+      "file": "datas/devdocs/http/headers/Transfer-Encoding.md",
+      "updatedAt": "2026-03-10T08:47:29.097Z"
+    },
+    "headers/upgrade": {
+      "hash": "d21263f1",
+      "file": "datas/devdocs/http/headers/Upgrade.md",
+      "updatedAt": "2026-03-10T08:47:29.102Z"
+    },
+    "headers/upgrade-insecure-requests": {
+      "hash": "df93800b",
+      "file": "datas/devdocs/http/headers/Upgrade-Insecure-Requests.md",
+      "updatedAt": "2026-03-10T08:47:29.107Z"
+    },
+    "headers/user-agent": {
+      "hash": "cca2c3e3",
+      "file": "datas/devdocs/http/headers/User-Agent.md",
+      "updatedAt": "2026-03-10T08:47:29.110Z"
+    },
+    "headers/user-agent/firefox": {
+      "hash": "5c7938ce",
+      "file": "datas/devdocs/http/headers/User-Agent- Firefox.md",
+      "updatedAt": "2026-03-10T08:47:29.114Z"
+    },
+    "headers/vary": {
+      "hash": "8b4de710",
+      "file": "datas/devdocs/http/headers/Vary.md",
+      "updatedAt": "2026-03-10T08:47:29.131Z"
+    },
+    "headers/via": {
+      "hash": "56b0cec1",
+      "file": "datas/devdocs/http/headers/Via.md",
+      "updatedAt": "2026-03-10T08:47:29.134Z"
+    },
+    "headers/viewport-width": {
+      "hash": "f8ad5af7",
+      "file": "datas/devdocs/http/headers/Viewport-Width.md",
+      "updatedAt": "2026-03-10T08:47:29.137Z"
+    },
+    "headers/warning": {
+      "hash": "29e3cd1b",
+      "file": "datas/devdocs/http/headers/Warning.md",
+      "updatedAt": "2026-03-10T08:47:29.142Z"
+    },
+    "headers/width": {
+      "hash": "2ab35574",
+      "file": "datas/devdocs/http/headers/Width.md",
+      "updatedAt": "2026-03-10T08:47:29.145Z"
+    },
+    "headers/www-authenticate": {
+      "hash": "2fc8d92a",
+      "file": "datas/devdocs/http/headers/WWW-Authenticate.md",
+      "updatedAt": "2026-03-10T08:47:29.149Z"
+    },
+    "headers/x-content-type-options": {
+      "hash": "d01d0097",
+      "file": "datas/devdocs/http/headers/X-Content-Type-Options.md",
+      "updatedAt": "2026-03-10T08:47:29.156Z"
+    },
+    "headers/x-dns-prefetch-control": {
+      "hash": "6f3e87cc",
+      "file": "datas/devdocs/http/headers/X-DNS-Prefetch-Control.md",
+      "updatedAt": "2026-03-10T08:47:29.159Z"
+    },
+    "headers/x-forwarded-for": {
+      "hash": "d7720eec",
+      "file": "datas/devdocs/http/headers/X-Forwarded-For.md",
+      "updatedAt": "2026-03-10T08:47:29.163Z"
+    },
+    "headers/x-forwarded-host": {
+      "hash": "ac1d7440",
+      "file": "datas/devdocs/http/headers/X-Forwarded-Host.md",
+      "updatedAt": "2026-03-10T08:47:29.166Z"
+    },
+    "headers/x-forwarded-proto": {
+      "hash": "23dc04c1",
+      "file": "datas/devdocs/http/headers/X-Forwarded-Proto.md",
+      "updatedAt": "2026-03-10T08:47:29.168Z"
+    },
+    "headers/x-frame-options": {
+      "hash": "92128914",
+      "file": "datas/devdocs/http/headers/X-Frame-Options.md",
+      "updatedAt": "2026-03-10T08:47:29.170Z"
+    },
+    "headers/x-xss-protection": {
+      "hash": "c85099ff",
+      "file": "datas/devdocs/http/headers/X-XSS-Protection.md",
+      "updatedAt": "2026-03-10T08:47:29.175Z"
+    }
+  }
+}

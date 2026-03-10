@@ -1,0 +1,71 @@
+# ob_get_flush
+
+Source: https://devdocs.io/php/function.ob-get-flush
+
+(PHP 4 >= 4.3.0, PHP 5, PHP 7, PHP 8)
+
+ob_get_flush — Flush (send) the return value of the active output handler, return the contents of the active output buffer and turn it off
+
+### Description
+
+```
+ob_get_flush(): string|false
+```
+
+This function calls the output handler (with the PHP_OUTPUT_HANDLER_FINAL flag), flushes (sends) it's return value, returns the contents of the active output buffer and turns off the active output buffer.
+
+ob_get_flush() will fail without an active output buffer started with the PHP_OUTPUT_HANDLER_REMOVABLE flag.
+
+ob_get_flush() will flush (send) the return value of the output handler even if the active output buffer was started without the PHP_OUTPUT_HANDLER_FLUSHABLE flag.
+
+### Parameters
+
+This function has no parameters.
+
+### Return Values
+
+Returns the contents of the active output buffer on success or false on failure.
+
+### Errors/Exceptions
+
+If the function fails it generates an E_NOTICE.
+
+### Examples
+
+Example #1 ob_get_flush() example
+
+```
+<?php
+//using output_buffering=On
+print_r(ob_list_handlers());
+
+//save buffer in a file
+$buffer = ob_get_flush();
+file_put_contents('buffer.txt', $buffer);
+
+print_r(ob_list_handlers());
+?>
+```
+
+The above example will output:
+
+```
+Array
+(
+    [0] => default output handler
+)
+Array
+(
+)
+```
+
+### See Also
+
+- ob_start() - Turn on output buffering
+- ob_get_contents() - Return the contents of the output buffer
+- ob_flush() - Flush (send) the return value of the active output handler
+- ob_end_flush() - Flush (send) the return value of the active output handler and turn the active output buffer off
+- ob_get_clean() - Get the contents of the active output buffer and turn it off
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.ob-get-flush.php

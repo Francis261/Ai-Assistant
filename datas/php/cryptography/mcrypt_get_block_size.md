@@ -1,0 +1,58 @@
+# mcrypt_get_block_size
+
+Source: https://devdocs.io/php/function.mcrypt-get-block-size
+
+(PHP 4, PHP 5, PHP 7 < 7.2.0, PECL mcrypt >= 1.0.0)
+
+mcrypt_get_block_size — Gets the block size of the specified cipher
+
+This function has been DEPRECATED as of PHP 7.1.0 and REMOVED as of PHP 7.2.0. Relying on this function is highly discouraged.
+
+### Description
+
+```
+mcrypt_get_block_size(int $cipher): int|false
+```
+
+```
+mcrypt_get_block_size(string $cipher, string $mode): int|false
+```
+
+The first prototype is when linked against libmcrypt 2.2.x, the second when linked against libmcrypt 2.4.x or 2.5.x.
+
+mcrypt_get_block_size() is used to get the size of a block of the specified cipher (in combination with an encryption mode).
+
+It is more useful to use the mcrypt_enc_get_block_size() function as this uses the resource returned by mcrypt_module_open().
+
+### Parameters
+
+One of the MCRYPT_ciphername constants, or the name of the algorithm as string.
+
+One of the MCRYPT_MODE_modename constants, or one of the following strings: "ecb", "cbc", "cfb", "ofb", "nofb" or "stream".
+
+### Return Values
+
+Returns the algorithm block size in bytes or false on failure.
+
+### Examples
+
+Example #1 mcrypt_get_block_size() example
+
+This example shows how to use this function when linked against libmcrypt 2.4.x and 2.5.x.
+
+```
+<?php
+
+echo mcrypt_get_block_size('tripledes', 'ecb'); // 8
+
+?>
+```
+
+### See Also
+
+- mcrypt_get_key_size() - Gets the key size of the specified cipher
+- mcrypt_enc_get_block_size() - Returns the blocksize of the opened algorithm
+- mcrypt_encrypt() - Encrypts plaintext with given parameters
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.mcrypt-get-block-size.php

@@ -1,0 +1,68 @@
+# array_walk_recursive
+
+Source: https://devdocs.io/php/function.array-walk-recursive
+
+(PHP 5, PHP 7, PHP 8)
+
+array_walk_recursive — Apply a user function recursively to every member of an array
+
+### Description
+
+```
+array_walk_recursive(array|object &$array, callable $callback, mixed $arg = null): true
+```
+
+Applies the user-defined callback function to each element of the array. This function will recurse into deeper arrays.
+
+### Parameters
+
+The input array.
+
+Typically, callback takes on two parameters. The array parameter's value being the first, and the key/index second.
+
+Note:
+
+If callback needs to be working with the actual values of the array, specify the first parameter of callback as a reference. Then, any changes made to those elements will be made in the original array itself.
+
+If the optional arg parameter is supplied, it will be passed as the third parameter to the callback.
+
+### Return Values
+
+Always returns true.
+
+### Changelog
+
+### Examples
+
+Example #1 array_walk_recursive() example
+
+```
+<?php
+$sweet = array('a' => 'apple', 'b' => 'banana');
+$fruits = array('sweet' => $sweet, 'sour' => 'lemon');
+
+function test_print($item, $key)
+{
+    echo "$key holds $item\n";
+}
+
+array_walk_recursive($fruits, 'test_print');
+?>
+```
+
+The above example will output:
+
+```
+a holds apple
+b holds banana
+sour holds lemon
+```
+
+You may notice that the key 'sweet' is never displayed. Any key that holds an array will not be passed to the function.
+
+### See Also
+
+- array_walk() - Apply a user supplied function to every member of an array
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.array-walk-recursive.php

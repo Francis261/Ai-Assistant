@@ -1,0 +1,60 @@
+# filter_list
+
+Source: https://devdocs.io/php/function.filter-list
+
+(PHP 5 >= 5.2.0, PHP 7, PHP 8)
+
+filter_list — Returns a list of all supported filters
+
+### Description
+
+```
+filter_list(): array
+```
+
+### Parameters
+
+This function has no parameters.
+
+### Return Values
+
+Returns an array of names of all supported filters, empty array if there are no such filters. Indexes of this array are not filter IDs, they can be obtained with filter_id() from a name instead.
+
+### Examples
+
+Example #1 A filter_list() example
+
+```
+<?php
+print_r(filter_list());
+?>
+```
+
+The above example will output something similar to:
+
+```
+Array
+(
+    [0] => int
+    [1] => boolean
+    [2] => float
+    [3] => validate_regexp
+    [4] => validate_url
+    [5] => validate_email
+    [6] => validate_ip
+    [7] => string
+    [8] => stripped
+    [9] => encoded
+    [10] => special_chars
+    [11] => unsafe_raw
+    [12] => email
+    [13] => url
+    [14] => number_int
+    [15] => number_float
+    [16] => magic_quotes
+    [17] => callback
+)
+```
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.filter-list.php

@@ -1,0 +1,75 @@
+# imagecolorresolvealpha
+
+Source: https://devdocs.io/php/function.imagecolorresolvealpha
+
+(PHP 4 >= 4.0.6, PHP 5, PHP 7, PHP 8)
+
+imagecolorresolvealpha — Get the index of the specified color + alpha or its closest possible alternative
+
+### Description
+
+```
+imagecolorresolvealpha(
+ GdImage $image,
+ int $red,
+ int $green,
+ int $blue,
+ int $alpha
+): int
+```
+
+This function is guaranteed to return a color index for a requested color, either the exact color or the closest possible alternative.
+
+### Parameters
+
+A GdImage object, returned by one of the image creation functions, such as imagecreatetruecolor().
+
+Value of red component.
+
+Value of green component.
+
+Value of blue component.
+
+A value between 0 and 127. 0 indicates completely opaque while 127 indicates completely transparent.
+
+### Return Values
+
+Returns a color index.
+
+### Changelog
+
+### Examples
+
+Example #1 Using imagecoloresolvealpha() to get colors from an image
+
+```
+<?php
+// Load an image
+$im = imagecreatefromgif('phplogo.gif');
+
+// Get closest colors from the image
+$colors = array();
+$colors[] = imagecolorresolvealpha($im, 255, 255, 255, 0);
+$colors[] = imagecolorresolvealpha($im, 0, 0, 200, 127);
+
+// Output
+print_r($colors);
+?>
+```
+
+The above example will output something similar to:
+
+```
+Array
+(
+    [0] => 89
+    [1] => 85
+)
+```
+
+### See Also
+
+- imagecolorclosestalpha() - Get the index of the closest color to the specified color + alpha
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.imagecolorresolvealpha.php

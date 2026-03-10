@@ -1,0 +1,76 @@
+# mailparse_uudecode_all
+
+Source: https://devdocs.io/php/function.mailparse-uudecode-all
+
+(PECL mailparse >= 0.9.0)
+
+mailparse_uudecode_all — Scans the data from fp and extract each embedded uuencoded file
+
+### Description
+
+```
+mailparse_uudecode_all(resource $fp): array
+```
+
+Scans the data from the given file pointer and extract each embedded uuencoded file into a temporary file.
+
+### Parameters
+
+A valid file pointer.
+
+### Return Values
+
+Returns an array of associative arrays listing filename information.
+
+### Examples
+
+Example #1 mailparse_uudecode_all() example
+
+```
+<?php
+
+$text = <<<EOD
+To: fred@example.com
+
+hello, this is some text hello.
+blah blah blah.
+
+begin 644 test.txt
+/=&AI<R!I<R!A('1E<W0*
+`
+end
+
+EOD;
+
+$fp = tmpfile();
+fwrite($fp, $text);
+
+$data = mailparse_uudecode_all($fp);
+
+echo "BODY\n";
+readfile($data[0]["filename"]);
+echo "UUE ({$data[1]['origfilename']})\n";
+readfile($data[1]["filename"]);
+
+// Clean up
+unlink($data[0]["filename"]);
+unlink($data[1]["filename"]);
+
+?>
+```
+
+The above example will output:
+
+```
+BODY
+To: fred@example.com
+
+hello, this is some text hello.
+blah blah blah.
+
+UUE (test.txt)
+this is a test
+```
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.mailparse-uudecode-all.php

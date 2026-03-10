@@ -1,0 +1,50 @@
+# socket_set_block
+
+Source: https://devdocs.io/php/function.socket-set-block
+
+(PHP 4 >= 4.2.0, PHP 5, PHP 7, PHP 8)
+
+socket_set_block — Sets blocking mode on a socket
+
+### Description
+
+```
+socket_set_block(Socket $socket): bool
+```
+
+The socket_set_block() function removes the O_NONBLOCK flag on the socket specified by the socket parameter.
+
+When an operation (e.g. receive, send, connect, accept, ...) is performed on a blocking socket, the script will pause its execution until it receives a signal or it can perform the operation.
+
+### Parameters
+
+A Socket instance created with socket_create() or socket_accept().
+
+### Return Values
+
+Returns true on success or false on failure.
+
+### Changelog
+
+### Examples
+
+Example #1 socket_set_block() example
+
+```
+<?php
+$socket = socket_create_listen(1223);
+socket_set_block($socket);
+
+socket_accept($socket);
+?>
+```
+
+This example creates a listening socket on all interfaces on port 1223 and sets the socket to O_BLOCK mode. socket_accept() will hang until there is a connection to accept.
+
+### See Also
+
+- socket_set_nonblock() - Sets nonblocking mode for file descriptor fd
+- socket_set_option() - Sets socket options for the socket
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.socket-set-block.php

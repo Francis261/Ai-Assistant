@@ -1,0 +1,71 @@
+# runkit7_method_copy
+
+Source: https://devdocs.io/php/function.runkit7-method-copy
+
+(PECL runkit7 >= Unknown)
+
+runkit7_method_copy — Copies a method from class to another
+
+### Description
+
+```
+runkit7_method_copy(
+ string $destination_class,
+ string $destination_method_name,
+ string $source_class,
+ string $source_method_name = ?
+): bool
+```
+
+### Parameters
+
+Destination class for copied method
+
+Destination method name
+
+Source class of the method to copy
+
+Name of the method to copy from the source class. If this parameter is omitted, the value of destination_method_name is assumed.
+
+### Return Values
+
+### Examples
+
+Example #1 runkit7_method_copy() example
+
+```
+<?php
+class Foo {
+    function example() {
+        return "foo!\n";
+    }
+}
+
+class Bar {
+    // initially, no methods
+}
+
+// copy the example() method from the Foo class to the Bar class, as baz()
+runkit7_method_copy('Bar', 'baz', 'Foo', 'example');
+
+// output copied function
+echo Bar::baz();
+?>
+```
+
+The above example will output:
+
+```
+foo!
+```
+
+### See Also
+
+- runkit7_method_add() - Dynamically adds a new method to a given class
+- runkit7_method_redefine() - Dynamically changes the code of the given method
+- runkit7_method_remove() - Dynamically removes the given method
+- runkit7_method_rename() - Dynamically changes the name of the given method
+- runkit7_function_copy() - Copy a function to a new function name
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.runkit7-method-copy.php

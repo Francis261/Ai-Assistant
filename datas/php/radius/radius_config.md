@@ -1,0 +1,30 @@
+# radius_config
+
+Source: https://devdocs.io/php/function.radius-config
+
+(PECL radius >= 1.1.0)
+
+radius_config — Causes the library to read the given configuration file
+
+### Description
+
+```
+radius_config(resource $radius_handle, string $file): bool
+```
+
+Before issuing any Radius requests, the library must be made aware of the servers it can contact. The easiest way to configure the library is to call radius_config(). radius_config() causes the library to read a configuration file whose format is described in » radius.conf.
+
+### Parameters
+
+The pathname of the configuration file is passed as the file argument to radius_config(). The library can also be configured programmatically by calls to radius_add_server().
+
+### Return Values
+
+Returns true on success or false on failure.
+
+### See Also
+
+- radius_add_server() - Adds a server
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.radius-config.php

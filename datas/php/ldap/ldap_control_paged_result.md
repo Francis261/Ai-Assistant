@@ -1,0 +1,109 @@
+# ldap_control_paged_result
+
+Source: https://devdocs.io/php/function.ldap-control-paged-result
+
+(PHP 5 >= 5.4.0, PHP 7)
+
+ldap_control_paged_result — Send LDAP pagination control
+
+This function has been DEPRECATED as of PHP 7.4.0, and REMOVED as of PHP 8.0.0. Instead the controls parameter of ldap_search() should be used. See also LDAP Controls for details.
+
+### Description
+
+```
+ldap_control_paged_result(
+ resource $link,
+ int $pagesize,
+ bool $iscritical = false,
+ string $cookie = ""
+): bool
+```
+
+Enable LDAP pagination by sending the pagination control (page size, cookie...).
+
+### Parameters
+
+An LDAP resource, returned by ldap_connect().
+
+The number of entries by page.
+
+Indicates whether the pagination is critical or not. If true and if the server doesn't support pagination, the search will return no result.
+
+An opaque structure sent by the server (ldap_control_paged_result_response()).
+
+### Return Values
+
+Returns true on success or false on failure.
+
+### Changelog
+
+### Examples
+
+The example below show the retrieval of the first page of a search paginated with one entry by page.
+
+Example #1 LDAP pagination
+
+```
+<?php
+     // $ds is a valid link identifier (see ldap_connect)
+     ldap_set_option($ds, LDAP_OPT_PROTOCOL_VERSION, 3);
+
+     $dn        = 'ou=example,dc=org';
+     $filter    = '(|(sn=Doe*)(givenname=John*))';
+     $justthese = array('ou', 'sn', 'givenname', 'mail');
+
+     // enable pagination with a page size of 1.
+     ldap_control_paged_result($ds, 1);
+
+     $sr = ldap_search($ds, $dn, $filter, $justthese);
+
+     $info = ldap_get_entries($ds, $sr);
+
+     echo $info['count'] . ' entries returned' . PHP_EOL;
+```
+
+The example below show the retrieval of all the result paginated with 100 entries by page.
+
+Example #2 LDAP pagination
+
+```
+<?php
+     // $ds is a valid link identifier (see ldap_connect)
+     ldap_set_option($ds, LDAP_OPT_PROTOCOL_VERSION, 3);
+
+     $dn        = 'ou=example,dc=org';
+     $filter    = '(|(sn=Doe*)(givenname=John*))';
+     $justthese = array('ou', 'sn', 'givenname', 'mail');
+
+     // enable pagination with a page size of 100.
+     $pageSize = 100;
+
+     $cookie = '';
+     do {
+         ldap_control_paged_result($ds, $pageSize, true, $cookie);
+
+         $result  = ldap_search($ds, $dn, $filter, $justthese);
+         $entries = ldap_get_entries($ds, $result);
+             
+         foreach ($entries as $e) {
+             echo $e['dn'] . PHP_EOL;
+         }
+
+         ldap_control_paged_result_response($ds, $result, $cookie);
+       
+     } while($cookie !== null && $cookie != '');
+```
+
+### Notes
+
+Note:
+
+Pagination control is a LDAPv3 protocol feature.
+
+### See Also
+
+- ldap_control_paged_result_response() - Retrieve the LDAP pagination cookie
+- » RFC2696 : LDAP Control Extension for Simple Paged Results Manipulation
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.ldap-control-paged-result.php

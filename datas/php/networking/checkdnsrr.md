@@ -1,0 +1,43 @@
+# checkdnsrr
+
+Source: https://devdocs.io/php/function.checkdnsrr
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+checkdnsrr — Check DNS records corresponding to a given Internet host name or IP address
+
+### Description
+
+```
+checkdnsrr(string $hostname, string $type = "MX"): bool
+```
+
+Searches DNS for records of type type corresponding to hostname.
+
+### Parameters
+
+hostname may either be the IP address in dotted-quad notation or the host name.
+
+type may be any one of: A, MX, NS, SOA, PTR, CNAME, AAAA, A6, SRV, NAPTR, TXT or ANY.
+
+### Return Values
+
+Returns true if any records are found; returns false if no records were found or if an error occurred.
+
+### Notes
+
+Note:
+
+For compatibility with Windows before this was implemented, then try the » PEAR class » Net_DNS.
+
+### See Also
+
+- dns_get_record() - Fetch DNS Resource Records associated with a hostname
+- getmxrr() - Get MX records corresponding to a given Internet host name
+- gethostbyaddr() - Get the Internet host name corresponding to a given IP address
+- gethostbyname() - Get the IPv4 address corresponding to a given Internet host name
+- gethostbynamel() - Get a list of IPv4 addresses corresponding to a given Internet host name
+- the named(8) manual page
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.checkdnsrr.php

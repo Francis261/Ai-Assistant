@@ -1,0 +1,89 @@
+# TypeError: setting getter-only property "x"
+
+Source: https://devdocs.io/javascript/errors/getter_only
+
+The JavaScript strict mode-only exception "setting getter-only property" occurs when there is an attempt to set a new value to a property for which only a getter is specified, or when setting a private accessor property that similarly only has a getter defined.
+
+## Message
+
+```
+TypeError: Cannot set property x of #<Object> which has only a getter (V8-based)
+TypeError: '#x' was defined without a setter (V8-based)
+TypeError: setting getter-only property "x" (Firefox)
+TypeError: Attempted to assign to readonly property. (Safari)
+TypeError: Trying to access an undefined private setter (Safari)
+```
+
+## Error type
+
+TypeError in strict mode only.
+
+## What went wrong?
+
+There is an attempt to set a new value to a property for which only a getter is specified. While this will be silently ignored in non-strict mode, it will throw a TypeError in strict mode. Classes are always in strict mode, so assigning to a getter-only private element always throws this error.
+
+## Examples
+
+### Property with no setter
+
+The example below shows how to set a getter for a property. It doesn't specify a setter, so a TypeError will be thrown upon trying to set the temperature property to 30. For more details see also the Object.defineProperty() page.
+
+```
+"use strict";
+
+function Archiver() {
+  const temperature = null;
+  Object.defineProperty(this, "temperature", {
+    get() {
+      console.log("get!");
+      return temperature;
+    },
+  });
+}
+
+const arc = new Archiver();
+arc.temperature; // 'get!'
+
+arc.temperature = 30;
+// TypeError: setting getter-only property "temperature"
+```
+
+To fix this error, you will either need to remove the arc.temperature = 30 line, which attempts to set the temperature property, or you will need to implement a setter for it, for example like this:
+
+```
+"use strict";
+
+function Archiver() {
+  let temperature = null;
+  const archive = [];
+
+  Object.defineProperty(this, "temperature", {
+    get() {
+      console.log("get!");
+      return temperature;
+    },
+    set(value) {
+      temperature = value;
+      archive.push({ val: temperature });
+    },
+  });
+
+  this.getArchive = function () {
+    return archive;
+  };
+}
+
+const arc = new Archiver();
+arc.temperature; // 'get!'
+arc.temperature = 11;
+arc.temperature = 13;
+arc.getArchive(); // [{ val: 11 }, { val: 13 }]
+```
+
+## See also
+
+- Object.defineProperty()
+- Object.defineProperties()
+
+© 2005–2025 MDN contributors.Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Getter_only

@@ -1,0 +1,87 @@
+# Closure::bindTo
+
+Source: https://devdocs.io/php/closure.bindto
+
+(PHP 5 >= 5.4.0, PHP 7, PHP 8)
+
+Closure::bindTo — Duplicates the closure with a new bound object and class scope
+
+### Description
+
+```
+public Closure::bindTo(?object $newThis, object|string|null $newScope = "static"): ?Closure
+```
+
+Create and return a new anonymous function with the same body and bound variables as this one, but possibly with a different bound object and a new class scope.
+
+The “bound object” determines the value $this will have in the function body and the “class scope” represents a class which determines which private and protected members the anonymous function will be able to access. Namely, the members that will be visible are the same as if the anonymous function were a method of the class given as value of the newScope parameter.
+
+Static closures cannot have any bound object (the value of the parameter newThis should be null), but this method can nevertheless be used to change their class scope.
+
+This method will ensure that for a non-static closure, having a bound instance will imply being scoped and vice-versa. To this end, non-static closures that are given a scope but a null instance are made static and non-static non-scoped closures that are given a non-null instance are scoped to an unspecified class.
+
+Note:
+
+If you only want to duplicate the anonymous functions, you can use cloning instead.
+
+### Parameters
+
+The object to which the given anonymous function should be bound, or null for the closure to be unbound.
+
+The class scope to which the closure is to be associated, or 'static' to keep the current one. If an object is given, the type of the object will be used instead. This determines the visibility of protected and private methods of the bound object. It is not allowed to pass (an object of) an internal class as this parameter.
+
+### Return Values
+
+Returns the newly created Closure object or null on failure.
+
+### Examples
+
+Example #1 Closure::bindTo() example
+
+```
+<?php
+
+class A
+{
+    private $val;
+
+    public function __construct($val)
+    {
+        $this->val = $val;
+    }
+
+    public function getClosure()
+    {
+        // Returns closure bound to this object and scope
+        return function() {
+            return $this->val;
+        };
+    }
+}
+
+$ob1 = new A(1);
+$ob2 = new A(2);
+
+$cl = $ob1->getClosure();
+echo $cl(), "\n";
+
+$cl = $cl->bindTo($ob2);
+echo $cl(), "\n";
+
+?>
+```
+
+The above example will output something similar to:
+
+```
+1
+2
+```
+
+### See Also
+
+- Anonymous functions
+- Closure::bind() - Duplicates a closure with a specific bound object and class scope
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/closure.bindto.php

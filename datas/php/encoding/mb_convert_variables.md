@@ -1,0 +1,51 @@
+# mb_convert_variables
+
+Source: https://devdocs.io/php/function.mb-convert-variables
+
+(PHP 4 >= 4.0.6, PHP 5, PHP 7, PHP 8)
+
+mb_convert_variables — Convert character code in variable(s)
+
+### Description
+
+```
+mb_convert_variables(
+ string $to_encoding,
+ array|string $from_encoding,
+ mixed &$var,
+ mixed &...$vars
+): string|false
+```
+
+Converts character encoding of variables var and vars in encoding from_encoding to encoding to_encoding.
+
+mb_convert_variables() join strings in Array or Object to detect encoding, since encoding detection tends to fail for short strings. Therefore, it is impossible to mix encoding in single array or object.
+
+### Parameters
+
+The encoding that the string is being converted to.
+
+from_encoding is specified as an array or comma separated string, it tries to detect encoding from from-coding. When from_encoding is omitted, detect_order is used.
+
+var is the reference to the variable being converted. String, Array and Object are accepted. mb_convert_variables() assumes all parameters have the same encoding.
+
+Additional vars.
+
+### Return Values
+
+The character encoding before conversion for success, or false for failure.
+
+### Examples
+
+Example #1 mb_convert_variables() example
+
+```
+<?php
+/* Convert variables $post1, $post2 to internal encoding */
+$interenc = mb_internal_encoding();
+$inputenc = mb_convert_variables($interenc, "ASCII,UTF-8,SJIS-win", $post1, $post2);
+?>
+```
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.mb-convert-variables.php

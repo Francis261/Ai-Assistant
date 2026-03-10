@@ -1,0 +1,44 @@
+# imagecreatefromxbm
+
+Source: https://devdocs.io/php/function.imagecreatefromxbm
+
+(PHP 4 >= 4.0.1, PHP 5, PHP 7, PHP 8)
+
+imagecreatefromxbm — Create a new image from file or URL
+
+### Description
+
+```
+imagecreatefromxbm(string $filename): GdImage|false
+```
+
+imagecreatefromxbm() returns an image identifier representing the image obtained from the given filename.
+
+A URL can be used as a filename with this function if the fopen wrappers have been enabled. See fopen() for more details on how to specify the filename. See the Supported Protocols and Wrappers for links to information about what abilities the various wrappers have, notes on their usage, and information on any predefined variables they may provide.
+
+### Parameters
+
+Path to the XBM image.
+
+### Return Values
+
+Returns an image object on success, false on errors.
+
+### Changelog
+
+### Examples
+
+Example #1 Convert an XBM image to a png image using imagecreatefromxbm()
+
+```
+<?php
+// Load the xbm file
+$xbm = imagecreatefromxbm('./example.xbm');
+
+// Convert it to a png file
+imagepng($xbm, './example.png');
+?>
+```
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.imagecreatefromxbm.php

@@ -1,0 +1,397 @@
+{
+  "category": "typescript",
+  "docMtime": 1757947681,
+  "generatedAt": "2026-03-10T08:50:28.666Z",
+  "entries": {
+    "docs/handbook/asp-net-core": {
+      "hash": "9c1710f0",
+      "file": "datas/devdocs/typescript/tutorials/ASP.NET Core.md",
+      "updatedAt": "2026-03-10T08:50:28.679Z"
+    },
+    "docs/handbook/basic-types": {
+      "hash": "b2e93f60",
+      "file": "datas/devdocs/typescript/basic-types/Basic Types.md",
+      "updatedAt": "2026-03-10T08:50:28.794Z"
+    },
+    "docs/handbook/2/classes": {
+      "hash": "8d58d386",
+      "file": "datas/devdocs/typescript/handbook/Classes.md",
+      "updatedAt": "2026-03-10T08:50:28.830Z"
+    },
+    "docs/handbook/classes": {
+      "hash": "ca3f5e02",
+      "file": "datas/devdocs/typescript/classes/Classes.md",
+      "updatedAt": "2026-03-10T08:50:28.873Z"
+    },
+    "docs/handbook/compiler-options-in-msbuild": {
+      "hash": "f30b57c3",
+      "file": "datas/devdocs/typescript/project-configuration/Compiler Options in MSBuild.md",
+      "updatedAt": "2026-03-10T08:50:28.887Z"
+    },
+    "docs/handbook/2/conditional-types": {
+      "hash": "2c8d0cad",
+      "file": "datas/devdocs/typescript/handbook/Conditional Types.md",
+      "updatedAt": "2026-03-10T08:50:28.912Z"
+    },
+    "docs/handbook/configuring-watch": {
+      "hash": "2265560a",
+      "file": "datas/devdocs/typescript/project-configuration/Configuring Watch.md",
+      "updatedAt": "2026-03-10T08:50:28.970Z"
+    },
+    "docs/handbook/declaration-files/consumption": {
+      "hash": "e7a6765e",
+      "file": "datas/devdocs/typescript/declaration-files/Consumption.md",
+      "updatedAt": "2026-03-10T08:50:28.988Z"
+    },
+    "docs/handbook/declaration-files/dts-from-js": {
+      "hash": "f4d3a7f8",
+      "file": "datas/devdocs/typescript/declaration-files/Creating .d.ts Files from .js files.md",
+      "updatedAt": "2026-03-10T08:50:28.996Z"
+    },
+    "docs/handbook/2/types-from-types": {
+      "hash": "f958ebcc",
+      "file": "datas/devdocs/typescript/handbook/Creating Types from Types.md",
+      "updatedAt": "2026-03-10T08:50:29.005Z"
+    },
+    "docs/handbook/declaration-merging": {
+      "hash": "5d63cd66",
+      "file": "datas/devdocs/typescript/reference/Declaration Merging.md",
+      "updatedAt": "2026-03-10T08:50:29.012Z"
+    },
+    "docs/handbook/declaration-files/by-example": {
+      "hash": "1e69e03d",
+      "file": "datas/devdocs/typescript/declaration-files/Declaration Reference.md",
+      "updatedAt": "2026-03-10T08:50:29.024Z"
+    },
+    "docs/handbook/decorators": {
+      "hash": "a680b8fc",
+      "file": "datas/devdocs/typescript/reference/Decorators.md",
+      "updatedAt": "2026-03-10T08:50:29.035Z"
+    },
+    "docs/handbook/declaration-files/deep-dive": {
+      "hash": "df5b407d",
+      "file": "datas/devdocs/typescript/declaration-files/Deep Dive.md",
+      "updatedAt": "2026-03-10T08:50:29.049Z"
+    },
+    "docs/handbook/declaration-files/do-s-and-don-ts": {
+      "hash": "72074a5a",
+      "file": "datas/devdocs/typescript/declaration-files/Do's and Don'ts.md",
+      "updatedAt": "2026-03-10T08:50:29.059Z"
+    },
+    "docs/handbook/dom-manipulation": {
+      "hash": "c662d13c",
+      "file": "datas/devdocs/typescript/tutorials/DOM Manipulation.md",
+      "updatedAt": "2026-03-10T08:50:29.075Z"
+    },
+    "docs/handbook/enums": {
+      "hash": "6fa7606a",
+      "file": "datas/devdocs/typescript/reference/Enums.md",
+      "updatedAt": "2026-03-10T08:50:29.085Z"
+    },
+    "docs/handbook/2/everyday-types": {
+      "hash": "d1858163",
+      "file": "datas/devdocs/typescript/handbook/Everyday Types.md",
+      "updatedAt": "2026-03-10T08:50:29.099Z"
+    },
+    "docs/handbook/functions": {
+      "hash": "524b06c3",
+      "file": "datas/devdocs/typescript/functions/Functions.md",
+      "updatedAt": "2026-03-10T08:50:29.131Z"
+    },
+    "docs/handbook/2/generics": {
+      "hash": "5c5c1df2",
+      "file": "datas/devdocs/typescript/handbook/Generics.md",
+      "updatedAt": "2026-03-10T08:50:29.142Z"
+    },
+    "docs/handbook/generics": {
+      "hash": "4db74a79",
+      "file": "datas/devdocs/typescript/generics/Generics.md",
+      "updatedAt": "2026-03-10T08:50:29.154Z"
+    },
+    "docs/handbook/declaration-files/templates/global-d-ts": {
+      "hash": "ae634abe",
+      "file": "datas/devdocs/typescript/declaration-files/Global .d.ts.md",
+      "updatedAt": "2026-03-10T08:50:29.162Z"
+    },
+    "docs/handbook/declaration-files/templates/global-modifying-module-d-ts": {
+      "hash": "973f2dbf",
+      "file": "datas/devdocs/typescript/declaration-files/Global- Modifying Module.md",
+      "updatedAt": "2026-03-10T08:50:29.168Z"
+    },
+    "docs/handbook/declaration-files/templates/global-plugin-d-ts": {
+      "hash": "16072a74",
+      "file": "datas/devdocs/typescript/declaration-files/Global- Plugin.md",
+      "updatedAt": "2026-03-10T08:50:29.182Z"
+    },
+    "docs/handbook/gulp": {
+      "hash": "d200b05e",
+      "file": "datas/devdocs/typescript/tutorials/Gulp.md",
+      "updatedAt": "2026-03-10T08:50:29.191Z"
+    },
+    "docs/handbook/2/indexed-access-types": {
+      "hash": "cc608f1a",
+      "file": "datas/devdocs/typescript/handbook/Indexed Access Types.md",
+      "updatedAt": "2026-03-10T08:50:29.201Z"
+    },
+    "docs/handbook/integrating-with-build-tools": {
+      "hash": "54c1d832",
+      "file": "datas/devdocs/typescript/project-configuration/Integrating with Build Tools.md",
+      "updatedAt": "2026-03-10T08:50:29.207Z"
+    },
+    "docs/handbook/interfaces": {
+      "hash": "a9960eb1",
+      "file": "datas/devdocs/typescript/interfaces/Interfaces.md",
+      "updatedAt": "2026-03-10T08:50:29.214Z"
+    },
+    "tsconfig/index": {
+      "hash": "20859e10",
+      "file": "datas/devdocs/typescript/intro-to-the-tsconfig-reference/Intro to the TSConfig Reference.md",
+      "updatedAt": "2026-03-10T08:50:29.235Z"
+    },
+    "docs/handbook/declaration-files/introduction": {
+      "hash": "b6f4a4e9",
+      "file": "datas/devdocs/typescript/declaration-files/Introduction.md",
+      "updatedAt": "2026-03-10T08:50:29.406Z"
+    },
+    "docs/handbook/iterators-and-generators": {
+      "hash": "f70ae3d3",
+      "file": "datas/devdocs/typescript/reference/Iterators and Generators.md",
+      "updatedAt": "2026-03-10T08:50:29.413Z"
+    },
+    "docs/handbook/intro-to-js-ts": {
+      "hash": "2bdbb04e",
+      "file": "datas/devdocs/typescript/javascript/JS Projects Utilizing TypeScript.md",
+      "updatedAt": "2026-03-10T08:50:29.418Z"
+    },
+    "docs/handbook/jsdoc-supported-types": {
+      "hash": "242a49f3",
+      "file": "datas/devdocs/typescript/javascript/JSDoc Reference.md",
+      "updatedAt": "2026-03-10T08:50:29.430Z"
+    },
+    "docs/handbook/jsx": {
+      "hash": "58dd87b",
+      "file": "datas/devdocs/typescript/reference/JSX--492310f5.md",
+      "updatedAt": "2026-03-10T08:50:29.445Z"
+    },
+    "docs/handbook/2/keyof-types": {
+      "hash": "8b7e4139",
+      "file": "datas/devdocs/typescript/handbook/Keyof Type Operator.md",
+      "updatedAt": "2026-03-10T08:50:29.456Z"
+    },
+    "docs/handbook/declaration-files/library-structures": {
+      "hash": "3b7026be",
+      "file": "datas/devdocs/typescript/declaration-files/Library Structures.md",
+      "updatedAt": "2026-03-10T08:50:29.462Z"
+    },
+    "docs/handbook/2/mapped-types": {
+      "hash": "f19b463a",
+      "file": "datas/devdocs/typescript/handbook/Mapped Types.md",
+      "updatedAt": "2026-03-10T08:50:29.473Z"
+    },
+    "docs/handbook/migrating-from-javascript": {
+      "hash": "4f3d95b5",
+      "file": "datas/devdocs/typescript/tutorials/Migrating from JavaScript.md",
+      "updatedAt": "2026-03-10T08:50:29.479Z"
+    },
+    "docs/handbook/mixins": {
+      "hash": "ccb8da13",
+      "file": "datas/devdocs/typescript/reference/Mixins.md",
+      "updatedAt": "2026-03-10T08:50:29.499Z"
+    },
+    "docs/handbook/declaration-files/templates/module-class-d-ts": {
+      "hash": "b1a04dd0",
+      "file": "datas/devdocs/typescript/declaration-files/Module- Class.md",
+      "updatedAt": "2026-03-10T08:50:29.506Z"
+    },
+    "docs/handbook/declaration-files/templates/module-function-d-ts": {
+      "hash": "b5892632",
+      "file": "datas/devdocs/typescript/declaration-files/Module- Function.md",
+      "updatedAt": "2026-03-10T08:50:29.510Z"
+    },
+    "docs/handbook/declaration-files/templates/module-plugin-d-ts": {
+      "hash": "4b2ca1d7",
+      "file": "datas/devdocs/typescript/declaration-files/Module- Plugin.md",
+      "updatedAt": "2026-03-10T08:50:29.515Z"
+    },
+    "docs/handbook/2/modules": {
+      "hash": "69aea43c",
+      "file": "datas/devdocs/typescript/handbook/Modules.md",
+      "updatedAt": "2026-03-10T08:50:29.520Z"
+    },
+    "docs/handbook/modules/guides/choosing-compiler-options": {
+      "hash": "4d598e27",
+      "file": "datas/devdocs/typescript/modules-reference/Modules - Choosing Compiler Options.md",
+      "updatedAt": "2026-03-10T08:50:29.540Z"
+    },
+    "docs/handbook/modules/appendices/esm-cjs-interop": {
+      "hash": "94d73d72",
+      "file": "datas/devdocs/typescript/modules-reference/Modules - ESM-CJS Interoperability.md",
+      "updatedAt": "2026-03-10T08:50:29.550Z"
+    },
+    "docs/handbook/modules/introduction": {
+      "hash": "c5e46231",
+      "file": "datas/devdocs/typescript/modules-reference/Modules - Introduction.md",
+      "updatedAt": "2026-03-10T08:50:29.564Z"
+    },
+    "docs/handbook/modules/reference": {
+      "hash": "e98557c6",
+      "file": "datas/devdocs/typescript/modules-reference/Modules - Reference.md",
+      "updatedAt": "2026-03-10T08:50:29.569Z"
+    },
+    "docs/handbook/modules/theory": {
+      "hash": "720a9ed7",
+      "file": "datas/devdocs/typescript/modules-reference/Modules - Theory.md",
+      "updatedAt": "2026-03-10T08:50:29.618Z"
+    },
+    "docs/handbook/declaration-files/templates/module-d-ts": {
+      "hash": "98308004",
+      "file": "datas/devdocs/typescript/declaration-files/Modules .d.ts.md",
+      "updatedAt": "2026-03-10T08:50:29.654Z"
+    },
+    "docs/handbook/2/functions": {
+      "hash": "fac1e000",
+      "file": "datas/devdocs/typescript/handbook/More on Functions.md",
+      "updatedAt": "2026-03-10T08:50:29.662Z"
+    },
+    "docs/handbook/namespaces": {
+      "hash": "c3329319",
+      "file": "datas/devdocs/typescript/reference/Namespaces.md",
+      "updatedAt": "2026-03-10T08:50:29.685Z"
+    },
+    "docs/handbook/namespaces-and-modules": {
+      "hash": "8f499c80",
+      "file": "datas/devdocs/typescript/reference/Namespaces and Modules.md",
+      "updatedAt": "2026-03-10T08:50:29.698Z"
+    },
+    "docs/handbook/2/narrowing": {
+      "hash": "ed09ded3",
+      "file": "datas/devdocs/typescript/handbook/Narrowing.md",
+      "updatedAt": "2026-03-10T08:50:29.705Z"
+    },
+    "docs/handbook/nightly-builds": {
+      "hash": "cb9b9c0e",
+      "file": "datas/devdocs/typescript/project-configuration/Nightly Builds.md",
+      "updatedAt": "2026-03-10T08:50:29.718Z"
+    },
+    "docs/handbook/2/objects": {
+      "hash": "c7f3682e",
+      "file": "datas/devdocs/typescript/handbook/Object Types.md",
+      "updatedAt": "2026-03-10T08:50:29.726Z"
+    },
+    "docs/handbook/project-references": {
+      "hash": "c1601541",
+      "file": "datas/devdocs/typescript/project-configuration/Project References.md",
+      "updatedAt": "2026-03-10T08:50:29.771Z"
+    },
+    "docs/handbook/declaration-files/publishing": {
+      "hash": "49363283",
+      "file": "datas/devdocs/typescript/declaration-files/Publishing.md",
+      "updatedAt": "2026-03-10T08:50:29.784Z"
+    },
+    "docs/handbook/symbols": {
+      "hash": "39824e16",
+      "file": "datas/devdocs/typescript/reference/Symbols.md",
+      "updatedAt": "2026-03-10T08:50:29.799Z"
+    },
+    "docs/handbook/2/template-literal-types": {
+      "hash": "c23829dc",
+      "file": "datas/devdocs/typescript/handbook/Template Literal Types.md",
+      "updatedAt": "2026-03-10T08:50:29.815Z"
+    },
+    "docs/handbook/declaration-files/templates": {
+      "hash": "42b6ccfe",
+      "file": "datas/devdocs/typescript/declaration-files/Templates.md",
+      "updatedAt": "2026-03-10T08:50:29.822Z"
+    },
+    "docs/handbook/2/basic-types": {
+      "hash": "7aaed828",
+      "file": "datas/devdocs/typescript/handbook/The Basics.md",
+      "updatedAt": "2026-03-10T08:50:29.827Z"
+    },
+    "docs/handbook/intro": {
+      "hash": "73db0296",
+      "file": "datas/devdocs/typescript/handbook/The TypeScript Handbook.md",
+      "updatedAt": "2026-03-10T08:50:29.841Z"
+    },
+    "docs/handbook/triple-slash-directives": {
+      "hash": "7eb57fd1",
+      "file": "datas/devdocs/typescript/reference/Triple-Slash Directives.md",
+      "updatedAt": "2026-03-10T08:50:29.852Z"
+    },
+    "docs/handbook/compiler-options": {
+      "hash": "1abb11ba",
+      "file": "datas/devdocs/typescript/project-configuration/tsc CLI Options.md",
+      "updatedAt": "2026-03-10T08:50:29.873Z"
+    },
+    "tsconfig": {
+      "hash": "c1a07c93",
+      "file": "datas/devdocs/typescript/tsconfig-reference/TSConfig Reference.md",
+      "updatedAt": "2026-03-10T08:50:29.909Z"
+    },
+    "docs/handbook/type-checking-javascript-files": {
+      "hash": "e2f57322",
+      "file": "datas/devdocs/typescript/javascript/Type Checking JavaScript Files.md",
+      "updatedAt": "2026-03-10T08:50:30.058Z"
+    },
+    "docs/handbook/type-compatibility": {
+      "hash": "33aea562",
+      "file": "datas/devdocs/typescript/reference/Type Compatibility.md",
+      "updatedAt": "2026-03-10T08:50:30.065Z"
+    },
+    "docs/handbook/type-inference": {
+      "hash": "d8cb0749",
+      "file": "datas/devdocs/typescript/reference/Type Inference.md",
+      "updatedAt": "2026-03-10T08:50:30.075Z"
+    },
+    "docs/handbook/2/typeof-types": {
+      "hash": "d5a2ebc1",
+      "file": "datas/devdocs/typescript/handbook/Typeof Type Operator.md",
+      "updatedAt": "2026-03-10T08:50:30.082Z"
+    },
+    "docs/handbook/typescript-in-5-minutes-func": {
+      "hash": "397f65fc",
+      "file": "datas/devdocs/typescript/get-started/TypeScript for Functional Programmers.md",
+      "updatedAt": "2026-03-10T08:50:30.087Z"
+    },
+    "docs/handbook/typescript-in-5-minutes-oop": {
+      "hash": "cd4e606f",
+      "file": "datas/devdocs/typescript/get-started/TypeScript for Java-C# Programmers.md",
+      "updatedAt": "2026-03-10T08:50:30.101Z"
+    },
+    "docs/handbook/typescript-in-5-minutes": {
+      "hash": "47f6aa64",
+      "file": "datas/devdocs/typescript/get-started/TypeScript for JavaScript Programmers.md",
+      "updatedAt": "2026-03-10T08:50:30.120Z"
+    },
+    "docs/handbook/typescript-from-scratch": {
+      "hash": "8ed5cd8c",
+      "file": "datas/devdocs/typescript/get-started/TypeScript for the New Programmer.md",
+      "updatedAt": "2026-03-10T08:50:30.128Z"
+    },
+    "docs/handbook/typescript-tooling-in-5-minutes": {
+      "hash": "f23fb5f7",
+      "file": "datas/devdocs/typescript/get-started/TypeScript Tooling in 5 minutes.md",
+      "updatedAt": "2026-03-10T08:50:30.137Z"
+    },
+    "docs/handbook/babel-with-typescript": {
+      "hash": "71866de0",
+      "file": "datas/devdocs/typescript/tutorials/Using Babel with TypeScript.md",
+      "updatedAt": "2026-03-10T08:50:30.144Z"
+    },
+    "docs/handbook/utility-types": {
+      "hash": "4405114c",
+      "file": "datas/devdocs/typescript/reference/Utility Types.md",
+      "updatedAt": "2026-03-10T08:50:30.161Z"
+    },
+    "docs/handbook/variable-declarations": {
+      "hash": "addfa0bb",
+      "file": "datas/devdocs/typescript/reference/Variable Declaration.md",
+      "updatedAt": "2026-03-10T08:50:30.169Z"
+    },
+    "docs/handbook/tsconfig-json": {
+      "hash": "b52ff949",
+      "file": "datas/devdocs/typescript/project-configuration/What is a tsconfig.json.md",
+      "updatedAt": "2026-03-10T08:50:30.181Z"
+    }
+  }
+}

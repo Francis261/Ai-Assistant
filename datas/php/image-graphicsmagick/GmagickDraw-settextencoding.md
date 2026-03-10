@@ -1,0 +1,26 @@
+# GmagickDraw::settextencoding
+
+Source: https://devdocs.io/php/gmagickdraw.settextencoding
+
+(PECL gmagick >= Unknown)
+
+GmagickDraw::settextencoding — Specifies the text code set
+
+### Description
+
+```
+public GmagickDraw::settextencoding(string $encoding): GmagickDraw
+```
+
+Specifies the code set to use for text annotations. The only character encoding which may be specified at this time is "UTF-8" for representing Unicode as a sequence of bytes. Specify an empty string to set text encoding to the system's default. Successful text annotation using Unicode may require fonts designed to support Unicode.
+
+### Parameters
+
+Character string specifying text encoding
+
+### Return Values
+
+The GmagickDraw object.
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/gmagickdraw.settextencoding.php

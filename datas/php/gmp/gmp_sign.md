@@ -1,0 +1,56 @@
+# gmp_sign
+
+Source: https://devdocs.io/php/function.gmp-sign
+
+(PHP 4 >= 4.0.4, PHP 5, PHP 7, PHP 8)
+
+gmp_sign — Sign of number
+
+### Description
+
+```
+gmp_sign(GMP|int|string $num): int
+```
+
+Checks the sign of a number.
+
+### Parameters
+
+Either a GMP object, or a numeric string provided that it is possible to convert the latter to an int.
+
+### Return Values
+
+Returns 1 if num is positive, -1 if num is negative, and 0 if num is zero.
+
+### Examples
+
+Example #1 gmp_sign() example
+
+```
+<?php
+// positive
+echo gmp_sign("500") . "\n";
+
+// negative
+echo gmp_sign("-500") . "\n";
+
+// zero
+echo gmp_sign("0") . "\n";
+?>
+```
+
+The above example will output:
+
+```
+1
+-1
+0
+```
+
+### See Also
+
+- gmp_abs() - Absolute value
+- abs() - Absolute value
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.gmp-sign.php

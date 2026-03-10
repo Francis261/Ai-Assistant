@@ -1,0 +1,85 @@
+# strip_tags
+
+Source: https://devdocs.io/php/function.strip-tags
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+strip_tags — Strip HTML and PHP tags from a string
+
+### Description
+
+```
+strip_tags(string $string, array|string|null $allowed_tags = null): string
+```
+
+This function tries to return a string with all NULL bytes, HTML and PHP tags stripped from a given string. It uses the same tag stripping state machine as the fgetss() function.
+
+### Parameters
+
+The input string.
+
+You can use the optional second parameter to specify tags which should not be stripped. These are either given as string, or as of PHP 7.4.0, as array. Refer to the example below regarding the format of this parameter.
+
+Note:
+
+HTML comments and PHP tags are also stripped. This is hardcoded and can not be changed with allowed_tags.
+
+Note:
+
+Self-closing XHTML tags are ignored and only non-self-closing tags should be used in allowed_tags. For example, to allow both <br> and <br/>, you should use:
+
+```
+<?php
+strip_tags($input, '<br>');
+?>
+```
+
+### Return Values
+
+Returns the stripped string.
+
+### Changelog
+
+### Examples
+
+Example #1 strip_tags() example
+
+```
+<?php
+$text = '<p>Test paragraph.</p><!-- Comment --> <a href="#fragment">Other text</a>';
+echo strip_tags($text);
+echo "\n";
+
+// Allow <p> and <a>
+echo strip_tags($text, '<p><a>');
+
+// as of PHP 7.4.0 the line above can be written as:
+// echo strip_tags($text, ['p', 'a']);
+?>
+```
+
+The above example will output:
+
+```
+Test paragraph. Other text
+<p>Test paragraph.</p> <a href="#fragment">Other text</a>
+```
+
+### Notes
+
+This function should not be used to try to prevent XSS attacks. Use more appropriate functions like htmlspecialchars() or other means depending on the context of the output.
+
+Because strip_tags() does not actually validate the HTML, partial or broken tags can result in the removal of more text/data than expected.
+
+This function does not modify any attributes on the tags that you allow using allowed_tags, including the style and onmouseover attributes that a mischievous user may abuse when posting text that will be shown to other users.
+
+Note:
+
+Tag names within the input HTML that are greater than 1023 bytes in length will be treated as though they are invalid, regardless of the allowed_tags parameter.
+
+### See Also
+
+- htmlspecialchars() - Convert special characters to HTML entities
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.strip-tags.php

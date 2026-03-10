@@ -1,0 +1,97 @@
+# ldap_search
+
+Source: https://devdocs.io/php/function.ldap-search
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+ldap_search — Search LDAP tree
+
+### Description
+
+```
+ldap_search(
+ LDAP\Connection|array $ldap,
+ array|string $base,
+ array|string $filter,
+ array $attributes = [],
+ int $attributes_only = 0,
+ int $sizelimit = -1,
+ int $timelimit = -1,
+ int $deref = LDAP_DEREF_NEVER,
+ ?array $controls = null
+): LDAP\Result|array|false
+```
+
+Performs the search for a specified filter on the directory with the scope of LDAP_SCOPE_SUBTREE. This is equivalent to searching the entire directory.
+
+It is also possible to perform parallel searches. In this case, the first argument should be an array of LDAP\Connection instances, rather than a single one. If the searches should not all use the same base DN and filter, an array of base DNs and/or an array of filters can be passed as arguments instead. These arrays must be of the same size as the LDAP\Connection instances array, since the first entries of the arrays are used for one search, the second entries are used for another, and so on. When doing parallel searches an array of LDAP\Result instances is returned, except in case of error, when the return value will be false.
+
+### Parameters
+
+An LDAP\Connection instance, returned by ldap_connect().
+
+The base DN for the directory.
+
+The search filter can be simple or advanced, using boolean operators in the format described in the LDAP documentation (see the » Netscape Directory SDK or » RFC4515 for full information on filters).
+
+An array of the required attributes, e.g. array("mail", "sn", "cn"). Note that the "dn" is always returned irrespective of which attributes types are requested.
+
+Using this parameter is much more efficient than the default action (which is to return all attributes and their associated values). The use of this parameter should therefore be considered good practice.
+
+Should be set to 1 if only attribute types are wanted. If set to 0 both attributes types and attribute values are fetched which is the default behaviour.
+
+Enables you to limit the count of entries fetched. Setting this to 0 means no limit.
+
+Note:
+
+This parameter can NOT override server-side preset sizelimit. You can set it lower though.
+
+Some directory server hosts will be configured to return no more than a preset number of entries. If this occurs, the server will indicate that it has only returned a partial results set. This also occurs if you use this parameter to limit the count of fetched entries.
+
+Sets the number of seconds how long is spend on the search. Setting this to 0 means no limit.
+
+Note:
+
+This parameter can NOT override server-side preset timelimit. You can set it lower though.
+
+Specifies how aliases should be handled during the search. It can be one of the following:
+
+- LDAP_DEREF_NEVER - (default) aliases are never dereferenced.
+- LDAP_DEREF_SEARCHING - aliases should be dereferenced during the search but not when locating the base object of the search.
+- LDAP_DEREF_FINDING - aliases should be dereferenced when locating the base object but not during the search.
+- LDAP_DEREF_ALWAYS - aliases should be dereferenced always.
+
+Array of LDAP Controls to send with the request.
+
+### Return Values
+
+Returns an LDAP\Result instance, an array of LDAP\Result instances, or false on failure.
+
+### Changelog
+
+### Examples
+
+The example below retrieves the organizational unit, surname, given name and email address for all people in "My Company" where the surname or given name contains the substring $person. This example uses a boolean filter to tell the server to look for information in more than one attribute.
+
+Example #1 LDAP search
+
+```
+<?php
+// $ds is a valid LDAP\Connection instance for a directory server
+
+// $person is all or part of a person's name, eg "Jo"
+
+$dn = "o=My Company, c=US";
+$filter="(|(sn=$person*)(givenname=$person*))";
+$justthese = array("ou", "sn", "givenname", "mail");
+
+$sr=ldap_search($ds, $dn, $filter, $justthese);
+
+$info = ldap_get_entries($ds, $sr);
+
+echo $info["count"]." entries returned\n";
+?>
+```
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.ldap-search.php

@@ -1,0 +1,48 @@
+# exif_tagname
+
+Source: https://devdocs.io/php/function.exif-tagname
+
+(PHP 4 >= 4.2.0, PHP 5, PHP 7, PHP 8)
+
+exif_tagname — Get the header name for an index
+
+### Description
+
+```
+exif_tagname(int $index): string|false
+```
+
+### Parameters
+
+The Tag ID for which a Tag Name will be looked up.
+
+### Return Values
+
+Returns the header name, or false if index is not a defined EXIF tag id.
+
+### Examples
+
+Example #1 exif_tagname() example
+
+```
+<?php
+echo "256: ".exif_tagname(256).PHP_EOL;
+echo "257: ".exif_tagname(257).PHP_EOL;
+?>
+```
+
+The above example will output:
+
+```
+256: ImageWidth
+257: ImageLength
+```
+
+### See Also
+
+- exif_imagetype() - Determine the type of an image
+- » EXIF Specification
+- » EXIF Tags
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.exif-tagname.php

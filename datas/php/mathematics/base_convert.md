@@ -1,0 +1,55 @@
+# base_convert
+
+Source: https://devdocs.io/php/function.base-convert
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+base_convert — Convert a number between arbitrary bases
+
+### Description
+
+```
+base_convert(string $num, int $from_base, int $to_base): string
+```
+
+Returns a string containing num represented in base to_base. The base in which num is given is specified in from_base. Both from_base and to_base have to be between 2 and 36, inclusive. Digits in numbers with a base higher than 10 will be represented with the letters a-z, with a meaning 10, b meaning 11 and z meaning 35. The case of the letters doesn't matter, i.e. num is interpreted case-insensitively.
+
+base_convert() may lose precision on large numbers due to properties related to the internal float type used. Please see the Floating point numbers section in the manual for more specific information and limitations.
+
+### Parameters
+
+The number to convert. Any invalid characters in num are silently ignored. As of PHP 7.4.0 supplying any invalid characters is deprecated.
+
+The base num is in
+
+The base to convert num to
+
+### Return Values
+
+num converted to base to_base
+
+### Changelog
+
+### Examples
+
+Example #1 base_convert() example
+
+```
+<?php
+$hexadecimal = 'a37334';
+echo base_convert($hexadecimal, 16, 2);
+?>
+```
+
+The above example will output:
+
+```
+101000110111001100110100
+```
+
+### See Also
+
+- intval() - Get the integer value of a variable
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.base-convert.php

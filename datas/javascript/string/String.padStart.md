@@ -1,0 +1,76 @@
+# String.prototype.padStart()
+
+Source: https://devdocs.io/javascript/global_objects/string/padstart
+
+The padStart() method of String values pads this string with a given string (repeated and/or truncated, if needed) so that the resulting string has a given length. The padding is applied from the start of this string.
+
+## Try it
+
+```
+const str = "5";
+
+console.log(str.padStart(2, "0"));
+// Expected output: "05"
+
+const fullNumber = "2034399002125581";
+const last4Digits = fullNumber.slice(-4);
+const maskedNumber = last4Digits.padStart(fullNumber.length, "*");
+
+console.log(maskedNumber);
+// Expected output: "************5581"
+```
+
+## Syntax
+
+```
+padStart(targetLength)
+padStart(targetLength, padString)
+```
+
+### Parameters
+
+The length of the resulting string once the current str has been padded. If the value is less than or equal to str.length, then str is returned as-is.
+
+The string to pad the current str with. If padString is too long to stay within targetLength, it will be truncated from the end. The default value is the space character (U+0020).
+
+### Return value
+
+A String of the specified targetLength with padString applied at the start.
+
+## Examples
+
+### Using String.prototype.padStart()
+
+```
+"abc".padStart(10); // "       abc"
+"abc".padStart(10, "foo"); // "foofoofabc"
+"abc".padStart(6, "123465"); // "123abc"
+"abc".padStart(8, "0"); // "00000abc"
+"abc".padStart(1); // "abc"
+```
+
+### Fixed width string number conversion
+
+```
+// JavaScript version of: (unsigned)
+// printf "%0*d" width num
+function leftFillNum(num, targetLength) {
+  return num.toString().padStart(targetLength, "0");
+}
+
+const num = 123;
+console.log(leftFillNum(num, 5)); // "00123"
+```
+
+## Specifications
+
+## Browser compatibility
+
+## See also
+
+- Polyfill of String.prototype.padStart in core-js
+- es-shims polyfill of String.prototype.padStart
+- String.prototype.padEnd()
+
+© 2005–2025 MDN contributors.Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart

@@ -1,0 +1,62 @@
+# filemtime
+
+Source: https://devdocs.io/php/function.filemtime
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+filemtime — Gets file modification time
+
+### Description
+
+```
+filemtime(string $filename): int|false
+```
+
+This function returns the time when the data blocks of a file were being written to, that is, the time when the content of the file was changed.
+
+### Parameters
+
+Path to the file.
+
+### Return Values
+
+Returns the time the file was last modified, or false on failure. The time is returned as a Unix timestamp, which is suitable for the date() function.
+
+### Errors/Exceptions
+
+Upon failure, an E_WARNING is emitted.
+
+### Examples
+
+Example #1 filemtime() example
+
+```
+<?php
+// outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
+
+$filename = 'somefile.txt';
+if (file_exists($filename)) {
+    echo "$filename was last modified: " . date ("F d Y H:i:s.", filemtime($filename));
+}
+?>
+```
+
+### Notes
+
+Note:
+
+Note that time resolution may differ from one file system to another.
+
+Note: The results of this function are cached. See clearstatcache() for more details.
+
+As of PHP 5.0.0, this function can also be used with some URL wrappers. Refer to Supported Protocols and Wrappers to determine which wrappers support stat() family of functionality.
+
+### See Also
+
+- filectime() - Gets inode change time of file
+- stat() - Gives information about a file
+- touch() - Sets access and modification time of file
+- getlastmod() - Gets time of last page modification
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.filemtime.php

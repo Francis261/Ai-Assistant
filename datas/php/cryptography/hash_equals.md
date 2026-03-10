@@ -1,0 +1,69 @@
+# hash_equals
+
+Source: https://devdocs.io/php/function.hash-equals
+
+(PHP 5 >= 5.6.0, PHP 7, PHP 8)
+
+hash_equals — Timing attack safe string comparison
+
+### Description
+
+```
+hash_equals(#[\SensitiveParameter] string $known_string, #[\SensitiveParameter] string $user_string): bool
+```
+
+Checks whether two strings are equal without leaking information about the contents of known_string via the execution time.
+
+This function can be used to mitigate timing attacks. Performing a regular comparison with === will take more or less time to execute depending on whether the two values are different or not and at which position the first difference can be found, thus leaking information about the contents of the secret known_string.
+
+It is important to provide the user-supplied string as the second parameter, rather than the first.
+
+### Parameters
+
+The known string that must be kept secret.
+
+The user-supplied string to compare against.
+
+### Return Values
+
+Returns true when the two strings are equal, false otherwise.
+
+### Examples
+
+Example #1 hash_equals() example
+
+```
+<?php
+$secretKey = '8uRhAeH89naXfFXKGOEj';
+
+// Value and signature are provided by the user, e.g. within the URL
+// and retrieved using $_GET.
+$value = 'username=rasmuslerdorf';
+$signature = '8c35009d3b50caf7f5d2c1e031842e6b7823a1bb781d33c5237cd27b57b5f327';
+
+if (hash_equals(hash_hmac('sha256', $value, $secretKey), $signature)) {
+    echo "The value is correctly signed.", PHP_EOL;
+} else {
+    echo "The value was tampered with.", PHP_EOL;
+}
+?>
+```
+
+The above example will output:
+
+```
+The value is correctly signed.
+```
+
+### Notes
+
+Note:
+
+Both arguments must be of the same length to be compared successfully. When arguments of differing length are supplied, false is returned immediately and the length of the known string may be leaked in case of a timing attack.
+
+### See Also
+
+- hash_hmac() - Generate a keyed hash value using the HMAC method
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.hash-equals.php

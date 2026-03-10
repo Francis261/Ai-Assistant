@@ -1,0 +1,159 @@
+# Extending Exceptions
+
+Source: https://devdocs.io/php/language.exceptions.extending
+
+## Extending Exceptions
+
+A User defined Exception class can be defined by extending the built-in Exception class. The members and properties below, show what is accessible within the child class that derives from the built-in Exception class.
+
+Example #1 The Built in Exception class
+
+```
+<?php
+class Exception implements Throwable
+{
+    protected $message = 'Unknown exception';   // exception message
+    private   $string;                          // __toString cache
+    protected $code = 0;                        // user defined exception code
+    protected $file;                            // source filename of exception
+    protected $line;                            // source line of exception
+    private   $trace;                           // backtrace
+    private   $previous;                        // previous exception if nested exception
+
+    public function __construct($message = '', $code = 0, ?Throwable $previous = null);
+
+    final private function __clone();           // Inhibits cloning of exceptions.
+
+    final public  function getMessage();        // message of exception
+    final public  function getCode();           // code of exception
+    final public  function getFile();           // source filename
+    final public  function getLine();           // source line
+    final public  function getTrace();          // an array of the backtrace()
+    final public  function getPrevious();       // previous exception
+    final public  function getTraceAsString();  // formatted string of trace
+
+    // Overrideable
+    public function __toString();               // formatted string for display
+}
+?>
+```
+
+If a class extends the built-in Exception class and re-defines the constructor, it is highly recommended that it also call parent::__construct() to ensure all available data has been properly assigned. The __toString() method can be overridden to provide a custom output when the object is presented as a string.
+
+Note:
+
+Exceptions cannot be cloned. Attempting to clone an Exception will result in a fatal E_ERROR error.
+
+Example #2 Extending the Exception class
+
+```
+<?php
+/**
+ * Define a custom exception class
+ */
+class MyException extends Exception
+{
+    // Redefine the exception so message isn't optional
+    public function __construct($message, $code = 0, ?Throwable $previous = null) {
+        // some code
+
+        // make sure everything is assigned properly
+        parent::__construct($message, $code, $previous);
+    }
+
+    // custom string representation of object
+    public function __toString() {
+        return __CLASS__ . ": [{$this->code}]: {$this->message}\n";
+    }
+
+    public function customFunction() {
+        echo "A custom function for this type of exception\n";
+    }
+}
+
+/**
+ * Create a class to test the exception
+ */
+class TestException
+{
+    public $var;
+
+    const THROW_NONE    = 0;
+    const THROW_CUSTOM  = 1;
+    const THROW_DEFAULT = 2;
+
+    function __construct($avalue = self::THROW_NONE) {
+
+        switch ($avalue) {
+            case self::THROW_CUSTOM:
+                // throw custom exception
+                throw new MyException('1 is an invalid parameter', 5);
+                break;
+
+            case self::THROW_DEFAULT:
+                // throw default one.
+                throw new Exception('2 is not allowed as a parameter', 6);
+                break;
+
+            default:
+                // No exception, object will be created.
+                $this->var = $avalue;
+                break;
+        }
+    }
+}
+
+// Example 1
+try {
+    $o = new TestException(TestException::THROW_CUSTOM);
+} catch (MyException $e) {      // Will be caught
+    echo "Caught my exception\n", $e;
+    $e->customFunction();
+} catch (Exception $e) {        // Skipped
+    echo "Caught Default Exception\n", $e;
+}
+
+// Continue execution
+var_dump($o); // Null
+echo "\n\n";
+
+// Example 2
+try {
+    $o = new TestException(TestException::THROW_DEFAULT);
+} catch (MyException $e) {      // Doesn't match this type
+    echo "Caught my exception\n", $e;
+    $e->customFunction();
+} catch (Exception $e) {        // Will be caught
+    echo "Caught Default Exception\n", $e;
+}
+
+// Continue execution
+var_dump($o); // Null
+echo "\n\n";
+
+// Example 3
+try {
+    $o = new TestException(TestException::THROW_CUSTOM);
+} catch (Exception $e) {        // Will be caught
+    echo "Default Exception caught\n", $e;
+}
+
+// Continue execution
+var_dump($o); // Null
+echo "\n\n";
+
+// Example 4
+try {
+    $o = new TestException();
+} catch (Exception $e) {        // Skipped, no exception
+    echo "Default Exception caught\n", $e;
+}
+
+// Continue execution
+var_dump($o); // TestException
+echo "\n\n";
+?>
+```
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/language.exceptions.extending.php

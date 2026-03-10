@@ -1,0 +1,73 @@
+# stream_context_set_options
+
+Source: https://devdocs.io/php/function.stream-context-set-options
+
+(PHP 8 >= 8.3.0)
+
+stream_context_set_options — Sets options on the specified context
+
+### Description
+
+```
+stream_context_set_options(resource $context, array $options): true
+```
+
+Sets options on the specified context.
+
+### Parameters
+
+The stream or context resource to apply the options to.
+
+The options to set for context.
+
+Note:
+
+options must be an associative array of associative arrays in the format $array['wrapper']['option'] = $value.
+
+Refer to context options and parameters for a listing of stream options.
+
+### Return Values
+
+Returns true on success or false on failure.
+
+### Examples
+
+Example #1 stream_context_set_options() example
+
+```
+<?php
+
+$context = stream_context_create();
+
+$options = [
+    'http' => [
+        'protocol_version' => 1.1,
+        'user_agent' => 'PHPT Agent',
+    ],
+];
+
+stream_context_set_options($context, $options);
+var_dump(stream_context_get_options($context));
+?>
+```
+
+The above example will output:
+
+```
+array(1) {
+  ["http"]=>
+  array(2) {
+    ["protocol_version"]=>
+    float(1.1)
+    ["user_agent"]=>
+    string(10) "PHPT Agent"
+  }
+}
+```
+
+### See Also
+
+- stream_context_set_option() - Sets an option for a stream/wrapper/context
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.stream-context-set-options.php

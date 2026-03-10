@@ -1,0 +1,46 @@
+# is_iterable
+
+Source: https://devdocs.io/php/function.is-iterable
+
+(PHP 7 >= 7.1.0, PHP 8)
+
+is_iterable — Verify that the contents of a variable is an iterable value
+
+### Description
+
+```
+is_iterable(mixed $value): bool
+```
+
+Verify that the contents of a variable is accepted by the iterable pseudo-type, i.e. that it is either an array or an object implementing Traversable
+
+### Parameters
+
+The value to check
+
+### Return Values
+
+Returns true if value is iterable, false otherwise.
+
+### Examples
+
+Example #1 is_iterable() examples
+
+```
+<?php
+
+var_dump(is_iterable([1, 2, 3]));  // bool(true)
+var_dump(is_iterable(new ArrayIterator([1, 2, 3])));  // bool(true)
+var_dump(is_iterable((function () { yield 1; })()));  // bool(true)
+var_dump(is_iterable(1));  // bool(false)
+var_dump(is_iterable(new stdClass()));  // bool(false)
+
+?>
+```
+
+### See Also
+
+- is_array() - Finds whether a variable is an array
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.is-iterable.php

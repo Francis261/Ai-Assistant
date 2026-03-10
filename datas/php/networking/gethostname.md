@@ -1,0 +1,42 @@
+# gethostname
+
+Source: https://devdocs.io/php/function.gethostname
+
+(PHP 5 >= 5.3.0, PHP 7, PHP 8)
+
+gethostname — Gets the host name
+
+### Description
+
+```
+gethostname(): string|false
+```
+
+gethostname() gets the standard host name for the local machine.
+
+### Parameters
+
+This function has no parameters.
+
+### Return Values
+
+Returns a string with the hostname on success, otherwise false is returned.
+
+### Examples
+
+Example #1 A simple gethostname() example
+
+```
+<?php
+echo gethostname(); // may output e.g,: sandie
+?>
+```
+
+### See Also
+
+- gethostbyname() - Get the IPv4 address corresponding to a given Internet host name
+- gethostbyaddr() - Get the Internet host name corresponding to a given IP address
+- php_uname() - Returns information about the operating system PHP is running on
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.gethostname.php

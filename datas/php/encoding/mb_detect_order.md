@@ -1,0 +1,78 @@
+# mb_detect_order
+
+Source: https://devdocs.io/php/function.mb-detect-order
+
+(PHP 4 >= 4.0.6, PHP 5, PHP 7, PHP 8)
+
+mb_detect_order — Set/Get character encoding detection order
+
+### Description
+
+```
+mb_detect_order(array|string|null $encoding = null): array|bool
+```
+
+Sets the automatic character encoding detection order to encoding.
+
+### Parameters
+
+encoding is an array or comma separated list of character encoding. See supported encodings.
+
+If encoding is omitted or null, it returns the current character encoding detection order as array.
+
+This setting affects mb_detect_encoding() and mb_send_mail().
+
+mbstring currently implements the following encoding detection filters. If there is an invalid byte sequence for the following encodings, encoding detection will fail.
+
+For ISO-8859-*, mbstring always detects as ISO-8859-*.
+
+For UTF-16, UTF-32, UCS2 and UCS4, encoding detection will fail always.
+
+### Return Values
+
+When setting the encoding detection order, true is returned on success or false on failure.
+
+When getting the encoding detection order, an ordered array of the encodings is returned.
+
+### Changelog
+
+### Examples
+
+Example #1 mb_detect_order() examples
+
+```
+<?php
+/* Set detection order by enumerated list */
+mb_detect_order("eucjp-win,sjis-win,UTF-8");
+
+/* Set detection order by array */
+$ary[] = "ASCII";
+$ary[] = "JIS";
+$ary[] = "EUC-JP";
+mb_detect_order($ary);
+
+/* Display current detection order */
+echo implode(", ", mb_detect_order());
+?>
+```
+
+Example #2 Example showing useless detect orders
+
+```
+; Always detect as ISO-8859-1
+detect_order = ISO-8859-1, UTF-8
+
+; Always detect as UTF-8, since ASCII/UTF-7 values are 
+; valid for UTF-8
+detect_order = UTF-8, ASCII, UTF-7
+```
+
+### See Also
+
+- mb_internal_encoding() - Set/Get internal character encoding
+- mb_http_input() - Detect HTTP input character encoding
+- mb_http_output() - Set/Get HTTP output character encoding
+- mb_send_mail() - Send encoded mail
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.mb-detect-order.php

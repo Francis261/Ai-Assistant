@@ -1,0 +1,766 @@
+[
+  {
+    "path": "cli/v10/using-npm/config#_auth",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#access",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#all",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#allow-same-version",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#also",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#audit",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#audit-level",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#auth-type",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#before",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#bin",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#bin-links",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#browser",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#browser",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#bugs",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#bundledependencies",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#ca",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#cache",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#cache-max",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#cache-min",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#cafile",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#call",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#cert",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#cidr",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#color",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#command-line-flags",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#commit-hooks",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#cpu",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#cpu",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#default-configs",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#default-values",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#dependencies",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#depth",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#description",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#description-1",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#description-1",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#dev",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#devdependencies",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#diff",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#diff-dst-prefix",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#diff-ignore-all-space",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#diff-name-only",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#diff-no-prefix",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#diff-src-prefix",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#diff-text",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#diff-unified",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#directories",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#dry-run",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#editor",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#engine-strict",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#engines",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#environment-variables",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#fetch-retries",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#fetch-retry-factor",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#fetch-retry-maxtimeout",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#fetch-retry-mintimeout",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#fetch-timeout",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#files",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#force",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#foreground-scripts",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#format-package-lock",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#fund",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#funding",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#git",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#git-tag-version",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#global",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#global-style",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#globalconfig",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#heading",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#homepage",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#https-proxy",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#if-present",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#ignore-scripts",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#include",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#include-staged",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#include-workspace-root",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#init-author-email",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#init-author-name",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#init-author-url",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#init-license",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#init-module",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#init-version",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#initauthoremail",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#initauthorname",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#initauthorurl",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#initlicense",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#initmodule",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#initversion",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#install-links",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#install-strategy",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#json",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#key",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#keywords",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#legacy-bundling",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#legacy-peer-deps",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#license",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#link",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#local-address",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#location",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#lockfile-version",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#loglevel",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#logs-dir",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#logs-max",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#long",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#main",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#man",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#maxsockets",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#message",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#name",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#node-options",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#noproxy",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#npmrc-files",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#offline",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#omit",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#omit-lockfile-registry-resolved",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#only",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#optional",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#optionaldependencies",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#os",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#os",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#otp",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#overrides",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#pack-destination",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#package",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#package-lock",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#package-lock-only",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#parseable",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#peerdependencies",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#peerdependenciesmeta",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#people-fields-author-contributors",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#prefer-dedupe",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#prefer-offline",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#prefer-online",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#prefix",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#preid",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#private",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#production",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#progress",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#provenance",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#provenance-file",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#proxy",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#publishconfig",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#read-only",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#rebuild-bundle",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#registry",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#replace-registry-host",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#repository",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#save",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#save-bundle",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#save-dev",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#save-exact",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#save-optional",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#save-peer",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#save-prefix",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#save-prod",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#sbom-format",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#sbom-type",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#scope",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#script-shell",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#scripts",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#searchexclude",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#searchlimit",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#searchopts",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#searchstaleness",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#see-also",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#shell",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#shrinkwrap",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#sign-git-commit",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#sign-git-tag",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#strict-peer-deps",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#strict-ssl",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#tag",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#tag-version-prefix",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#timing",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#toc-heading",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#umask",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#unicode",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#update-notifier",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#usage",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#user-agent",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#userconfig",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#version",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#version",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#versions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#viewer",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#which",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#workspace",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/configuring-npm/package-json#workspaces",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#workspaces",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#workspaces-update",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "cli/v10/using-npm/config#yes",
+    "error": "content missing from db.json"
+  }
+]

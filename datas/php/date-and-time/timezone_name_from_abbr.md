@@ -1,0 +1,49 @@
+# timezone_name_from_abbr
+
+Source: https://devdocs.io/php/function.timezone-name-from-abbr
+
+(PHP 5 >= 5.1.3, PHP 7, PHP 8)
+
+timezone_name_from_abbr — Returns a timezone name by guessing from abbreviation and UTC offset
+
+### Description
+
+```
+timezone_name_from_abbr(string $abbr, int $utcOffset = -1, int $isDST = -1): string|false
+```
+
+### Parameters
+
+Time zone abbreviation.
+
+Offset from GMT in seconds. Defaults to -1 which means that first found time zone corresponding to abbr is returned. Otherwise exact offset is searched and only if not found then the first time zone with any offset is returned.
+
+Daylight saving time indicator. Defaults to -1, which means that whether the time zone has daylight saving or not is not taken into consideration when searching. If this is set to 1, then the utcOffset is assumed to be an offset with daylight saving in effect; if 0, then utcOffset is assumed to be an offset without daylight saving in effect. If abbr doesn't exist then the time zone is searched solely by the utcOffset and isDST.
+
+### Return Values
+
+Returns time zone name on success or false on failure.
+
+### Examples
+
+Example #1 A timezone_name_from_abbr() example
+
+```
+<?php
+echo timezone_name_from_abbr("CET") . "\n";
+echo timezone_name_from_abbr("", 3600, 0) . "\n";
+```
+
+The above example will output something similar to:
+
+```
+Europe/Berlin
+Europe/Paris
+```
+
+### See Also
+
+- timezone_abbreviations_list() - Alias of DateTimeZone::listAbbreviations
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.timezone-name-from-abbr.php

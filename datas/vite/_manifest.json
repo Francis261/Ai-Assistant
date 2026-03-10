@@ -1,0 +1,207 @@
+{
+  "category": "vite",
+  "docMtime": 1771060934,
+  "generatedAt": "2026-03-10T08:51:27.912Z",
+  "entries": {
+    "guide/backend-integration": {
+      "hash": "b8517ad8",
+      "file": "datas/devdocs/vite/backend-integration/Backend Integration.md",
+      "updatedAt": "2026-03-10T08:51:27.917Z"
+    },
+    "changes/index": {
+      "hash": "f228a098",
+      "file": "datas/devdocs/vite/breaking-changes/Breaking Changes.md",
+      "updatedAt": "2026-03-10T08:51:27.917Z"
+    },
+    "config/build-options": {
+      "hash": "7d2f10cd",
+      "file": "datas/devdocs/vite/build-options/Build Options.md",
+      "updatedAt": "2026-03-10T08:51:27.918Z"
+    },
+    "guide/build": {
+      "hash": "b106952f",
+      "file": "datas/devdocs/vite/building-for-production/Building for Production.md",
+      "updatedAt": "2026-03-10T08:51:27.922Z"
+    },
+    "guide/cli": {
+      "hash": "e4bc5d85",
+      "file": "datas/devdocs/vite/command-line-interface/Command Line Interface.md",
+      "updatedAt": "2026-03-10T08:51:27.923Z"
+    },
+    "config/index": {
+      "hash": "be18eb58",
+      "file": "datas/devdocs/vite/configuring-vite/Configuring Vite.md",
+      "updatedAt": "2026-03-10T08:51:27.923Z"
+    },
+    "config/dep-optimization-options": {
+      "hash": "abb0cfce",
+      "file": "datas/devdocs/vite/dep-optimization-options/Dep Optimization Options.md",
+      "updatedAt": "2026-03-10T08:51:27.924Z"
+    },
+    "guide/dep-pre-bundling": {
+      "hash": "e79b1485",
+      "file": "datas/devdocs/vite/dependency-pre-bundling/Dependency Pre-Bundling.md",
+      "updatedAt": "2026-03-10T08:51:27.925Z"
+    },
+    "guide/static-deploy": {
+      "hash": "b65d0ae0",
+      "file": "datas/devdocs/vite/deploying-a-static-site/Deploying a Static Site.md",
+      "updatedAt": "2026-03-10T08:51:27.925Z"
+    },
+    "guide/env-and-mode": {
+      "hash": "c52b059c",
+      "file": "datas/devdocs/vite/env-variables-and-modes/Env Variables and Modes.md",
+      "updatedAt": "2026-03-10T08:51:27.927Z"
+    },
+    "guide/api-environment": {
+      "hash": "2e077e62",
+      "file": "datas/devdocs/vite/environment-api/Environment API.md",
+      "updatedAt": "2026-03-10T08:51:27.927Z"
+    },
+    "guide/api-environment-frameworks": {
+      "hash": "df0c218c",
+      "file": "datas/devdocs/vite/environment-api-for-frameworks/Environment API for Frameworks.md",
+      "updatedAt": "2026-03-10T08:51:27.927Z"
+    },
+    "guide/api-environment-plugins": {
+      "hash": "382b6404",
+      "file": "datas/devdocs/vite/environment-api-for-plugins/Environment API for Plugins.md",
+      "updatedAt": "2026-03-10T08:51:27.928Z"
+    },
+    "guide/api-environment-runtimes": {
+      "hash": "3ead0b0",
+      "file": "datas/devdocs/vite/environment-api-for-runtimes/Environment API for Runtimes.md",
+      "updatedAt": "2026-03-10T08:51:27.929Z"
+    },
+    "guide/features": {
+      "hash": "68d10880",
+      "file": "datas/devdocs/vite/features/Features.md",
+      "updatedAt": "2026-03-10T08:51:27.930Z"
+    },
+    "guide/index": {
+      "hash": "dc3c5bda",
+      "file": "datas/devdocs/vite/getting-started/Getting Started.md",
+      "updatedAt": "2026-03-10T08:51:27.932Z"
+    },
+    "guide/api-hmr": {
+      "hash": "9a37a7eb",
+      "file": "datas/devdocs/vite/hmr-api/HMR API.md",
+      "updatedAt": "2026-03-10T08:51:27.933Z"
+    },
+    "changes/hotupdate-hook": {
+      "hash": "6e7d7da9",
+      "file": "datas/devdocs/vite/hmr-hotupdate-plugin-hook/HMR hotUpdate Plugin Hook.md",
+      "updatedAt": "2026-03-10T08:51:27.934Z"
+    },
+    "guide/api-javascript": {
+      "hash": "2b77bc65",
+      "file": "datas/devdocs/vite/javascript-api/JavaScript API.md",
+      "updatedAt": "2026-03-10T08:51:27.934Z"
+    },
+    "guide/migration": {
+      "hash": "ab27fed7",
+      "file": "datas/devdocs/vite/migration-from-v6/Migration from v6.md",
+      "updatedAt": "2026-03-10T08:51:27.935Z"
+    },
+    "changes/per-environment-apis": {
+      "hash": "ab9e4b4a",
+      "file": "datas/devdocs/vite/move-to-per-environment-apis/Move to Per-environment APIs.md",
+      "updatedAt": "2026-03-10T08:51:27.936Z"
+    },
+    "guide/performance": {
+      "hash": "38f6cb3b",
+      "file": "datas/devdocs/vite/performance/Performance.md",
+      "updatedAt": "2026-03-10T08:51:27.936Z"
+    },
+    "guide/api-plugin": {
+      "hash": "a234a0e6",
+      "file": "datas/devdocs/vite/plugin-api/Plugin API.md",
+      "updatedAt": "2026-03-10T08:51:27.936Z"
+    },
+    "config/preview-options": {
+      "hash": "fabe31b7",
+      "file": "datas/devdocs/vite/preview-options/Preview Options.md",
+      "updatedAt": "2026-03-10T08:51:27.938Z"
+    },
+    "guide/philosophy": {
+      "hash": "6fd10986",
+      "file": "datas/devdocs/vite/project-philosophy/Project Philosophy.md",
+      "updatedAt": "2026-03-10T08:51:27.939Z"
+    },
+    "releases": {
+      "hash": "52e1bf0b",
+      "file": "datas/devdocs/vite/releases/Releases.md",
+      "updatedAt": "2026-03-10T08:51:27.939Z"
+    },
+    "guide/rolldown": {
+      "hash": "499ec8b4",
+      "file": "datas/devdocs/vite/rolldown-integration/Rolldown Integration.md",
+      "updatedAt": "2026-03-10T08:51:27.940Z"
+    },
+    "config/server-options": {
+      "hash": "2b2f250c",
+      "file": "datas/devdocs/vite/server-options/Server Options.md",
+      "updatedAt": "2026-03-10T08:51:27.941Z"
+    },
+    "guide/ssr": {
+      "hash": "b7594a06",
+      "file": "datas/devdocs/vite/server-side-rendering-ssr/Server-Side Rendering (SSR).md",
+      "updatedAt": "2026-03-10T08:51:27.942Z"
+    },
+    "config/shared-options": {
+      "hash": "4c061980",
+      "file": "datas/devdocs/vite/shared-options/Shared Options.md",
+      "updatedAt": "2026-03-10T08:51:27.943Z"
+    },
+    "changes/shared-plugins-during-build": {
+      "hash": "e88f1187",
+      "file": "datas/devdocs/vite/shared-plugins-during-build/Shared Plugins during Build.md",
+      "updatedAt": "2026-03-10T08:51:27.945Z"
+    },
+    "config/ssr-options": {
+      "hash": "419faccc",
+      "file": "datas/devdocs/vite/ssr-options/SSR Options.md",
+      "updatedAt": "2026-03-10T08:51:27.945Z"
+    },
+    "changes/ssr-using-modulerunner": {
+      "hash": "3162effa",
+      "file": "datas/devdocs/vite/ssr-using-modulerunner-api/SSR Using ModuleRunner API.md",
+      "updatedAt": "2026-03-10T08:51:27.946Z"
+    },
+    "guide/assets": {
+      "hash": "b9edcfad",
+      "file": "datas/devdocs/vite/static-asset-handling/Static Asset Handling.md",
+      "updatedAt": "2026-03-10T08:51:27.946Z"
+    },
+    "changes/this-environment-in-hooks": {
+      "hash": "e4f13101",
+      "file": "datas/devdocs/vite/this.environment-in-hooks/this.environment in Hooks.md",
+      "updatedAt": "2026-03-10T08:51:27.947Z"
+    },
+    "guide/troubleshooting": {
+      "hash": "6849e7ef",
+      "file": "datas/devdocs/vite/troubleshooting/Troubleshooting.md",
+      "updatedAt": "2026-03-10T08:51:27.947Z"
+    },
+    "guide/api-environment-instances": {
+      "hash": "599ba44b",
+      "file": "datas/devdocs/vite/using-environment-instances/Using Environment Instances.md",
+      "updatedAt": "2026-03-10T08:51:27.949Z"
+    },
+    "guide/using-plugins": {
+      "hash": "cb87e273",
+      "file": "datas/devdocs/vite/using-plugins/Using Plugins.md",
+      "updatedAt": "2026-03-10T08:51:27.949Z"
+    },
+    "guide/why": {
+      "hash": "8318879e",
+      "file": "datas/devdocs/vite/why-vite/Why Vite.md",
+      "updatedAt": "2026-03-10T08:51:27.950Z"
+    },
+    "config/worker-options": {
+      "hash": "6adf1820",
+      "file": "datas/devdocs/vite/worker-options/Worker Options.md",
+      "updatedAt": "2026-03-10T08:51:27.950Z"
+    }
+  }
+}

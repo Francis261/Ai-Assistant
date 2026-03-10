@@ -1,0 +1,32 @@
+# log1p
+
+Source: https://devdocs.io/php/function.log1p
+
+(PHP 4 >= 4.1.0, PHP 5, PHP 7, PHP 8)
+
+log1p — Returns log(1 + number), computed in a way that is accurate even when the value of number is close to zero
+
+### Description
+
+```
+log1p(float $num): float
+```
+
+log1p() returns log(1 + num) computed in a way that is accurate even when the value of num is close to zero. log() might only return log(1) in this case due to lack of precision.
+
+### Parameters
+
+The argument to process
+
+### Return Values
+
+log(1 + num)
+
+### See Also
+
+- expm1() - Returns exp($num) - 1, computed in a way that is accurate even when the value of number is close to zero
+- log() - Natural logarithm
+- log10() - Base-10 logarithm
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.log1p.php

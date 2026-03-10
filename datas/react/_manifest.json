@@ -1,0 +1,897 @@
+{
+  "category": "react",
+  "docMtime": 1760541508,
+  "generatedAt": "2026-03-10T08:49:06.071Z",
+  "entries": {
+    "reference/rsc/use-client": {
+      "hash": "d9fa49ec",
+      "file": "datas/devdocs/react/react-server-components-directives/'use client'.md",
+      "updatedAt": "2026-03-10T08:49:06.078Z"
+    },
+    "reference/rsc/use-server": {
+      "hash": "5384311",
+      "file": "datas/devdocs/react/react-server-components-directives/'use server'.md",
+      "updatedAt": "2026-03-10T08:49:06.187Z"
+    },
+    "reference/react/activity": {
+      "hash": "c94b2a37",
+      "file": "datas/devdocs/react/react-components/Activity.md",
+      "updatedAt": "2026-03-10T08:49:06.230Z"
+    },
+    "reference/react-dom/components/form": {
+      "hash": "afcac17a",
+      "file": "datas/devdocs/react/react-dom-components/form.md",
+      "updatedAt": "2026-03-10T08:49:06.268Z"
+    },
+    "reference/react/fragment": {
+      "hash": "2ea4edd",
+      "file": "datas/devdocs/react/react-components/Fragment- (-...-).md",
+      "updatedAt": "2026-03-10T08:49:06.321Z"
+    },
+    "reference/react-dom/components/input": {
+      "hash": "501ea745",
+      "file": "datas/devdocs/react/react-dom-components/input.md",
+      "updatedAt": "2026-03-10T08:49:06.349Z"
+    },
+    "reference/react-dom/components/link": {
+      "hash": "86cb9510",
+      "file": "datas/devdocs/react/react-dom-components/link.md",
+      "updatedAt": "2026-03-10T08:49:06.405Z"
+    },
+    "reference/react-dom/components/meta": {
+      "hash": "9b79d122",
+      "file": "datas/devdocs/react/react-dom-components/meta.md",
+      "updatedAt": "2026-03-10T08:49:06.421Z"
+    },
+    "reference/react-dom/components/option": {
+      "hash": "427ae41d",
+      "file": "datas/devdocs/react/react-dom-components/option.md",
+      "updatedAt": "2026-03-10T08:49:06.429Z"
+    },
+    "reference/react/profiler": {
+      "hash": "b3ff9b55",
+      "file": "datas/devdocs/react/react-components/Profiler.md",
+      "updatedAt": "2026-03-10T08:49:06.434Z"
+    },
+    "reference/react-dom/components/progress": {
+      "hash": "b15ecdba",
+      "file": "datas/devdocs/react/react-dom-components/progress.md",
+      "updatedAt": "2026-03-10T08:49:06.450Z"
+    },
+    "reference/react-dom/components/script": {
+      "hash": "8354d882",
+      "file": "datas/devdocs/react/react-dom-components/script.md",
+      "updatedAt": "2026-03-10T08:49:06.454Z"
+    },
+    "reference/react-dom/components/select": {
+      "hash": "d523d6ce",
+      "file": "datas/devdocs/react/react-dom-components/select.md",
+      "updatedAt": "2026-03-10T08:49:06.463Z"
+    },
+    "reference/react/strictmode": {
+      "hash": "3ffb8b93",
+      "file": "datas/devdocs/react/react-components/StrictMode.md",
+      "updatedAt": "2026-03-10T08:49:06.479Z"
+    },
+    "reference/react-dom/components/style": {
+      "hash": "d839b70b",
+      "file": "datas/devdocs/react/react-dom-components/style.md",
+      "updatedAt": "2026-03-10T08:49:06.512Z"
+    },
+    "reference/react/suspense": {
+      "hash": "e7724729",
+      "file": "datas/devdocs/react/react-components/Suspense.md",
+      "updatedAt": "2026-03-10T08:49:06.518Z"
+    },
+    "reference/react-dom/components/textarea": {
+      "hash": "af73bbfa",
+      "file": "datas/devdocs/react/react-dom-components/textarea.md",
+      "updatedAt": "2026-03-10T08:49:06.539Z"
+    },
+    "reference/react-dom/components/title": {
+      "hash": "2d2338ba",
+      "file": "datas/devdocs/react/react-dom-components/title.md",
+      "updatedAt": "2026-03-10T08:49:06.562Z"
+    },
+    "reference/react/viewtransition": {
+      "hash": "fef19ce1",
+      "file": "datas/devdocs/react/react-components/ViewTransition- (Canary) version of React.md",
+      "updatedAt": "2026-03-10T08:49:06.567Z"
+    },
+    "reference/react/act": {
+      "hash": "3cbbdc8b",
+      "file": "datas/devdocs/react/react-apis/act.md",
+      "updatedAt": "2026-03-10T08:49:06.600Z"
+    },
+    "learn/add-react-to-an-existing-project": {
+      "hash": "6d17dbd7",
+      "file": "datas/devdocs/react/learn-installation/Add React to an Existing Project.md",
+      "updatedAt": "2026-03-10T08:49:06.608Z"
+    },
+    "learn/adding-interactivity": {
+      "hash": "e7ab7bcb",
+      "file": "datas/devdocs/react/learn-adding-interactivity/Adding Interactivity.md",
+      "updatedAt": "2026-03-10T08:49:06.629Z"
+    },
+    "reference/react/addtransitiontype": {
+      "hash": "e624a587",
+      "file": "datas/devdocs/react/react-apis/addTransitionType (Canary) version of React.md",
+      "updatedAt": "2026-03-10T08:49:06.650Z"
+    },
+    "learn/build-a-react-app-from-scratch": {
+      "hash": "d261c21d",
+      "file": "datas/devdocs/react/learn-installation/Build a React app from Scratch.md",
+      "updatedAt": "2026-03-10T08:49:06.660Z"
+    },
+    "reference/react/apis": {
+      "hash": "fc60a7f8",
+      "file": "datas/devdocs/react/react-apis/Built-in React APIs.md",
+      "updatedAt": "2026-03-10T08:49:06.678Z"
+    },
+    "reference/react/components": {
+      "hash": "bd26a632",
+      "file": "datas/devdocs/react/react-components/Built-in React Components.md",
+      "updatedAt": "2026-03-10T08:49:06.681Z"
+    },
+    "reference/react-dom/hooks": {
+      "hash": "96e7ffde",
+      "file": "datas/devdocs/react/react-dom-hooks/Built-in React DOM Hooks.md",
+      "updatedAt": "2026-03-10T08:49:06.684Z"
+    },
+    "reference/react/hooks": {
+      "hash": "e5ec834d",
+      "file": "datas/devdocs/react/react-hooks/Built-in React Hooks.md",
+      "updatedAt": "2026-03-10T08:49:06.685Z"
+    },
+    "reference/react/cache": {
+      "hash": "4947d4bb",
+      "file": "datas/devdocs/react/react-apis/cache.md",
+      "updatedAt": "2026-03-10T08:49:06.691Z"
+    },
+    "reference/react/cachesignal": {
+      "hash": "bd51e80c",
+      "file": "datas/devdocs/react/react-apis/cacheSignal.md",
+      "updatedAt": "2026-03-10T08:49:06.706Z"
+    },
+    "reference/react/captureownerstack": {
+      "hash": "2c7b5072",
+      "file": "datas/devdocs/react/react-apis/captureOwnerStack.md",
+      "updatedAt": "2026-03-10T08:49:06.724Z"
+    },
+    "reference/react/children": {
+      "hash": "203f2f3f",
+      "file": "datas/devdocs/react/legacy-apis-legacy-react-apis/Children.md",
+      "updatedAt": "2026-03-10T08:49:06.730Z"
+    },
+    "learn/choosing-the-state-structure": {
+      "hash": "e2b10ccd",
+      "file": "datas/devdocs/react/learn-managing-state/Choosing the State Structure.md",
+      "updatedAt": "2026-03-10T08:49:06.755Z"
+    },
+    "reference/react-dom/client": {
+      "hash": "37b7b64",
+      "file": "datas/devdocs/react/react-dom-client-apis/Client React DOM APIs.md",
+      "updatedAt": "2026-03-10T08:49:06.801Z"
+    },
+    "reference/react/cloneelement": {
+      "hash": "396f3f27",
+      "file": "datas/devdocs/react/legacy-apis-legacy-react-apis/cloneElement.md",
+      "updatedAt": "2026-03-10T08:49:06.804Z"
+    },
+    "reference/react-dom/components/common": {
+      "hash": "4efe7764",
+      "file": "datas/devdocs/react/react-dom-components/Common components (e.g. -div-).md",
+      "updatedAt": "2026-03-10T08:49:06.828Z"
+    },
+    "reference/react-compiler/compilationmode": {
+      "hash": "d297eca5",
+      "file": "datas/devdocs/react/react-compiler-configuration/compilationMode.md",
+      "updatedAt": "2026-03-10T08:49:06.913Z"
+    },
+    "reference/react-compiler/compiling-libraries": {
+      "hash": "82c0d783",
+      "file": "datas/devdocs/react/react-compiler-miscellaneous/Compiling Libraries.md",
+      "updatedAt": "2026-03-10T08:49:06.934Z"
+    },
+    "reference/react/component": {
+      "hash": "4376bb0c",
+      "file": "datas/devdocs/react/legacy-apis-legacy-react-apis/Component.md",
+      "updatedAt": "2026-03-10T08:49:06.940Z"
+    },
+    "reference/eslint-plugin-react-hooks/lints/component-hook-factories": {
+      "hash": "d8ac0a6f",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/component-hook-factories.md",
+      "updatedAt": "2026-03-10T08:49:07.034Z"
+    },
+    "reference/rules/components-and-hooks-must-be-pure": {
+      "hash": "dbd1a5c5",
+      "file": "datas/devdocs/react/rules-of-react-overview/Components and Hooks must be pure.md",
+      "updatedAt": "2026-03-10T08:49:07.041Z"
+    },
+    "learn/conditional-rendering": {
+      "hash": "6526a7f4",
+      "file": "datas/devdocs/react/learn-describing-the-ui/Conditional Rendering.md",
+      "updatedAt": "2026-03-10T08:49:07.059Z"
+    },
+    "reference/eslint-plugin-react-hooks/lints/config": {
+      "hash": "d537075",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/config.md",
+      "updatedAt": "2026-03-10T08:49:07.092Z"
+    },
+    "reference/react-compiler/configuration": {
+      "hash": "beec3abb",
+      "file": "datas/devdocs/react/react-compiler-configuration/Configuration.md",
+      "updatedAt": "2026-03-10T08:49:07.096Z"
+    },
+    "reference/react/createcontext": {
+      "hash": "e088d6a3",
+      "file": "datas/devdocs/react/react-apis/createContext.md",
+      "updatedAt": "2026-03-10T08:49:07.100Z"
+    },
+    "reference/react/createelement": {
+      "hash": "207f4e39",
+      "file": "datas/devdocs/react/legacy-apis-legacy-react-apis/createElement.md",
+      "updatedAt": "2026-03-10T08:49:07.108Z"
+    },
+    "reference/react-dom/createportal": {
+      "hash": "717a60b9",
+      "file": "datas/devdocs/react/react-dom-apis/createPortal.md",
+      "updatedAt": "2026-03-10T08:49:07.116Z"
+    },
+    "reference/react/createref": {
+      "hash": "2ed58190",
+      "file": "datas/devdocs/react/legacy-apis-legacy-react-apis/createRef.md",
+      "updatedAt": "2026-03-10T08:49:07.135Z"
+    },
+    "reference/react-dom/client/createroot": {
+      "hash": "d798dff6",
+      "file": "datas/devdocs/react/react-dom-client-apis/createRoot.md",
+      "updatedAt": "2026-03-10T08:49:07.143Z"
+    },
+    "learn/start-a-new-react-project": {
+      "hash": "afa31292",
+      "file": "datas/devdocs/react/learn-installation/Creating a React App.md",
+      "updatedAt": "2026-03-10T08:49:07.159Z"
+    },
+    "learn/creating-a-react-app": {
+      "hash": "4850ea52",
+      "file": "datas/devdocs/react/learn-installation/Creating a React App--6ea90a93.md",
+      "updatedAt": "2026-03-10T08:49:07.164Z"
+    },
+    "learn/react-compiler/debugging": {
+      "hash": "68b36003",
+      "file": "datas/devdocs/react/learn-react-compiler/Debugging and Troubleshooting.md",
+      "updatedAt": "2026-03-10T08:49:07.191Z"
+    },
+    "learn/describing-the-ui": {
+      "hash": "999dd6d7",
+      "file": "datas/devdocs/react/learn-describing-the-ui/Describing the UI.md",
+      "updatedAt": "2026-03-10T08:49:07.197Z"
+    },
+    "reference/rsc/directives": {
+      "hash": "2aa36982",
+      "file": "datas/devdocs/react/react-server-components-directives/Directives.md",
+      "updatedAt": "2026-03-10T08:49:07.210Z"
+    },
+    "reference/react-compiler/directives": {
+      "hash": "5ea44fbd",
+      "file": "datas/devdocs/react/react-compiler-directives/Directives.md",
+      "updatedAt": "2026-03-10T08:49:07.211Z"
+    },
+    "learn/editor-setup": {
+      "hash": "f9bf99",
+      "file": "datas/devdocs/react/learn-setup/Editor Setup.md",
+      "updatedAt": "2026-03-10T08:49:07.222Z"
+    },
+    "reference/eslint-plugin-react-hooks/lints/error-boundaries": {
+      "hash": "11086b81",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/error-boundaries.md",
+      "updatedAt": "2026-03-10T08:49:07.226Z"
+    },
+    "learn/escape-hatches": {
+      "hash": "f99665f6",
+      "file": "datas/devdocs/react/learn-escape-hatches/Escape Hatches.md",
+      "updatedAt": "2026-03-10T08:49:07.231Z"
+    },
+    "reference/eslint-plugin-react-hooks": {
+      "hash": "5bd7eb90",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/eslint-plugin-react-hooks - This feature is available in the latest RC version.md",
+      "updatedAt": "2026-03-10T08:49:07.294Z"
+    },
+    "reference/eslint-plugin-react-hooks/lints/exhaustive-deps": {
+      "hash": "89f777e3",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/exhaustive-deps.md",
+      "updatedAt": "2026-03-10T08:49:07.298Z"
+    },
+    "reference/react/experimental_taintobjectreference": {
+      "hash": "9b5ae4f5",
+      "file": "datas/devdocs/react/react-apis/experimental_taintObjectReference - This feature is available in the latest Experimental version of React.md",
+      "updatedAt": "2026-03-10T08:49:07.304Z"
+    },
+    "reference/react/experimental_taintuniquevalue": {
+      "hash": "9f9ae49f",
+      "file": "datas/devdocs/react/react-apis/experimental_taintUniqueValue - This feature is available in the latest Experimental version of React.md",
+      "updatedAt": "2026-03-10T08:49:07.310Z"
+    },
+    "learn/extracting-state-logic-into-a-reducer": {
+      "hash": "6dd5d556",
+      "file": "datas/devdocs/react/learn-managing-state/Extracting State Logic into a Reducer.md",
+      "updatedAt": "2026-03-10T08:49:07.329Z"
+    },
+    "reference/react-dom/flushsync": {
+      "hash": "aa0a6304",
+      "file": "datas/devdocs/react/react-dom-apis/flushSync.md",
+      "updatedAt": "2026-03-10T08:49:07.347Z"
+    },
+    "reference/react/forwardref": {
+      "hash": "39739f9c",
+      "file": "datas/devdocs/react/legacy-apis-legacy-react-apis/forwardRef.md",
+      "updatedAt": "2026-03-10T08:49:07.353Z"
+    },
+    "reference/react-compiler/gating": {
+      "hash": "2ea5c9c3",
+      "file": "datas/devdocs/react/react-compiler-configuration/gating.md",
+      "updatedAt": "2026-03-10T08:49:07.374Z"
+    },
+    "reference/eslint-plugin-react-hooks/lints/gating": {
+      "hash": "1300f176",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/gating.md",
+      "updatedAt": "2026-03-10T08:49:07.380Z"
+    },
+    "reference/eslint-plugin-react-hooks/lints/globals": {
+      "hash": "bfc97dcd",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/globals.md",
+      "updatedAt": "2026-03-10T08:49:07.402Z"
+    },
+    "reference/react-dom/client/hydrateroot": {
+      "hash": "974a6c5",
+      "file": "datas/devdocs/react/react-dom-client-apis/hydrateRoot.md",
+      "updatedAt": "2026-03-10T08:49:07.406Z"
+    },
+    "reference/eslint-plugin-react-hooks/lints/immutability": {
+      "hash": "fba13dee",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/immutability.md",
+      "updatedAt": "2026-03-10T08:49:07.417Z"
+    },
+    "learn/importing-and-exporting-components": {
+      "hash": "9276ba38",
+      "file": "datas/devdocs/react/learn-describing-the-ui/Importing and Exporting Components.md",
+      "updatedAt": "2026-03-10T08:49:07.425Z"
+    },
+    "reference/eslint-plugin-react-hooks/lints/incompatible-library": {
+      "hash": "23c66ce6",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/incompatible-library.md",
+      "updatedAt": "2026-03-10T08:49:07.432Z"
+    },
+    "learn/react-compiler/incremental-adoption": {
+      "hash": "6265d250",
+      "file": "datas/devdocs/react/learn-react-compiler/Incremental Adoption.md",
+      "updatedAt": "2026-03-10T08:49:07.437Z"
+    },
+    "learn/installation": {
+      "hash": "274ef760",
+      "file": "datas/devdocs/react/learn-installation/Installation.md",
+      "updatedAt": "2026-03-10T08:49:07.453Z"
+    },
+    "learn/react-compiler/installation": {
+      "hash": "a9d0374b",
+      "file": "datas/devdocs/react/learn-react-compiler/Installation.md",
+      "updatedAt": "2026-03-10T08:49:07.456Z"
+    },
+    "learn/react-compiler/introduction": {
+      "hash": "13303323",
+      "file": "datas/devdocs/react/learn-react-compiler/Introduction.md",
+      "updatedAt": "2026-03-10T08:49:07.463Z"
+    },
+    "reference/react/isvalidelement": {
+      "hash": "e37bec89",
+      "file": "datas/devdocs/react/legacy-apis-legacy-react-apis/isValidElement.md",
+      "updatedAt": "2026-03-10T08:49:07.471Z"
+    },
+    "learn/javascript-in-jsx-with-curly-braces": {
+      "hash": "17cab9d1",
+      "file": "datas/devdocs/react/learn-describing-the-ui/JavaScript in JSX with Curly Braces.md",
+      "updatedAt": "2026-03-10T08:49:07.478Z"
+    },
+    "learn/keeping-components-pure": {
+      "hash": "191a1938",
+      "file": "datas/devdocs/react/learn-describing-the-ui/Keeping Components Pure.md",
+      "updatedAt": "2026-03-10T08:49:07.497Z"
+    },
+    "reference/react/lazy": {
+      "hash": "71f7148c",
+      "file": "datas/devdocs/react/react-apis/lazy.md",
+      "updatedAt": "2026-03-10T08:49:07.508Z"
+    },
+    "reference/react/legacy": {
+      "hash": "b19e38d0",
+      "file": "datas/devdocs/react/legacy-apis-legacy-react-apis/Legacy React APIs.md",
+      "updatedAt": "2026-03-10T08:49:07.514Z"
+    },
+    "learn/lifecycle-of-reactive-effects": {
+      "hash": "4b8b02fe",
+      "file": "datas/devdocs/react/learn-escape-hatches/Lifecycle of Reactive Effects.md",
+      "updatedAt": "2026-03-10T08:49:07.518Z"
+    },
+    "reference/react-compiler/logger": {
+      "hash": "c53726b1",
+      "file": "datas/devdocs/react/react-compiler-configuration/logger.md",
+      "updatedAt": "2026-03-10T08:49:07.561Z"
+    },
+    "learn/managing-state": {
+      "hash": "f520e72",
+      "file": "datas/devdocs/react/learn-managing-state/Managing State.md",
+      "updatedAt": "2026-03-10T08:49:07.566Z"
+    },
+    "learn/manipulating-the-dom-with-refs": {
+      "hash": "3a6e5f14",
+      "file": "datas/devdocs/react/learn-escape-hatches/Manipulating the DOM with Refs.md",
+      "updatedAt": "2026-03-10T08:49:07.584Z"
+    },
+    "reference/react/memo": {
+      "hash": "541687ef",
+      "file": "datas/devdocs/react/react-apis/memo.md",
+      "updatedAt": "2026-03-10T08:49:07.619Z"
+    },
+    "reference/react-compiler/panicthreshold": {
+      "hash": "c68c0167",
+      "file": "datas/devdocs/react/react-compiler-configuration/panicThreshold.md",
+      "updatedAt": "2026-03-10T08:49:07.646Z"
+    },
+    "learn/passing-data-deeply-with-context": {
+      "hash": "b694d96b",
+      "file": "datas/devdocs/react/learn-managing-state/Passing Data Deeply with Context.md",
+      "updatedAt": "2026-03-10T08:49:07.663Z"
+    },
+    "learn/passing-props-to-a-component": {
+      "hash": "a601b6ed",
+      "file": "datas/devdocs/react/learn-describing-the-ui/Passing Props to a Component.md",
+      "updatedAt": "2026-03-10T08:49:07.686Z"
+    },
+    "reference/react-dom/preconnect": {
+      "hash": "987fdd03",
+      "file": "datas/devdocs/react/react-dom-apis/preconnect.md",
+      "updatedAt": "2026-03-10T08:49:07.713Z"
+    },
+    "reference/react-dom/prefetchdns": {
+      "hash": "f8ae586f",
+      "file": "datas/devdocs/react/react-dom-apis/prefetchDNS.md",
+      "updatedAt": "2026-03-10T08:49:07.718Z"
+    },
+    "reference/react-dom/preinit": {
+      "hash": "a623defa",
+      "file": "datas/devdocs/react/react-dom-apis/preinit.md",
+      "updatedAt": "2026-03-10T08:49:07.721Z"
+    },
+    "reference/react-dom/preinitmodule": {
+      "hash": "763a18a1",
+      "file": "datas/devdocs/react/react-dom-apis/preinitModule.md",
+      "updatedAt": "2026-03-10T08:49:07.727Z"
+    },
+    "reference/react-dom/preload": {
+      "hash": "c70a5d28",
+      "file": "datas/devdocs/react/react-dom-apis/preload.md",
+      "updatedAt": "2026-03-10T08:49:07.732Z"
+    },
+    "reference/react-dom/preloadmodule": {
+      "hash": "6d5b9899",
+      "file": "datas/devdocs/react/react-dom-apis/preloadModule.md",
+      "updatedAt": "2026-03-10T08:49:07.751Z"
+    },
+    "reference/react-dom/static/prerender": {
+      "hash": "b6f521ba",
+      "file": "datas/devdocs/react/react-dom-static-apis/prerender.md",
+      "updatedAt": "2026-03-10T08:49:07.757Z"
+    },
+    "reference/react-dom/static/prerendertonodestream": {
+      "hash": "94fad9e0",
+      "file": "datas/devdocs/react/react-dom-static-apis/prerenderToNodeStream.md",
+      "updatedAt": "2026-03-10T08:49:07.771Z"
+    },
+    "reference/eslint-plugin-react-hooks/lints/preserve-manual-memoization": {
+      "hash": "8ed178c6",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/preserve-manual-memoization.md",
+      "updatedAt": "2026-03-10T08:49:07.784Z"
+    },
+    "learn/preserving-and-resetting-state": {
+      "hash": "abc01698",
+      "file": "datas/devdocs/react/learn-managing-state/Preserving and Resetting State.md",
+      "updatedAt": "2026-03-10T08:49:07.790Z"
+    },
+    "reference/react/purecomponent": {
+      "hash": "c4f49ab",
+      "file": "datas/devdocs/react/legacy-apis-legacy-react-apis/PureComponent.md",
+      "updatedAt": "2026-03-10T08:49:07.847Z"
+    },
+    "reference/eslint-plugin-react-hooks/lints/purity": {
+      "hash": "2900db3d",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/purity.md",
+      "updatedAt": "2026-03-10T08:49:07.857Z"
+    },
+    "learn/queueing-a-series-of-state-updates": {
+      "hash": "258ffac2",
+      "file": "datas/devdocs/react/learn-adding-interactivity/Queueing a Series of State Updates.md",
+      "updatedAt": "2026-03-10T08:49:07.863Z"
+    },
+    "learn": {
+      "hash": "828391f6",
+      "file": "datas/devdocs/react/learn-quick-start/Quick Start.md",
+      "updatedAt": "2026-03-10T08:49:07.882Z"
+    },
+    "reference/rules/react-calls-components-and-hooks": {
+      "hash": "3ee9d5cf",
+      "file": "datas/devdocs/react/rules-of-react-overview/React calls Components and Hooks.md",
+      "updatedAt": "2026-03-10T08:49:07.922Z"
+    },
+    "learn/react-compiler": {
+      "hash": "58d4971e",
+      "file": "datas/devdocs/react/learn-react-compiler/React Compiler.md",
+      "updatedAt": "2026-03-10T08:49:07.930Z"
+    },
+    "learn/react-developer-tools": {
+      "hash": "e08c50a2",
+      "file": "datas/devdocs/react/learn-setup/React Developer Tools.md",
+      "updatedAt": "2026-03-10T08:49:07.934Z"
+    },
+    "reference/react-dom": {
+      "hash": "18e2f8ab",
+      "file": "datas/devdocs/react/react-dom-apis/React DOM APIs.md",
+      "updatedAt": "2026-03-10T08:49:07.958Z"
+    },
+    "reference/react-dom/components": {
+      "hash": "2dffb51d",
+      "file": "datas/devdocs/react/react-dom-components/React DOM Components.md",
+      "updatedAt": "2026-03-10T08:49:07.962Z"
+    },
+    "reference/dev-tools/react-performance-tracks": {
+      "hash": "aee82260",
+      "file": "datas/devdocs/react/react-devtools-miscellaneous/React Performance tracks.md",
+      "updatedAt": "2026-03-10T08:49:07.976Z"
+    },
+    "reference/react": {
+      "hash": "a5098a88",
+      "file": "datas/devdocs/react/react-miscellaneous/React Reference Overview.md",
+      "updatedAt": "2026-03-10T08:49:07.981Z"
+    },
+    "learn/reacting-to-input-with-state": {
+      "hash": "9737d89d",
+      "file": "datas/devdocs/react/learn-managing-state/Reacting to Input with State.md",
+      "updatedAt": "2026-03-10T08:49:08.007Z"
+    },
+    "learn/referencing-values-with-refs": {
+      "hash": "5b52b01c",
+      "file": "datas/devdocs/react/learn-escape-hatches/Referencing Values with Refs.md",
+      "updatedAt": "2026-03-10T08:49:08.035Z"
+    },
+    "reference/eslint-plugin-react-hooks/lints/refs": {
+      "hash": "3666fdd1",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/refs.md",
+      "updatedAt": "2026-03-10T08:49:08.063Z"
+    },
+    "learn/removing-effect-dependencies": {
+      "hash": "e1e1bf72",
+      "file": "datas/devdocs/react/learn-escape-hatches/Removing Effect Dependencies.md",
+      "updatedAt": "2026-03-10T08:49:08.069Z"
+    },
+    "learn/render-and-commit": {
+      "hash": "7b8dde27",
+      "file": "datas/devdocs/react/learn-adding-interactivity/Render and Commit.md",
+      "updatedAt": "2026-03-10T08:49:08.127Z"
+    },
+    "learn/rendering-lists": {
+      "hash": "de823220",
+      "file": "datas/devdocs/react/learn-describing-the-ui/Rendering Lists.md",
+      "updatedAt": "2026-03-10T08:49:08.149Z"
+    },
+    "reference/react-dom/server/rendertopipeablestream": {
+      "hash": "34731953",
+      "file": "datas/devdocs/react/react-dom-server-apis/renderToPipeableStream.md",
+      "updatedAt": "2026-03-10T08:49:08.183Z"
+    },
+    "reference/react-dom/server/rendertoreadablestream": {
+      "hash": "921c1ba1",
+      "file": "datas/devdocs/react/react-dom-server-apis/renderToReadableStream.md",
+      "updatedAt": "2026-03-10T08:49:08.209Z"
+    },
+    "reference/react-dom/server/rendertostaticmarkup": {
+      "hash": "7660faee",
+      "file": "datas/devdocs/react/react-dom-server-apis/renderToStaticMarkup.md",
+      "updatedAt": "2026-03-10T08:49:08.233Z"
+    },
+    "reference/react-dom/server/rendertostring": {
+      "hash": "4f04c2cc",
+      "file": "datas/devdocs/react/react-dom-server-apis/renderToString.md",
+      "updatedAt": "2026-03-10T08:49:08.237Z"
+    },
+    "learn/responding-to-events": {
+      "hash": "2e45a709",
+      "file": "datas/devdocs/react/learn-adding-interactivity/Responding to Events.md",
+      "updatedAt": "2026-03-10T08:49:08.256Z"
+    },
+    "reference/react-dom/server/resume": {
+      "hash": "5751b44c",
+      "file": "datas/devdocs/react/react-dom-server-apis/resume.md",
+      "updatedAt": "2026-03-10T08:49:08.274Z"
+    },
+    "reference/react-dom/static/resumeandprerender": {
+      "hash": "baf45979",
+      "file": "datas/devdocs/react/react-dom-static-apis/resumeAndPrerender.md",
+      "updatedAt": "2026-03-10T08:49:08.295Z"
+    },
+    "reference/react-dom/static/resumeandprerendertonodestream": {
+      "hash": "2a099a00",
+      "file": "datas/devdocs/react/react-dom-static-apis/resumeAndPrerenderToNodeStream.md",
+      "updatedAt": "2026-03-10T08:49:08.300Z"
+    },
+    "reference/react-dom/server/resumetopipeablestream": {
+      "hash": "f081324e",
+      "file": "datas/devdocs/react/react-dom-server-apis/resumeToPipeableStream.md",
+      "updatedAt": "2026-03-10T08:49:08.305Z"
+    },
+    "learn/reusing-logic-with-custom-hooks": {
+      "hash": "46e83601",
+      "file": "datas/devdocs/react/learn-escape-hatches/Reusing Logic with Custom Hooks.md",
+      "updatedAt": "2026-03-10T08:49:08.310Z"
+    },
+    "reference/rules/rules-of-hooks": {
+      "hash": "4182b9c",
+      "file": "datas/devdocs/react/rules-of-react-overview/Rules of Hooks.md",
+      "updatedAt": "2026-03-10T08:49:08.354Z"
+    },
+    "reference/rules": {
+      "hash": "8d5f02a7",
+      "file": "datas/devdocs/react/rules-of-react-overview/Rules of React.md",
+      "updatedAt": "2026-03-10T08:49:08.359Z"
+    },
+    "reference/eslint-plugin-react-hooks/lints/rules-of-hooks": {
+      "hash": "8a2b1d90",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/rules-of-hooks.md",
+      "updatedAt": "2026-03-10T08:49:08.368Z"
+    },
+    "learn/scaling-up-with-reducer-and-context": {
+      "hash": "a0882e7b",
+      "file": "datas/devdocs/react/learn-managing-state/Scaling Up with Reducer and Context.md",
+      "updatedAt": "2026-03-10T08:49:08.386Z"
+    },
+    "learn/separating-events-from-effects": {
+      "hash": "518f0f63",
+      "file": "datas/devdocs/react/learn-escape-hatches/Separating Events from Effects.md",
+      "updatedAt": "2026-03-10T08:49:08.404Z"
+    },
+    "reference/rsc/server-components": {
+      "hash": "e9f2095e",
+      "file": "datas/devdocs/react/react-server-components-miscellaneous/Server Components.md",
+      "updatedAt": "2026-03-10T08:49:08.439Z"
+    },
+    "reference/rsc/server-functions": {
+      "hash": "e016a9d9",
+      "file": "datas/devdocs/react/react-server-components-miscellaneous/Server Functions.md",
+      "updatedAt": "2026-03-10T08:49:08.454Z"
+    },
+    "reference/react-dom/server": {
+      "hash": "cb1f19da",
+      "file": "datas/devdocs/react/react-dom-server-apis/Server React DOM APIs.md",
+      "updatedAt": "2026-03-10T08:49:08.459Z"
+    },
+    "reference/eslint-plugin-react-hooks/lints/set-state-in-effect": {
+      "hash": "bccc5bac",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/set-state-in-effect.md",
+      "updatedAt": "2026-03-10T08:49:08.462Z"
+    },
+    "reference/eslint-plugin-react-hooks/lints/set-state-in-render": {
+      "hash": "351c4d33",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/set-state-in-render.md",
+      "updatedAt": "2026-03-10T08:49:08.466Z"
+    },
+    "learn/setup": {
+      "hash": "f2833388",
+      "file": "datas/devdocs/react/learn-setup/Setup.md",
+      "updatedAt": "2026-03-10T08:49:08.469Z"
+    },
+    "learn/sharing-state-between-components": {
+      "hash": "52649697",
+      "file": "datas/devdocs/react/learn-managing-state/Sharing State Between Components.md",
+      "updatedAt": "2026-03-10T08:49:08.471Z"
+    },
+    "reference/react/starttransition": {
+      "hash": "639e6732",
+      "file": "datas/devdocs/react/react-apis/startTransition.md",
+      "updatedAt": "2026-03-10T08:49:08.492Z"
+    },
+    "learn/state-as-a-snapshot": {
+      "hash": "2bb67d5c",
+      "file": "datas/devdocs/react/learn-adding-interactivity/State as a Snapshot.md",
+      "updatedAt": "2026-03-10T08:49:08.499Z"
+    },
+    "learn/state-a-components-memory": {
+      "hash": "55316bcf",
+      "file": "datas/devdocs/react/learn-adding-interactivity/State- A Component's Memory.md",
+      "updatedAt": "2026-03-10T08:49:08.542Z"
+    },
+    "reference/react-dom/static": {
+      "hash": "1093f257",
+      "file": "datas/devdocs/react/react-dom-static-apis/Static React DOM APIs.md",
+      "updatedAt": "2026-03-10T08:49:08.557Z"
+    },
+    "reference/eslint-plugin-react-hooks/lints/static-components": {
+      "hash": "2ecd44a6",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/static-components.md",
+      "updatedAt": "2026-03-10T08:49:08.560Z"
+    },
+    "learn/synchronizing-with-effects": {
+      "hash": "808e0b4a",
+      "file": "datas/devdocs/react/learn-escape-hatches/Synchronizing with Effects.md",
+      "updatedAt": "2026-03-10T08:49:08.563Z"
+    },
+    "reference/react-compiler/target": {
+      "hash": "91568708",
+      "file": "datas/devdocs/react/react-compiler-configuration/target.md",
+      "updatedAt": "2026-03-10T08:49:08.609Z"
+    },
+    "learn/thinking-in-react": {
+      "hash": "d9799c2e",
+      "file": "datas/devdocs/react/learn-quick-start/Thinking in React.md",
+      "updatedAt": "2026-03-10T08:49:08.614Z"
+    },
+    "learn/tutorial-tic-tac-toe": {
+      "hash": "197891fe",
+      "file": "datas/devdocs/react/learn-quick-start/Tutorial- Tic-Tac-Toe.md",
+      "updatedAt": "2026-03-10T08:49:08.649Z"
+    },
+    "learn/understanding-your-ui-as-a-tree": {
+      "hash": "f814771a",
+      "file": "datas/devdocs/react/learn-describing-the-ui/Understanding Your UI as a Tree.md",
+      "updatedAt": "2026-03-10T08:49:08.768Z"
+    },
+    "reference/eslint-plugin-react-hooks/lints/unsupported-syntax": {
+      "hash": "30418628",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/unsupported-syntax.md",
+      "updatedAt": "2026-03-10T08:49:08.777Z"
+    },
+    "learn/updating-arrays-in-state": {
+      "hash": "f66a22cf",
+      "file": "datas/devdocs/react/learn-adding-interactivity/Updating Arrays in State.md",
+      "updatedAt": "2026-03-10T08:49:08.781Z"
+    },
+    "learn/updating-objects-in-state": {
+      "hash": "7e7d8773",
+      "file": "datas/devdocs/react/learn-adding-interactivity/Updating Objects in State.md",
+      "updatedAt": "2026-03-10T08:49:08.817Z"
+    },
+    "reference/react/use": {
+      "hash": "e2b39952",
+      "file": "datas/devdocs/react/react-apis/use.md",
+      "updatedAt": "2026-03-10T08:49:08.840Z"
+    },
+    "reference/react-compiler/directives/use-memo": {
+      "hash": "982ef16a",
+      "file": "datas/devdocs/react/react-compiler-directives/use memo.md",
+      "updatedAt": "2026-03-10T08:49:08.861Z"
+    },
+    "reference/react-compiler/directives/use-no-memo": {
+      "hash": "a4e53188",
+      "file": "datas/devdocs/react/react-compiler-directives/use no memo.md",
+      "updatedAt": "2026-03-10T08:49:08.868Z"
+    },
+    "reference/eslint-plugin-react-hooks/lints/use-memo": {
+      "hash": "a9aadb3b",
+      "file": "datas/devdocs/react/eslint-plugin-react-hooks-lints/use-memo.md",
+      "updatedAt": "2026-03-10T08:49:08.874Z"
+    },
+    "reference/react/useactionstate": {
+      "hash": "79973f40",
+      "file": "datas/devdocs/react/react-hooks/useActionState.md",
+      "updatedAt": "2026-03-10T08:49:08.878Z"
+    },
+    "reference/react/usecallback": {
+      "hash": "4bd1096e",
+      "file": "datas/devdocs/react/react-hooks/useCallback.md",
+      "updatedAt": "2026-03-10T08:49:08.885Z"
+    },
+    "reference/react/usecontext": {
+      "hash": "d345d236",
+      "file": "datas/devdocs/react/react-hooks/useContext.md",
+      "updatedAt": "2026-03-10T08:49:08.913Z"
+    },
+    "reference/react/usedebugvalue": {
+      "hash": "b62f50a1",
+      "file": "datas/devdocs/react/react-hooks/useDebugValue.md",
+      "updatedAt": "2026-03-10T08:49:08.931Z"
+    },
+    "reference/react/usedeferredvalue": {
+      "hash": "3fe4c100",
+      "file": "datas/devdocs/react/react-hooks/useDeferredValue.md",
+      "updatedAt": "2026-03-10T08:49:08.937Z"
+    },
+    "reference/react/useeffect": {
+      "hash": "bbdb169",
+      "file": "datas/devdocs/react/react-hooks/useEffect.md",
+      "updatedAt": "2026-03-10T08:49:08.957Z"
+    },
+    "reference/react/useeffectevent": {
+      "hash": "ebd11263",
+      "file": "datas/devdocs/react/react-hooks/useEffectEvent.md",
+      "updatedAt": "2026-03-10T08:49:08.985Z"
+    },
+    "reference/react-dom/hooks/useformstatus": {
+      "hash": "b66be362",
+      "file": "datas/devdocs/react/react-dom-hooks/useFormStatus.md",
+      "updatedAt": "2026-03-10T08:49:08.989Z"
+    },
+    "reference/react/useid": {
+      "hash": "f0f750ba",
+      "file": "datas/devdocs/react/react-hooks/useId.md",
+      "updatedAt": "2026-03-10T08:49:09.006Z"
+    },
+    "reference/react/useimperativehandle": {
+      "hash": "9af9e423",
+      "file": "datas/devdocs/react/react-hooks/useImperativeHandle.md",
+      "updatedAt": "2026-03-10T08:49:09.015Z"
+    },
+    "reference/react/useinsertioneffect": {
+      "hash": "e72681e",
+      "file": "datas/devdocs/react/react-hooks/useInsertionEffect.md",
+      "updatedAt": "2026-03-10T08:49:09.021Z"
+    },
+    "reference/react/uselayouteffect": {
+      "hash": "a4d9c969",
+      "file": "datas/devdocs/react/react-hooks/useLayoutEffect.md",
+      "updatedAt": "2026-03-10T08:49:09.026Z"
+    },
+    "reference/react/usememo": {
+      "hash": "def31bed",
+      "file": "datas/devdocs/react/react-hooks/useMemo.md",
+      "updatedAt": "2026-03-10T08:49:09.035Z"
+    },
+    "reference/react/useoptimistic": {
+      "hash": "74677b59",
+      "file": "datas/devdocs/react/react-hooks/useOptimistic.md",
+      "updatedAt": "2026-03-10T08:49:09.063Z"
+    },
+    "reference/react/usereducer": {
+      "hash": "eb9e3ba",
+      "file": "datas/devdocs/react/react-hooks/useReducer.md",
+      "updatedAt": "2026-03-10T08:49:09.068Z"
+    },
+    "reference/react/useref": {
+      "hash": "809257b5",
+      "file": "datas/devdocs/react/react-hooks/useRef.md",
+      "updatedAt": "2026-03-10T08:49:09.093Z"
+    },
+    "reference/react/usestate": {
+      "hash": "c5252f02",
+      "file": "datas/devdocs/react/react-hooks/useState.md",
+      "updatedAt": "2026-03-10T08:49:09.100Z"
+    },
+    "reference/react/usesyncexternalstore": {
+      "hash": "6a1a3f82",
+      "file": "datas/devdocs/react/react-hooks/useSyncExternalStore.md",
+      "updatedAt": "2026-03-10T08:49:09.114Z"
+    },
+    "reference/react/usetransition": {
+      "hash": "6ca11f68",
+      "file": "datas/devdocs/react/react-hooks/useTransition.md",
+      "updatedAt": "2026-03-10T08:49:09.132Z"
+    },
+    "learn/typescript": {
+      "hash": "cdd3cc6b",
+      "file": "datas/devdocs/react/learn-setup/Using TypeScript.md",
+      "updatedAt": "2026-03-10T08:49:09.152Z"
+    },
+    "learn/writing-markup-with-jsx": {
+      "hash": "52a77808",
+      "file": "datas/devdocs/react/learn-describing-the-ui/Writing Markup with JSX.md",
+      "updatedAt": "2026-03-10T08:49:09.172Z"
+    },
+    "learn/you-might-not-need-an-effect": {
+      "hash": "c4dc105d",
+      "file": "datas/devdocs/react/learn-escape-hatches/You Might Not Need an Effect.md",
+      "updatedAt": "2026-03-10T08:49:09.182Z"
+    },
+    "learn/your-first-component": {
+      "hash": "3c11c020",
+      "file": "datas/devdocs/react/learn-describing-the-ui/Your First Component.md",
+      "updatedAt": "2026-03-10T08:49:09.224Z"
+    }
+  }
+}

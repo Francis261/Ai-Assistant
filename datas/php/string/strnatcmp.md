@@ -1,0 +1,84 @@
+# strnatcmp
+
+Source: https://devdocs.io/php/function.strnatcmp
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+strnatcmp — String comparisons using a "natural order" algorithm
+
+### Description
+
+```
+strnatcmp(string $string1, string $string2): int
+```
+
+This function implements a comparison algorithm that orders alphanumeric strings in the way a human being would, this is described as a "natural ordering". Note that this comparison is case sensitive.
+
+### Parameters
+
+The first string.
+
+The second string.
+
+### Return Values
+
+Returns a value less than 0 if string1 is less than string2; a value greater than 0 if string1 is greater than string2, and 0 if they are equal. No particular meaning can be reliably inferred from the value aside from its sign.
+
+### Changelog
+
+### Examples
+
+An example of the difference between this algorithm and the regular computer string sorting algorithms (used in strcmp()) can be seen below:
+
+Example #1 strcmp()
+
+```
+<?php
+$arr1 = $arr2 = array("img12.png", "img10.png", "img2.png", "img1.png");
+echo "Standard string comparison\n";
+usort($arr1, "strcmp");
+print_r($arr1);
+echo "\nNatural order string comparison\n";
+usort($arr2, "strnatcmp");
+print_r($arr2);
+?>
+```
+
+The above example will output:
+
+```
+Standard string comparison
+Array
+(
+    [0] => img1.png
+    [1] => img10.png
+    [2] => img12.png
+    [3] => img2.png
+)
+
+Natural order string comparison
+Array
+(
+    [0] => img1.png
+    [1] => img2.png
+    [2] => img10.png
+    [3] => img12.png
+)
+```
+
+### See Also
+
+- preg_match() - Perform a regular expression match
+- strcasecmp() - Binary safe case-insensitive string comparison
+- substr() - Return part of a string
+- stristr() - Case-insensitive strstr
+- strcmp() - Binary safe string comparison
+- strncmp() - Binary safe string comparison of the first n characters
+- strncasecmp() - Binary safe case-insensitive string comparison of the first n characters
+- strnatcasecmp() - Case insensitive string comparisons using a "natural order" algorithm
+- strstr() - Find the first occurrence of a string
+- natsort() - Sort an array using a "natural order" algorithm
+- natcasesort() - Sort an array using a case insensitive "natural order" algorithm
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.strnatcmp.php

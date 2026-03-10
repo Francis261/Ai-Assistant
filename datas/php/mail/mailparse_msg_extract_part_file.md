@@ -1,0 +1,43 @@
+# mailparse_msg_extract_part_file
+
+Source: https://devdocs.io/php/function.mailparse-msg-extract-part-file
+
+(PECL mailparse >= 0.9.0)
+
+mailparse_msg_extract_part_file — Extracts/decodes a message section
+
+### Description
+
+```
+mailparse_msg_extract_part_file(resource $mimemail, mixed $filename, callable $callbackfunc = ?): string
+```
+
+Extracts/decodes a message section from the supplied filename.
+
+The contents of the section will be decoded according to their transfer encoding - base64, quoted-printable and uuencoded text are supported.
+
+### Parameters
+
+A valid MIME resource, created with mailparse_msg_create().
+
+Can be a file name or a valid stream resource.
+
+If set, this must be either a valid callback that will be passed the extracted section, or null to make this function return the extracted section.
+
+If not specified, the contents will be sent to "stdout".
+
+### Return Values
+
+If callbackfunc is not null returns true on success.
+
+If callbackfunc is set to null, returns the extracted section as a string.
+
+Returns false on error.
+
+### See Also
+
+- mailparse_msg_extract_part() - Extracts/decodes a message section
+- mailparse_msg_extract_whole_part_file() - Extracts a message section including headers without decoding the transfer encoding
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.mailparse-msg-extract-part-file.php

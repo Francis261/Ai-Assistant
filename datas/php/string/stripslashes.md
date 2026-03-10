@@ -1,0 +1,88 @@
+# stripslashes
+
+Source: https://devdocs.io/php/function.stripslashes
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+stripslashes — Un-quotes a quoted string
+
+### Description
+
+```
+stripslashes(string $string): string
+```
+
+Un-quotes a quoted string.
+
+stripslashes() can be used if you aren't inserting this data into a place (such as a database) that requires escaping. For example, if you're simply outputting data straight from an HTML form.
+
+### Parameters
+
+The input string.
+
+### Return Values
+
+Returns a string with backslashes stripped off. (\' becomes ' and so on.) Double backslashes (\\) are made into a single backslash (\).
+
+### Examples
+
+Example #1 A stripslashes() example
+
+```
+<?php
+$str = "Is your name O\'reilly?";
+
+// Outputs: Is your name O'reilly?
+echo stripslashes($str);
+?>
+```
+
+Note:
+
+stripslashes() is not recursive. If you want to apply this function to a multi-dimensional array, you need to use a recursive function.
+
+Example #2 Using stripslashes() on an array
+
+```
+<?php
+function stripslashes_deep($value)
+{
+    $value = is_array($value) ?
+                array_map('stripslashes_deep', $value) :
+                stripslashes($value);
+
+    return $value;
+}
+
+// Example
+$array = array("f\\'oo", "b\\'ar", array("fo\\'o", "b\\'ar"));
+$array = stripslashes_deep($array);
+
+// Output
+print_r($array);
+?>
+```
+
+The above example will output:
+
+```
+Array
+(
+    [0] => f'oo
+    [1] => b'ar
+    [2] => Array
+        (
+            [0] => fo'o
+            [1] => b'ar
+        )
+
+)
+```
+
+### See Also
+
+- addslashes() - Quote string with slashes
+- get_magic_quotes_gpc() - Gets the current configuration setting of magic_quotes_gpc
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.stripslashes.php

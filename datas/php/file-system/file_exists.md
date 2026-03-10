@@ -1,0 +1,72 @@
+# file_exists
+
+Source: https://devdocs.io/php/function.file-exists
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+file_exists — Checks whether a file or directory exists
+
+### Description
+
+```
+file_exists(string $filename): bool
+```
+
+Checks whether a file or directory exists.
+
+### Parameters
+
+Path to the file or directory.
+
+On windows, use //computername/share/filename or \\computername\share\filename to check files on network shares.
+
+### Return Values
+
+Returns true if the file or directory specified by filename exists; false otherwise.
+
+Note:
+
+This function will return false for symlinks pointing to non-existing files.
+
+Note:
+
+The check is done using the real UID/GID instead of the effective one.
+
+Note: Because PHP's integer type is signed and many platforms use 32bit integers, some filesystem functions may return unexpected results for files which are larger than 2GB.
+
+### Errors/Exceptions
+
+Upon failure, an E_WARNING is emitted.
+
+### Examples
+
+Example #1 Testing whether a file exists
+
+```
+<?php
+$filename = '/path/to/foo.txt';
+
+if (file_exists($filename)) {
+    echo "The file $filename exists";
+} else {
+    echo "The file $filename does not exist";
+}
+?>
+```
+
+### Notes
+
+Note: The results of this function are cached. See clearstatcache() for more details.
+
+As of PHP 5.0.0, this function can also be used with some URL wrappers. Refer to Supported Protocols and Wrappers to determine which wrappers support stat() family of functionality.
+
+### See Also
+
+- is_readable() - Tells whether a file exists and is readable
+- is_writable() - Tells whether the filename is writable
+- is_file() - Tells whether the filename is a regular file
+- file() - Reads entire file into an array
+- SplFileInfo
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.file-exists.php

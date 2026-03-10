@@ -1,0 +1,1227 @@
+{
+  "category": "html",
+  "docMtime": 1757950755,
+  "generatedAt": "2026-03-10T08:46:12.994Z",
+  "entries": {
+    "reference/elements/a": {
+      "hash": "96ee912b",
+      "file": "datas/devdocs/html/elements/a.md",
+      "updatedAt": "2026-03-10T08:46:13.001Z"
+    },
+    "reference/elements/abbr": {
+      "hash": "4adb7fe3",
+      "file": "datas/devdocs/html/elements/abbr.md",
+      "updatedAt": "2026-03-10T08:46:13.092Z"
+    },
+    "reference/attributes/accept": {
+      "hash": "e1ba5ad1",
+      "file": "datas/devdocs/html/attributes/accept (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.111Z"
+    },
+    "reference/global_attributes/accesskey": {
+      "hash": "77a6d7",
+      "file": "datas/devdocs/html/global-attributes/accesskey (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.122Z"
+    },
+    "reference/elements/acronym": {
+      "hash": "f8bd3ba7",
+      "file": "datas/devdocs/html/obsolete/acronym.md",
+      "updatedAt": "2026-03-10T08:46:13.129Z"
+    },
+    "reference/elements/address": {
+      "hash": "7d3c89ac",
+      "file": "datas/devdocs/html/elements/address.md",
+      "updatedAt": "2026-03-10T08:46:13.133Z"
+    },
+    "reference/global_attributes/anchor": {
+      "hash": "de19bba8",
+      "file": "datas/devdocs/html/global-attributes/anchor (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.147Z"
+    },
+    "reference/elements/area": {
+      "hash": "910f730e",
+      "file": "datas/devdocs/html/elements/area.md",
+      "updatedAt": "2026-03-10T08:46:13.154Z"
+    },
+    "reference/elements/article": {
+      "hash": "be92b1a9",
+      "file": "datas/devdocs/html/elements/article.md",
+      "updatedAt": "2026-03-10T08:46:13.169Z"
+    },
+    "reference/elements/aside": {
+      "hash": "9bbeabed",
+      "file": "datas/devdocs/html/elements/aside.md",
+      "updatedAt": "2026-03-10T08:46:13.177Z"
+    },
+    "reference/elements/audio": {
+      "hash": "d03b127c",
+      "file": "datas/devdocs/html/elements/audio.md",
+      "updatedAt": "2026-03-10T08:46:13.183Z"
+    },
+    "reference/global_attributes/autocapitalize": {
+      "hash": "37c52117",
+      "file": "datas/devdocs/html/global-attributes/autocapitalize (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.216Z"
+    },
+    "reference/attributes/autocomplete": {
+      "hash": "ea6294cb",
+      "file": "datas/devdocs/html/attributes/autocomplete (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.222Z"
+    },
+    "reference/global_attributes/autocorrect": {
+      "hash": "aaca0a2e",
+      "file": "datas/devdocs/html/global-attributes/autocorrect (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.240Z"
+    },
+    "reference/global_attributes/autofocus": {
+      "hash": "4076446b",
+      "file": "datas/devdocs/html/global-attributes/autofocus (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.246Z"
+    },
+    "reference/elements/b": {
+      "hash": "24ccadd7",
+      "file": "datas/devdocs/html/elements/b.md",
+      "updatedAt": "2026-03-10T08:46:13.250Z"
+    },
+    "reference/elements/base": {
+      "hash": "998b248",
+      "file": "datas/devdocs/html/elements/base.md",
+      "updatedAt": "2026-03-10T08:46:13.259Z"
+    },
+    "reference/elements/bdi": {
+      "hash": "ed493cc3",
+      "file": "datas/devdocs/html/elements/bdi.md",
+      "updatedAt": "2026-03-10T08:46:13.274Z"
+    },
+    "reference/elements/bdo": {
+      "hash": "7e590acb",
+      "file": "datas/devdocs/html/elements/bdo.md",
+      "updatedAt": "2026-03-10T08:46:13.280Z"
+    },
+    "reference/elements/big": {
+      "hash": "8ce43bac",
+      "file": "datas/devdocs/html/obsolete/big.md",
+      "updatedAt": "2026-03-10T08:46:13.285Z"
+    },
+    "reference/elements/blockquote": {
+      "hash": "543dcf84",
+      "file": "datas/devdocs/html/elements/blockquote.md",
+      "updatedAt": "2026-03-10T08:46:13.288Z"
+    },
+    "reference/elements/body": {
+      "hash": "f75826f6",
+      "file": "datas/devdocs/html/elements/body.md",
+      "updatedAt": "2026-03-10T08:46:13.293Z"
+    },
+    "reference/elements/br": {
+      "hash": "421dbab6",
+      "file": "datas/devdocs/html/elements/br.md",
+      "updatedAt": "2026-03-10T08:46:13.302Z"
+    },
+    "reference/elements/button": {
+      "hash": "7a227d2",
+      "file": "datas/devdocs/html/elements/button.md",
+      "updatedAt": "2026-03-10T08:46:13.306Z"
+    },
+    "reference/elements/canvas": {
+      "hash": "d7f2d9a8",
+      "file": "datas/devdocs/html/elements/canvas.md",
+      "updatedAt": "2026-03-10T08:46:13.320Z"
+    },
+    "reference/elements/caption": {
+      "hash": "14da10f8",
+      "file": "datas/devdocs/html/elements/caption.md",
+      "updatedAt": "2026-03-10T08:46:13.337Z"
+    },
+    "reference/attributes/capture": {
+      "hash": "efb8451f",
+      "file": "datas/devdocs/html/attributes/capture (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.343Z"
+    },
+    "reference/elements/center": {
+      "hash": "bcc23ba6",
+      "file": "datas/devdocs/html/obsolete/center.md",
+      "updatedAt": "2026-03-10T08:46:13.347Z"
+    },
+    "guides/cheatsheet": {
+      "hash": "f648df9",
+      "file": "datas/devdocs/html/guides/Cheatsheet.md",
+      "updatedAt": "2026-03-10T08:46:13.350Z"
+    },
+    "reference/elements/cite": {
+      "hash": "4dd40c2",
+      "file": "datas/devdocs/html/elements/cite.md",
+      "updatedAt": "2026-03-10T08:46:13.357Z"
+    },
+    "reference/global_attributes/class": {
+      "hash": "33daedc5",
+      "file": "datas/devdocs/html/global-attributes/class (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.362Z"
+    },
+    "reference/elements/code": {
+      "hash": "36a2be82",
+      "file": "datas/devdocs/html/elements/code.md",
+      "updatedAt": "2026-03-10T08:46:13.365Z"
+    },
+    "reference/elements/col": {
+      "hash": "f10bd6cb",
+      "file": "datas/devdocs/html/elements/col.md",
+      "updatedAt": "2026-03-10T08:46:13.369Z"
+    },
+    "reference/elements/colgroup": {
+      "hash": "ca22f1fa",
+      "file": "datas/devdocs/html/elements/colgroup.md",
+      "updatedAt": "2026-03-10T08:46:13.378Z"
+    },
+    "guides/comments": {
+      "hash": "f122a727",
+      "file": "datas/devdocs/html/guides/Comments.md",
+      "updatedAt": "2026-03-10T08:46:13.386Z"
+    },
+    "guides/constraint_validation": {
+      "hash": "23e7dbbe",
+      "file": "datas/devdocs/html/guides/Constraint validation.md",
+      "updatedAt": "2026-03-10T08:46:13.390Z"
+    },
+    "reference/attributes/content": {
+      "hash": "a2f626be",
+      "file": "datas/devdocs/html/attributes/content (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.407Z"
+    },
+    "guides/content_categories": {
+      "hash": "ed8cadda",
+      "file": "datas/devdocs/html/guides/Content categories.md",
+      "updatedAt": "2026-03-10T08:46:13.411Z"
+    },
+    "reference/global_attributes/contenteditable": {
+      "hash": "60326ed6",
+      "file": "datas/devdocs/html/global-attributes/contenteditable (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.435Z"
+    },
+    "how_to/cors_enabled_image": {
+      "hash": "96308ec5",
+      "file": "datas/devdocs/html/miscellaneous/CORS enabled image.md",
+      "updatedAt": "2026-03-10T08:46:13.443Z"
+    },
+    "reference/attributes/crossorigin": {
+      "hash": "c25683fa",
+      "file": "datas/devdocs/html/attributes/crossorigin (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.448Z"
+    },
+    "reference/elements/data": {
+      "hash": "51c2699a",
+      "file": "datas/devdocs/html/elements/data.md",
+      "updatedAt": "2026-03-10T08:46:13.455Z"
+    },
+    "reference/global_attributes/data-*": {
+      "hash": "701da3e6",
+      "file": "datas/devdocs/html/global-attributes/data- (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.459Z"
+    },
+    "reference/elements/datalist": {
+      "hash": "93c7396a",
+      "file": "datas/devdocs/html/elements/datalist.md",
+      "updatedAt": "2026-03-10T08:46:13.461Z"
+    },
+    "guides/date_and_time_formats": {
+      "hash": "4e84bc31",
+      "file": "datas/devdocs/html/guides/Date and time formats.md",
+      "updatedAt": "2026-03-10T08:46:13.474Z"
+    },
+    "reference/elements/dd": {
+      "hash": "e1398f2a",
+      "file": "datas/devdocs/html/elements/dd.md",
+      "updatedAt": "2026-03-10T08:46:13.484Z"
+    },
+    "reference/elements/del": {
+      "hash": "7f51f2b0",
+      "file": "datas/devdocs/html/elements/del.md",
+      "updatedAt": "2026-03-10T08:46:13.488Z"
+    },
+    "reference/elements/details": {
+      "hash": "1e05c5c5",
+      "file": "datas/devdocs/html/elements/details.md",
+      "updatedAt": "2026-03-10T08:46:13.493Z"
+    },
+    "reference/elements/dfn": {
+      "hash": "c504cfb4",
+      "file": "datas/devdocs/html/elements/dfn.md",
+      "updatedAt": "2026-03-10T08:46:13.498Z"
+    },
+    "reference/elements/dialog": {
+      "hash": "cb5d5bc2",
+      "file": "datas/devdocs/html/elements/dialog.md",
+      "updatedAt": "2026-03-10T08:46:13.503Z"
+    },
+    "reference/elements/dir": {
+      "hash": "6457993c",
+      "file": "datas/devdocs/html/obsolete/dir.md",
+      "updatedAt": "2026-03-10T08:46:13.527Z"
+    },
+    "reference/global_attributes/dir": {
+      "hash": "320006d8",
+      "file": "datas/devdocs/html/global-attributes/dir (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.530Z"
+    },
+    "reference/attributes/dirname": {
+      "hash": "1ed83be0",
+      "file": "datas/devdocs/html/attributes/dirname (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.532Z"
+    },
+    "reference/attributes/disabled": {
+      "hash": "366d496",
+      "file": "datas/devdocs/html/attributes/disabled (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.536Z"
+    },
+    "reference/elements/div": {
+      "hash": "766d17c9",
+      "file": "datas/devdocs/html/elements/div.md",
+      "updatedAt": "2026-03-10T08:46:13.542Z"
+    },
+    "reference/elements/dl": {
+      "hash": "5e2f51b7",
+      "file": "datas/devdocs/html/elements/dl.md",
+      "updatedAt": "2026-03-10T08:46:13.547Z"
+    },
+    "reference/global_attributes/draggable": {
+      "hash": "2222cc0e",
+      "file": "datas/devdocs/html/global-attributes/draggable (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.551Z"
+    },
+    "reference/elements/dt": {
+      "hash": "94cb2931",
+      "file": "datas/devdocs/html/elements/dt.md",
+      "updatedAt": "2026-03-10T08:46:13.553Z"
+    },
+    "reference/attributes/elementtiming": {
+      "hash": "bafd2d70",
+      "file": "datas/devdocs/html/attributes/elementtiming (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.556Z"
+    },
+    "reference/elements/em": {
+      "hash": "db57d44f",
+      "file": "datas/devdocs/html/elements/em.md",
+      "updatedAt": "2026-03-10T08:46:13.559Z"
+    },
+    "reference/elements/embed": {
+      "hash": "fe8db724",
+      "file": "datas/devdocs/html/elements/embed.md",
+      "updatedAt": "2026-03-10T08:46:13.563Z"
+    },
+    "reference/global_attributes/enterkeyhint": {
+      "hash": "d19ab409",
+      "file": "datas/devdocs/html/global-attributes/enterkeyhint (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.567Z"
+    },
+    "reference/global_attributes/exportparts": {
+      "hash": "83e2477c",
+      "file": "datas/devdocs/html/global-attributes/exportparts (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.569Z"
+    },
+    "reference/elements/fencedframe": {
+      "hash": "72db9de2",
+      "file": "datas/devdocs/html/elements/fencedframe.md",
+      "updatedAt": "2026-03-10T08:46:13.574Z"
+    },
+    "reference/elements/fieldset": {
+      "hash": "ef800a6c",
+      "file": "datas/devdocs/html/elements/fieldset.md",
+      "updatedAt": "2026-03-10T08:46:13.589Z"
+    },
+    "reference/elements/figcaption": {
+      "hash": "e2d944e4",
+      "file": "datas/devdocs/html/elements/figcaption.md",
+      "updatedAt": "2026-03-10T08:46:13.595Z"
+    },
+    "reference/elements/figure": {
+      "hash": "e41cc9b7",
+      "file": "datas/devdocs/html/elements/figure.md",
+      "updatedAt": "2026-03-10T08:46:13.598Z"
+    },
+    "reference/elements/font": {
+      "hash": "35ff78ba",
+      "file": "datas/devdocs/html/obsolete/font.md",
+      "updatedAt": "2026-03-10T08:46:13.601Z"
+    },
+    "reference/elements/footer": {
+      "hash": "a6322012",
+      "file": "datas/devdocs/html/elements/footer.md",
+      "updatedAt": "2026-03-10T08:46:13.604Z"
+    },
+    "reference/attributes/for": {
+      "hash": "38afbe31",
+      "file": "datas/devdocs/html/attributes/for (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.608Z"
+    },
+    "reference/elements/form": {
+      "hash": "10338d62",
+      "file": "datas/devdocs/html/elements/form.md",
+      "updatedAt": "2026-03-10T08:46:13.610Z"
+    },
+    "reference/attributes/form": {
+      "hash": "30f3c3d8",
+      "file": "datas/devdocs/html/attributes/form (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.619Z"
+    },
+    "reference/elements/frame": {
+      "hash": "dfb9bcd3",
+      "file": "datas/devdocs/html/obsolete/frame.md",
+      "updatedAt": "2026-03-10T08:46:13.625Z"
+    },
+    "reference/elements/frameset": {
+      "hash": "ed997fa2",
+      "file": "datas/devdocs/html/obsolete/frameset.md",
+      "updatedAt": "2026-03-10T08:46:13.631Z"
+    },
+    "guides": {
+      "hash": "bcc31323",
+      "file": "datas/devdocs/html/miscellaneous/Guides.md",
+      "updatedAt": "2026-03-10T08:46:13.643Z"
+    },
+    "reference/elements/head": {
+      "hash": "f542b397",
+      "file": "datas/devdocs/html/elements/head.md",
+      "updatedAt": "2026-03-10T08:46:13.646Z"
+    },
+    "reference/elements/header": {
+      "hash": "1fa5ae7a",
+      "file": "datas/devdocs/html/elements/header.md",
+      "updatedAt": "2026-03-10T08:46:13.649Z"
+    },
+    "reference/elements/heading_elements": {
+      "hash": "56d4144e",
+      "file": "datas/devdocs/html/elements/heading elements.md",
+      "updatedAt": "2026-03-10T08:46:13.653Z"
+    },
+    "reference/elements/hgroup": {
+      "hash": "f622bfbb",
+      "file": "datas/devdocs/html/elements/hgroup.md",
+      "updatedAt": "2026-03-10T08:46:13.663Z"
+    },
+    "reference/global_attributes/hidden": {
+      "hash": "b313bd87",
+      "file": "datas/devdocs/html/global-attributes/hidden (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.665Z"
+    },
+    "reference/elements/hr": {
+      "hash": "d406244d",
+      "file": "datas/devdocs/html/elements/hr.md",
+      "updatedAt": "2026-03-10T08:46:13.669Z"
+    },
+    "reference/elements/html": {
+      "hash": "ed9a240e",
+      "file": "datas/devdocs/html/elements/html.md",
+      "updatedAt": "2026-03-10T08:46:13.673Z"
+    },
+    "reference/elements/i": {
+      "hash": "1b16f5b7",
+      "file": "datas/devdocs/html/elements/i.md",
+      "updatedAt": "2026-03-10T08:46:13.676Z"
+    },
+    "reference/global_attributes/id": {
+      "hash": "5fad464",
+      "file": "datas/devdocs/html/global-attributes/id (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.688Z"
+    },
+    "reference/elements/iframe": {
+      "hash": "b7bdad48",
+      "file": "datas/devdocs/html/elements/iframe.md",
+      "updatedAt": "2026-03-10T08:46:13.691Z"
+    },
+    "reference/elements/img": {
+      "hash": "43243d0a",
+      "file": "datas/devdocs/html/elements/img.md",
+      "updatedAt": "2026-03-10T08:46:13.702Z"
+    },
+    "reference/global_attributes/inert": {
+      "hash": "9c62a8a4",
+      "file": "datas/devdocs/html/global-attributes/inert (attribute).md",
+      "updatedAt": "2026-03-10T08:46:13.719Z"
+    },
+    "reference/elements/input": {
+      "hash": "78ecf55",
+      "file": "datas/devdocs/html/elements/input.md",
+      "updatedAt": "2026-03-10T08:46:13.723Z"
+    },
+    "reference/elements/input/button": {
+      "hash": "ed6e014f",
+      "file": "datas/devdocs/html/elements/input type=-button.md",
+      "updatedAt": "2026-03-10T08:46:13.794Z"
+    },
+    "reference/elements/input/checkbox": {
+      "hash": "5ae33dbf",
+      "file": "datas/devdocs/html/elements/input type=-checkbox.md",
+      "updatedAt": "2026-03-10T08:46:13.802Z"
+    },
+    "reference/elements/input/color": {
+      "hash": "922bb6f9",
+      "file": "datas/devdocs/html/elements/input type=-color.md",
+      "updatedAt": "2026-03-10T08:46:13.809Z"
+    },
+    "reference/elements/input/date": {
+      "hash": "59ba9e55",
+      "file": "datas/devdocs/html/elements/input type=-date.md",
+      "updatedAt": "2026-03-10T08:46:13.814Z"
+    },
+    "reference/elements/input/datetime-local": {
+      "hash": "62cdb5a4",
+      "file": "datas/devdocs/html/elements/input type=-datetime-local.md",
+      "updatedAt": "2026-03-10T08:46:13.819Z"
+    },
+    "reference/elements/input/email": {
+      "hash": "fae0b3a5",
+      "file": "datas/devdocs/html/elements/input type=-email.md",
+      "updatedAt": "2026-03-10T08:46:13.824Z"
+    },
+    "reference/elements/input/file": {
+      "hash": "bbda5353",
+      "file": "datas/devdocs/html/elements/input type=-file.md",
+      "updatedAt": "2026-03-10T08:46:13.833Z"
+    },
+    "reference/elements/input/hidden": {
+      "hash": "89128e95",
+      "file": "datas/devdocs/html/elements/input type=-hidden.md",
+      "updatedAt": "2026-03-10T08:46:13.852Z"
+    },
+    "reference/elements/input/image": {
+      "hash": "f22adb62",
+      "file": "datas/devdocs/html/elements/input type=-image.md",
+      "updatedAt": "2026-03-10T08:46:13.856Z"
+    },
+    "reference/elements/input/month": {
+      "hash": "d74fb97a",
+      "file": "datas/devdocs/html/elements/input type=-month.md",
+      "updatedAt": "2026-03-10T08:46:13.863Z"
+    },
+    "reference/elements/input/number": {
+      "hash": "aaa5de23",
+      "file": "datas/devdocs/html/elements/input type=-number.md",
+      "updatedAt": "2026-03-10T08:46:13.883Z"
+    },
+    "reference/elements/input/password": {
+      "hash": "93f64b36",
+      "file": "datas/devdocs/html/elements/input type=-password.md",
+      "updatedAt": "2026-03-10T08:46:13.891Z"
+    },
+    "reference/elements/input/radio": {
+      "hash": "52b7a2de",
+      "file": "datas/devdocs/html/elements/input type=-radio.md",
+      "updatedAt": "2026-03-10T08:46:13.898Z"
+    },
+    "reference/elements/input/range": {
+      "hash": "1c20b2da",
+      "file": "datas/devdocs/html/elements/input type=-range.md",
+      "updatedAt": "2026-03-10T08:46:13.908Z"
+    },
+    "reference/elements/input/reset": {
+      "hash": "aa1b7ee",
+      "file": "datas/devdocs/html/elements/input type=-reset.md",
+      "updatedAt": "2026-03-10T08:46:13.918Z"
+    },
+    "reference/elements/input/search": {
+      "hash": "d8ad1f",
+      "file": "datas/devdocs/html/elements/input type=-search.md",
+      "updatedAt": "2026-03-10T08:46:13.923Z"
+    },
+    "reference/elements/input/submit": {
+      "hash": "f97ef8e1",
+      "file": "datas/devdocs/html/elements/input type=-submit.md",
+      "updatedAt": "2026-03-10T08:46:13.942Z"
+    },
+    "reference/elements/input/tel": {
+      "hash": "bc1a269c",
+      "file": "datas/devdocs/html/elements/input type=-tel.md",
+      "updatedAt": "2026-03-10T08:46:13.948Z"
+    },
+    "reference/elements/input/text": {
+      "hash": "62d48f84",
+      "file": "datas/devdocs/html/elements/input type=-text.md",
+      "updatedAt": "2026-03-10T08:46:13.968Z"
+    },
+    "reference/elements/input/time": {
+      "hash": "57e314db",
+      "file": "datas/devdocs/html/elements/input type=-time.md",
+      "updatedAt": "2026-03-10T08:46:13.975Z"
+    },
+    "reference/elements/input/url": {
+      "hash": "ffe288b1",
+      "file": "datas/devdocs/html/elements/input type=-url.md",
+      "updatedAt": "2026-03-10T08:46:13.991Z"
+    },
+    "reference/elements/input/week": {
+      "hash": "5a629d51",
+      "file": "datas/devdocs/html/elements/input type=-week.md",
+      "updatedAt": "2026-03-10T08:46:13.999Z"
+    },
+    "reference/global_attributes/inputmode": {
+      "hash": "63491305",
+      "file": "datas/devdocs/html/global-attributes/inputmode (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.007Z"
+    },
+    "reference/elements/ins": {
+      "hash": "1e9b8757",
+      "file": "datas/devdocs/html/elements/ins.md",
+      "updatedAt": "2026-03-10T08:46:14.010Z"
+    },
+    "reference/global_attributes/is": {
+      "hash": "d7d1c22f",
+      "file": "datas/devdocs/html/global-attributes/is (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.014Z"
+    },
+    "reference/global_attributes/itemid": {
+      "hash": "d364b54",
+      "file": "datas/devdocs/html/global-attributes/itemid (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.017Z"
+    },
+    "reference/global_attributes/itemprop": {
+      "hash": "7afe1727",
+      "file": "datas/devdocs/html/global-attributes/itemprop (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.019Z"
+    },
+    "reference/global_attributes/itemref": {
+      "hash": "8454421b",
+      "file": "datas/devdocs/html/global-attributes/itemref (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.027Z"
+    },
+    "reference/global_attributes/itemscope": {
+      "hash": "532ce182",
+      "file": "datas/devdocs/html/global-attributes/itemscope (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.029Z"
+    },
+    "reference/global_attributes/itemtype": {
+      "hash": "22f8db9a",
+      "file": "datas/devdocs/html/global-attributes/itemtype (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.033Z"
+    },
+    "reference/elements/kbd": {
+      "hash": "807301a8",
+      "file": "datas/devdocs/html/elements/kbd.md",
+      "updatedAt": "2026-03-10T08:46:14.036Z"
+    },
+    "reference/elements/label": {
+      "hash": "44f929f4",
+      "file": "datas/devdocs/html/elements/label.md",
+      "updatedAt": "2026-03-10T08:46:14.040Z"
+    },
+    "reference/global_attributes/lang": {
+      "hash": "d47710e2",
+      "file": "datas/devdocs/html/global-attributes/lang (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.051Z"
+    },
+    "reference/elements/legend": {
+      "hash": "32cb0c84",
+      "file": "datas/devdocs/html/elements/legend.md",
+      "updatedAt": "2026-03-10T08:46:14.053Z"
+    },
+    "reference/elements/li": {
+      "hash": "7ae7cc6",
+      "file": "datas/devdocs/html/elements/li.md",
+      "updatedAt": "2026-03-10T08:46:14.056Z"
+    },
+    "reference/elements/link": {
+      "hash": "9c30627d",
+      "file": "datas/devdocs/html/elements/link.md",
+      "updatedAt": "2026-03-10T08:46:14.059Z"
+    },
+    "reference/elements/main": {
+      "hash": "e380337",
+      "file": "datas/devdocs/html/elements/main.md",
+      "updatedAt": "2026-03-10T08:46:14.068Z"
+    },
+    "reference/elements/map": {
+      "hash": "ba8ff354",
+      "file": "datas/devdocs/html/elements/map.md",
+      "updatedAt": "2026-03-10T08:46:14.071Z"
+    },
+    "reference/elements/mark": {
+      "hash": "f737cdea",
+      "file": "datas/devdocs/html/elements/mark.md",
+      "updatedAt": "2026-03-10T08:46:14.073Z"
+    },
+    "reference/elements/marquee": {
+      "hash": "6482f788",
+      "file": "datas/devdocs/html/obsolete/marquee.md",
+      "updatedAt": "2026-03-10T08:46:14.083Z"
+    },
+    "reference/attributes/max": {
+      "hash": "a56ef41b",
+      "file": "datas/devdocs/html/attributes/max (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.089Z"
+    },
+    "reference/attributes/maxlength": {
+      "hash": "cb0b9e4c",
+      "file": "datas/devdocs/html/attributes/maxlength (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.092Z"
+    },
+    "reference/elements/menu": {
+      "hash": "c93e4967",
+      "file": "datas/devdocs/html/elements/menu.md",
+      "updatedAt": "2026-03-10T08:46:14.094Z"
+    },
+    "reference/elements/meta": {
+      "hash": "3981ff2a",
+      "file": "datas/devdocs/html/elements/meta.md",
+      "updatedAt": "2026-03-10T08:46:14.097Z"
+    },
+    "reference/elements/meta/http-equiv": {
+      "hash": "d81506eb",
+      "file": "datas/devdocs/html/elements/meta.http-equiv.md",
+      "updatedAt": "2026-03-10T08:46:14.102Z"
+    },
+    "reference/elements/meta/name": {
+      "hash": "33eb1969",
+      "file": "datas/devdocs/html/elements/meta.name.md",
+      "updatedAt": "2026-03-10T08:46:14.107Z"
+    },
+    "reference/elements/meta/name/color-scheme": {
+      "hash": "d138ab4f",
+      "file": "datas/devdocs/html/elements/meta.name.color-scheme.md",
+      "updatedAt": "2026-03-10T08:46:14.112Z"
+    },
+    "reference/elements/meta/name/referrer": {
+      "hash": "72bbd012",
+      "file": "datas/devdocs/html/elements/meta.name.referrer.md",
+      "updatedAt": "2026-03-10T08:46:14.114Z"
+    },
+    "reference/elements/meta/name/robots": {
+      "hash": "d5afb54a",
+      "file": "datas/devdocs/html/elements/meta.name.robots.md",
+      "updatedAt": "2026-03-10T08:46:14.117Z"
+    },
+    "reference/elements/meta/name/theme-color": {
+      "hash": "d6781b6c",
+      "file": "datas/devdocs/html/elements/meta.name.theme-color.md",
+      "updatedAt": "2026-03-10T08:46:14.119Z"
+    },
+    "reference/elements/meta/name/viewport": {
+      "hash": "88b49f2c",
+      "file": "datas/devdocs/html/elements/meta.name.viewport.md",
+      "updatedAt": "2026-03-10T08:46:14.123Z"
+    },
+    "reference/elements/meter": {
+      "hash": "4a5442f4",
+      "file": "datas/devdocs/html/elements/meter.md",
+      "updatedAt": "2026-03-10T08:46:14.133Z"
+    },
+    "guides/microdata": {
+      "hash": "2b5b2013",
+      "file": "datas/devdocs/html/guides/Microdata.md",
+      "updatedAt": "2026-03-10T08:46:14.137Z"
+    },
+    "guides/microformats": {
+      "hash": "c0db7025",
+      "file": "datas/devdocs/html/guides/Microformats.md",
+      "updatedAt": "2026-03-10T08:46:14.140Z"
+    },
+    "reference/attributes/min": {
+      "hash": "9acf481b",
+      "file": "datas/devdocs/html/attributes/min (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.146Z"
+    },
+    "reference/attributes/minlength": {
+      "hash": "3bae40fa",
+      "file": "datas/devdocs/html/attributes/minlength (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.151Z"
+    },
+    "reference/attributes/multiple": {
+      "hash": "dea0d1e3",
+      "file": "datas/devdocs/html/attributes/multiple (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.154Z"
+    },
+    "reference/elements/nav": {
+      "hash": "db3c2736",
+      "file": "datas/devdocs/html/elements/nav.md",
+      "updatedAt": "2026-03-10T08:46:14.158Z"
+    },
+    "reference/elements/nobr": {
+      "hash": "dbabfc65",
+      "file": "datas/devdocs/html/obsolete/nobr.md",
+      "updatedAt": "2026-03-10T08:46:14.161Z"
+    },
+    "reference/elements/noembed": {
+      "hash": "2544d021",
+      "file": "datas/devdocs/html/obsolete/noembed.md",
+      "updatedAt": "2026-03-10T08:46:14.163Z"
+    },
+    "reference/elements/noframes": {
+      "hash": "95e1a342",
+      "file": "datas/devdocs/html/obsolete/noframes.md",
+      "updatedAt": "2026-03-10T08:46:14.171Z"
+    },
+    "reference/global_attributes/nonce": {
+      "hash": "6597cd59",
+      "file": "datas/devdocs/html/global-attributes/nonce (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.173Z"
+    },
+    "reference/elements/noscript": {
+      "hash": "37bfdc60",
+      "file": "datas/devdocs/html/elements/noscript.md",
+      "updatedAt": "2026-03-10T08:46:14.175Z"
+    },
+    "reference/elements/object": {
+      "hash": "abff5e86",
+      "file": "datas/devdocs/html/elements/object.md",
+      "updatedAt": "2026-03-10T08:46:14.178Z"
+    },
+    "reference/elements/ol": {
+      "hash": "20ca852",
+      "file": "datas/devdocs/html/elements/ol.md",
+      "updatedAt": "2026-03-10T08:46:14.184Z"
+    },
+    "reference/elements/optgroup": {
+      "hash": "7f28b962",
+      "file": "datas/devdocs/html/elements/optgroup.md",
+      "updatedAt": "2026-03-10T08:46:14.189Z"
+    },
+    "reference/elements/option": {
+      "hash": "eeff96b",
+      "file": "datas/devdocs/html/elements/option.md",
+      "updatedAt": "2026-03-10T08:46:14.192Z"
+    },
+    "reference/elements/output": {
+      "hash": "c7133bd8",
+      "file": "datas/devdocs/html/elements/output.md",
+      "updatedAt": "2026-03-10T08:46:14.195Z"
+    },
+    "reference/elements/p": {
+      "hash": "5b5bdbf6",
+      "file": "datas/devdocs/html/elements/p.md",
+      "updatedAt": "2026-03-10T08:46:14.198Z"
+    },
+    "reference/elements/param": {
+      "hash": "a3a4224e",
+      "file": "datas/devdocs/html/obsolete/param.md",
+      "updatedAt": "2026-03-10T08:46:14.202Z"
+    },
+    "reference/global_attributes/part": {
+      "hash": "f982bfd1",
+      "file": "datas/devdocs/html/global-attributes/part (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.204Z"
+    },
+    "reference/attributes/pattern": {
+      "hash": "92cc71d4",
+      "file": "datas/devdocs/html/attributes/pattern (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.206Z"
+    },
+    "reference/elements/picture": {
+      "hash": "9b16204",
+      "file": "datas/devdocs/html/elements/picture.md",
+      "updatedAt": "2026-03-10T08:46:14.209Z"
+    },
+    "reference/attributes/placeholder": {
+      "hash": "a7ecac75",
+      "file": "datas/devdocs/html/attributes/placeholder (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.212Z"
+    },
+    "reference/elements/plaintext": {
+      "hash": "4836e5eb",
+      "file": "datas/devdocs/html/obsolete/plaintext.md",
+      "updatedAt": "2026-03-10T08:46:14.221Z"
+    },
+    "reference/global_attributes/popover": {
+      "hash": "21dff076",
+      "file": "datas/devdocs/html/global-attributes/popover (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.223Z"
+    },
+    "reference/elements/pre": {
+      "hash": "b0b98efb",
+      "file": "datas/devdocs/html/elements/pre.md",
+      "updatedAt": "2026-03-10T08:46:14.226Z"
+    },
+    "reference/elements/progress": {
+      "hash": "e60cf275",
+      "file": "datas/devdocs/html/elements/progress.md",
+      "updatedAt": "2026-03-10T08:46:14.230Z"
+    },
+    "reference/elements/q": {
+      "hash": "1e0aad2e",
+      "file": "datas/devdocs/html/elements/q.md",
+      "updatedAt": "2026-03-10T08:46:14.234Z"
+    },
+    "guides/quirks_mode_and_standards_mode": {
+      "hash": "2c157d1d",
+      "file": "datas/devdocs/html/guides/Quirks mode and standards mode.md",
+      "updatedAt": "2026-03-10T08:46:14.236Z"
+    },
+    "reference/elements/rb": {
+      "hash": "16283690",
+      "file": "datas/devdocs/html/obsolete/rb.md",
+      "updatedAt": "2026-03-10T08:46:14.238Z"
+    },
+    "reference/attributes/readonly": {
+      "hash": "98bfcd5",
+      "file": "datas/devdocs/html/attributes/readonly (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.242Z"
+    },
+    "reference": {
+      "hash": "42fa6e18",
+      "file": "datas/devdocs/html/miscellaneous/Reference.md",
+      "updatedAt": "2026-03-10T08:46:14.245Z"
+    },
+    "reference/attributes": {
+      "hash": "63a74f99",
+      "file": "datas/devdocs/html/attributes/Reference.Attributes.md",
+      "updatedAt": "2026-03-10T08:46:14.246Z"
+    },
+    "reference/elements": {
+      "hash": "d7602b6f",
+      "file": "datas/devdocs/html/elements/Reference.Elements.md",
+      "updatedAt": "2026-03-10T08:46:14.260Z"
+    },
+    "reference/global_attributes": {
+      "hash": "22389129",
+      "file": "datas/devdocs/html/global-attributes/Reference.Global attributes.md",
+      "updatedAt": "2026-03-10T08:46:14.276Z"
+    },
+    "reference/attributes/rel": {
+      "hash": "86f4901",
+      "file": "datas/devdocs/html/attributes/rel (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.290Z"
+    },
+    "reference/attributes/rel/alternate_stylesheet": {
+      "hash": "c142ccb4",
+      "file": "datas/devdocs/html/attributes/rel.alternate stylesheet (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.308Z"
+    },
+    "reference/attributes/rel/compression-dictionary": {
+      "hash": "114fce0d",
+      "file": "datas/devdocs/html/attributes/rel.compression-dictionary (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.310Z"
+    },
+    "reference/attributes/rel/dns-prefetch": {
+      "hash": "9346ff5b",
+      "file": "datas/devdocs/html/attributes/rel.dns-prefetch (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.312Z"
+    },
+    "reference/attributes/rel/manifest": {
+      "hash": "395656f0",
+      "file": "datas/devdocs/html/attributes/rel.manifest (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.313Z"
+    },
+    "reference/attributes/rel/me": {
+      "hash": "e88c11a",
+      "file": "datas/devdocs/html/attributes/rel.me (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.314Z"
+    },
+    "reference/attributes/rel/modulepreload": {
+      "hash": "dd7e21b7",
+      "file": "datas/devdocs/html/attributes/rel.modulepreload (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.315Z"
+    },
+    "reference/attributes/rel/noopener": {
+      "hash": "95e67a54",
+      "file": "datas/devdocs/html/attributes/rel.noopener (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.318Z"
+    },
+    "reference/attributes/rel/noreferrer": {
+      "hash": "aeeb9ac6",
+      "file": "datas/devdocs/html/attributes/rel.noreferrer (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.320Z"
+    },
+    "reference/attributes/rel/preconnect": {
+      "hash": "2ae652f",
+      "file": "datas/devdocs/html/attributes/rel.preconnect (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.321Z"
+    },
+    "reference/attributes/rel/prefetch": {
+      "hash": "7bacb38e",
+      "file": "datas/devdocs/html/attributes/rel.prefetch (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.323Z"
+    },
+    "reference/attributes/rel/preload": {
+      "hash": "a677b6c2",
+      "file": "datas/devdocs/html/attributes/rel.preload (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.325Z"
+    },
+    "reference/attributes/rel/prerender": {
+      "hash": "fe50e0d4",
+      "file": "datas/devdocs/html/obsolete/rel.prerender (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.330Z"
+    },
+    "reference/attributes/required": {
+      "hash": "e984f5dd",
+      "file": "datas/devdocs/html/attributes/required (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.332Z"
+    },
+    "guides/responsive_images": {
+      "hash": "7312261f",
+      "file": "datas/devdocs/html/guides/Responsive images.md",
+      "updatedAt": "2026-03-10T08:46:14.337Z"
+    },
+    "reference/elements/rp": {
+      "hash": "d9ea2607",
+      "file": "datas/devdocs/html/elements/rp.md",
+      "updatedAt": "2026-03-10T08:46:14.424Z"
+    },
+    "reference/elements/rt": {
+      "hash": "959d154d",
+      "file": "datas/devdocs/html/elements/rt.md",
+      "updatedAt": "2026-03-10T08:46:14.427Z"
+    },
+    "reference/elements/rtc": {
+      "hash": "87b5ecec",
+      "file": "datas/devdocs/html/obsolete/rtc.md",
+      "updatedAt": "2026-03-10T08:46:14.429Z"
+    },
+    "reference/elements/ruby": {
+      "hash": "6f4b2889",
+      "file": "datas/devdocs/html/elements/ruby.md",
+      "updatedAt": "2026-03-10T08:46:14.431Z"
+    },
+    "reference/elements/s": {
+      "hash": "b9297538",
+      "file": "datas/devdocs/html/elements/s.md",
+      "updatedAt": "2026-03-10T08:46:14.433Z"
+    },
+    "reference/elements/samp": {
+      "hash": "3ff56001",
+      "file": "datas/devdocs/html/elements/samp.md",
+      "updatedAt": "2026-03-10T08:46:14.436Z"
+    },
+    "reference/elements/script": {
+      "hash": "b7cadeb7",
+      "file": "datas/devdocs/html/elements/script.md",
+      "updatedAt": "2026-03-10T08:46:14.439Z"
+    },
+    "reference/elements/script/type": {
+      "hash": "a7cd8355",
+      "file": "datas/devdocs/html/elements/script.type.md",
+      "updatedAt": "2026-03-10T08:46:14.450Z"
+    },
+    "reference/elements/script/type/importmap": {
+      "hash": "980847b5",
+      "file": "datas/devdocs/html/elements/script.type.importmap.md",
+      "updatedAt": "2026-03-10T08:46:14.477Z"
+    },
+    "reference/elements/script/type/speculationrules": {
+      "hash": "ac956eaf",
+      "file": "datas/devdocs/html/elements/script.type.speculationrules.md",
+      "updatedAt": "2026-03-10T08:46:14.482Z"
+    },
+    "reference/elements/search": {
+      "hash": "796d9f15",
+      "file": "datas/devdocs/html/elements/search.md",
+      "updatedAt": "2026-03-10T08:46:14.495Z"
+    },
+    "reference/elements/section": {
+      "hash": "22f3f19f",
+      "file": "datas/devdocs/html/elements/section.md",
+      "updatedAt": "2026-03-10T08:46:14.498Z"
+    },
+    "reference/elements/select": {
+      "hash": "deec249c",
+      "file": "datas/devdocs/html/elements/select.md",
+      "updatedAt": "2026-03-10T08:46:14.502Z"
+    },
+    "reference/elements/selectedcontent": {
+      "hash": "39482c44",
+      "file": "datas/devdocs/html/elements/selectedcontent.md",
+      "updatedAt": "2026-03-10T08:46:14.509Z"
+    },
+    "reference/attributes/size": {
+      "hash": "cef7f79f",
+      "file": "datas/devdocs/html/attributes/size (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.521Z"
+    },
+    "reference/elements/slot": {
+      "hash": "26f59dd4",
+      "file": "datas/devdocs/html/elements/slot.md",
+      "updatedAt": "2026-03-10T08:46:14.524Z"
+    },
+    "reference/global_attributes/slot": {
+      "hash": "399d1567",
+      "file": "datas/devdocs/html/global-attributes/slot (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.527Z"
+    },
+    "reference/elements/small": {
+      "hash": "10acb0a5",
+      "file": "datas/devdocs/html/elements/small.md",
+      "updatedAt": "2026-03-10T08:46:14.528Z"
+    },
+    "reference/elements/source": {
+      "hash": "4921b656",
+      "file": "datas/devdocs/html/elements/source.md",
+      "updatedAt": "2026-03-10T08:46:14.531Z"
+    },
+    "reference/elements/span": {
+      "hash": "46cf1f8b",
+      "file": "datas/devdocs/html/elements/span.md",
+      "updatedAt": "2026-03-10T08:46:14.537Z"
+    },
+    "reference/global_attributes/spellcheck": {
+      "hash": "65b1aa4e",
+      "file": "datas/devdocs/html/global-attributes/spellcheck (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.539Z"
+    },
+    "reference/attributes/step": {
+      "hash": "256882db",
+      "file": "datas/devdocs/html/attributes/step (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.541Z"
+    },
+    "reference/elements/strike": {
+      "hash": "9236854d",
+      "file": "datas/devdocs/html/obsolete/strike.md",
+      "updatedAt": "2026-03-10T08:46:14.545Z"
+    },
+    "reference/elements/strong": {
+      "hash": "4c926fd8",
+      "file": "datas/devdocs/html/elements/strong.md",
+      "updatedAt": "2026-03-10T08:46:14.547Z"
+    },
+    "reference/elements/style": {
+      "hash": "2a8c5f50",
+      "file": "datas/devdocs/html/elements/style.md",
+      "updatedAt": "2026-03-10T08:46:14.550Z"
+    },
+    "reference/global_attributes/style": {
+      "hash": "4ad5d563",
+      "file": "datas/devdocs/html/global-attributes/style (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.553Z"
+    },
+    "reference/elements/sub": {
+      "hash": "3869ebf0",
+      "file": "datas/devdocs/html/elements/sub.md",
+      "updatedAt": "2026-03-10T08:46:14.555Z"
+    },
+    "reference/elements/summary": {
+      "hash": "aa0fe6c6",
+      "file": "datas/devdocs/html/elements/summary.md",
+      "updatedAt": "2026-03-10T08:46:14.566Z"
+    },
+    "reference/elements/sup": {
+      "hash": "d4076a89",
+      "file": "datas/devdocs/html/elements/sup.md",
+      "updatedAt": "2026-03-10T08:46:14.571Z"
+    },
+    "reference/global_attributes/tabindex": {
+      "hash": "7514f7aa",
+      "file": "datas/devdocs/html/global-attributes/tabindex (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.574Z"
+    },
+    "reference/elements/table": {
+      "hash": "1a563908",
+      "file": "datas/devdocs/html/elements/table.md",
+      "updatedAt": "2026-03-10T08:46:14.578Z"
+    },
+    "reference/elements/tbody": {
+      "hash": "afd136c4",
+      "file": "datas/devdocs/html/elements/tbody.md",
+      "updatedAt": "2026-03-10T08:46:14.590Z"
+    },
+    "reference/elements/td": {
+      "hash": "ed4ad5fc",
+      "file": "datas/devdocs/html/elements/td.md",
+      "updatedAt": "2026-03-10T08:46:14.604Z"
+    },
+    "reference/elements/template": {
+      "hash": "6a627dca",
+      "file": "datas/devdocs/html/elements/template.md",
+      "updatedAt": "2026-03-10T08:46:14.611Z"
+    },
+    "reference/elements/textarea": {
+      "hash": "d6a44a8c",
+      "file": "datas/devdocs/html/elements/textarea.md",
+      "updatedAt": "2026-03-10T08:46:14.618Z"
+    },
+    "reference/elements/tfoot": {
+      "hash": "40a7dde",
+      "file": "datas/devdocs/html/elements/tfoot.md",
+      "updatedAt": "2026-03-10T08:46:14.631Z"
+    },
+    "reference/elements/th": {
+      "hash": "c9fe0710",
+      "file": "datas/devdocs/html/elements/th.md",
+      "updatedAt": "2026-03-10T08:46:14.645Z"
+    },
+    "reference/elements/thead": {
+      "hash": "d2d5489",
+      "file": "datas/devdocs/html/elements/thead.md",
+      "updatedAt": "2026-03-10T08:46:14.652Z"
+    },
+    "reference/elements/time": {
+      "hash": "a6ba5e45",
+      "file": "datas/devdocs/html/elements/time.md",
+      "updatedAt": "2026-03-10T08:46:14.658Z"
+    },
+    "reference/elements/title": {
+      "hash": "fcd0fabd",
+      "file": "datas/devdocs/html/elements/title.md",
+      "updatedAt": "2026-03-10T08:46:14.663Z"
+    },
+    "reference/global_attributes/title": {
+      "hash": "cbf943f5",
+      "file": "datas/devdocs/html/global-attributes/title (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.667Z"
+    },
+    "reference/elements/tr": {
+      "hash": "3d697478",
+      "file": "datas/devdocs/html/elements/tr.md",
+      "updatedAt": "2026-03-10T08:46:14.671Z"
+    },
+    "reference/elements/track": {
+      "hash": "7dbbe688",
+      "file": "datas/devdocs/html/elements/track.md",
+      "updatedAt": "2026-03-10T08:46:14.685Z"
+    },
+    "reference/global_attributes/translate": {
+      "hash": "55918ff4",
+      "file": "datas/devdocs/html/global-attributes/translate (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.691Z"
+    },
+    "reference/elements/tt": {
+      "hash": "e563724b",
+      "file": "datas/devdocs/html/obsolete/tt.md",
+      "updatedAt": "2026-03-10T08:46:14.698Z"
+    },
+    "reference/elements/u": {
+      "hash": "b15355de",
+      "file": "datas/devdocs/html/elements/u.md",
+      "updatedAt": "2026-03-10T08:46:14.708Z"
+    },
+    "reference/elements/ul": {
+      "hash": "46856c30",
+      "file": "datas/devdocs/html/elements/ul.md",
+      "updatedAt": "2026-03-10T08:46:14.716Z"
+    },
+    "how_to/use_data_attributes": {
+      "hash": "8bf87edc",
+      "file": "datas/devdocs/html/miscellaneous/Use data attributes.md",
+      "updatedAt": "2026-03-10T08:46:14.723Z"
+    },
+    "reference/elements/var": {
+      "hash": "bc60e110",
+      "file": "datas/devdocs/html/elements/var.md",
+      "updatedAt": "2026-03-10T08:46:14.726Z"
+    },
+    "reference/elements/video": {
+      "hash": "37e25817",
+      "file": "datas/devdocs/html/elements/video.md",
+      "updatedAt": "2026-03-10T08:46:14.730Z"
+    },
+    "guides/viewport_meta_element": {
+      "hash": "23bd886d",
+      "file": "datas/devdocs/html/guides/Viewport meta element.md",
+      "updatedAt": "2026-03-10T08:46:14.745Z"
+    },
+    "reference/global_attributes/virtualkeyboardpolicy": {
+      "hash": "b764c67f",
+      "file": "datas/devdocs/html/global-attributes/virtualkeyboardpolicy (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.748Z"
+    },
+    "reference/elements/wbr": {
+      "hash": "3551c095",
+      "file": "datas/devdocs/html/elements/wbr.md",
+      "updatedAt": "2026-03-10T08:46:14.751Z"
+    },
+    "reference/global_attributes/writingsuggestions": {
+      "hash": "8763247a",
+      "file": "datas/devdocs/html/global-attributes/writingsuggestions (attribute).md",
+      "updatedAt": "2026-03-10T08:46:14.754Z"
+    },
+    "reference/elements/xmp": {
+      "hash": "c19652e2",
+      "file": "datas/devdocs/html/obsolete/xmp.md",
+      "updatedAt": "2026-03-10T08:46:14.757Z"
+    }
+  }
+}

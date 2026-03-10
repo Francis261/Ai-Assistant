@@ -1,0 +1,24 @@
+# Yaf_Request_Simple::getCookie
+
+Source: https://devdocs.io/php/yaf-request-simple.getcookie
+
+(Yaf >=1.0.0)
+
+Yaf_Request_Simple::getCookie — The getCookie purpose
+
+### Description
+
+```
+public Yaf_Request_Simple::getCookie(): void
+```
+
+This function is currently not documented; only its argument list is available.
+
+### Parameters
+
+This function has no parameters.
+
+### Return Values
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/yaf-request-simple.getcookie.php

@@ -1,0 +1,67 @@
+# is_string
+
+Source: https://devdocs.io/php/function.is-string
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+is_string — Find whether the type of a variable is string
+
+### Description
+
+```
+is_string(mixed $value): bool
+```
+
+Finds whether the type of the given variable is string.
+
+### Parameters
+
+The variable being evaluated.
+
+### Return Values
+
+Returns true if value is of type string, false otherwise.
+
+### Examples
+
+Example #1 is_string() example
+
+```
+<?php
+$values = array(false, true, null, 'abc', '23', 23, '23.5', 23.5, '', ' ', '0', 0);
+foreach ($values as $value) {
+    echo "is_string(";
+    var_export($value);
+    echo ") = ";
+    echo var_dump(is_string($value));
+}
+?>
+```
+
+The above example will output:
+
+```
+is_string(false) = bool(false)
+is_string(true) = bool(false)
+is_string(NULL) = bool(false)
+is_string('abc') = bool(true)
+is_string('23') = bool(true)
+is_string(23) = bool(false)
+is_string('23.5') = bool(true)
+is_string(23.5) = bool(false)
+is_string('') = bool(true)
+is_string(' ') = bool(true)
+is_string('0') = bool(true)
+is_string(0) = bool(false)
+```
+
+### See Also
+
+- is_float() - Finds whether the type of a variable is float
+- is_int() - Find whether the type of a variable is integer
+- is_bool() - Finds out whether a variable is a boolean
+- is_object() - Finds whether a variable is an object
+- is_array() - Finds whether a variable is an array
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.is-string.php

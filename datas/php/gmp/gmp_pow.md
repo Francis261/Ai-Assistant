@@ -1,0 +1,52 @@
+# gmp_pow
+
+Source: https://devdocs.io/php/function.gmp-pow
+
+(PHP 4 >= 4.0.4, PHP 5, PHP 7, PHP 8)
+
+gmp_pow — Raise number into power
+
+### Description
+
+```
+gmp_pow(GMP|int|string $num, int $exponent): GMP
+```
+
+Raise num into power exponent.
+
+### Parameters
+
+The base number.
+
+A GMP object, an int, or a string that can be interpreted as a number following the same logic as if the string was used in gmp_init() with automatic base detection (i.e. when base is equal to 0).
+
+The positive power to raise the num.
+
+### Return Values
+
+The new (raised) number, as a GMP number. The case of 0^0 yields 1.
+
+### Examples
+
+Example #1 gmp_pow() example
+
+```
+<?php
+$pow1 = gmp_pow("2", 31);
+echo gmp_strval($pow1) . "\n";
+$pow2 = gmp_pow("0", 0);
+echo gmp_strval($pow2) . "\n";
+$pow3 = gmp_pow("2", -1); // Negative exp, generates warning
+echo gmp_strval($pow3) . "\n";
+?>
+```
+
+The above example will output:
+
+```
+2147483648
+1
+```
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.gmp-pow.php

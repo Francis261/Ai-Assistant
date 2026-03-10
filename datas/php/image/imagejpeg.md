@@ -1,0 +1,104 @@
+# imagejpeg
+
+Source: https://devdocs.io/php/function.imagejpeg
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+imagejpeg — Output image to browser or file
+
+### Description
+
+```
+imagejpeg(GdImage $image, resource|string|null $file = null, int $quality = -1): bool
+```
+
+imagejpeg() creates a JPEG file from the given image.
+
+### Parameters
+
+A GdImage object, returned by one of the image creation functions, such as imagecreatetruecolor().
+
+The path or an open stream resource (which is automatically closed after this function returns) to save the file to. If not set or null, the raw image stream will be output directly.
+
+quality is optional, and ranges from 0 (worst quality, smaller file) to 100 (best quality, biggest file). The default (-1) uses the default IJG quality value (about 75).
+
+### Return Values
+
+Returns true on success or false on failure.
+
+However, if libgd fails to output the image, this function returns true.
+
+### Errors/Exceptions
+
+Throws a ValueError if quality is invalid.
+
+### Changelog
+
+### Examples
+
+Example #1 Outputting a JPEG image to the browser
+
+```
+<?php
+// Create a blank image and add some text
+$im = imagecreatetruecolor(120, 20);
+$text_color = imagecolorallocate($im, 233, 14, 91);
+imagestring($im, 1, 5, 5,  'A Simple Text String', $text_color);
+
+// Set the content type header - in this case image/jpeg
+header('Content-Type: image/jpeg');
+
+// Output the image
+imagejpeg($im);
+?>
+```
+
+The above example will output something similar to:
+
+Example #2 Saving a JPEG image to a file
+
+```
+<?php
+// Create a blank image and add some text
+$im = imagecreatetruecolor(120, 20);
+$text_color = imagecolorallocate($im, 233, 14, 91);
+imagestring($im, 1, 5, 5,  'A Simple Text String', $text_color);
+
+// Save the image as 'simpletext.jpg'
+imagejpeg($im, 'simpletext.jpg');
+?>
+```
+
+Example #3 Outputting the image at 75% quality to the browser
+
+```
+<?php
+// Create a blank image and add some text
+$im = imagecreatetruecolor(120, 20);
+$text_color = imagecolorallocate($im, 233, 14, 91);
+imagestring($im, 1, 5, 5,  'A Simple Text String', $text_color);
+
+// Set the content type header - in this case image/jpeg
+header('Content-Type: image/jpeg');
+
+// Skip the file parameter using NULL, then set the quality to 75%
+imagejpeg($im, NULL, 75);
+?>
+```
+
+### Notes
+
+Note:
+
+If you want to output Progressive JPEGs, you need to set interlacing on with imageinterlace().
+
+### See Also
+
+- imagepng() - Output a PNG image to either the browser or a file
+- imagegif() - Output image to browser or file
+- imagewbmp() - Output image to browser or file
+- imageinterlace() - Enable or disable interlace
+- imagetypes() - Return the image types supported by this PHP build
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.imagejpeg.php

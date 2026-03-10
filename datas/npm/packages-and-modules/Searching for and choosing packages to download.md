@@ -1,0 +1,88 @@
+# Searching for and choosing packages to download
+
+Source: https://devdocs.io/npm/searching-for-and-choosing-packages-to-download
+
+You can use the npm search bar to find packages to use in your projects. npm search uses npms and the npms analyzer; for more information on both, see https://npms.io/about.
+
+## Searching for a package
+
+1. In the search bar, type a search term and press Enter. As you type, possible choices will appear.
+2. To list packages ranked according to package search rank criteria, in the left sidebar, under "Sort packages", click the criterion. For example, to sort packages by popularity, click "Popularity".
+3. In the package search results list, click the name of the package.
+
+In the search bar, type a search term and press Enter. As you type, possible choices will appear.
+
+To list packages ranked according to package search rank criteria, in the left sidebar, under "Sort packages", click the criterion. For example, to sort packages by popularity, click "Popularity".
+
+In the package search results list, click the name of the package.
+
+## Package search rank criteria
+
+Often, there are dozens or even hundreds of packages with similar names and/or similar purposes. To help you decide the best ones to explore, each package has been ranked according to four criteria using the npms analyzer:
+
+### Popularity
+
+Popularity indicates how many times the package has been downloaded. This is a strong indicator of packages that others have found to be useful.
+
+### Quality
+
+Quality includes considerations such as the presence of a README file, stability, tests, up-to-date dependencies, custom website, and code complexity.
+
+### Maintenance
+
+Maintenance ranks packages according to the attention they are given by developers. More frequently maintained packages are more likely to work well with the current or upcoming versions of the npm CLI, for example.
+
+### Optimal
+
+Optimal combines the other three criteria (popularity, quality, maintenance) into one score in a meaningful way.
+
+## Package provenance
+
+When packages have been published with provenance, you can:
+
+- Verify where and how a package was published.
+- Validate that an authorized user published a package.
+
+You can use this information to audit packages and determine whether or not you want to consume them. For more information about npm provenance, see "About npm provenance."
+
+To view provenance information for a package in the npm registry:
+
+1. In the npm registry, navigate to a package.
+2. On the package's page, in the Version field to the right of the README, look for a green check mark. If there is a green check mark, this means the package was published with provenance.
+3. Click on the check mark, then click View more details.
+4. View the following information for the package:
+  - Build Environment: The environment used to build the package.
+  - Build Summary: A link to the workflow run that built the package.
+  - Source Commit: A link to the commit the package was built from.
+  - Build File: A link to the workflow file used to build the package.
+  - Public Ledger: A link to a transparency log entry attesting an authorized user published the package.
+
+In the npm registry, navigate to a package.
+
+On the package's page, in the Version field to the right of the README, look for a green check mark. If there is a green check mark, this means the package was published with provenance.
+
+Click on the check mark, then click View more details.
+
+View the following information for the package:
+
+- Build Environment: The environment used to build the package.
+- Build Summary: A link to the workflow run that built the package.
+- Source Commit: A link to the commit the package was built from.
+- Build File: A link to the workflow file used to build the package.
+- Public Ledger: A link to a transparency log entry attesting an authorized user published the package.
+
+Note: Whenever you access a package's provenance information on npmjs.com, the linked source commit and repository are checked by npm. If the linked source commit or repository cannot be found, an error message will appear at the top of the page and alongside the provenance information. This is to inform you that the provenance for this package can no longer be established, which may occur when a repository is deleted or made private.
+
+### Verifying provenance attestations
+
+When you download a package from the registry, you can verify the provenance of a package with the following CLI command:
+
+This command checks the registry signatures and provenance attestations. If a package has missing or invalid signatures or attestations, it returns an error. This could indicate that a package has been tampered with.
+
+Note: In order to run the audit command to verify package provenance, you must:
+
+- Install npm CLI version v9.5.0 or later: npm install -g npm@latest
+- Install dependencies with npm install or npm ci
+
+© npm, Inc. and ContributorsLicensed under the npm License.npm is a trademark of npm, Inc.
+ https://docs.npmjs.com/searching-for-and-choosing-packages-to-download

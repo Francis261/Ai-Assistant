@@ -1,0 +1,1677 @@
+{
+  "category": "webpack~5",
+  "docMtime": 1733655164,
+  "generatedAt": "2026-03-10T09:00:58.059Z",
+  "entries": {
+    "guides/entry-advanced": {
+      "hash": "cf273c86",
+      "file": "datas/devdocs/webpack5/guides/Advanced entry.md",
+      "updatedAt": "2026-03-10T09:00:58.063Z"
+    },
+    "configuration/other-options#amd": {
+      "hash": "b94d2071",
+      "file": "datas/devdocs/webpack5/configuration/amd.md",
+      "updatedAt": "2026-03-10T09:00:58.088Z"
+    },
+    "guides/asset-management": {
+      "hash": "83b42cac",
+      "file": "datas/devdocs/webpack5/guides/Asset Management.md",
+      "updatedAt": "2026-03-10T09:00:58.116Z"
+    },
+    "guides/asset-modules": {
+      "hash": "f3ed0a46",
+      "file": "datas/devdocs/webpack5/guides/Asset Modules.md",
+      "updatedAt": "2026-03-10T09:00:58.135Z"
+    },
+    "guides/author-libraries": {
+      "hash": "df038c0d",
+      "file": "datas/devdocs/webpack5/guides/Authoring Libraries.md",
+      "updatedAt": "2026-03-10T09:00:58.150Z"
+    },
+    "plugins/automatic-prefetch-plugin": {
+      "hash": "e629064e",
+      "file": "datas/devdocs/webpack5/plugins/AutomaticPrefetchPlugin.md",
+      "updatedAt": "2026-03-10T09:00:58.157Z"
+    },
+    "configuration/configuration-languages#babel-and-jsx": {
+      "hash": "aea2055d",
+      "file": "datas/devdocs/webpack5/configuration/Babel and JSX.md",
+      "updatedAt": "2026-03-10T09:00:58.163Z"
+    },
+    "loaders/babel-loader": {
+      "hash": "d462124e",
+      "file": "datas/devdocs/webpack5/loaders/babel-loader.md",
+      "updatedAt": "2026-03-10T09:00:58.168Z"
+    },
+    "configuration/other-options#bail": {
+      "hash": "b94d2071",
+      "file": "datas/devdocs/webpack5/configuration/bail.md",
+      "updatedAt": "2026-03-10T09:00:58.182Z"
+    },
+    "plugins/banner-plugin": {
+      "hash": "c84d95e4",
+      "file": "datas/devdocs/webpack5/plugins/BannerPlugin.md",
+      "updatedAt": "2026-03-10T09:00:58.190Z"
+    },
+    "guides/build-performance": {
+      "hash": "9eeed263",
+      "file": "datas/devdocs/webpack5/guides/Build Performance.md",
+      "updatedAt": "2026-03-10T09:00:58.192Z"
+    },
+    "configuration/cache": {
+      "hash": "91ac9f84",
+      "file": "datas/devdocs/webpack5/configuration/Cache.md",
+      "updatedAt": "2026-03-10T09:00:58.199Z"
+    },
+    "configuration/cache#cache": {
+      "hash": "91ac9f84",
+      "file": "datas/devdocs/webpack5/configuration/cache.md",
+      "updatedAt": "2026-03-10T09:00:58.210Z"
+    },
+    "guides/caching": {
+      "hash": "a8a9a552",
+      "file": "datas/devdocs/webpack5/guides/Caching.md",
+      "updatedAt": "2026-03-10T09:00:58.222Z"
+    },
+    "plugins/chunks-webpack-plugin": {
+      "hash": "ee6ed781",
+      "file": "datas/devdocs/webpack5/plugins/ChunksWebpackPlugin.md",
+      "updatedAt": "2026-03-10T09:00:58.229Z"
+    },
+    "guides/code-splitting": {
+      "hash": "24780cdf",
+      "file": "datas/devdocs/webpack5/guides/Code Splitting.md",
+      "updatedAt": "2026-03-10T09:00:58.235Z"
+    },
+    "loaders/coffee-loader": {
+      "hash": "c115436b",
+      "file": "datas/devdocs/webpack5/loaders/coffee-loader.md",
+      "updatedAt": "2026-03-10T09:00:58.246Z"
+    },
+    "configuration/configuration-languages#coffeescript": {
+      "hash": "aea2055d",
+      "file": "datas/devdocs/webpack5/configuration/CoffeeScript.md",
+      "updatedAt": "2026-03-10T09:00:58.249Z"
+    },
+    "api/cli": {
+      "hash": "e75765ff",
+      "file": "datas/devdocs/webpack5/api/Command Line Interface.md",
+      "updatedAt": "2026-03-10T09:00:58.255Z"
+    },
+    "plugins/commons-chunk-plugin": {
+      "hash": "3b5b7a17",
+      "file": "datas/devdocs/webpack5/plugins/CommonsChunkPlugin.md",
+      "updatedAt": "2026-03-10T09:00:58.284Z"
+    },
+    "api/compilation-hooks": {
+      "hash": "a195494d",
+      "file": "datas/devdocs/webpack5/api/Compilation Hooks.md",
+      "updatedAt": "2026-03-10T09:00:58.289Z"
+    },
+    "api/compilation-object": {
+      "hash": "9540ec1b",
+      "file": "datas/devdocs/webpack5/api/Compilation Object.md",
+      "updatedAt": "2026-03-10T09:00:58.310Z"
+    },
+    "api/compiler-hooks": {
+      "hash": "221109d9",
+      "file": "datas/devdocs/webpack5/api/Compiler Hooks.md",
+      "updatedAt": "2026-03-10T09:00:58.322Z"
+    },
+    "plugins/compression-webpack-plugin": {
+      "hash": "2e6918dc",
+      "file": "datas/devdocs/webpack5/plugins/CompressionWebpackPlugin.md",
+      "updatedAt": "2026-03-10T09:00:58.330Z"
+    },
+    "concepts/index": {
+      "hash": "3b78dda",
+      "file": "datas/devdocs/webpack5/concepts/Concepts.md",
+      "updatedAt": "2026-03-10T09:00:58.345Z"
+    },
+    "configuration/module#condition": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Condition.md",
+      "updatedAt": "2026-03-10T09:00:58.353Z"
+    },
+    "configuration/index": {
+      "hash": "2ab46e6b",
+      "file": "datas/devdocs/webpack5/configuration/Configuration.md",
+      "updatedAt": "2026-03-10T09:00:58.391Z"
+    },
+    "concepts/configuration": {
+      "hash": "766f940",
+      "file": "datas/devdocs/webpack5/concepts/Configuration.md",
+      "updatedAt": "2026-03-10T09:00:58.394Z"
+    },
+    "configuration/configuration-languages": {
+      "hash": "aea2055d",
+      "file": "datas/devdocs/webpack5/configuration/Configuration Languages.md",
+      "updatedAt": "2026-03-10T09:00:58.397Z"
+    },
+    "configuration/configuration-types": {
+      "hash": "4fd2108f",
+      "file": "datas/devdocs/webpack5/configuration/Configuration Types.md",
+      "updatedAt": "2026-03-10T09:00:58.406Z"
+    },
+    "guides/csp": {
+      "hash": "3783979a",
+      "file": "datas/devdocs/webpack5/guides/Content Security Policies.md",
+      "updatedAt": "2026-03-10T09:00:58.410Z"
+    },
+    "configuration/entry-context#context": {
+      "hash": "3661078",
+      "file": "datas/devdocs/webpack5/configuration/context.md",
+      "updatedAt": "2026-03-10T09:00:58.413Z"
+    },
+    "plugins/context-exclusion-plugin": {
+      "hash": "7c28fbeb",
+      "file": "datas/devdocs/webpack5/plugins/ContextExclusionPlugin.md",
+      "updatedAt": "2026-03-10T09:00:58.415Z"
+    },
+    "api/contextmodulefactory-hooks": {
+      "hash": "93b6d1df",
+      "file": "datas/devdocs/webpack5/api/ContextModuleFactory Hooks.md",
+      "updatedAt": "2026-03-10T09:00:58.417Z"
+    },
+    "plugins/context-replacement-plugin": {
+      "hash": "3c02732a",
+      "file": "datas/devdocs/webpack5/plugins/ContextReplacementPlugin.md",
+      "updatedAt": "2026-03-10T09:00:58.419Z"
+    },
+    "plugins/copy-webpack-plugin": {
+      "hash": "d709c8c6",
+      "file": "datas/devdocs/webpack5/plugins/CopyWebpackPlugin.md",
+      "updatedAt": "2026-03-10T09:00:58.421Z"
+    },
+    "loaders/css-loader": {
+      "hash": "e9491558",
+      "file": "datas/devdocs/webpack5/loaders/css-loader.md",
+      "updatedAt": "2026-03-10T09:00:58.432Z"
+    },
+    "plugins/css-minimizer-webpack-plugin": {
+      "hash": "50fbefac",
+      "file": "datas/devdocs/webpack5/plugins/CssMinimizerWebpackPlugin.md",
+      "updatedAt": "2026-03-10T09:00:58.455Z"
+    },
+    "plugins/define-plugin": {
+      "hash": "e2209f55",
+      "file": "datas/devdocs/webpack5/plugins/DefinePlugin.md",
+      "updatedAt": "2026-03-10T09:00:58.464Z"
+    },
+    "configuration/other-options#dependencies": {
+      "hash": "b94d2071",
+      "file": "datas/devdocs/webpack5/configuration/dependencies.md",
+      "updatedAt": "2026-03-10T09:00:58.468Z"
+    },
+    "concepts/dependency-graph": {
+      "hash": "f32deefd",
+      "file": "datas/devdocs/webpack5/concepts/Dependency Graph.md",
+      "updatedAt": "2026-03-10T09:00:58.472Z"
+    },
+    "guides/dependency-management": {
+      "hash": "5ae5dd7d",
+      "file": "datas/devdocs/webpack5/guides/Dependency Management.md",
+      "updatedAt": "2026-03-10T09:00:58.473Z"
+    },
+    "guides/development": {
+      "hash": "14f3c557",
+      "file": "datas/devdocs/webpack5/guides/Development.md",
+      "updatedAt": "2026-03-10T09:00:58.477Z"
+    },
+    "guides/development-vagrant": {
+      "hash": "670f3ce4",
+      "file": "datas/devdocs/webpack5/guides/Development- Vagrant.md",
+      "updatedAt": "2026-03-10T09:00:58.489Z"
+    },
+    "configuration/dev-server#devserver": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.md",
+      "updatedAt": "2026-03-10T09:00:58.491Z"
+    },
+    "configuration/dev-server": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/DevServer.md",
+      "updatedAt": "2026-03-10T09:00:58.504Z"
+    },
+    "configuration/dev-server#devserverallowedhosts": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.allowedHosts.md",
+      "updatedAt": "2026-03-10T09:00:58.516Z"
+    },
+    "configuration/dev-server#devserverapp": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.app.md",
+      "updatedAt": "2026-03-10T09:00:58.539Z"
+    },
+    "configuration/dev-server#devserverbonjour": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.bonjour.md",
+      "updatedAt": "2026-03-10T09:00:58.551Z"
+    },
+    "configuration/dev-server#devserverclient": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.client.md",
+      "updatedAt": "2026-03-10T09:00:58.563Z"
+    },
+    "configuration/dev-server#devservercompress": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.compress.md",
+      "updatedAt": "2026-03-10T09:00:58.577Z"
+    },
+    "configuration/dev-server#devserverdevmiddleware": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.devMiddleware.md",
+      "updatedAt": "2026-03-10T09:00:58.602Z"
+    },
+    "configuration/dev-server#devserverheaders": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.headers.md",
+      "updatedAt": "2026-03-10T09:00:58.617Z"
+    },
+    "configuration/dev-server#devserverhistoryapifallback": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.historyApiFallback.md",
+      "updatedAt": "2026-03-10T09:00:58.638Z"
+    },
+    "configuration/dev-server#devserverhost": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.host.md",
+      "updatedAt": "2026-03-10T09:00:58.650Z"
+    },
+    "configuration/dev-server#devserverhot": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.hot.md",
+      "updatedAt": "2026-03-10T09:00:58.665Z"
+    },
+    "configuration/dev-server#devserveripc": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.ipc.md",
+      "updatedAt": "2026-03-10T09:00:58.679Z"
+    },
+    "configuration/dev-server#devserverlivereload": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.liveReload.md",
+      "updatedAt": "2026-03-10T09:00:58.703Z"
+    },
+    "configuration/dev-server#devserveronlistening": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devserver.onListening.md",
+      "updatedAt": "2026-03-10T09:00:58.717Z"
+    },
+    "configuration/dev-server#devserveropen": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.open.md",
+      "updatedAt": "2026-03-10T09:00:58.739Z"
+    },
+    "configuration/dev-server#devserverport": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.port.md",
+      "updatedAt": "2026-03-10T09:00:58.755Z"
+    },
+    "configuration/dev-server#devserverproxy": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.proxy.md",
+      "updatedAt": "2026-03-10T09:00:58.769Z"
+    },
+    "configuration/dev-server#devserverserver": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.server.md",
+      "updatedAt": "2026-03-10T09:00:58.784Z"
+    },
+    "configuration/dev-server#devserversetupexitsignals": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.setupExitSignals.md",
+      "updatedAt": "2026-03-10T09:00:58.804Z"
+    },
+    "configuration/dev-server#devserversetupmiddlewares": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.setupMiddlewares.md",
+      "updatedAt": "2026-03-10T09:00:58.818Z"
+    },
+    "configuration/dev-server#devserverstatic": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.static.md",
+      "updatedAt": "2026-03-10T09:00:58.840Z"
+    },
+    "configuration/dev-server#devserverwatchfiles": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.watchFiles.md",
+      "updatedAt": "2026-03-10T09:00:58.852Z"
+    },
+    "configuration/dev-server#devserverwebsocketserver": {
+      "hash": "19fce907",
+      "file": "datas/devdocs/webpack5/configuration/devServer.webSocketServer.md",
+      "updatedAt": "2026-03-10T09:00:58.863Z"
+    },
+    "configuration/devtool": {
+      "hash": "dafcf8af",
+      "file": "datas/devdocs/webpack5/configuration/Devtool.md",
+      "updatedAt": "2026-03-10T09:00:58.873Z"
+    },
+    "configuration/devtool#devtool": {
+      "hash": "dafcf8af",
+      "file": "datas/devdocs/webpack5/configuration/devtool.md",
+      "updatedAt": "2026-03-10T09:00:58.887Z"
+    },
+    "plugins/dll-plugin": {
+      "hash": "af682a9f",
+      "file": "datas/devdocs/webpack5/plugins/DllPlugin.md",
+      "updatedAt": "2026-03-10T09:00:58.895Z"
+    },
+    "guides/ecma-script-modules": {
+      "hash": "925c4df4",
+      "file": "datas/devdocs/webpack5/guides/ECMAScript Modules.md",
+      "updatedAt": "2026-03-10T09:00:58.898Z"
+    },
+    "configuration/entry-context#entry": {
+      "hash": "3661078",
+      "file": "datas/devdocs/webpack5/configuration/entry.md",
+      "updatedAt": "2026-03-10T09:00:58.900Z"
+    },
+    "configuration/entry-context": {
+      "hash": "3661078",
+      "file": "datas/devdocs/webpack5/configuration/Entry and Context.md",
+      "updatedAt": "2026-03-10T09:00:58.902Z"
+    },
+    "concepts/entry-points": {
+      "hash": "1f65e876",
+      "file": "datas/devdocs/webpack5/concepts/Entry Points.md",
+      "updatedAt": "2026-03-10T09:00:58.903Z"
+    },
+    "guides/environment-variables": {
+      "hash": "9e2a2b1d",
+      "file": "datas/devdocs/webpack5/guides/Environment Variables.md",
+      "updatedAt": "2026-03-10T09:00:58.905Z"
+    },
+    "plugins/environment-plugin": {
+      "hash": "8e99f04b",
+      "file": "datas/devdocs/webpack5/plugins/EnvironmentPlugin.md",
+      "updatedAt": "2026-03-10T09:00:58.906Z"
+    },
+    "plugins/eslint-webpack-plugin": {
+      "hash": "b474e192",
+      "file": "datas/devdocs/webpack5/plugins/EslintWebpackPlugin.md",
+      "updatedAt": "2026-03-10T09:00:58.909Z"
+    },
+    "plugins/eval-source-map-dev-tool-plugin": {
+      "hash": "b6dba284",
+      "file": "datas/devdocs/webpack5/plugins/EvalSourceMapDevToolPlugin.md",
+      "updatedAt": "2026-03-10T09:00:58.914Z"
+    },
+    "configuration/experiments#experiments": {
+      "hash": "75767896",
+      "file": "datas/devdocs/webpack5/configuration/experiments.md",
+      "updatedAt": "2026-03-10T09:00:58.916Z"
+    },
+    "configuration/experiments": {
+      "hash": "75767896",
+      "file": "datas/devdocs/webpack5/configuration/Experiments.md",
+      "updatedAt": "2026-03-10T09:00:58.929Z"
+    },
+    "configuration/configuration-types#exporting-a-function": {
+      "hash": "4fd2108f",
+      "file": "datas/devdocs/webpack5/configuration/Exporting a Function.md",
+      "updatedAt": "2026-03-10T09:00:58.935Z"
+    },
+    "configuration/configuration-types#exporting-a-promise": {
+      "hash": "4fd2108f",
+      "file": "datas/devdocs/webpack5/configuration/Exporting a Promise.md",
+      "updatedAt": "2026-03-10T09:00:58.937Z"
+    },
+    "configuration/configuration-types#exporting-multiple-configurations": {
+      "hash": "4fd2108f",
+      "file": "datas/devdocs/webpack5/configuration/Exporting multiple configurations.md",
+      "updatedAt": "2026-03-10T09:00:58.939Z"
+    },
+    "loaders/exports-loader": {
+      "hash": "5308938a",
+      "file": "datas/devdocs/webpack5/loaders/exports-loader.md",
+      "updatedAt": "2026-03-10T09:00:58.941Z"
+    },
+    "loaders/expose-loader": {
+      "hash": "824b64e8",
+      "file": "datas/devdocs/webpack5/loaders/expose-loader.md",
+      "updatedAt": "2026-03-10T09:00:58.945Z"
+    },
+    "configuration/extending-configurations#extending-multiple-configurations": {
+      "hash": "88eec220",
+      "file": "datas/devdocs/webpack5/configuration/Extending multiple configurations.md",
+      "updatedAt": "2026-03-10T09:00:58.949Z"
+    },
+    "configuration/extending-configurations": {
+      "hash": "88eec220",
+      "file": "datas/devdocs/webpack5/configuration/Extends.md",
+      "updatedAt": "2026-03-10T09:00:58.951Z"
+    },
+    "configuration/extending-configurations#extends": {
+      "hash": "88eec220",
+      "file": "datas/devdocs/webpack5/configuration/extends.md",
+      "updatedAt": "2026-03-10T09:00:58.952Z"
+    },
+    "configuration/externals#externals": {
+      "hash": "8c57b492",
+      "file": "datas/devdocs/webpack5/configuration/externals.md",
+      "updatedAt": "2026-03-10T09:00:58.954Z"
+    },
+    "configuration/externals": {
+      "hash": "8c57b492",
+      "file": "datas/devdocs/webpack5/configuration/Externals.md",
+      "updatedAt": "2026-03-10T09:00:58.962Z"
+    },
+    "configuration/externals#externalspresets": {
+      "hash": "8c57b492",
+      "file": "datas/devdocs/webpack5/configuration/externalsPresets.md",
+      "updatedAt": "2026-03-10T09:00:58.971Z"
+    },
+    "configuration/externals#externalstype": {
+      "hash": "8c57b492",
+      "file": "datas/devdocs/webpack5/configuration/externalsType.md",
+      "updatedAt": "2026-03-10T09:00:58.986Z"
+    },
+    "guides/getting-started": {
+      "hash": "2f838a38",
+      "file": "datas/devdocs/webpack5/guides/Getting Started.md",
+      "updatedAt": "2026-03-10T09:00:58.994Z"
+    },
+    "plugins/hashed-module-ids-plugin": {
+      "hash": "b7aebf77",
+      "file": "datas/devdocs/webpack5/plugins/HashedModuleIdsPlugin.md",
+      "updatedAt": "2026-03-10T09:00:58.999Z"
+    },
+    "guides/hot-module-replacement": {
+      "hash": "6fe30dbc",
+      "file": "datas/devdocs/webpack5/guides/Hot Module Replacement.md",
+      "updatedAt": "2026-03-10T09:00:59.001Z"
+    },
+    "concepts/hot-module-replacement": {
+      "hash": "9bd90e7d",
+      "file": "datas/devdocs/webpack5/concepts/Hot Module Replacement.md",
+      "updatedAt": "2026-03-10T09:00:59.006Z"
+    },
+    "api/hot-module-replacement": {
+      "hash": "d96f589a",
+      "file": "datas/devdocs/webpack5/api/Hot Module Replacement.md",
+      "updatedAt": "2026-03-10T09:00:59.008Z"
+    },
+    "plugins/hot-module-replacement-plugin": {
+      "hash": "eb723edb",
+      "file": "datas/devdocs/webpack5/plugins/HotModuleReplacementPlugin.md",
+      "updatedAt": "2026-03-10T09:00:59.019Z"
+    },
+    "loaders/html-loader": {
+      "hash": "e7795ccb",
+      "file": "datas/devdocs/webpack5/loaders/html-loader.md",
+      "updatedAt": "2026-03-10T09:00:59.020Z"
+    },
+    "plugins/html-minimizer-webpack-plugin": {
+      "hash": "f78a7f79",
+      "file": "datas/devdocs/webpack5/plugins/HtmlMinimizerWebpackPlugin.md",
+      "updatedAt": "2026-03-10T09:00:59.029Z"
+    },
+    "plugins/html-webpack-plugin": {
+      "hash": "d88176f8",
+      "file": "datas/devdocs/webpack5/plugins/HtmlWebpackPlugin.md",
+      "updatedAt": "2026-03-10T09:00:59.035Z"
+    },
+    "plugins/ignore-plugin": {
+      "hash": "b289e6d4",
+      "file": "datas/devdocs/webpack5/plugins/IgnorePlugin.md",
+      "updatedAt": "2026-03-10T09:00:59.037Z"
+    },
+    "configuration/other-options#ignorewarnings": {
+      "hash": "b94d2071",
+      "file": "datas/devdocs/webpack5/configuration/ignoreWarnings.md",
+      "updatedAt": "2026-03-10T09:00:59.038Z"
+    },
+    "plugins/image-minimizer-webpack-plugin": {
+      "hash": "666d6aa2",
+      "file": "datas/devdocs/webpack5/plugins/ImageMinimizerWebpackPlugin.md",
+      "updatedAt": "2026-03-10T09:00:59.041Z"
+    },
+    "loaders/imports-loader": {
+      "hash": "f805a456",
+      "file": "datas/devdocs/webpack5/loaders/imports-loader.md",
+      "updatedAt": "2026-03-10T09:00:59.072Z"
+    },
+    "configuration/infrastructurelogging": {
+      "hash": "ec5c07c4",
+      "file": "datas/devdocs/webpack5/configuration/InfrastructureLogging.md",
+      "updatedAt": "2026-03-10T09:00:59.079Z"
+    },
+    "configuration/infrastructurelogging#infrastructureloggingappendonly": {
+      "hash": "ec5c07c4",
+      "file": "datas/devdocs/webpack5/configuration/infrastructureLogging.appendOnly.md",
+      "updatedAt": "2026-03-10T09:00:59.082Z"
+    },
+    "configuration/infrastructurelogging#infrastructureloggingcolors": {
+      "hash": "ec5c07c4",
+      "file": "datas/devdocs/webpack5/configuration/infrastructureLogging.colors.md",
+      "updatedAt": "2026-03-10T09:00:59.084Z"
+    },
+    "configuration/infrastructurelogging#infrastructureloggingconsole": {
+      "hash": "ec5c07c4",
+      "file": "datas/devdocs/webpack5/configuration/infrastructureLogging.console.md",
+      "updatedAt": "2026-03-10T09:00:59.086Z"
+    },
+    "configuration/infrastructurelogging#infrastructureloggingdebug": {
+      "hash": "ec5c07c4",
+      "file": "datas/devdocs/webpack5/configuration/infrastructureLogging.debug.md",
+      "updatedAt": "2026-03-10T09:00:59.088Z"
+    },
+    "configuration/infrastructurelogging#infrastructurelogginglevel": {
+      "hash": "ec5c07c4",
+      "file": "datas/devdocs/webpack5/configuration/infrastructureLogging.level.md",
+      "updatedAt": "2026-03-10T09:00:59.089Z"
+    },
+    "configuration/infrastructurelogging#infrastructureloggingstream": {
+      "hash": "ec5c07c4",
+      "file": "datas/devdocs/webpack5/configuration/infrastructureLogging.stream.md",
+      "updatedAt": "2026-03-10T09:00:59.091Z"
+    },
+    "guides/installation": {
+      "hash": "d52fb827",
+      "file": "datas/devdocs/webpack5/guides/Installation.md",
+      "updatedAt": "2026-03-10T09:00:59.094Z"
+    },
+    "plugins/install-webpack-plugin": {
+      "hash": "85062665",
+      "file": "datas/devdocs/webpack5/plugins/InstallWebpackPlugin.md",
+      "updatedAt": "2026-03-10T09:00:59.095Z"
+    },
+    "guides/integrations": {
+      "hash": "f3f7d92a",
+      "file": "datas/devdocs/webpack5/guides/Integrations.md",
+      "updatedAt": "2026-03-10T09:00:59.100Z"
+    },
+    "plugins/internal-plugins": {
+      "hash": "497d76aa",
+      "file": "datas/devdocs/webpack5/plugins/Internal webpack plugins.md",
+      "updatedAt": "2026-03-10T09:00:59.103Z"
+    },
+    "api/index": {
+      "hash": "a1856a7d",
+      "file": "datas/devdocs/webpack5/api/Introduction.md",
+      "updatedAt": "2026-03-10T09:00:59.110Z"
+    },
+    "api/parser": {
+      "hash": "180b7422",
+      "file": "datas/devdocs/webpack5/api/JavascriptParser Hooks.md",
+      "updatedAt": "2026-03-10T09:00:59.112Z"
+    },
+    "plugins/json-minimizer-webpack-plugin": {
+      "hash": "9772ef59",
+      "file": "datas/devdocs/webpack5/plugins/JsonMinimizerWebpackPlugin.md",
+      "updatedAt": "2026-03-10T09:00:59.128Z"
+    },
+    "guides/lazy-loading": {
+      "hash": "3f8097d6",
+      "file": "datas/devdocs/webpack5/guides/Lazy Loading.md",
+      "updatedAt": "2026-03-10T09:00:59.130Z"
+    },
+    "loaders/less-loader": {
+      "hash": "353232a8",
+      "file": "datas/devdocs/webpack5/loaders/less-loader.md",
+      "updatedAt": "2026-03-10T09:00:59.132Z"
+    },
+    "plugins/limit-chunk-count-plugin": {
+      "hash": "b53b33a6",
+      "file": "datas/devdocs/webpack5/plugins/LimitChunkCountPlugin.md",
+      "updatedAt": "2026-03-10T09:00:59.138Z"
+    },
+    "configuration/other-options#loader": {
+      "hash": "b94d2071",
+      "file": "datas/devdocs/webpack5/configuration/loader.md",
+      "updatedAt": "2026-03-10T09:00:59.140Z"
+    },
+    "api/loaders": {
+      "hash": "c155b614",
+      "file": "datas/devdocs/webpack5/api/Loader Interface.md",
+      "updatedAt": "2026-03-10T09:00:59.143Z"
+    },
+    "loaders/index": {
+      "hash": "2f3ba88",
+      "file": "datas/devdocs/webpack5/loaders/Loaders.md",
+      "updatedAt": "2026-03-10T09:00:59.151Z"
+    },
+    "concepts/loaders": {
+      "hash": "688fab13",
+      "file": "datas/devdocs/webpack5/concepts/Loaders.md",
+      "updatedAt": "2026-03-10T09:00:59.154Z"
+    },
+    "configuration/extending-configurations#loading-configuration-from-external-packages": {
+      "hash": "88eec220",
+      "file": "datas/devdocs/webpack5/configuration/Loading configuration from external packages.md",
+      "updatedAt": "2026-03-10T09:00:59.157Z"
+    },
+    "api/logging": {
+      "hash": "26d6630f",
+      "file": "datas/devdocs/webpack5/api/Logger Interface.md",
+      "updatedAt": "2026-03-10T09:00:59.159Z"
+    },
+    "plugins/min-chunk-size-plugin": {
+      "hash": "cddc2c45",
+      "file": "datas/devdocs/webpack5/plugins/MinChunkSizePlugin.md",
+      "updatedAt": "2026-03-10T09:00:59.161Z"
+    },
+    "plugins/mini-css-extract-plugin": {
+      "hash": "4253c680",
+      "file": "datas/devdocs/webpack5/plugins/MiniCssExtractPlugin.md",
+      "updatedAt": "2026-03-10T09:00:59.163Z"
+    },
+    "configuration/mode": {
+      "hash": "a1c7d3ce",
+      "file": "datas/devdocs/webpack5/configuration/Mode.md",
+      "updatedAt": "2026-03-10T09:00:59.176Z"
+    },
+    "configuration/module": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Module.md",
+      "updatedAt": "2026-03-10T09:00:59.177Z"
+    },
+    "configuration/module#module-contexts": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Module Contexts.md",
+      "updatedAt": "2026-03-10T09:00:59.190Z"
+    },
+    "concepts/module-federation": {
+      "hash": "b442e641",
+      "file": "datas/devdocs/webpack5/concepts/Module Federation.md",
+      "updatedAt": "2026-03-10T09:00:59.204Z"
+    },
+    "api/module-methods": {
+      "hash": "5242dff7",
+      "file": "datas/devdocs/webpack5/api/Module Methods.md",
+      "updatedAt": "2026-03-10T09:00:59.215Z"
+    },
+    "concepts/module-resolution": {
+      "hash": "cce56c66",
+      "file": "datas/devdocs/webpack5/concepts/Module Resolution.md",
+      "updatedAt": "2026-03-10T09:00:59.224Z"
+    },
+    "api/module-variables": {
+      "hash": "96575e74",
+      "file": "datas/devdocs/webpack5/api/Module Variables.md",
+      "updatedAt": "2026-03-10T09:00:59.227Z"
+    },
+    "configuration/module#moduledefaultrules": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/module.defaultRules.md",
+      "updatedAt": "2026-03-10T09:00:59.232Z"
+    },
+    "configuration/module#modulegenerator": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/module.generator.md",
+      "updatedAt": "2026-03-10T09:00:59.251Z"
+    },
+    "configuration/module#modulenoparse": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/module.noParse.md",
+      "updatedAt": "2026-03-10T09:00:59.265Z"
+    },
+    "configuration/module#moduleparser": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/module.parser.md",
+      "updatedAt": "2026-03-10T09:00:59.284Z"
+    },
+    "configuration/module#modulerules": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/module.rules.md",
+      "updatedAt": "2026-03-10T09:00:59.297Z"
+    },
+    "configuration/module#moduleunsafecache": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/module.unsafeCache.md",
+      "updatedAt": "2026-03-10T09:00:59.310Z"
+    },
+    "plugins/module-concatenation-plugin": {
+      "hash": "61c5f6f6",
+      "file": "datas/devdocs/webpack5/plugins/ModuleConcatenationPlugin.md",
+      "updatedAt": "2026-03-10T09:00:59.328Z"
+    },
+    "plugins/module-federation-plugin": {
+      "hash": "74211497",
+      "file": "datas/devdocs/webpack5/plugins/ModuleFederationPlugin.md",
+      "updatedAt": "2026-03-10T09:00:59.330Z"
+    },
+    "concepts/modules": {
+      "hash": "fc94f8c",
+      "file": "datas/devdocs/webpack5/concepts/Modules.md",
+      "updatedAt": "2026-03-10T09:00:59.333Z"
+    },
+    "configuration/other-options#name": {
+      "hash": "b94d2071",
+      "file": "datas/devdocs/webpack5/configuration/name.md",
+      "updatedAt": "2026-03-10T09:00:59.335Z"
+    },
+    "configuration/module#nested-rules": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Nested rules.md",
+      "updatedAt": "2026-03-10T09:00:59.338Z"
+    },
+    "configuration/node": {
+      "hash": "c8a0cdc4",
+      "file": "datas/devdocs/webpack5/configuration/Node.md",
+      "updatedAt": "2026-03-10T09:00:59.357Z"
+    },
+    "configuration/node#node": {
+      "hash": "c8a0cdc4",
+      "file": "datas/devdocs/webpack5/configuration/node.md",
+      "updatedAt": "2026-03-10T09:00:59.367Z"
+    },
+    "api/node": {
+      "hash": "1d9bdafc",
+      "file": "datas/devdocs/webpack5/api/Node Interface.md",
+      "updatedAt": "2026-03-10T09:00:59.376Z"
+    },
+    "loaders/node-loader": {
+      "hash": "1d62b550",
+      "file": "datas/devdocs/webpack5/loaders/node-loader.md",
+      "updatedAt": "2026-03-10T09:00:59.381Z"
+    },
+    "configuration/node#node__dirname": {
+      "hash": "c8a0cdc4",
+      "file": "datas/devdocs/webpack5/configuration/node.__dirname.md",
+      "updatedAt": "2026-03-10T09:00:59.383Z"
+    },
+    "configuration/node#node__filename": {
+      "hash": "c8a0cdc4",
+      "file": "datas/devdocs/webpack5/configuration/node.__filename.md",
+      "updatedAt": "2026-03-10T09:00:59.386Z"
+    },
+    "configuration/node#nodeglobal": {
+      "hash": "c8a0cdc4",
+      "file": "datas/devdocs/webpack5/configuration/node.global.md",
+      "updatedAt": "2026-03-10T09:00:59.387Z"
+    },
+    "plugins/noemitonerrorsplugin": {
+      "hash": "cdd7edbb",
+      "file": "datas/devdocs/webpack5/plugins/NoEmitOnErrorsPlugin.md",
+      "updatedAt": "2026-03-10T09:00:59.390Z"
+    },
+    "api/normalmodulefactory-hooks": {
+      "hash": "465cfc8",
+      "file": "datas/devdocs/webpack5/api/NormalModuleFactory Hooks.md",
+      "updatedAt": "2026-03-10T09:00:59.390Z"
+    },
+    "plugins/normal-module-replacement-plugin": {
+      "hash": "b7e6e7e7",
+      "file": "datas/devdocs/webpack5/plugins/NormalModuleReplacementPlugin.md",
+      "updatedAt": "2026-03-10T09:00:59.393Z"
+    },
+    "configuration/optimization": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/Optimization.md",
+      "updatedAt": "2026-03-10T09:00:59.394Z"
+    },
+    "configuration/optimization#optimizationavoidentryiife": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.avoidEntryIife.md",
+      "updatedAt": "2026-03-10T09:00:59.400Z"
+    },
+    "configuration/optimization#optimizationcheckwasmtypes": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.checkWasmTypes.md",
+      "updatedAt": "2026-03-10T09:00:59.406Z"
+    },
+    "configuration/optimization#optimizationchunkids": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.chunkIds.md",
+      "updatedAt": "2026-03-10T09:00:59.411Z"
+    },
+    "configuration/optimization#optimizationconcatenatemodules": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.concatenateModules.md",
+      "updatedAt": "2026-03-10T09:00:59.417Z"
+    },
+    "configuration/optimization#optimizationemitonerrors": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.emitOnErrors.md",
+      "updatedAt": "2026-03-10T09:00:59.422Z"
+    },
+    "configuration/optimization#optimizationflagincludedchunks": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.flagIncludedChunks.md",
+      "updatedAt": "2026-03-10T09:00:59.433Z"
+    },
+    "configuration/optimization#optimizationinnergraph": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.innerGraph.md",
+      "updatedAt": "2026-03-10T09:00:59.440Z"
+    },
+    "configuration/optimization#optimizationmangleexports": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.mangleExports.md",
+      "updatedAt": "2026-03-10T09:00:59.447Z"
+    },
+    "configuration/optimization#optimizationmanglewasmimports": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.mangleWasmImports.md",
+      "updatedAt": "2026-03-10T09:00:59.455Z"
+    },
+    "configuration/optimization#optimizationmergeduplicatechunks": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.mergeDuplicateChunks.md",
+      "updatedAt": "2026-03-10T09:00:59.462Z"
+    },
+    "configuration/optimization#optimizationminimize": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.minimize.md",
+      "updatedAt": "2026-03-10T09:00:59.480Z"
+    },
+    "configuration/optimization#optimizationminimizer": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.minimizer.md",
+      "updatedAt": "2026-03-10T09:00:59.487Z"
+    },
+    "configuration/optimization#optimizationmoduleids": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.moduleIds.md",
+      "updatedAt": "2026-03-10T09:00:59.494Z"
+    },
+    "configuration/optimization#optimizationnodeenv": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.nodeEnv.md",
+      "updatedAt": "2026-03-10T09:00:59.501Z"
+    },
+    "configuration/optimization#optimizationportablerecords": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.portableRecords.md",
+      "updatedAt": "2026-03-10T09:00:59.508Z"
+    },
+    "configuration/optimization#optimizationprovidedexports": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.providedExports.md",
+      "updatedAt": "2026-03-10T09:00:59.514Z"
+    },
+    "configuration/optimization#optimizationrealcontenthash": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.realContentHash.md",
+      "updatedAt": "2026-03-10T09:00:59.528Z"
+    },
+    "configuration/optimization#optimizationremoveavailablemodules": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.removeAvailableModules.md",
+      "updatedAt": "2026-03-10T09:00:59.535Z"
+    },
+    "configuration/optimization#optimizationremoveemptychunks": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.removeEmptyChunks.md",
+      "updatedAt": "2026-03-10T09:00:59.541Z"
+    },
+    "configuration/optimization#optimizationruntimechunk": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.runtimeChunk.md",
+      "updatedAt": "2026-03-10T09:00:59.547Z"
+    },
+    "configuration/optimization#optimizationsideeffects": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.sideEffects.md",
+      "updatedAt": "2026-03-10T09:00:59.553Z"
+    },
+    "configuration/optimization#optimizationsplitchunks": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.splitChunks.md",
+      "updatedAt": "2026-03-10T09:00:59.559Z"
+    },
+    "configuration/optimization#optimizationusedexports": {
+      "hash": "c14487cd",
+      "file": "datas/devdocs/webpack5/configuration/optimization.usedExports.md",
+      "updatedAt": "2026-03-10T09:00:59.573Z"
+    },
+    "configuration/other-options": {
+      "hash": "b94d2071",
+      "file": "datas/devdocs/webpack5/configuration/Other Options.md",
+      "updatedAt": "2026-03-10T09:00:59.581Z"
+    },
+    "configuration/output": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/Output.md",
+      "updatedAt": "2026-03-10T09:00:59.585Z"
+    },
+    "concepts/output": {
+      "hash": "b4c96d74",
+      "file": "datas/devdocs/webpack5/concepts/Output.md",
+      "updatedAt": "2026-03-10T09:00:59.613Z"
+    },
+    "guides/output-management": {
+      "hash": "6d3cb62c",
+      "file": "datas/devdocs/webpack5/guides/Output Management.md",
+      "updatedAt": "2026-03-10T09:00:59.614Z"
+    },
+    "configuration/output#outputassetmodulefilename": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.assetModuleFilename.md",
+      "updatedAt": "2026-03-10T09:00:59.618Z"
+    },
+    "configuration/output#outputasyncchunks": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.asyncChunks.md",
+      "updatedAt": "2026-03-10T09:00:59.645Z"
+    },
+    "configuration/output#outputauxiliarycomment": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.auxiliaryComment.md",
+      "updatedAt": "2026-03-10T09:00:59.676Z"
+    },
+    "configuration/output#outputcharset": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.charset.md",
+      "updatedAt": "2026-03-10T09:00:59.709Z"
+    },
+    "configuration/output#outputchunkfilename": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.chunkFilename.md",
+      "updatedAt": "2026-03-10T09:00:59.735Z"
+    },
+    "configuration/output#outputchunkformat": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.chunkFormat.md",
+      "updatedAt": "2026-03-10T09:00:59.762Z"
+    },
+    "configuration/output#outputchunkloading": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.chunkLoading.md",
+      "updatedAt": "2026-03-10T09:00:59.784Z"
+    },
+    "configuration/output#outputchunkloadingglobal": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.chunkLoadingGlobal.md",
+      "updatedAt": "2026-03-10T09:00:59.817Z"
+    },
+    "configuration/output#outputchunkloadtimeout": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.chunkLoadTimeout.md",
+      "updatedAt": "2026-03-10T09:00:59.847Z"
+    },
+    "configuration/output#outputclean": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.clean.md",
+      "updatedAt": "2026-03-10T09:00:59.876Z"
+    },
+    "configuration/output#outputcomparebeforeemit": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.compareBeforeEmit.md",
+      "updatedAt": "2026-03-10T09:00:59.900Z"
+    },
+    "configuration/output#outputcrossoriginloading": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.crossOriginLoading.md",
+      "updatedAt": "2026-03-10T09:00:59.927Z"
+    },
+    "configuration/output#outputcsschunkfilename": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.cssChunkFilename.md",
+      "updatedAt": "2026-03-10T09:00:59.955Z"
+    },
+    "configuration/output#outputcssfilename": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.cssFilename.md",
+      "updatedAt": "2026-03-10T09:00:59.983Z"
+    },
+    "configuration/output#outputdevtoolfallbackmodulefilenametemplate": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.devtoolFallbackModuleFilenameTemplate.md",
+      "updatedAt": "2026-03-10T09:01:00.033Z"
+    },
+    "configuration/output#outputdevtoolmodulefilenametemplate": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.devtoolModuleFilenameTemplate.md",
+      "updatedAt": "2026-03-10T09:01:00.072Z"
+    },
+    "configuration/output#outputdevtoolnamespace": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.devtoolNamespace.md",
+      "updatedAt": "2026-03-10T09:01:00.096Z"
+    },
+    "configuration/output#outputenabledchunkloadingtypes": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.enabledChunkLoadingTypes.md",
+      "updatedAt": "2026-03-10T09:01:00.124Z"
+    },
+    "configuration/output#outputenabledlibrarytypes": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.enabledLibraryTypes.md",
+      "updatedAt": "2026-03-10T09:01:00.156Z"
+    },
+    "configuration/output#outputenabledwasmloadingtypes": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.enabledWasmLoadingTypes.md",
+      "updatedAt": "2026-03-10T09:01:00.181Z"
+    },
+    "configuration/output#outputenvironment": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.environment.md",
+      "updatedAt": "2026-03-10T09:01:00.215Z"
+    },
+    "configuration/output#outputfilename": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.filename.md",
+      "updatedAt": "2026-03-10T09:01:00.246Z"
+    },
+    "configuration/output#outputglobalobject": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.globalObject.md",
+      "updatedAt": "2026-03-10T09:01:00.272Z"
+    },
+    "configuration/output#outputhashdigest": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.hashDigest.md",
+      "updatedAt": "2026-03-10T09:01:00.307Z"
+    },
+    "configuration/output#outputhashdigestlength": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.hashDigestLength.md",
+      "updatedAt": "2026-03-10T09:01:00.345Z"
+    },
+    "configuration/output#outputhashfunction": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.hashFunction.md",
+      "updatedAt": "2026-03-10T09:01:00.372Z"
+    },
+    "configuration/output#outputhashsalt": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.hashSalt.md",
+      "updatedAt": "2026-03-10T09:01:00.412Z"
+    },
+    "configuration/output#outputhotupdatechunkfilename": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.hotUpdateChunkFilename.md",
+      "updatedAt": "2026-03-10T09:01:00.447Z"
+    },
+    "configuration/output#outputhotupdateglobal": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.hotUpdateGlobal.md",
+      "updatedAt": "2026-03-10T09:01:00.482Z"
+    },
+    "configuration/output#outputhotupdatemainfilename": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.hotUpdateMainFilename.md",
+      "updatedAt": "2026-03-10T09:01:00.519Z"
+    },
+    "configuration/output#outputignorebrowserwarnings": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.ignoreBrowserWarnings.md",
+      "updatedAt": "2026-03-10T09:01:00.551Z"
+    },
+    "configuration/output#outputiife": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.iife.md",
+      "updatedAt": "2026-03-10T09:01:00.570Z"
+    },
+    "configuration/output#outputimportfunctionname": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.importFunctionName.md",
+      "updatedAt": "2026-03-10T09:01:00.599Z"
+    },
+    "configuration/output#outputimportmetaname": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.importMetaName.md",
+      "updatedAt": "2026-03-10T09:01:00.625Z"
+    },
+    "configuration/output#outputlibrary": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.library.md",
+      "updatedAt": "2026-03-10T09:01:00.647Z"
+    },
+    "configuration/output#outputlibraryexport-1": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.libraryExport.md",
+      "updatedAt": "2026-03-10T09:01:00.674Z"
+    },
+    "configuration/output#outputlibrarytarget": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.libraryTarget.md",
+      "updatedAt": "2026-03-10T09:01:00.698Z"
+    },
+    "configuration/output#outputmodule": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.module.md",
+      "updatedAt": "2026-03-10T09:01:00.727Z"
+    },
+    "configuration/output#outputpath": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.path.md",
+      "updatedAt": "2026-03-10T09:01:00.759Z"
+    },
+    "configuration/output#outputpathinfo": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.pathinfo.md",
+      "updatedAt": "2026-03-10T09:01:00.786Z"
+    },
+    "configuration/output#outputpublicpath": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.publicPath.md",
+      "updatedAt": "2026-03-10T09:01:00.817Z"
+    },
+    "configuration/output#outputscripttype": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.scriptType.md",
+      "updatedAt": "2026-03-10T09:01:00.849Z"
+    },
+    "configuration/output#outputsourcemapfilename": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.sourceMapFilename.md",
+      "updatedAt": "2026-03-10T09:01:00.871Z"
+    },
+    "configuration/output#outputsourceprefix": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.sourcePrefix.md",
+      "updatedAt": "2026-03-10T09:01:00.902Z"
+    },
+    "configuration/output#outputstrictmoduleerrorhandling": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.strictModuleErrorHandling.md",
+      "updatedAt": "2026-03-10T09:01:00.920Z"
+    },
+    "configuration/output#outputstrictmoduleexceptionhandling": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.strictModuleExceptionHandling.md",
+      "updatedAt": "2026-03-10T09:01:00.954Z"
+    },
+    "configuration/output#outputtrustedtypes": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.trustedTypes.md",
+      "updatedAt": "2026-03-10T09:01:01.026Z"
+    },
+    "configuration/output#outputumdnameddefine": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.umdNamedDefine.md",
+      "updatedAt": "2026-03-10T09:01:01.066Z"
+    },
+    "configuration/output#outputuniquename": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.uniqueName.md",
+      "updatedAt": "2026-03-10T09:01:01.093Z"
+    },
+    "configuration/output#outputwasmloading": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.wasmLoading.md",
+      "updatedAt": "2026-03-10T09:01:01.131Z"
+    },
+    "configuration/output#outputwebassemblymodulefilename": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.webassemblyModuleFilename.md",
+      "updatedAt": "2026-03-10T09:01:01.173Z"
+    },
+    "configuration/output#outputworkerchunkloading": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.workerChunkLoading.md",
+      "updatedAt": "2026-03-10T09:01:01.207Z"
+    },
+    "configuration/output#outputworkerpublicpath": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.workerPublicPath.md",
+      "updatedAt": "2026-03-10T09:01:01.237Z"
+    },
+    "configuration/output#outputworkerwasmloading": {
+      "hash": "deae31dc",
+      "file": "datas/devdocs/webpack5/configuration/output.workerWasmLoading.md",
+      "updatedAt": "2026-03-10T09:01:01.270Z"
+    },
+    "configuration/extending-configurations#overridding-configurations": {
+      "hash": "88eec220",
+      "file": "datas/devdocs/webpack5/configuration/Overridding Configurations.md",
+      "updatedAt": "2026-03-10T09:01:01.302Z"
+    },
+    "guides/package-exports": {
+      "hash": "cebfbb2d",
+      "file": "datas/devdocs/webpack5/guides/Package exports.md",
+      "updatedAt": "2026-03-10T09:01:01.304Z"
+    },
+    "configuration/other-options#parallelism": {
+      "hash": "b94d2071",
+      "file": "datas/devdocs/webpack5/configuration/parallelism.md",
+      "updatedAt": "2026-03-10T09:01:01.316Z"
+    },
+    "configuration/performance": {
+      "hash": "37f9a9cd",
+      "file": "datas/devdocs/webpack5/configuration/Performance.md",
+      "updatedAt": "2026-03-10T09:01:01.322Z"
+    },
+    "configuration/performance#performance": {
+      "hash": "37f9a9cd",
+      "file": "datas/devdocs/webpack5/configuration/performance.md",
+      "updatedAt": "2026-03-10T09:01:01.325Z"
+    },
+    "api/plugins": {
+      "hash": "dcb8ed10",
+      "file": "datas/devdocs/webpack5/api/Plugin API.md",
+      "updatedAt": "2026-03-10T09:01:01.327Z"
+    },
+    "configuration/plugins": {
+      "hash": "a60e7fc6",
+      "file": "datas/devdocs/webpack5/configuration/Plugins.md",
+      "updatedAt": "2026-03-10T09:01:01.330Z"
+    },
+    "configuration/plugins#plugins": {
+      "hash": "a60e7fc6",
+      "file": "datas/devdocs/webpack5/configuration/plugins.md",
+      "updatedAt": "2026-03-10T09:01:01.331Z"
+    },
+    "plugins/index": {
+      "hash": "4b53a63",
+      "file": "datas/devdocs/webpack5/plugins/Plugins.md",
+      "updatedAt": "2026-03-10T09:01:01.332Z"
+    },
+    "concepts/plugins": {
+      "hash": "cb05093",
+      "file": "datas/devdocs/webpack5/concepts/Plugins.md",
+      "updatedAt": "2026-03-10T09:01:01.335Z"
+    },
+    "loaders/postcss-loader": {
+      "hash": "73069740",
+      "file": "datas/devdocs/webpack5/loaders/postcss-loader.md",
+      "updatedAt": "2026-03-10T09:01:01.338Z"
+    },
+    "plugins/prefetch-plugin": {
+      "hash": "e73bf350",
+      "file": "datas/devdocs/webpack5/plugins/PrefetchPlugin.md",
+      "updatedAt": "2026-03-10T09:01:01.351Z"
+    },
+    "guides/production": {
+      "hash": "dced4c5f",
+      "file": "datas/devdocs/webpack5/guides/Production.md",
+      "updatedAt": "2026-03-10T09:01:01.353Z"
+    },
+    "configuration/other-options#profile": {
+      "hash": "b94d2071",
+      "file": "datas/devdocs/webpack5/configuration/profile.md",
+      "updatedAt": "2026-03-10T09:01:01.357Z"
+    },
+    "plugins/profiling-plugin": {
+      "hash": "8d90d5a6",
+      "file": "datas/devdocs/webpack5/plugins/ProfilingPlugin.md",
+      "updatedAt": "2026-03-10T09:01:01.362Z"
+    },
+    "guides/progressive-web-application": {
+      "hash": "36031d45",
+      "file": "datas/devdocs/webpack5/guides/Progressive Web Application.md",
+      "updatedAt": "2026-03-10T09:01:01.363Z"
+    },
+    "plugins/progress-plugin": {
+      "hash": "1ad2b0d5",
+      "file": "datas/devdocs/webpack5/plugins/ProgressPlugin.md",
+      "updatedAt": "2026-03-10T09:01:01.367Z"
+    },
+    "plugins/provide-plugin": {
+      "hash": "67ba53ea",
+      "file": "datas/devdocs/webpack5/plugins/ProvidePlugin.md",
+      "updatedAt": "2026-03-10T09:01:01.372Z"
+    },
+    "guides/public-path": {
+      "hash": "6f065e3",
+      "file": "datas/devdocs/webpack5/guides/Public Path.md",
+      "updatedAt": "2026-03-10T09:01:01.373Z"
+    },
+    "configuration/other-options#recordsinputpath": {
+      "hash": "b94d2071",
+      "file": "datas/devdocs/webpack5/configuration/recordsInputPath.md",
+      "updatedAt": "2026-03-10T09:01:01.377Z"
+    },
+    "configuration/other-options#recordsoutputpath": {
+      "hash": "b94d2071",
+      "file": "datas/devdocs/webpack5/configuration/recordsOutputPath.md",
+      "updatedAt": "2026-03-10T09:01:01.381Z"
+    },
+    "configuration/other-options#recordspath": {
+      "hash": "b94d2071",
+      "file": "datas/devdocs/webpack5/configuration/recordsPath.md",
+      "updatedAt": "2026-03-10T09:01:01.392Z"
+    },
+    "loaders/remark-loader": {
+      "hash": "94f0d6a",
+      "file": "datas/devdocs/webpack5/loaders/remark-loader.md",
+      "updatedAt": "2026-03-10T09:01:01.398Z"
+    },
+    "configuration/resolve": {
+      "hash": "8a748159",
+      "file": "datas/devdocs/webpack5/configuration/Resolve.md",
+      "updatedAt": "2026-03-10T09:01:01.402Z"
+    },
+    "configuration/resolve#resolve": {
+      "hash": "8a748159",
+      "file": "datas/devdocs/webpack5/configuration/resolve.md",
+      "updatedAt": "2026-03-10T09:01:01.410Z"
+    },
+    "configuration/resolve#resolveloader": {
+      "hash": "8a748159",
+      "file": "datas/devdocs/webpack5/configuration/resolveLoader.md",
+      "updatedAt": "2026-03-10T09:01:01.426Z"
+    },
+    "api/resolvers": {
+      "hash": "7391c93b",
+      "file": "datas/devdocs/webpack5/api/Resolvers.md",
+      "updatedAt": "2026-03-10T09:01:01.433Z"
+    },
+    "configuration/module#rule": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.md",
+      "updatedAt": "2026-03-10T09:01:01.435Z"
+    },
+    "configuration/module#ruleassert": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.assert.md",
+      "updatedAt": "2026-03-10T09:01:01.460Z"
+    },
+    "configuration/module#rulecompiler": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.compiler.md",
+      "updatedAt": "2026-03-10T09:01:01.486Z"
+    },
+    "configuration/module#ruleenforce": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.enforce.md",
+      "updatedAt": "2026-03-10T09:01:01.507Z"
+    },
+    "configuration/module#ruleexclude": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.exclude.md",
+      "updatedAt": "2026-03-10T09:01:01.537Z"
+    },
+    "configuration/module#rulegenerator": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.generator.md",
+      "updatedAt": "2026-03-10T09:01:01.558Z"
+    },
+    "configuration/module#ruleinclude": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.include.md",
+      "updatedAt": "2026-03-10T09:01:01.583Z"
+    },
+    "configuration/module#ruleissuer": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.issuer.md",
+      "updatedAt": "2026-03-10T09:01:01.610Z"
+    },
+    "configuration/module#ruleissuerlayer": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.issuerLayer.md",
+      "updatedAt": "2026-03-10T09:01:01.636Z"
+    },
+    "configuration/module#rulelayer": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.layer.md",
+      "updatedAt": "2026-03-10T09:01:01.654Z"
+    },
+    "configuration/module#ruleloader": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.loader.md",
+      "updatedAt": "2026-03-10T09:01:01.690Z"
+    },
+    "configuration/module#ruleloaders": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.loaders.md",
+      "updatedAt": "2026-03-10T09:01:01.710Z"
+    },
+    "configuration/module#rulemimetype": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.mimetype.md",
+      "updatedAt": "2026-03-10T09:01:01.729Z"
+    },
+    "configuration/module#ruleoneof": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.oneOf.md",
+      "updatedAt": "2026-03-10T09:01:01.761Z"
+    },
+    "configuration/module#ruleoptions--rulequery": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.options - Rule.query.md",
+      "updatedAt": "2026-03-10T09:01:01.780Z"
+    },
+    "configuration/module#ruleparser": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.parser.md",
+      "updatedAt": "2026-03-10T09:01:01.807Z"
+    },
+    "configuration/module#ruleparserdataurlcondition": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.parser.dataUrlCondition.md",
+      "updatedAt": "2026-03-10T09:01:01.834Z"
+    },
+    "configuration/module#ruleparserparse": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.parser.parse.md",
+      "updatedAt": "2026-03-10T09:01:01.860Z"
+    },
+    "configuration/module#ruleresolve": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.resolve.md",
+      "updatedAt": "2026-03-10T09:01:01.874Z"
+    },
+    "configuration/module#ruleresource": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.resource.md",
+      "updatedAt": "2026-03-10T09:01:01.905Z"
+    },
+    "configuration/module#ruleresourcequery": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.resourceQuery.md",
+      "updatedAt": "2026-03-10T09:01:01.926Z"
+    },
+    "configuration/module#rulerules": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.rules.md",
+      "updatedAt": "2026-03-10T09:01:01.946Z"
+    },
+    "configuration/module#rulescheme": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.scheme.md",
+      "updatedAt": "2026-03-10T09:01:01.989Z"
+    },
+    "configuration/module#rulesideeffects": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.sideEffects.md",
+      "updatedAt": "2026-03-10T09:01:02.009Z"
+    },
+    "configuration/module#ruletest": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.test.md",
+      "updatedAt": "2026-03-10T09:01:02.040Z"
+    },
+    "configuration/module#ruletype": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.type.md",
+      "updatedAt": "2026-03-10T09:01:02.064Z"
+    },
+    "configuration/module#ruleuse": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.use.md",
+      "updatedAt": "2026-03-10T09:01:02.109Z"
+    },
+    "configuration/module#rulewith": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/Rule.with.md",
+      "updatedAt": "2026-03-10T09:01:02.138Z"
+    },
+    "loaders/sass-loader": {
+      "hash": "88f3fd56",
+      "file": "datas/devdocs/webpack5/loaders/sass-loader.md",
+      "updatedAt": "2026-03-10T09:01:02.166Z"
+    },
+    "configuration/index#set-up-a-new-webpack-project": {
+      "hash": "2ab46e6b",
+      "file": "datas/devdocs/webpack5/configuration/Set up a new webpack project.md",
+      "updatedAt": "2026-03-10T09:01:02.188Z"
+    },
+    "configuration/cache#setup-cache-in-cicd-system": {
+      "hash": "91ac9f84",
+      "file": "datas/devdocs/webpack5/configuration/Setup cache in CI-CD system.md",
+      "updatedAt": "2026-03-10T09:01:02.191Z"
+    },
+    "guides/shimming": {
+      "hash": "14deb99e",
+      "file": "datas/devdocs/webpack5/guides/Shimming.md",
+      "updatedAt": "2026-03-10T09:01:02.209Z"
+    },
+    "configuration/other-options#snapshot": {
+      "hash": "b94d2071",
+      "file": "datas/devdocs/webpack5/configuration/snapshot.md",
+      "updatedAt": "2026-03-10T09:01:02.214Z"
+    },
+    "loaders/source-map-loader": {
+      "hash": "a715b3f3",
+      "file": "datas/devdocs/webpack5/loaders/source-map-loader.md",
+      "updatedAt": "2026-03-10T09:01:02.219Z"
+    },
+    "plugins/source-map-dev-tool-plugin": {
+      "hash": "f0c47534",
+      "file": "datas/devdocs/webpack5/plugins/SourceMapDevToolPlugin.md",
+      "updatedAt": "2026-03-10T09:01:02.222Z"
+    },
+    "plugins/split-chunks-plugin": {
+      "hash": "44067332",
+      "file": "datas/devdocs/webpack5/plugins/SplitChunksPlugin.md",
+      "updatedAt": "2026-03-10T09:01:02.224Z"
+    },
+    "configuration/stats": {
+      "hash": "5d94ed5a",
+      "file": "datas/devdocs/webpack5/configuration/Stats.md",
+      "updatedAt": "2026-03-10T09:01:02.232Z"
+    },
+    "api/stats": {
+      "hash": "75b55492",
+      "file": "datas/devdocs/webpack5/api/Stats Data.md",
+      "updatedAt": "2026-03-10T09:01:02.244Z"
+    },
+    "configuration/stats#stats-options": {
+      "hash": "5d94ed5a",
+      "file": "datas/devdocs/webpack5/configuration/Stats Options.md",
+      "updatedAt": "2026-03-10T09:01:02.247Z"
+    },
+    "configuration/stats#stats-presets": {
+      "hash": "5d94ed5a",
+      "file": "datas/devdocs/webpack5/configuration/Stats Presets.md",
+      "updatedAt": "2026-03-10T09:01:02.263Z"
+    },
+    "loaders/style-loader": {
+      "hash": "bac9a62d",
+      "file": "datas/devdocs/webpack5/loaders/style-loader.md",
+      "updatedAt": "2026-03-10T09:01:02.274Z"
+    },
+    "plugins/stylelint-webpack-plugin": {
+      "hash": "45459472",
+      "file": "datas/devdocs/webpack5/plugins/StylelintWebpackPlugin.md",
+      "updatedAt": "2026-03-10T09:01:02.286Z"
+    },
+    "loaders/stylus-loader": {
+      "hash": "443bea2b",
+      "file": "datas/devdocs/webpack5/loaders/stylus-loader.md",
+      "updatedAt": "2026-03-10T09:01:02.291Z"
+    },
+    "plugins/svg-chunk-webpack-plugin": {
+      "hash": "55f573ff",
+      "file": "datas/devdocs/webpack5/plugins/SvgChunkWebpackPlugin.md",
+      "updatedAt": "2026-03-10T09:01:02.296Z"
+    },
+    "configuration/target#target": {
+      "hash": "dafd75bb",
+      "file": "datas/devdocs/webpack5/configuration/target.md",
+      "updatedAt": "2026-03-10T09:01:02.300Z"
+    },
+    "configuration/target": {
+      "hash": "dafd75bb",
+      "file": "datas/devdocs/webpack5/configuration/Target.md",
+      "updatedAt": "2026-03-10T09:01:02.304Z"
+    },
+    "concepts/targets": {
+      "hash": "89cec0fb",
+      "file": "datas/devdocs/webpack5/concepts/Targets.md",
+      "updatedAt": "2026-03-10T09:01:02.307Z"
+    },
+    "plugins/terser-webpack-plugin": {
+      "hash": "4c91f53b",
+      "file": "datas/devdocs/webpack5/plugins/TerserWebpackPlugin.md",
+      "updatedAt": "2026-03-10T09:01:02.309Z"
+    },
+    "concepts/manifest": {
+      "hash": "fcc939e7",
+      "file": "datas/devdocs/webpack5/concepts/The Manifest.md",
+      "updatedAt": "2026-03-10T09:01:02.323Z"
+    },
+    "loaders/thread-loader": {
+      "hash": "91693d26",
+      "file": "datas/devdocs/webpack5/loaders/thread-loader.md",
+      "updatedAt": "2026-03-10T09:01:02.327Z"
+    },
+    "guides/tree-shaking": {
+      "hash": "c846c197",
+      "file": "datas/devdocs/webpack5/guides/Tree Shaking.md",
+      "updatedAt": "2026-03-10T09:01:02.330Z"
+    },
+    "configuration/watch#troubleshooting": {
+      "hash": "63a065",
+      "file": "datas/devdocs/webpack5/configuration/Troubleshooting.md",
+      "updatedAt": "2026-03-10T09:01:02.336Z"
+    },
+    "configuration/configuration-languages#typescript": {
+      "hash": "aea2055d",
+      "file": "datas/devdocs/webpack5/configuration/TypeScript.md",
+      "updatedAt": "2026-03-10T09:01:02.343Z"
+    },
+    "guides/typescript": {
+      "hash": "ce7ecc99",
+      "file": "datas/devdocs/webpack5/guides/TypeScript.md",
+      "updatedAt": "2026-03-10T09:01:02.346Z"
+    },
+    "concepts/under-the-hood": {
+      "hash": "fc8de523",
+      "file": "datas/devdocs/webpack5/concepts/Under The Hood.md",
+      "updatedAt": "2026-03-10T09:01:02.350Z"
+    },
+    "configuration/mode#usage": {
+      "hash": "a1c7d3ce",
+      "file": "datas/devdocs/webpack5/configuration/Usage.md",
+      "updatedAt": "2026-03-10T09:01:02.353Z"
+    },
+    "configuration/index#use-a-different-configuration-file": {
+      "hash": "2ab46e6b",
+      "file": "datas/devdocs/webpack5/configuration/Use a different configuration file.md",
+      "updatedAt": "2026-03-10T09:01:02.356Z"
+    },
+    "configuration/module#useentry": {
+      "hash": "da7350ce",
+      "file": "datas/devdocs/webpack5/configuration/UseEntry.md",
+      "updatedAt": "2026-03-10T09:01:02.358Z"
+    },
+    "loaders/val-loader": {
+      "hash": "a8e60880",
+      "file": "datas/devdocs/webpack5/loaders/val-loader.md",
+      "updatedAt": "2026-03-10T09:01:02.381Z"
+    },
+    "configuration/watch#watch": {
+      "hash": "63a065",
+      "file": "datas/devdocs/webpack5/configuration/watch.md",
+      "updatedAt": "2026-03-10T09:01:02.385Z"
+    },
+    "configuration/watch": {
+      "hash": "63a065",
+      "file": "datas/devdocs/webpack5/configuration/Watch and WatchOptions.md",
+      "updatedAt": "2026-03-10T09:01:02.387Z"
+    },
+    "plugins/watch-ignore-plugin": {
+      "hash": "2b465dc",
+      "file": "datas/devdocs/webpack5/plugins/WatchIgnorePlugin.md",
+      "updatedAt": "2026-03-10T09:01:02.391Z"
+    },
+    "configuration/watch#watchoptions": {
+      "hash": "63a065",
+      "file": "datas/devdocs/webpack5/configuration/watchOptions.md",
+      "updatedAt": "2026-03-10T09:01:02.393Z"
+    },
+    "guides/web-workers": {
+      "hash": "12929279",
+      "file": "datas/devdocs/webpack5/guides/Web Workers.md",
+      "updatedAt": "2026-03-10T09:01:02.396Z"
+    },
+    "api/webpack-dev-server": {
+      "hash": "f20afa42",
+      "file": "datas/devdocs/webpack5/api/webpack-dev-server API.md",
+      "updatedAt": "2026-03-10T09:01:02.397Z"
+    },
+    "concepts/why-webpack": {
+      "hash": "6e01cf06",
+      "file": "datas/devdocs/webpack5/concepts/Why webpack.md",
+      "updatedAt": "2026-03-10T09:01:02.399Z"
+    }
+  }
+}

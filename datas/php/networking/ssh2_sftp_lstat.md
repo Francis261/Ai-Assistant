@@ -1,0 +1,57 @@
+# ssh2_sftp_lstat
+
+Source: https://devdocs.io/php/function.ssh2-sftp-lstat
+
+(PECL ssh2 >= 0.9.0)
+
+ssh2_sftp_lstat — Stat a symbolic link
+
+### Description
+
+```
+ssh2_sftp_lstat(resource $sftp, string $path): array
+```
+
+Stats a symbolic link on the remote filesystem without following the link.
+
+This function is similar to using the lstat() function with the ssh2.sftp:// wrapper and returns the same values.
+
+### Parameters
+
+An SSH2 SFTP resource opened by ssh2_sftp().
+
+Path to the remote symbolic link.
+
+### Return Values
+
+See the documentation for stat() for details on the values which may be returned.
+
+### Examples
+
+Example #1 Stating a symbolic link via SFTP
+
+```
+<?php
+$connection = ssh2_connect('shell.example.com', 22);
+ssh2_auth_password($connection, 'username', 'password');
+
+$sftp = ssh2_sftp($connection);
+$statinfo = ssh2_sftp_lstat($sftp, '/path/to/symlink');
+
+$filesize = $statinfo['size'];
+$group = $statinfo['gid'];
+$owner = $statinfo['uid'];
+$atime = $statinfo['atime'];
+$mtime = $statinfo['mtime'];
+$mode = $statinfo['mode'];
+?>
+```
+
+### See Also
+
+- ssh2_sftp_stat() - Stat a file on a remote filesystem
+- lstat() - Gives information about a file or symbolic link
+- stat() - Gives information about a file
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.ssh2-sftp-lstat.php

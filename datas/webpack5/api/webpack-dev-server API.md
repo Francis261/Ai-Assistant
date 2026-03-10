@@ -1,0 +1,183 @@
+# webpack-dev-server API
+
+Source: https://devdocs.io/webpack~5/api/webpack-dev-server
+
+webpack-dev-server provides a Node.js API which can be used directly in Node.js runtime.
+
+## Installation
+
+To start using the webpack-dev-server Node.js API, first install webpack and webpack-dev-server if you haven’t yet:
+
+```
+npm install --save-dev webpack webpack-dev-server
+```
+
+Then require the modules in your Node.js script:
+
+```
+const Webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
+```
+
+## start
+
+It instructs webpack-dev-server instance to start the server.
+
+server.js
+
+```
+const Webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
+const webpackConfig = require('./webpack.config.js');
+
+const compiler = Webpack(webpackConfig);
+const devServerOptions = { ...webpackConfig.devServer, open: true };
+const server = new WebpackDevServer(devServerOptions, compiler);
+
+const runServer = async () => {
+  console.log('Starting server...');
+  await server.start();
+};
+
+runServer();
+```
+
+And then run the server with the following command:
+
+```
+node server.js
+```
+
+## startCallback(callback)
+
+It instructs webpack-dev-server instance to start the server and then run the callback function.
+
+server.js
+
+```
+const Webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
+const webpackConfig = require('./webpack.config.js');
+
+const compiler = Webpack(webpackConfig);
+const devServerOptions = { ...webpackConfig.devServer, open: true };
+const server = new WebpackDevServer(devServerOptions, compiler);
+
+server.startCallback(() => {
+  console.log('Successfully started server on http://localhost:8080');
+});
+```
+
+And then run the server with the following command:
+
+```
+node server.js
+```
+
+## stop
+
+It instructs webpack-dev-server instance to stop the server.
+
+server.js
+
+```
+const Webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
+const webpackConfig = require('./webpack.config.js');
+
+const compiler = Webpack(webpackConfig);
+const devServerOptions = { ...webpackConfig.devServer, open: true };
+const server = new WebpackDevServer(devServerOptions, compiler);
+
+const runServer = async () => {
+  console.log('Starting server...');
+  await server.start();
+};
+
+const stopServer = async () => {
+  console.log('Stopping server...');
+  await server.stop();
+};
+
+runServer();
+
+setTimeout(stopServer, 5000);
+```
+
+And then run the server with the following command:
+
+```
+node server.js
+```
+
+## stopCallback(callback)
+
+It instructs webpack-dev-server instance to stop the server and then run the callback function.
+
+server.js
+
+```
+const Webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
+const webpackConfig = require('./webpack.config.js');
+
+const compiler = Webpack(webpackConfig);
+const devServerOptions = { ...webpackConfig.devServer, open: true };
+const server = new WebpackDevServer(devServerOptions, compiler);
+
+server.startCallback(() => {
+  console.log('Successfully started server on http://localhost:8080');
+});
+
+const stopServer = () =>
+  server.stopCallback(() => {
+    console.log('Server stopped.');
+  });
+
+setTimeout(stopServer, 5000);
+```
+
+And then run the server with the following command:
+
+```
+node server.js
+```
+
+## internalIP(family: "v4" | "v6")
+
+Returns the internal IPv4/IPv6 address asynchronously.
+
+server.js
+
+```
+const WebpackDevServer = require('webpack-dev-server');
+
+const logInternalIPs = async () => {
+  const localIPv4 = await WebpackDevServer.internalIP('v4');
+  const localIPv6 = await WebpackDevServer.internalIP('v6');
+
+  console.log('Local IPv4 address:', localIPv4);
+  console.log('Local IPv6 address:', localIPv6);
+};
+
+logInternalIPs();
+```
+
+## internalIPSync(family: "v4" | "v6")
+
+Returns the internal IPv4/IPv6 address synchronously.
+
+server.js
+
+```
+const WebpackDevServer = require('webpack-dev-server');
+
+const localIPv4 = WebpackDevServer.internalIPSync('v4');
+const localIPv6 = WebpackDevServer.internalIPSync('v6');
+
+console.log('Local IPv4 address:', localIPv4);
+console.log('Local IPv6 address:', localIPv6);
+```
+
+© JS Foundation and other contributorsLicensed under the Creative Commons Attribution License 4.0.
+ https://webpack.js.org/api/webpack-dev-server

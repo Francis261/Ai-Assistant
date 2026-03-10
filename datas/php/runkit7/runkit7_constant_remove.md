@@ -1,0 +1,30 @@
+# runkit7_constant_remove
+
+Source: https://devdocs.io/php/function.runkit7-constant-remove
+
+(PECL runkit7 >= Unknown)
+
+runkit7_constant_remove — Remove/Delete an already defined constant
+
+### Description
+
+```
+runkit7_constant_remove(string $constant_name): bool
+```
+
+### Parameters
+
+Name of the constant to remove. Either the name of a global constant, or classname::constname indicating a class constant.
+
+### Return Values
+
+Returns true on success or false on failure.
+
+### See Also
+
+- define() - Defines a named constant
+- runkit7_constant_add() - Similar to define(), but allows defining in class definitions as well
+- runkit7_constant_redefine() - Redefine an already defined constant
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.runkit7-constant-remove.php

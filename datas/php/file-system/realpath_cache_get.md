@@ -1,0 +1,69 @@
+# realpath_cache_get
+
+Source: https://devdocs.io/php/function.realpath-cache-get
+
+(PHP 5 >= 5.3.2, PHP 7, PHP 8)
+
+realpath_cache_get — Get realpath cache entries
+
+### Description
+
+```
+realpath_cache_get(): array
+```
+
+Get the contents of the realpath cache.
+
+### Parameters
+
+This function has no parameters.
+
+### Return Values
+
+Returns an array of realpath cache entries. The keys are original path entries, and the values are arrays of data items, containing the resolved path, expiration date, and other options kept in the cache.
+
+### Examples
+
+Example #1 realpath_cache_get() example
+
+```
+<?php
+var_dump(realpath_cache_get());
+?>
+```
+
+The above example will output something similar to:
+
+```
+array(2) {
+  ["/test"]=>
+  array(4) {
+    ["key"]=>
+    int(123456789)
+    ["is_dir"]=>
+    bool(true)
+    ["realpath"]=>
+    string(5) "/test"
+    ["expires"]=>
+    int(1260318939)
+  }
+  ["/test/test.php"]=>
+  array(4) {
+    ["key"]=>
+    int(987654321)
+    ["is_dir"]=>
+    bool(false)
+    ["realpath"]=>
+    string(12) "/root/test.php"
+    ["expires"]=>
+    int(1260318939)
+  }
+}
+```
+
+### See Also
+
+- realpath_cache_size() - Get realpath cache size
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.realpath-cache-get.php

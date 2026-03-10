@@ -1,0 +1,1462 @@
+[
+  {
+    "path": "docs/handbook/2/everyday-types#non-null-assertion-operator-postfix-",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/triple-slash-directives#using---noresolve",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/declaration-files/publishing#-reference-path-",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/namespaces-and-modules#-reference-ing-a-module",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsdoc-supported-types#author",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsdoc-supported-types#typedef-callback-and-param",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsdoc-supported-types#constructor",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsdoc-supported-types#deprecated",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsdoc-supported-types#enum",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsdoc-supported-types#extends",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsdoc-supported-types#implements",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsdoc-supported-types#import",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsdoc-supported-types#link",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsdoc-supported-types#override",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsdoc-supported-types#param-and-returns",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsdoc-supported-types#readonly",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsdoc-supported-types#satisfies",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsdoc-supported-types#see",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsdoc-supported-types#template",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsdoc-supported-types#this",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsdoc-supported-types#type",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/modules/appendices/esm-cjs-interop#no-__esmodule-detection-the-double-default-problem",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#allowArbitraryExtensions-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#allowArbitraryExtensions-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#allowImportingTsExtensions-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#allowImportingTsExtensions-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#allowJs-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#allowJs-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#allowSyntheticDefaultImports-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#allowSyntheticDefaultImports-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#allowUmdGlobalAccess-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#allowUmdGlobalAccess-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#allowUnreachableCode-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#allowUnreachableCode-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#allowUnusedLabels-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#allowUnusedLabels-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#alwaysStrict-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#alwaysStrict-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/modules/reference#amd",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/objects#the-array-type",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#assumeChangesOnlyAffectDirectDependencies-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#assumeChangesOnlyAffectDirectDependencies-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/variable-declarations#await-using-vs-await",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/variable-declarations#await-using-and-return",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#baseUrl-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#baseUrl-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/declaration-files/do-s-and-don-ts#number-string-boolean-symbol-and-object",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/modules/reference#bundler",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/utility-types#capitalizestringtype",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/template-literal-types#capitalizestringtype",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#charset-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#charset-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#checkJs-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#checkJs-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/modules/reference#classic",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/modules/reference#commonjs",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#composite-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#composite-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/interfaces#readonly-vs-const",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/typescript-in-5-minutes-func#readonly-and-const",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/enums#const-enums",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#customConditions-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#customConditions-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#declaration-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#declaration-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#declarationDir-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#declarationDir-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#declarationMap-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#declarationMap-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#diagnostics-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#diagnostics-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#type-disableFilenameBasedTypeAcquisition-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#type-disableFilenameBasedTypeAcquisition-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#disableReferencedProjectLoad-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#disableReferencedProjectLoad-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#disableSizeLimit-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#disableSizeLimit-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#disableSolutionSearching-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#disableSolutionSearching-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#disableSourceOfProjectReferenceRedirect-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#disableSourceOfProjectReferenceRedirect-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/dom-manipulation#documentcreateelement",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/dom-manipulation#documentgetelementbyid",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#downlevelIteration-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#downlevelIteration-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#emitBOM-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#emitBOM-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#emitDeclarationOnly-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#emitDeclarationOnly-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#emitDecoratorMetadata-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#emitDecoratorMetadata-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#type-enable-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#type-enable-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#erasableSyntaxOnly-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#erasableSyntaxOnly-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/modules/reference#es2015-es2020-es2022-esnext",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/modules/appendices/esm-cjs-interop#applications-with-commonjs-code-should-always-enable-esmoduleinterop",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#esModuleInterop-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#esModuleInterop-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#exactOptionalPropertyTypes-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#exactOptionalPropertyTypes-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#type-exclude-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#type-exclude-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#exclude-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#exclude-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#watch-excludeDirectories-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#watch-excludeDirectories-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#watch-excludeFiles-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#watch-excludeFiles-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#experimentalDecorators-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#experimentalDecorators-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#explainFiles-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#explainFiles-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/modules/reference#export--and-import--require",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#extendedDiagnostics-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#extendedDiagnostics-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#extends-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#extends-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/classes#extends-clauses",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#watch-fallbackPolling-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#watch-fallbackPolling-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#files-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#files-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/iterators-and-generators#forof-vs-forin-statements",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/iterators-and-generators#forof-statements",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#forceConsistentCasingInFileNames-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#forceConsistentCasingInFileNames-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/functions#function",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#generateCpuProfile-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#generateCpuProfile-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#generateTrace-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#generateTrace-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/integrating-with-build-tools#using-grunt-browserify-combined-with-tsify",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/integrating-with-build-tools#using-grunt-ts-no-longer-maintained",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/gulp#create-a-gulpfilejs",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/classes#implements-clauses",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/modules/reference#import-types",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#importHelpers-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#importHelpers-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#importsNotUsedAsValues-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#importsNotUsedAsValues-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#include-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#type-include-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#include-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#type-include-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#incremental-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#incremental-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#inlineSourceMap-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#inlineSourceMap-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#inlineSources-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#inlineSources-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/declaration-files/deep-dive#adding-using-an-interface",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#isolatedDeclarations-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#isolatedDeclarations-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#isolatedModules-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#isolatedModules-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/iterators-and-generators#iterable-interface",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/jsx#the-jsx-namespace",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#jsx-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#jsx-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#jsxFactory-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#jsxFactory-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#jsxFragmentFactory-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#jsxFragmentFactory-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#jsxImportSource-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#jsxImportSource-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#keyofStringsOnly-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#keyofStringsOnly-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#lib-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#lib-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#libReplacement-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#libReplacement-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#listEmittedFiles-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#listEmittedFiles-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#listFiles-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#listFiles-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/template-literal-types#lowercasestringtype",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/utility-types#lowercasestringtype",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#mapRoot-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#mapRoot-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#maxNodeModuleJsDepth-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#maxNodeModuleJsDepth-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#module-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/modules/appendices/esm-cjs-interop#setting-the-right-module-compiler-option-is-critical",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#module-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#moduleDetection-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#moduleDetection-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#moduleResolution-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#moduleResolution-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#moduleSuffixes-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#moduleSuffixes-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/declaration-files/deep-dive#adding-using-a-namespace",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/functions#never",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#newLine-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#newLine-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noCheck-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noCheck-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/modules/reference#node10-formerly-known-as-node",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/dom-manipulation#nodeappendchild",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/modules/reference#node16-nodenext",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/modules/reference#node16-node18-node20-nodenext",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noEmit-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noEmit-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noEmitHelpers-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noEmitHelpers-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noEmitOnError-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noEmitOnError-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noErrorTruncation-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noErrorTruncation-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noFallthroughCasesInSwitch-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noFallthroughCasesInSwitch-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noImplicitAny-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noImplicitAny-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/everyday-types#noimplicitany",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noImplicitOverride-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noImplicitOverride-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noImplicitReturns-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noImplicitReturns-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noImplicitThis-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noImplicitThis-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noImplicitUseStrict-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noImplicitUseStrict-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noLib-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noLib-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noPropertyAccessFromIndexSignature-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noPropertyAccessFromIndexSignature-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noResolve-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noResolve-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noStrictGenericChecks-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noStrictGenericChecks-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noUncheckedIndexedAccess-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noUncheckedIndexedAccess-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noUncheckedSideEffectImports-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noUncheckedSideEffectImports-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noUnusedLocals-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noUnusedLocals-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#noUnusedParameters-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#noUnusedParameters-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/variable-declarations#null-and-undefined",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/functions#object",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#out-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#out-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#outDir-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#outDir-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#outFile-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#outFile-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#paths-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#paths-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#plugins-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#plugins-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/modules/reference#preserve",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#preserveConstEnums-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#preserveConstEnums-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#preserveSymlinks-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#preserveSymlinks-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#preserveValueImports-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#preserveValueImports-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#preserveWatchOutput-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#preserveWatchOutput-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#pretty-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#pretty-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/classes#private",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/classes#understanding-typescripts-private",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/classes#protected",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/classes#understanding-protected",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/classes#public",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#reactNamespace-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#reactNamespace-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/objects#readonly-tuple-types",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/objects#readonly-properties",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/classes#readonly",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/objects#the-readonlyarray-type",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#references-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#references-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#removeComments-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#removeComments-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/modules/appendices/esm-cjs-interop#cannot-require-a-true-es-module-before-nodejs-v22",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#resolveJsonModule-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#resolveJsonModule-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#resolvePackageJsonExports-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#resolvePackageJsonExports-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#resolvePackageJsonImports-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#resolvePackageJsonImports-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#rewriteRelativeImportExtensions-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#rewriteRelativeImportExtensions-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#rootDir-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#rootDir-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#rootDirs-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#rootDirs-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#skipDefaultLibCheck-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#skipDefaultLibCheck-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#skipLibCheck-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#skipLibCheck-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#sourceMap-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#sourceMap-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#sourceRoot-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#sourceRoot-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#strict-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#strict-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#strictBindCallApply-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#strictBindCallApply-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#strictBuiltinIteratorReturn-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#strictBuiltinIteratorReturn-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#strictFunctionTypes-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#strictFunctionTypes-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/everyday-types#strictnullchecks-on",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#strictNullChecks-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/everyday-types#strictnullchecks-off",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#strictNullChecks-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#strictPropertyInitialization-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#strictPropertyInitialization-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#stripInternal-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#stripInternal-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#suppressExcessPropertyErrors-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#suppressExcessPropertyErrors-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#suppressImplicitAnyIndexErrors-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#suppressImplicitAnyIndexErrors-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/symbols#symbolasynciterator",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/symbols#symbolhasinstance",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/symbols#symbolisconcatspreadable",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/symbols#symboliterator",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/symbols#symbolmatch",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/symbols#symbolreplace",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/symbols#symbolsearch",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/symbols#symbolspecies",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/symbols#symbolsplit",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/symbols#symboltoprimitive",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/symbols#symboltostringtag",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/symbols#symbolunscopables",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#watch-synchronousWatchDirectory-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#watch-synchronousWatchDirectory-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/modules/reference#system",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#target-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#target-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/functions#this-and-arrow-functions",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/classes#this-parameters",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/classes#this-based-type-guards",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/functions#this-parameters",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#traceResolution-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#traceResolution-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#tsBuildInfoFile-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#tsBuildInfoFile-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/project-references#tsc--b-commandline",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#typeRoots-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#typeRoots-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#types-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#types-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/modules/reference#umd",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/utility-types#uncapitalizestringtype",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/template-literal-types#uncapitalizestringtype",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/functions#unknown",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/utility-types#uppercasestringtype",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/template-literal-types#uppercasestringtype",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#useDefineForClassFields-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#useDefineForClassFields-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#useUnknownInCatchVariables-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#useUnknownInCatchVariables-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#verbatimModuleSyntax-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#verbatimModuleSyntax-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/functions#void",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "docs/handbook/2/functions#return-type-void",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#watch-watchDirectory-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#watch-watchDirectory-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig/index#watch-watchFile-config",
+    "error": "content missing from db.json"
+  },
+  {
+    "path": "tsconfig#watch-watchFile-config",
+    "error": "content missing from db.json"
+  }
+]

@@ -1,0 +1,53 @@
+# gmp_divexact
+
+Source: https://devdocs.io/php/function.gmp-divexact
+
+(PHP 4 >= 4.0.4, PHP 5, PHP 7, PHP 8)
+
+gmp_divexact — Exact division of numbers
+
+### Description
+
+```
+gmp_divexact(GMP|int|string $num1, GMP|int|string $num2): GMP
+```
+
+Divides num1 by num2, using fast "exact division" algorithm. This function produces correct results only when it is known in advance that num2 divides num1.
+
+### Parameters
+
+The number being divided.
+
+A GMP object, an int, or a string that can be interpreted as a number following the same logic as if the string was used in gmp_init() with automatic base detection (i.e. when base is equal to 0).
+
+The number that num1 is being divided by.
+
+A GMP object, an int, or a string that can be interpreted as a number following the same logic as if the string was used in gmp_init() with automatic base detection (i.e. when base is equal to 0).
+
+### Return Values
+
+A GMP object.
+
+### Examples
+
+Example #1 gmp_divexact() example
+
+```
+<?php
+$div1 = gmp_divexact("10", "2");
+echo gmp_strval($div1) . "\n";
+
+$div2 = gmp_divexact("10", "3"); // bogus result
+echo gmp_strval($div2) . "\n";
+?>
+```
+
+The above example will output:
+
+```
+5
+2863311534
+```
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.gmp-divexact.php

@@ -1,0 +1,59 @@
+# set_include_path
+
+Source: https://devdocs.io/php/function.set-include-path
+
+(PHP 4 >= 4.3.0, PHP 5, PHP 7, PHP 8)
+
+set_include_path — Sets the include_path configuration option
+
+### Description
+
+```
+set_include_path(string $include_path): string|false
+```
+
+Sets the include_path configuration option for the duration of the script.
+
+### Parameters
+
+The new value for the include_path
+
+### Return Values
+
+Returns the old include_path on success or false on failure.
+
+### Examples
+
+Example #1 set_include_path() example
+
+```
+<?php
+set_include_path('/usr/lib/pear');
+
+// Or using ini_set()
+ini_set('include_path', '/usr/lib/pear');
+?>
+```
+
+Example #2 Adding to the include path
+
+Making use of the PATH_SEPARATOR constant, it is possible to extend the include path regardless of the operating system.
+
+In this example we add /usr/lib/pear to the end of the existing include_path.
+
+```
+<?php
+$path = '/usr/lib/pear';
+set_include_path(get_include_path() . PATH_SEPARATOR . $path);
+?>
+```
+
+### See Also
+
+- ini_set() - Sets the value of a configuration option
+- get_include_path() - Gets the current include_path configuration option
+- restore_include_path() - Restores the value of the include_path configuration option
+- include - include
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.set-include-path.php

@@ -1,0 +1,112 @@
+# imagecolorallocatealpha
+
+Source: https://devdocs.io/php/function.imagecolorallocatealpha
+
+(PHP 4 >= 4.3.2, PHP 5, PHP 7, PHP 8)
+
+imagecolorallocatealpha — Allocate a color for an image
+
+### Description
+
+```
+imagecolorallocatealpha(
+ GdImage $image,
+ int $red,
+ int $green,
+ int $blue,
+ int $alpha
+): int|false
+```
+
+imagecolorallocatealpha() behaves identically to imagecolorallocate() with the addition of the transparency parameter alpha.
+
+### Parameters
+
+A GdImage object, returned by one of the image creation functions, such as imagecreatetruecolor().
+
+Value of red component.
+
+Value of green component.
+
+Value of blue component.
+
+A value between 0 and 127. 0 indicates completely opaque while 127 indicates completely transparent.
+
+### Return Values
+
+A color identifier or false if the allocation failed.
+
+This function may return Boolean false, but may also return a non-Boolean value which evaluates to false. Please read the section on Booleans for more information. Use the === operator for testing the return value of this function.
+
+### Changelog
+
+### Examples
+
+Example #1 Example of using imagecolorallocatealpha()
+
+```
+<?php
+$size = 300;
+$image=imagecreatetruecolor($size, $size);
+
+// something to get a white background with black border
+$back = imagecolorallocate($image, 255, 255, 255);
+$border = imagecolorallocate($image, 0, 0, 0);
+imagefilledrectangle($image, 0, 0, $size - 1, $size - 1, $back);
+imagerectangle($image, 0, 0, $size - 1, $size - 1, $border);
+
+$yellow_x = 100;
+$yellow_y = 75;
+$red_x    = 120;
+$red_y    = 165;
+$blue_x   = 187;
+$blue_y   = 125;
+$radius   = 150;
+
+// allocate colors with alpha values
+$yellow = imagecolorallocatealpha($image, 255, 255, 0, 75);
+$red    = imagecolorallocatealpha($image, 255, 0, 0, 75);
+$blue   = imagecolorallocatealpha($image, 0, 0, 255, 75);
+
+// drawing 3 overlapped circle
+imagefilledellipse($image, $yellow_x, $yellow_y, $radius, $radius, $yellow);
+imagefilledellipse($image, $red_x, $red_y, $radius, $radius, $red);
+imagefilledellipse($image, $blue_x, $blue_y, $radius, $radius, $blue);
+
+// don't forget to output a correct header!
+header('Content-Type: image/png');
+
+// and finally, output the result
+imagepng($image);
+?>
+```
+
+The above example will output something similar to:
+
+Example #2 Convert typical alpha values for use with imagecolorallocatealpha()
+
+Usually alpha values of 0 designate fully transparent pixels, and the alpha channel has 8 bits. To convert such alpha values to be compatible with imagecolorallocatealpha(), some simple arithmetic is sufficient:
+
+```
+<?php
+$alpha8 = 0; // fully transparent
+var_dump(127 - ($alpha8 >> 1));
+$alpha8 = 255; // fully opaque
+var_dump(127 - ($alpha8 >> 1));
+?>
+```
+
+The above example will output:
+
+```
+int(127)
+int(0)
+```
+
+### See Also
+
+- imagecolorallocate() - Allocate a color for an image
+- imagecolordeallocate() - De-allocate a color for an image
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.imagecolorallocatealpha.php

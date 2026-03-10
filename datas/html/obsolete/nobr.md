@@ -1,0 +1,31 @@
+# <nobr>: The Non-Breaking Text element
+
+Source: https://devdocs.io/html/reference/elements/nobr
+
+Deprecated: This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.
+
+The <nobr> HTML element prevents the text it contains from automatically wrapping across multiple lines, potentially resulting in the user having to scroll horizontally to see the entire width of the text.
+
+Warning: Although this element is widely supported, it was never standard HTML, so you shouldn't use it. Instead, use the CSS property white-space like this:
+
+```
+<span class="nobr">Long line with no breaks</span>
+```
+
+```
+.nobr {
+  white-space: nowrap;
+}
+```
+
+## Specifications
+
+## Browser compatibility
+
+## See also
+
+- white-space
+- overflow
+
+© 2005–2025 MDN contributors.Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+ https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/nobr

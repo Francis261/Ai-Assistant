@@ -1,0 +1,103 @@
+# odbc_statistics
+
+Source: https://devdocs.io/php/function.odbc-statistics
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+odbc_statistics — Retrieve statistics about a table
+
+### Description
+
+```
+odbc_statistics(
+ Odbc\Connection $odbc,
+ ?string $catalog,
+ string $schema,
+ string $table,
+ int $unique,
+ int $accuracy
+): Odbc\Result|false
+```
+
+Get statistics about a table and its indexes.
+
+### Parameters
+
+The ODBC connection object, see odbc_connect() for details.
+
+The catalog ('qualifier' in ODBC 2 parlance).
+
+The schema ('owner' in ODBC 2 parlance).
+
+The table name.
+
+The type of the index. One of SQL_INDEX_UNIQUE or SQL_INDEX_ALL.
+
+One of SQL_ENSURE or SQL_QUICK. The latter requests that the driver retrieve the CARDINALITY and PAGES only if they are readily available from the server.
+
+### Return Values
+
+Returns an ODBC result object or false on failure.
+
+The result set has the following columns:
+
+- TABLE_CAT
+- TABLE_SCHEM
+- TABLE_NAME
+- NON_UNIQUE
+- INDEX_QUALIFIER
+- INDEX_NAME
+- TYPE
+- ORDINAL_POSITION
+- COLUMN_NAME
+- ASC_OR_DESC
+- CARDINALITY
+- PAGES
+- FILTER_CONDITION
+
+The result set is ordered by NON_UNIQUE, TYPE, INDEX_QUALIFIER, INDEX_NAME and ORDINAL_POSITION.
+
+### Changelog
+
+### Examples
+
+Example #1 List Statistics of a Table
+
+```
+<?php
+$conn = odbc_connect($dsn, $user, $pass);
+$statistics = odbc_statistics($conn, 'TutorialDB', 'dbo', 'TEST', SQL_INDEX_UNIQUE, SQL_QUICK);
+while (($row = odbc_fetch_array($statistics))) {
+    print_r($row);
+    break; // further rows omitted for brevity
+}
+?>
+```
+
+The above example will output something similar to:
+
+```
+Array
+(
+    [TABLE_CAT] => TutorialDB
+    [TABLE_SCHEM] => dbo
+    [TABLE_NAME] => TEST
+    [NON_UNIQUE] =>
+    [INDEX_QUALIFIER] =>
+    [INDEX_NAME] =>
+    [TYPE] => 0
+    [ORDINAL_POSITION] =>
+    [COLUMN_NAME] =>
+    [ASC_OR_DESC] =>
+    [CARDINALITY] => 15
+    [PAGES] => 3
+    [FILTER_CONDITION] =>
+)
+```
+
+### See Also
+
+- odbc_tables() - Get the list of table names stored in a specific data source
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.odbc-statistics.php

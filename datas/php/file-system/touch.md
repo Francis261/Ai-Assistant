@@ -1,0 +1,70 @@
+# touch
+
+Source: https://devdocs.io/php/function.touch
+
+(PHP 4, PHP 5, PHP 7, PHP 8)
+
+touch — Sets access and modification time of file
+
+### Description
+
+```
+touch(string $filename, ?int $mtime = null, ?int $atime = null): bool
+```
+
+Attempts to set the access and modification times of the file named in the filename parameter to the value given in mtime. Note that the access time is always modified, regardless of the number of parameters.
+
+If the file does not exist, it will be created.
+
+### Parameters
+
+The name of the file being touched.
+
+The touch time. If mtime is null, the current system time() is used.
+
+If not null, the access time of the given filename is set to the value of atime. Otherwise, it is set to the value passed to the mtime parameter. If both are null, the current system time is used.
+
+### Return Values
+
+Returns true on success or false on failure.
+
+### Changelog
+
+### Examples
+
+Example #1 touch() example
+
+```
+<?php
+if (touch($filename)) {
+    echo $filename . ' modification time has been changed to present time';
+} else {
+    echo 'Sorry, could not change modification time of ' . $filename;
+}
+?>
+```
+
+Example #2 touch() using the mtime parameter
+
+```
+<?php
+// This is the touch time, we'll set it to one hour in the past.
+$time = time() - 3600;
+
+// Touch the file
+if (!touch('some_file.txt', $time)) {
+    echo 'Whoops, something went wrong...';
+} else {
+    echo 'Touched file with success';
+}
+?>
+```
+
+### Notes
+
+Note:
+
+Note that time resolution may differ from one file system to another.
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.touch.php

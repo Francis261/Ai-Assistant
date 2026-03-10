@@ -1,0 +1,73 @@
+# CLI Commands
+
+Source: https://devdocs.io/npm/cli/v10/commands
+
+- npmJavaScript package manager
+- npm accessSet access level on published packages
+- npm adduserAdd a registry user account
+- npm auditRun a security audit
+- npm bugsBugs for a package in a web browser maybe
+- npm cacheManipulates packages cache
+- npm ciInstall a project with a clean slate
+- npm completionTab completion for npm
+- npm configManage the npm configuration files
+- npm dedupeReduce duplication
+- npm deprecateDeprecate a version of a package
+- npm diffThe registry diff command
+- npm dist-tagModify package distribution tags
+- npm docsDocs for a package in a web browser maybe
+- npm doctorCheck your environments
+- npm editEdit an installed package
+- npm execRun a command from an npm package
+- npm explainExplain installed packages
+- npm exploreBrowse an installed package
+- npm find-dupesFind duplication in the package tree
+- npm fundRetrieve funding information
+- npm helpSearch npm help documentation
+- npm help-searchGet help on npm
+- npm hookManage registry hooks
+- npm initCreate a package.json file
+- npm installInstall a package
+- npm install-ci-testInstall a project with a clean slate and run tests
+- npm install-testInstall package(s) and run tests
+- npm linkSymlink a package folder
+- npm loginLogin to a registry user account
+- npm logoutLog out of the registry
+- npm lsList installed packages
+- npm orgManage orgs
+- npm outdatedCheck for outdated packages
+- npm ownerManage package owners
+- npm packCreate a tarball from a package
+- npm pingPing npm registry
+- npm pkgManages your package.json
+- npm prefixDisplay prefix
+- npm profileChange settings on your registry profile
+- npm pruneRemove extraneous packages
+- npm publishPublish a package
+- npm queryRetrieve a filtered list of packages
+- npm rebuildRebuild a package
+- npm repoOpen package repository page in the browser
+- npm restartRestart a package
+- npm rootDisplay npm root
+- npm run-scriptRun arbitrary package scripts
+- npm sbomGenerate a Software Bill of Materials (SBOM)
+- npm searchSearch for packages
+- npm shrinkwrapLock down dependency versions for publication
+- npm starMark your favorite packages
+- npm starsView packages marked as favorites
+- npm startStart a package
+- npm stopStop a package
+- npm teamManage organization teams and team memberships
+- npm testTest a package
+- npm tokenManage your authentication tokens
+- npm uninstallRemove a package
+- npm unpublishRemove a package from the registry
+- npm unstarRemove an item from your favorite packages
+- npm updateUpdate a package
+- npm versionBump a package version
+- npm viewView registry info
+- npm whoamiDisplay npm username
+- npxRun a command from an npm package
+
+© npm, Inc. and ContributorsLicensed under the npm License.npm is a trademark of npm, Inc.
+ https://docs.npmjs.com/cli/v10/commands

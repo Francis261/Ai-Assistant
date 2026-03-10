@@ -1,0 +1,80 @@
+# mdecrypt_generic
+
+Source: https://devdocs.io/php/function.mdecrypt-generic
+
+(PHP 4 >= 4.0.2, PHP 5, PHP 7 < 7.2.0, PECL mcrypt >= 1.0.0)
+
+mdecrypt_generic — Decrypts data
+
+This function has been DEPRECATED as of PHP 7.1.0 and REMOVED as of PHP 7.2.0. Relying on this function is highly discouraged.
+
+### Description
+
+```
+mdecrypt_generic(resource $td, string $data): string
+```
+
+This function decrypts data. Note that the length of the returned string can in fact be longer than the unencrypted string, due to the padding of the data.
+
+### Parameters
+
+An encryption descriptor returned by mcrypt_module_open()
+
+Encrypted data.
+
+### Return Values
+
+Returns decrypted string.
+
+### Examples
+
+Example #1 mdecrypt_generic() Example
+
+```
+<?php
+    /* Data */
+    $key = 'this is a very long key, even too long for the cipher';
+    $plain_text = 'very important data';
+
+    /* Open module, and create IV */
+    $td = mcrypt_module_open('des', '', 'ecb', '');
+    $key = substr($key, 0, mcrypt_enc_get_key_size($td));
+    $iv_size = mcrypt_enc_get_iv_size($td);
+    $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
+
+    /* Initialize encryption handle */
+    if (mcrypt_generic_init($td, $key, $iv) != -1) {
+
+        /* Encrypt data */
+        $c_t = mcrypt_generic($td, $plain_text);
+        mcrypt_generic_deinit($td);
+
+        /* Reinitialize buffers for decryption */
+        mcrypt_generic_init($td, $key, $iv);
+        $p_t = mdecrypt_generic($td, $c_t);
+
+        /* Clean up */
+        mcrypt_generic_deinit($td);
+        mcrypt_module_close($td);
+    }
+
+    if (strncmp($p_t, $plain_text, strlen($plain_text)) == 0) {
+        echo "ok\n";
+    } else {
+        echo "error\n";
+    }
+?>
+```
+
+The example above shows how to check if the data before the encryption is the same as the data after the decryption. It is very important to reinitialize the encryption buffer with mcrypt_generic_init() before you try to decrypt the data.
+
+The decryption handle should always be initialized with mcrypt_generic_init() with a key and an IV before calling this function. Where the encryption is done, you should free the encryption buffers by calling mcrypt_generic_deinit(). See mcrypt_module_open() for an example.
+
+### See Also
+
+- mcrypt_generic() - This function encrypts data
+- mcrypt_generic_init() - This function initializes all buffers needed for encryption
+- mcrypt_generic_deinit() - This function deinitializes an encryption module
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.mdecrypt-generic.php

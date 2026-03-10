@@ -1,0 +1,2317 @@
+{
+  "category": "redis",
+  "docMtime": 1681332415,
+  "generatedAt": "2026-03-10T08:50:00.871Z",
+  "entries": {
+    "acl-cat/index": {
+      "hash": "b1312e58",
+      "file": "datas/devdocs/redis/core-server-managment/acl cat.md",
+      "updatedAt": "2026-03-10T08:50:00.876Z"
+    },
+    "acl-deluser/index": {
+      "hash": "fb1825ea",
+      "file": "datas/devdocs/redis/core-server-managment/acl deluser.md",
+      "updatedAt": "2026-03-10T08:50:00.904Z"
+    },
+    "acl-dryrun/index": {
+      "hash": "71e8eaa2",
+      "file": "datas/devdocs/redis/core-server-managment/acl dryrun.md",
+      "updatedAt": "2026-03-10T08:50:00.910Z"
+    },
+    "acl-genpass/index": {
+      "hash": "d2400a40",
+      "file": "datas/devdocs/redis/core-server-managment/acl genpass.md",
+      "updatedAt": "2026-03-10T08:50:00.920Z"
+    },
+    "acl-getuser/index": {
+      "hash": "f02899c0",
+      "file": "datas/devdocs/redis/core-server-managment/acl getuser.md",
+      "updatedAt": "2026-03-10T08:50:00.926Z"
+    },
+    "acl-list/index": {
+      "hash": "6340e1f5",
+      "file": "datas/devdocs/redis/core-server-managment/acl list.md",
+      "updatedAt": "2026-03-10T08:50:00.933Z"
+    },
+    "acl-load/index": {
+      "hash": "b8d5580c",
+      "file": "datas/devdocs/redis/core-server-managment/acl load.md",
+      "updatedAt": "2026-03-10T08:50:00.948Z"
+    },
+    "acl-log/index": {
+      "hash": "91db1c74",
+      "file": "datas/devdocs/redis/core-server-managment/acl log.md",
+      "updatedAt": "2026-03-10T08:50:00.953Z"
+    },
+    "acl-save/index": {
+      "hash": "253961c8",
+      "file": "datas/devdocs/redis/core-server-managment/acl save.md",
+      "updatedAt": "2026-03-10T08:50:00.960Z"
+    },
+    "acl-setuser/index": {
+      "hash": "8c796df6",
+      "file": "datas/devdocs/redis/core-server-managment/acl setuser.md",
+      "updatedAt": "2026-03-10T08:50:00.963Z"
+    },
+    "acl-users/index": {
+      "hash": "4d5ee25e",
+      "file": "datas/devdocs/redis/core-server-managment/acl users.md",
+      "updatedAt": "2026-03-10T08:50:00.977Z"
+    },
+    "acl-whoami/index": {
+      "hash": "dc8c9b42",
+      "file": "datas/devdocs/redis/core-server-managment/acl whoami.md",
+      "updatedAt": "2026-03-10T08:50:00.980Z"
+    },
+    "append/index": {
+      "hash": "43f39bbf",
+      "file": "datas/devdocs/redis/core-string/append.md",
+      "updatedAt": "2026-03-10T08:50:00.985Z"
+    },
+    "asking/index": {
+      "hash": "f5db34af",
+      "file": "datas/devdocs/redis/core-cluster-management/asking.md",
+      "updatedAt": "2026-03-10T08:50:00.989Z"
+    },
+    "auth/index": {
+      "hash": "f7bd6bd6",
+      "file": "datas/devdocs/redis/core-connection-management/auth.md",
+      "updatedAt": "2026-03-10T08:50:00.992Z"
+    },
+    "bf.add/index": {
+      "hash": "77d02eab",
+      "file": "datas/devdocs/redis/stack-bloom-filter/bf.add.md",
+      "updatedAt": "2026-03-10T08:50:00.996Z"
+    },
+    "bf.card/index": {
+      "hash": "8ba1c1cf",
+      "file": "datas/devdocs/redis/stack-bloom-filter/bf.card.md",
+      "updatedAt": "2026-03-10T08:50:01.002Z"
+    },
+    "bf.exists/index": {
+      "hash": "99c5debd",
+      "file": "datas/devdocs/redis/stack-bloom-filter/bf.exists.md",
+      "updatedAt": "2026-03-10T08:50:01.007Z"
+    },
+    "bf.info/index": {
+      "hash": "4f254513",
+      "file": "datas/devdocs/redis/stack-bloom-filter/bf.info.md",
+      "updatedAt": "2026-03-10T08:50:01.011Z"
+    },
+    "bf.insert/index": {
+      "hash": "2c5e2195",
+      "file": "datas/devdocs/redis/stack-bloom-filter/bf.insert.md",
+      "updatedAt": "2026-03-10T08:50:01.018Z"
+    },
+    "bf.loadchunk/index": {
+      "hash": "365f65d3",
+      "file": "datas/devdocs/redis/stack-bloom-filter/bf.loadchunk.md",
+      "updatedAt": "2026-03-10T08:50:01.030Z"
+    },
+    "bf.madd/index": {
+      "hash": "e576b92b",
+      "file": "datas/devdocs/redis/stack-bloom-filter/bf.madd.md",
+      "updatedAt": "2026-03-10T08:50:01.042Z"
+    },
+    "bf.mexists/index": {
+      "hash": "897d232d",
+      "file": "datas/devdocs/redis/stack-bloom-filter/bf.mexists.md",
+      "updatedAt": "2026-03-10T08:50:01.045Z"
+    },
+    "bf.reserve/index": {
+      "hash": "324957f8",
+      "file": "datas/devdocs/redis/stack-bloom-filter/bf.reserve.md",
+      "updatedAt": "2026-03-10T08:50:01.049Z"
+    },
+    "bf.scandump/index": {
+      "hash": "3947247d",
+      "file": "datas/devdocs/redis/stack-bloom-filter/bf.scandump.md",
+      "updatedAt": "2026-03-10T08:50:01.053Z"
+    },
+    "bgrewriteaof/index": {
+      "hash": "f6460d9",
+      "file": "datas/devdocs/redis/core-server-managment/bgrewriteaof.md",
+      "updatedAt": "2026-03-10T08:50:01.056Z"
+    },
+    "bgsave/index": {
+      "hash": "c555bfe7",
+      "file": "datas/devdocs/redis/core-server-managment/bgsave.md",
+      "updatedAt": "2026-03-10T08:50:01.060Z"
+    },
+    "bitcount/index": {
+      "hash": "6483851a",
+      "file": "datas/devdocs/redis/core-bitmap/bitcount.md",
+      "updatedAt": "2026-03-10T08:50:01.063Z"
+    },
+    "bitfield/index": {
+      "hash": "276c7ca4",
+      "file": "datas/devdocs/redis/core-bitmap/bitfield.md",
+      "updatedAt": "2026-03-10T08:50:01.067Z"
+    },
+    "bitfield_ro/index": {
+      "hash": "66084ccd",
+      "file": "datas/devdocs/redis/core-bitmap/bitfield_ro.md",
+      "updatedAt": "2026-03-10T08:50:01.073Z"
+    },
+    "bitop/index": {
+      "hash": "f4bcfa50",
+      "file": "datas/devdocs/redis/core-bitmap/bitop.md",
+      "updatedAt": "2026-03-10T08:50:01.077Z"
+    },
+    "bitpos/index": {
+      "hash": "a1dba6c5",
+      "file": "datas/devdocs/redis/core-bitmap/bitpos.md",
+      "updatedAt": "2026-03-10T08:50:01.081Z"
+    },
+    "blmove/index": {
+      "hash": "85fa08f8",
+      "file": "datas/devdocs/redis/core-list/blmove.md",
+      "updatedAt": "2026-03-10T08:50:01.085Z"
+    },
+    "blmpop/index": {
+      "hash": "ebd680ae",
+      "file": "datas/devdocs/redis/core-list/blmpop.md",
+      "updatedAt": "2026-03-10T08:50:01.088Z"
+    },
+    "blpop/index": {
+      "hash": "989ff08a",
+      "file": "datas/devdocs/redis/core-list/blpop.md",
+      "updatedAt": "2026-03-10T08:50:01.092Z"
+    },
+    "brpop/index": {
+      "hash": "4a00067",
+      "file": "datas/devdocs/redis/core-list/brpop.md",
+      "updatedAt": "2026-03-10T08:50:01.101Z"
+    },
+    "brpoplpush/index": {
+      "hash": "1ed53b2a",
+      "file": "datas/devdocs/redis/core-list/brpoplpush.md",
+      "updatedAt": "2026-03-10T08:50:01.105Z"
+    },
+    "bzmpop/index": {
+      "hash": "8c5839b0",
+      "file": "datas/devdocs/redis/core-sorted-set/bzmpop.md",
+      "updatedAt": "2026-03-10T08:50:01.108Z"
+    },
+    "bzpopmax/index": {
+      "hash": "b0c58e1",
+      "file": "datas/devdocs/redis/core-sorted-set/bzpopmax.md",
+      "updatedAt": "2026-03-10T08:50:01.111Z"
+    },
+    "bzpopmin/index": {
+      "hash": "c9f2b221",
+      "file": "datas/devdocs/redis/core-sorted-set/bzpopmin.md",
+      "updatedAt": "2026-03-10T08:50:01.114Z"
+    },
+    "cf.add/index": {
+      "hash": "489c302e",
+      "file": "datas/devdocs/redis/stack-cuckoo-filter/cf.add.md",
+      "updatedAt": "2026-03-10T08:50:01.119Z"
+    },
+    "cf.addnx/index": {
+      "hash": "635f8182",
+      "file": "datas/devdocs/redis/stack-cuckoo-filter/cf.addnx.md",
+      "updatedAt": "2026-03-10T08:50:01.122Z"
+    },
+    "cf.count/index": {
+      "hash": "5f6787a0",
+      "file": "datas/devdocs/redis/stack-cuckoo-filter/cf.count.md",
+      "updatedAt": "2026-03-10T08:50:01.125Z"
+    },
+    "cf.del/index": {
+      "hash": "7976aa6e",
+      "file": "datas/devdocs/redis/stack-cuckoo-filter/cf.del.md",
+      "updatedAt": "2026-03-10T08:50:01.127Z"
+    },
+    "cf.exists/index": {
+      "hash": "d8b502f6",
+      "file": "datas/devdocs/redis/stack-cuckoo-filter/cf.exists.md",
+      "updatedAt": "2026-03-10T08:50:01.130Z"
+    },
+    "cf.info/index": {
+      "hash": "1c95c599",
+      "file": "datas/devdocs/redis/stack-cuckoo-filter/cf.info.md",
+      "updatedAt": "2026-03-10T08:50:01.134Z"
+    },
+    "cf.insert/index": {
+      "hash": "a0b41339",
+      "file": "datas/devdocs/redis/stack-cuckoo-filter/cf.insert.md",
+      "updatedAt": "2026-03-10T08:50:01.137Z"
+    },
+    "cf.insertnx/index": {
+      "hash": "f5f112c3",
+      "file": "datas/devdocs/redis/stack-cuckoo-filter/cf.insertnx.md",
+      "updatedAt": "2026-03-10T08:50:01.140Z"
+    },
+    "cf.loadchunk/index": {
+      "hash": "7c7eea51",
+      "file": "datas/devdocs/redis/stack-cuckoo-filter/cf.loadchunk.md",
+      "updatedAt": "2026-03-10T08:50:01.145Z"
+    },
+    "cf.mexists/index": {
+      "hash": "8592ebc1",
+      "file": "datas/devdocs/redis/stack-cuckoo-filter/cf.mexists.md",
+      "updatedAt": "2026-03-10T08:50:01.148Z"
+    },
+    "cf.reserve/index": {
+      "hash": "c3724863",
+      "file": "datas/devdocs/redis/stack-cuckoo-filter/cf.reserve.md",
+      "updatedAt": "2026-03-10T08:50:01.150Z"
+    },
+    "cf.scandump/index": {
+      "hash": "f587e706",
+      "file": "datas/devdocs/redis/stack-cuckoo-filter/cf.scandump.md",
+      "updatedAt": "2026-03-10T08:50:01.155Z"
+    },
+    "client-caching/index": {
+      "hash": "321a6f3d",
+      "file": "datas/devdocs/redis/core-connection-management/client caching.md",
+      "updatedAt": "2026-03-10T08:50:01.158Z"
+    },
+    "client-getname/index": {
+      "hash": "c459b9c9",
+      "file": "datas/devdocs/redis/core-connection-management/client getname.md",
+      "updatedAt": "2026-03-10T08:50:01.161Z"
+    },
+    "client-getredir/index": {
+      "hash": "7588bb4e",
+      "file": "datas/devdocs/redis/core-connection-management/client getredir.md",
+      "updatedAt": "2026-03-10T08:50:01.162Z"
+    },
+    "client-id/index": {
+      "hash": "7cdfb4a7",
+      "file": "datas/devdocs/redis/core-connection-management/client id.md",
+      "updatedAt": "2026-03-10T08:50:01.164Z"
+    },
+    "client-info/index": {
+      "hash": "4604e8c1",
+      "file": "datas/devdocs/redis/core-connection-management/client info.md",
+      "updatedAt": "2026-03-10T08:50:01.167Z"
+    },
+    "client-kill/index": {
+      "hash": "f825c68d",
+      "file": "datas/devdocs/redis/core-connection-management/client kill.md",
+      "updatedAt": "2026-03-10T08:50:01.169Z"
+    },
+    "client-list/index": {
+      "hash": "d526ab2a",
+      "file": "datas/devdocs/redis/core-connection-management/client list.md",
+      "updatedAt": "2026-03-10T08:50:01.177Z"
+    },
+    "client-no-evict/index": {
+      "hash": "c3a506ec",
+      "file": "datas/devdocs/redis/core-connection-management/client no evict.md",
+      "updatedAt": "2026-03-10T08:50:01.184Z"
+    },
+    "client-pause/index": {
+      "hash": "cec8bfab",
+      "file": "datas/devdocs/redis/core-connection-management/client pause.md",
+      "updatedAt": "2026-03-10T08:50:01.187Z"
+    },
+    "client-reply/index": {
+      "hash": "5a4854e4",
+      "file": "datas/devdocs/redis/core-connection-management/client reply.md",
+      "updatedAt": "2026-03-10T08:50:01.194Z"
+    },
+    "client-setname/index": {
+      "hash": "ecfd912d",
+      "file": "datas/devdocs/redis/core-connection-management/client setname.md",
+      "updatedAt": "2026-03-10T08:50:01.204Z"
+    },
+    "client-tracking/index": {
+      "hash": "6d2ed329",
+      "file": "datas/devdocs/redis/core-connection-management/client tracking.md",
+      "updatedAt": "2026-03-10T08:50:01.205Z"
+    },
+    "client-trackinginfo/index": {
+      "hash": "672b89cb",
+      "file": "datas/devdocs/redis/core-connection-management/client trackinginfo.md",
+      "updatedAt": "2026-03-10T08:50:01.212Z"
+    },
+    "client-unblock/index": {
+      "hash": "606a5169",
+      "file": "datas/devdocs/redis/core-connection-management/client unblock.md",
+      "updatedAt": "2026-03-10T08:50:01.216Z"
+    },
+    "client-unpause/index": {
+      "hash": "707c2bc3",
+      "file": "datas/devdocs/redis/core-connection-management/client unpause.md",
+      "updatedAt": "2026-03-10T08:50:01.218Z"
+    },
+    "cluster-addslots/index": {
+      "hash": "42ebdaff",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster addslots.md",
+      "updatedAt": "2026-03-10T08:50:01.221Z"
+    },
+    "cluster-addslotsrange/index": {
+      "hash": "dfffc09a",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster addslotsrange.md",
+      "updatedAt": "2026-03-10T08:50:01.224Z"
+    },
+    "cluster-bumpepoch/index": {
+      "hash": "c8292490",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster bumpepoch.md",
+      "updatedAt": "2026-03-10T08:50:01.225Z"
+    },
+    "cluster-count-failure-reports/index": {
+      "hash": "d7d4f791",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster count failure reports.md",
+      "updatedAt": "2026-03-10T08:50:01.232Z"
+    },
+    "cluster-countkeysinslot/index": {
+      "hash": "fff83324",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster countkeysinslot.md",
+      "updatedAt": "2026-03-10T08:50:01.235Z"
+    },
+    "cluster-delslots/index": {
+      "hash": "21788146",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster delslots.md",
+      "updatedAt": "2026-03-10T08:50:01.236Z"
+    },
+    "cluster-delslotsrange/index": {
+      "hash": "e48e0ab9",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster delslotsrange.md",
+      "updatedAt": "2026-03-10T08:50:01.244Z"
+    },
+    "cluster-failover/index": {
+      "hash": "3d0148bc",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster failover.md",
+      "updatedAt": "2026-03-10T08:50:01.247Z"
+    },
+    "cluster-flushslots/index": {
+      "hash": "8d710d52",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster flushslots.md",
+      "updatedAt": "2026-03-10T08:50:01.251Z"
+    },
+    "cluster-forget/index": {
+      "hash": "958d05fa",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster forget.md",
+      "updatedAt": "2026-03-10T08:50:01.254Z"
+    },
+    "cluster-getkeysinslot/index": {
+      "hash": "d140bc07",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster getkeysinslot.md",
+      "updatedAt": "2026-03-10T08:50:01.258Z"
+    },
+    "cluster-info/index": {
+      "hash": "21ebd6a5",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster info.md",
+      "updatedAt": "2026-03-10T08:50:01.260Z"
+    },
+    "cluster-keyslot/index": {
+      "hash": "936dadf4",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster keyslot.md",
+      "updatedAt": "2026-03-10T08:50:01.266Z"
+    },
+    "cluster-links/index": {
+      "hash": "3ce7cda9",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster links.md",
+      "updatedAt": "2026-03-10T08:50:01.269Z"
+    },
+    "cluster-meet/index": {
+      "hash": "13524d7",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster meet.md",
+      "updatedAt": "2026-03-10T08:50:01.273Z"
+    },
+    "cluster-myid/index": {
+      "hash": "22d47ab8",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster myid.md",
+      "updatedAt": "2026-03-10T08:50:01.278Z"
+    },
+    "cluster-nodes/index": {
+      "hash": "8660f82c",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster nodes.md",
+      "updatedAt": "2026-03-10T08:50:01.280Z"
+    },
+    "cluster-replicas/index": {
+      "hash": "3f753a12",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster replicas.md",
+      "updatedAt": "2026-03-10T08:50:01.289Z"
+    },
+    "cluster-replicate/index": {
+      "hash": "fbf15933",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster replicate.md",
+      "updatedAt": "2026-03-10T08:50:01.292Z"
+    },
+    "cluster-reset/index": {
+      "hash": "b51675d",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster reset.md",
+      "updatedAt": "2026-03-10T08:50:01.294Z"
+    },
+    "cluster-saveconfig/index": {
+      "hash": "7cc1d369",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster saveconfig.md",
+      "updatedAt": "2026-03-10T08:50:01.298Z"
+    },
+    "cluster-set-config-epoch/index": {
+      "hash": "e29325ee",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster set config epoch.md",
+      "updatedAt": "2026-03-10T08:50:01.300Z"
+    },
+    "cluster-setslot/index": {
+      "hash": "fce0af6d",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster setslot.md",
+      "updatedAt": "2026-03-10T08:50:01.303Z"
+    },
+    "cluster-shards/index": {
+      "hash": "6e0e06d9",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster shards.md",
+      "updatedAt": "2026-03-10T08:50:01.311Z"
+    },
+    "cluster-slaves/index": {
+      "hash": "5aa0ac2a",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster slaves.md",
+      "updatedAt": "2026-03-10T08:50:01.315Z"
+    },
+    "cluster-slots/index": {
+      "hash": "5fdabeac",
+      "file": "datas/devdocs/redis/core-cluster-management/cluster slots.md",
+      "updatedAt": "2026-03-10T08:50:01.328Z"
+    },
+    "cms.incrby/index": {
+      "hash": "372bd9dd",
+      "file": "datas/devdocs/redis/stack-count-min-sketch/cms.incrby.md",
+      "updatedAt": "2026-03-10T08:50:01.342Z"
+    },
+    "cms.info/index": {
+      "hash": "3ab15714",
+      "file": "datas/devdocs/redis/stack-count-min-sketch/cms.info.md",
+      "updatedAt": "2026-03-10T08:50:01.344Z"
+    },
+    "cms.initbydim/index": {
+      "hash": "dd1d525f",
+      "file": "datas/devdocs/redis/stack-count-min-sketch/cms.initbydim.md",
+      "updatedAt": "2026-03-10T08:50:01.345Z"
+    },
+    "cms.initbyprob/index": {
+      "hash": "bb582e04",
+      "file": "datas/devdocs/redis/stack-count-min-sketch/cms.initbyprob.md",
+      "updatedAt": "2026-03-10T08:50:01.347Z"
+    },
+    "cms.merge/index": {
+      "hash": "47fb9c49",
+      "file": "datas/devdocs/redis/stack-count-min-sketch/cms.merge.md",
+      "updatedAt": "2026-03-10T08:50:01.348Z"
+    },
+    "cms.query/index": {
+      "hash": "9e8d75df",
+      "file": "datas/devdocs/redis/stack-count-min-sketch/cms.query.md",
+      "updatedAt": "2026-03-10T08:50:01.351Z"
+    },
+    "command/index": {
+      "hash": "7e147324",
+      "file": "datas/devdocs/redis/core-server-managment/command.md",
+      "updatedAt": "2026-03-10T08:50:01.354Z"
+    },
+    "command-count/index": {
+      "hash": "481abcb1",
+      "file": "datas/devdocs/redis/core-server-managment/command count.md",
+      "updatedAt": "2026-03-10T08:50:01.362Z"
+    },
+    "command-docs/index": {
+      "hash": "a8f3151b",
+      "file": "datas/devdocs/redis/core-server-managment/command docs.md",
+      "updatedAt": "2026-03-10T08:50:01.364Z"
+    },
+    "command-getkeys/index": {
+      "hash": "f3da3055",
+      "file": "datas/devdocs/redis/core-server-managment/command getkeys.md",
+      "updatedAt": "2026-03-10T08:50:01.368Z"
+    },
+    "command-getkeysandflags/index": {
+      "hash": "948753b5",
+      "file": "datas/devdocs/redis/core-server-managment/command getkeysandflags.md",
+      "updatedAt": "2026-03-10T08:50:01.370Z"
+    },
+    "command-info/index": {
+      "hash": "f959f958",
+      "file": "datas/devdocs/redis/core-server-managment/command info.md",
+      "updatedAt": "2026-03-10T08:50:01.371Z"
+    },
+    "command-list/index": {
+      "hash": "16039311",
+      "file": "datas/devdocs/redis/core-server-managment/command list.md",
+      "updatedAt": "2026-03-10T08:50:01.373Z"
+    },
+    "config-get/index": {
+      "hash": "8fc14729",
+      "file": "datas/devdocs/redis/core-server-managment/config get.md",
+      "updatedAt": "2026-03-10T08:50:01.375Z"
+    },
+    "config-resetstat/index": {
+      "hash": "6fd522c4",
+      "file": "datas/devdocs/redis/core-server-managment/config resetstat.md",
+      "updatedAt": "2026-03-10T08:50:01.377Z"
+    },
+    "config-rewrite/index": {
+      "hash": "fbefbba2",
+      "file": "datas/devdocs/redis/core-server-managment/config rewrite.md",
+      "updatedAt": "2026-03-10T08:50:01.378Z"
+    },
+    "config-set/index": {
+      "hash": "b235051c",
+      "file": "datas/devdocs/redis/core-server-managment/config set.md",
+      "updatedAt": "2026-03-10T08:50:01.380Z"
+    },
+    "copy/index": {
+      "hash": "eab95ead",
+      "file": "datas/devdocs/redis/core-generic/copy.md",
+      "updatedAt": "2026-03-10T08:50:01.386Z"
+    },
+    "dbsize/index": {
+      "hash": "1050f9c0",
+      "file": "datas/devdocs/redis/core-server-managment/dbsize.md",
+      "updatedAt": "2026-03-10T08:50:01.388Z"
+    },
+    "decr/index": {
+      "hash": "875a7e86",
+      "file": "datas/devdocs/redis/core-string/decr.md",
+      "updatedAt": "2026-03-10T08:50:01.391Z"
+    },
+    "decrby/index": {
+      "hash": "8175f0a3",
+      "file": "datas/devdocs/redis/core-string/decrby.md",
+      "updatedAt": "2026-03-10T08:50:01.393Z"
+    },
+    "del/index": {
+      "hash": "f3f66d76",
+      "file": "datas/devdocs/redis/core-generic/del.md",
+      "updatedAt": "2026-03-10T08:50:01.395Z"
+    },
+    "discard/index": {
+      "hash": "b8aa04ec",
+      "file": "datas/devdocs/redis/core-transactions/discard.md",
+      "updatedAt": "2026-03-10T08:50:01.396Z"
+    },
+    "dump/index": {
+      "hash": "1d97a227",
+      "file": "datas/devdocs/redis/core-generic/dump.md",
+      "updatedAt": "2026-03-10T08:50:01.399Z"
+    },
+    "echo/index": {
+      "hash": "53aa94e9",
+      "file": "datas/devdocs/redis/core-connection-management/echo.md",
+      "updatedAt": "2026-03-10T08:50:01.401Z"
+    },
+    "eval/index": {
+      "hash": "cab7bf09",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/eval.md",
+      "updatedAt": "2026-03-10T08:50:01.404Z"
+    },
+    "eval_ro/index": {
+      "hash": "80f1e0d3",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/eval_ro.md",
+      "updatedAt": "2026-03-10T08:50:01.405Z"
+    },
+    "evalsha/index": {
+      "hash": "6c7d0e77",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/evalsha.md",
+      "updatedAt": "2026-03-10T08:50:01.407Z"
+    },
+    "evalsha_ro/index": {
+      "hash": "a19efffe",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/evalsha_ro.md",
+      "updatedAt": "2026-03-10T08:50:01.408Z"
+    },
+    "exec/index": {
+      "hash": "74cdd8f5",
+      "file": "datas/devdocs/redis/core-transactions/exec.md",
+      "updatedAt": "2026-03-10T08:50:01.412Z"
+    },
+    "exists/index": {
+      "hash": "5a1216d0",
+      "file": "datas/devdocs/redis/core-generic/exists.md",
+      "updatedAt": "2026-03-10T08:50:01.414Z"
+    },
+    "expire/index": {
+      "hash": "94cc128",
+      "file": "datas/devdocs/redis/core-generic/expire.md",
+      "updatedAt": "2026-03-10T08:50:01.416Z"
+    },
+    "expireat/index": {
+      "hash": "d6600180",
+      "file": "datas/devdocs/redis/core-generic/expireat.md",
+      "updatedAt": "2026-03-10T08:50:01.423Z"
+    },
+    "expiretime/index": {
+      "hash": "13d8be2e",
+      "file": "datas/devdocs/redis/core-generic/expiretime.md",
+      "updatedAt": "2026-03-10T08:50:01.430Z"
+    },
+    "failover/index": {
+      "hash": "f7097ec9",
+      "file": "datas/devdocs/redis/core-server-managment/failover.md",
+      "updatedAt": "2026-03-10T08:50:01.439Z"
+    },
+    "fcall/index": {
+      "hash": "5cc54977",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/fcall.md",
+      "updatedAt": "2026-03-10T08:50:01.456Z"
+    },
+    "fcall_ro/index": {
+      "hash": "785fe2d5",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/fcall_ro.md",
+      "updatedAt": "2026-03-10T08:50:01.458Z"
+    },
+    "flushall/index": {
+      "hash": "82387bb6",
+      "file": "datas/devdocs/redis/core-server-managment/flushall.md",
+      "updatedAt": "2026-03-10T08:50:01.463Z"
+    },
+    "flushdb/index": {
+      "hash": "3d4f002e",
+      "file": "datas/devdocs/redis/core-server-managment/flushdb.md",
+      "updatedAt": "2026-03-10T08:50:01.466Z"
+    },
+    "ft._list/index": {
+      "hash": "9804cd3e",
+      "file": "datas/devdocs/redis/stack-search/ft._list.md",
+      "updatedAt": "2026-03-10T08:50:01.469Z"
+    },
+    "ft.aggregate/index": {
+      "hash": "f1064631",
+      "file": "datas/devdocs/redis/stack-search/ft.aggregate.md",
+      "updatedAt": "2026-03-10T08:50:01.471Z"
+    },
+    "ft.aliasadd/index": {
+      "hash": "1be213f3",
+      "file": "datas/devdocs/redis/stack-search/ft.aliasadd.md",
+      "updatedAt": "2026-03-10T08:50:01.484Z"
+    },
+    "ft.aliasdel/index": {
+      "hash": "d74e4401",
+      "file": "datas/devdocs/redis/stack-search/ft.aliasdel.md",
+      "updatedAt": "2026-03-10T08:50:01.491Z"
+    },
+    "ft.aliasupdate/index": {
+      "hash": "11d8489f",
+      "file": "datas/devdocs/redis/stack-search/ft.aliasupdate.md",
+      "updatedAt": "2026-03-10T08:50:01.496Z"
+    },
+    "ft.alter/index": {
+      "hash": "e1d2d76b",
+      "file": "datas/devdocs/redis/stack-search/ft.alter.md",
+      "updatedAt": "2026-03-10T08:50:01.502Z"
+    },
+    "ft.config-get/index": {
+      "hash": "9fbb6067",
+      "file": "datas/devdocs/redis/stack-search/ft.config get.md",
+      "updatedAt": "2026-03-10T08:50:01.523Z"
+    },
+    "ft.config-set/index": {
+      "hash": "e5075ec7",
+      "file": "datas/devdocs/redis/stack-search/ft.config set.md",
+      "updatedAt": "2026-03-10T08:50:01.550Z"
+    },
+    "ft.create/index": {
+      "hash": "9187307a",
+      "file": "datas/devdocs/redis/stack-search/ft.create.md",
+      "updatedAt": "2026-03-10T08:50:01.574Z"
+    },
+    "ft.cursor-del/index": {
+      "hash": "21432f46",
+      "file": "datas/devdocs/redis/stack-search/ft.cursor del.md",
+      "updatedAt": "2026-03-10T08:50:01.597Z"
+    },
+    "ft.cursor-read/index": {
+      "hash": "fb9b1de1",
+      "file": "datas/devdocs/redis/stack-search/ft.cursor read.md",
+      "updatedAt": "2026-03-10T08:50:01.600Z"
+    },
+    "ft.dictadd/index": {
+      "hash": "21a185dd",
+      "file": "datas/devdocs/redis/stack-search/ft.dictadd.md",
+      "updatedAt": "2026-03-10T08:50:01.606Z"
+    },
+    "ft.dictdel/index": {
+      "hash": "dc0b7059",
+      "file": "datas/devdocs/redis/stack-search/ft.dictdel.md",
+      "updatedAt": "2026-03-10T08:50:01.610Z"
+    },
+    "ft.dictdump/index": {
+      "hash": "ba6517af",
+      "file": "datas/devdocs/redis/stack-search/ft.dictdump.md",
+      "updatedAt": "2026-03-10T08:50:01.612Z"
+    },
+    "ft.dropindex/index": {
+      "hash": "6cbfe0d0",
+      "file": "datas/devdocs/redis/stack-search/ft.dropindex.md",
+      "updatedAt": "2026-03-10T08:50:01.621Z"
+    },
+    "ft.explain/index": {
+      "hash": "9936ade9",
+      "file": "datas/devdocs/redis/stack-search/ft.explain.md",
+      "updatedAt": "2026-03-10T08:50:01.623Z"
+    },
+    "ft.explaincli/index": {
+      "hash": "ed7a41d4",
+      "file": "datas/devdocs/redis/stack-search/ft.explaincli.md",
+      "updatedAt": "2026-03-10T08:50:01.629Z"
+    },
+    "ft.info/index": {
+      "hash": "2319f3cd",
+      "file": "datas/devdocs/redis/stack-search/ft.info.md",
+      "updatedAt": "2026-03-10T08:50:01.648Z"
+    },
+    "ft.profile/index": {
+      "hash": "a64346",
+      "file": "datas/devdocs/redis/stack-search/ft.profile.md",
+      "updatedAt": "2026-03-10T08:50:01.662Z"
+    },
+    "ft.search/index": {
+      "hash": "c46d78f3",
+      "file": "datas/devdocs/redis/stack-search/ft.search.md",
+      "updatedAt": "2026-03-10T08:50:01.673Z"
+    },
+    "ft.spellcheck/index": {
+      "hash": "bc6255d6",
+      "file": "datas/devdocs/redis/stack-search/ft.spellcheck.md",
+      "updatedAt": "2026-03-10T08:50:01.692Z"
+    },
+    "ft.sugadd/index": {
+      "hash": "2866ea4a",
+      "file": "datas/devdocs/redis/stack-auto-suggest/ft.sugadd.md",
+      "updatedAt": "2026-03-10T08:50:01.698Z"
+    },
+    "ft.sugdel/index": {
+      "hash": "7cafdc82",
+      "file": "datas/devdocs/redis/stack-auto-suggest/ft.sugdel.md",
+      "updatedAt": "2026-03-10T08:50:01.701Z"
+    },
+    "ft.sugget/index": {
+      "hash": "c0bf3388",
+      "file": "datas/devdocs/redis/stack-auto-suggest/ft.sugget.md",
+      "updatedAt": "2026-03-10T08:50:01.736Z"
+    },
+    "ft.suglen/index": {
+      "hash": "b49c99e5",
+      "file": "datas/devdocs/redis/stack-auto-suggest/ft.suglen.md",
+      "updatedAt": "2026-03-10T08:50:01.755Z"
+    },
+    "ft.syndump/index": {
+      "hash": "e8e1b67f",
+      "file": "datas/devdocs/redis/stack-search/ft.syndump.md",
+      "updatedAt": "2026-03-10T08:50:01.758Z"
+    },
+    "ft.synupdate/index": {
+      "hash": "a58d3881",
+      "file": "datas/devdocs/redis/stack-search/ft.synupdate.md",
+      "updatedAt": "2026-03-10T08:50:01.761Z"
+    },
+    "ft.tagvals/index": {
+      "hash": "65802894",
+      "file": "datas/devdocs/redis/stack-search/ft.tagvals.md",
+      "updatedAt": "2026-03-10T08:50:01.765Z"
+    },
+    "function-delete/index": {
+      "hash": "f81d1e82",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/function delete.md",
+      "updatedAt": "2026-03-10T08:50:01.774Z"
+    },
+    "function-dump/index": {
+      "hash": "99a37863",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/function dump.md",
+      "updatedAt": "2026-03-10T08:50:01.791Z"
+    },
+    "function-flush/index": {
+      "hash": "c314fbe9",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/function flush.md",
+      "updatedAt": "2026-03-10T08:50:01.798Z"
+    },
+    "function-kill/index": {
+      "hash": "a47a963e",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/function kill.md",
+      "updatedAt": "2026-03-10T08:50:01.801Z"
+    },
+    "function-list/index": {
+      "hash": "47e7890d",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/function list.md",
+      "updatedAt": "2026-03-10T08:50:01.804Z"
+    },
+    "function-load/index": {
+      "hash": "eb70384a",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/function load.md",
+      "updatedAt": "2026-03-10T08:50:01.807Z"
+    },
+    "function-restore/index": {
+      "hash": "bbe4046e",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/function restore.md",
+      "updatedAt": "2026-03-10T08:50:01.813Z"
+    },
+    "function-stats/index": {
+      "hash": "9ce08e1",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/function stats.md",
+      "updatedAt": "2026-03-10T08:50:01.818Z"
+    },
+    "geoadd/index": {
+      "hash": "a363a6f7",
+      "file": "datas/devdocs/redis/core-geospatial-indices/geoadd.md",
+      "updatedAt": "2026-03-10T08:50:01.824Z"
+    },
+    "geodist/index": {
+      "hash": "46ea99e2",
+      "file": "datas/devdocs/redis/core-geospatial-indices/geodist.md",
+      "updatedAt": "2026-03-10T08:50:01.829Z"
+    },
+    "geohash/index": {
+      "hash": "b74f064c",
+      "file": "datas/devdocs/redis/core-geospatial-indices/geohash.md",
+      "updatedAt": "2026-03-10T08:50:01.831Z"
+    },
+    "geopos/index": {
+      "hash": "2e85ff6e",
+      "file": "datas/devdocs/redis/core-geospatial-indices/geopos.md",
+      "updatedAt": "2026-03-10T08:50:01.832Z"
+    },
+    "georadius/index": {
+      "hash": "9e97fe83",
+      "file": "datas/devdocs/redis/core-geospatial-indices/georadius.md",
+      "updatedAt": "2026-03-10T08:50:01.834Z"
+    },
+    "georadius_ro/index": {
+      "hash": "3914212e",
+      "file": "datas/devdocs/redis/core-geospatial-indices/georadius_ro.md",
+      "updatedAt": "2026-03-10T08:50:01.840Z"
+    },
+    "georadiusbymember/index": {
+      "hash": "9615e7d7",
+      "file": "datas/devdocs/redis/core-geospatial-indices/georadiusbymember.md",
+      "updatedAt": "2026-03-10T08:50:01.845Z"
+    },
+    "georadiusbymember_ro/index": {
+      "hash": "56ac74a2",
+      "file": "datas/devdocs/redis/core-geospatial-indices/georadiusbymember_ro.md",
+      "updatedAt": "2026-03-10T08:50:01.848Z"
+    },
+    "geosearch/index": {
+      "hash": "632bae9d",
+      "file": "datas/devdocs/redis/core-geospatial-indices/geosearch.md",
+      "updatedAt": "2026-03-10T08:50:01.856Z"
+    },
+    "geosearchstore/index": {
+      "hash": "ddbe5437",
+      "file": "datas/devdocs/redis/core-geospatial-indices/geosearchstore.md",
+      "updatedAt": "2026-03-10T08:50:01.870Z"
+    },
+    "get/index": {
+      "hash": "9878dcad",
+      "file": "datas/devdocs/redis/core-string/get.md",
+      "updatedAt": "2026-03-10T08:50:01.872Z"
+    },
+    "getbit/index": {
+      "hash": "41797d4",
+      "file": "datas/devdocs/redis/core-bitmap/getbit.md",
+      "updatedAt": "2026-03-10T08:50:01.900Z"
+    },
+    "getdel/index": {
+      "hash": "45fe540c",
+      "file": "datas/devdocs/redis/core-string/getdel.md",
+      "updatedAt": "2026-03-10T08:50:01.903Z"
+    },
+    "getex/index": {
+      "hash": "7a1c97db",
+      "file": "datas/devdocs/redis/core-string/getex.md",
+      "updatedAt": "2026-03-10T08:50:01.904Z"
+    },
+    "getrange/index": {
+      "hash": "ffcb069b",
+      "file": "datas/devdocs/redis/core-string/getrange.md",
+      "updatedAt": "2026-03-10T08:50:01.911Z"
+    },
+    "getset/index": {
+      "hash": "5f458d73",
+      "file": "datas/devdocs/redis/core-string/getset.md",
+      "updatedAt": "2026-03-10T08:50:01.912Z"
+    },
+    "graph.config-get/index": {
+      "hash": "e8e77fd",
+      "file": "datas/devdocs/redis/stack-graph/graph.config get.md",
+      "updatedAt": "2026-03-10T08:50:01.914Z"
+    },
+    "graph.config-set/index": {
+      "hash": "501dd0e7",
+      "file": "datas/devdocs/redis/stack-graph/graph.config set.md",
+      "updatedAt": "2026-03-10T08:50:01.923Z"
+    },
+    "graph.delete/index": {
+      "hash": "2240b65d",
+      "file": "datas/devdocs/redis/stack-graph/graph.delete.md",
+      "updatedAt": "2026-03-10T08:50:01.925Z"
+    },
+    "graph.explain/index": {
+      "hash": "a42c09b4",
+      "file": "datas/devdocs/redis/stack-graph/graph.explain.md",
+      "updatedAt": "2026-03-10T08:50:01.950Z"
+    },
+    "graph.list/index": {
+      "hash": "1815e720",
+      "file": "datas/devdocs/redis/stack-graph/graph.list.md",
+      "updatedAt": "2026-03-10T08:50:01.962Z"
+    },
+    "graph.profile/index": {
+      "hash": "ec8fc9a5",
+      "file": "datas/devdocs/redis/stack-graph/graph.profile.md",
+      "updatedAt": "2026-03-10T08:50:01.964Z"
+    },
+    "graph.query/index": {
+      "hash": "d1301fc1",
+      "file": "datas/devdocs/redis/stack-graph/graph.query.md",
+      "updatedAt": "2026-03-10T08:50:01.967Z"
+    },
+    "graph.ro_query/index": {
+      "hash": "ce1ed071",
+      "file": "datas/devdocs/redis/stack-graph/graph.ro_query.md",
+      "updatedAt": "2026-03-10T08:50:02.156Z"
+    },
+    "graph.slowlog/index": {
+      "hash": "7359250c",
+      "file": "datas/devdocs/redis/stack-graph/graph.slowlog.md",
+      "updatedAt": "2026-03-10T08:50:02.159Z"
+    },
+    "hdel/index": {
+      "hash": "c76e625c",
+      "file": "datas/devdocs/redis/core-hash/hdel.md",
+      "updatedAt": "2026-03-10T08:50:02.162Z"
+    },
+    "hello/index": {
+      "hash": "7a343f32",
+      "file": "datas/devdocs/redis/core-connection-management/hello.md",
+      "updatedAt": "2026-03-10T08:50:02.164Z"
+    },
+    "hexists/index": {
+      "hash": "fd49b70b",
+      "file": "datas/devdocs/redis/core-hash/hexists.md",
+      "updatedAt": "2026-03-10T08:50:02.166Z"
+    },
+    "hget/index": {
+      "hash": "f1e1a2f1",
+      "file": "datas/devdocs/redis/core-hash/hget.md",
+      "updatedAt": "2026-03-10T08:50:02.168Z"
+    },
+    "hgetall/index": {
+      "hash": "32107154",
+      "file": "datas/devdocs/redis/core-hash/hgetall.md",
+      "updatedAt": "2026-03-10T08:50:02.171Z"
+    },
+    "hincrby/index": {
+      "hash": "d9e3dcf8",
+      "file": "datas/devdocs/redis/core-hash/hincrby.md",
+      "updatedAt": "2026-03-10T08:50:02.173Z"
+    },
+    "hincrbyfloat/index": {
+      "hash": "ecd6bb6f",
+      "file": "datas/devdocs/redis/core-hash/hincrbyfloat.md",
+      "updatedAt": "2026-03-10T08:50:02.177Z"
+    },
+    "hkeys/index": {
+      "hash": "c8f9a18b",
+      "file": "datas/devdocs/redis/core-hash/hkeys.md",
+      "updatedAt": "2026-03-10T08:50:02.179Z"
+    },
+    "hlen/index": {
+      "hash": "6eaec3d8",
+      "file": "datas/devdocs/redis/core-hash/hlen.md",
+      "updatedAt": "2026-03-10T08:50:02.182Z"
+    },
+    "hmget/index": {
+      "hash": "8d45c373",
+      "file": "datas/devdocs/redis/core-hash/hmget.md",
+      "updatedAt": "2026-03-10T08:50:02.185Z"
+    },
+    "hmset/index": {
+      "hash": "dc7b6e63",
+      "file": "datas/devdocs/redis/core-hash/hmset.md",
+      "updatedAt": "2026-03-10T08:50:02.187Z"
+    },
+    "hrandfield/index": {
+      "hash": "173abb22",
+      "file": "datas/devdocs/redis/core-hash/hrandfield.md",
+      "updatedAt": "2026-03-10T08:50:02.189Z"
+    },
+    "hscan/index": {
+      "hash": "7f95674a",
+      "file": "datas/devdocs/redis/core-hash/hscan.md",
+      "updatedAt": "2026-03-10T08:50:02.192Z"
+    },
+    "hset/index": {
+      "hash": "8d30a1bf",
+      "file": "datas/devdocs/redis/core-hash/hset.md",
+      "updatedAt": "2026-03-10T08:50:02.193Z"
+    },
+    "hsetnx/index": {
+      "hash": "709d3edd",
+      "file": "datas/devdocs/redis/core-hash/hsetnx.md",
+      "updatedAt": "2026-03-10T08:50:02.195Z"
+    },
+    "hstrlen/index": {
+      "hash": "6872cbf1",
+      "file": "datas/devdocs/redis/core-hash/hstrlen.md",
+      "updatedAt": "2026-03-10T08:50:02.196Z"
+    },
+    "hvals/index": {
+      "hash": "ea35db6c",
+      "file": "datas/devdocs/redis/core-hash/hvals.md",
+      "updatedAt": "2026-03-10T08:50:02.199Z"
+    },
+    "incr/index": {
+      "hash": "24bd39a3",
+      "file": "datas/devdocs/redis/core-string/incr.md",
+      "updatedAt": "2026-03-10T08:50:02.201Z"
+    },
+    "incrby/index": {
+      "hash": "2452b9a5",
+      "file": "datas/devdocs/redis/core-string/incrby.md",
+      "updatedAt": "2026-03-10T08:50:02.205Z"
+    },
+    "incrbyfloat/index": {
+      "hash": "974c47b6",
+      "file": "datas/devdocs/redis/core-string/incrbyfloat.md",
+      "updatedAt": "2026-03-10T08:50:02.207Z"
+    },
+    "info/index": {
+      "hash": "12edfa5f",
+      "file": "datas/devdocs/redis/core-server-managment/info.md",
+      "updatedAt": "2026-03-10T08:50:02.209Z"
+    },
+    "json.arrappend/index": {
+      "hash": "d3e6dbc9",
+      "file": "datas/devdocs/redis/stack-json/json.arrappend.md",
+      "updatedAt": "2026-03-10T08:50:02.229Z"
+    },
+    "json.arrindex/index": {
+      "hash": "94e48f9d",
+      "file": "datas/devdocs/redis/stack-json/json.arrindex.md",
+      "updatedAt": "2026-03-10T08:50:02.241Z"
+    },
+    "json.arrinsert/index": {
+      "hash": "eeb734b3",
+      "file": "datas/devdocs/redis/stack-json/json.arrinsert.md",
+      "updatedAt": "2026-03-10T08:50:02.245Z"
+    },
+    "json.arrlen/index": {
+      "hash": "e8447f8a",
+      "file": "datas/devdocs/redis/stack-json/json.arrlen.md",
+      "updatedAt": "2026-03-10T08:50:02.248Z"
+    },
+    "json.arrpop/index": {
+      "hash": "76091f9f",
+      "file": "datas/devdocs/redis/stack-json/json.arrpop.md",
+      "updatedAt": "2026-03-10T08:50:02.252Z"
+    },
+    "json.arrtrim/index": {
+      "hash": "7e5267e6",
+      "file": "datas/devdocs/redis/stack-json/json.arrtrim.md",
+      "updatedAt": "2026-03-10T08:50:02.255Z"
+    },
+    "json.clear/index": {
+      "hash": "ea613a59",
+      "file": "datas/devdocs/redis/stack-json/json.clear.md",
+      "updatedAt": "2026-03-10T08:50:02.261Z"
+    },
+    "json.debug/index": {
+      "hash": "39b75793",
+      "file": "datas/devdocs/redis/stack-json/json.debug.md",
+      "updatedAt": "2026-03-10T08:50:02.265Z"
+    },
+    "json.debug-memory/index": {
+      "hash": "77aee5cc",
+      "file": "datas/devdocs/redis/stack-json/json.debug memory.md",
+      "updatedAt": "2026-03-10T08:50:02.266Z"
+    },
+    "json.del/index": {
+      "hash": "5c99a6f2",
+      "file": "datas/devdocs/redis/stack-json/json.del.md",
+      "updatedAt": "2026-03-10T08:50:02.268Z"
+    },
+    "json.forget/index": {
+      "hash": "b5047613",
+      "file": "datas/devdocs/redis/stack-json/json.forget.md",
+      "updatedAt": "2026-03-10T08:50:02.270Z"
+    },
+    "json.get/index": {
+      "hash": "de25e41f",
+      "file": "datas/devdocs/redis/stack-json/json.get.md",
+      "updatedAt": "2026-03-10T08:50:02.274Z"
+    },
+    "json.mget/index": {
+      "hash": "59fd6e3e",
+      "file": "datas/devdocs/redis/stack-json/json.mget.md",
+      "updatedAt": "2026-03-10T08:50:02.276Z"
+    },
+    "json.numincrby/index": {
+      "hash": "5ac84a31",
+      "file": "datas/devdocs/redis/stack-json/json.numincrby.md",
+      "updatedAt": "2026-03-10T08:50:02.278Z"
+    },
+    "json.nummultby/index": {
+      "hash": "fc5c587b",
+      "file": "datas/devdocs/redis/stack-json/json.nummultby.md",
+      "updatedAt": "2026-03-10T08:50:02.280Z"
+    },
+    "json.objkeys/index": {
+      "hash": "e3bc3c7b",
+      "file": "datas/devdocs/redis/stack-json/json.objkeys.md",
+      "updatedAt": "2026-03-10T08:50:02.284Z"
+    },
+    "json.objlen/index": {
+      "hash": "31d7e0a3",
+      "file": "datas/devdocs/redis/stack-json/json.objlen.md",
+      "updatedAt": "2026-03-10T08:50:02.287Z"
+    },
+    "json.resp/index": {
+      "hash": "a000d545",
+      "file": "datas/devdocs/redis/stack-json/json.resp.md",
+      "updatedAt": "2026-03-10T08:50:02.294Z"
+    },
+    "json.set/index": {
+      "hash": "bc0a2fc3",
+      "file": "datas/devdocs/redis/stack-json/json.set.md",
+      "updatedAt": "2026-03-10T08:50:02.297Z"
+    },
+    "json.strappend/index": {
+      "hash": "3af5df10",
+      "file": "datas/devdocs/redis/stack-json/json.strappend.md",
+      "updatedAt": "2026-03-10T08:50:02.302Z"
+    },
+    "json.strlen/index": {
+      "hash": "5a3a5f7b",
+      "file": "datas/devdocs/redis/stack-json/json.strlen.md",
+      "updatedAt": "2026-03-10T08:50:02.305Z"
+    },
+    "json.toggle/index": {
+      "hash": "86e30a4",
+      "file": "datas/devdocs/redis/stack-json/json.toggle.md",
+      "updatedAt": "2026-03-10T08:50:02.307Z"
+    },
+    "json.type/index": {
+      "hash": "a1e6781f",
+      "file": "datas/devdocs/redis/stack-json/json.type.md",
+      "updatedAt": "2026-03-10T08:50:02.309Z"
+    },
+    "keys/index": {
+      "hash": "619cd3c9",
+      "file": "datas/devdocs/redis/core-generic/keys.md",
+      "updatedAt": "2026-03-10T08:50:02.312Z"
+    },
+    "lastsave/index": {
+      "hash": "f4d2097c",
+      "file": "datas/devdocs/redis/core-server-managment/lastsave.md",
+      "updatedAt": "2026-03-10T08:50:02.314Z"
+    },
+    "latency-doctor/index": {
+      "hash": "282d6a08",
+      "file": "datas/devdocs/redis/core-server-managment/latency doctor.md",
+      "updatedAt": "2026-03-10T08:50:02.316Z"
+    },
+    "latency-graph/index": {
+      "hash": "e6ef1193",
+      "file": "datas/devdocs/redis/core-server-managment/latency graph.md",
+      "updatedAt": "2026-03-10T08:50:02.317Z"
+    },
+    "latency-histogram/index": {
+      "hash": "de421404",
+      "file": "datas/devdocs/redis/core-server-managment/latency histogram.md",
+      "updatedAt": "2026-03-10T08:50:02.319Z"
+    },
+    "latency-history/index": {
+      "hash": "27ebd6e3",
+      "file": "datas/devdocs/redis/core-server-managment/latency history.md",
+      "updatedAt": "2026-03-10T08:50:02.323Z"
+    },
+    "latency-latest/index": {
+      "hash": "432cc5fc",
+      "file": "datas/devdocs/redis/core-server-managment/latency latest.md",
+      "updatedAt": "2026-03-10T08:50:02.326Z"
+    },
+    "latency-reset/index": {
+      "hash": "ebaf90bf",
+      "file": "datas/devdocs/redis/core-server-managment/latency reset.md",
+      "updatedAt": "2026-03-10T08:50:02.328Z"
+    },
+    "lcs/index": {
+      "hash": "d8412e19",
+      "file": "datas/devdocs/redis/core-string/lcs.md",
+      "updatedAt": "2026-03-10T08:50:02.330Z"
+    },
+    "lindex/index": {
+      "hash": "5ad9e0e5",
+      "file": "datas/devdocs/redis/core-list/lindex.md",
+      "updatedAt": "2026-03-10T08:50:02.332Z"
+    },
+    "linsert/index": {
+      "hash": "53415912",
+      "file": "datas/devdocs/redis/core-list/linsert.md",
+      "updatedAt": "2026-03-10T08:50:02.344Z"
+    },
+    "llen/index": {
+      "hash": "37eee920",
+      "file": "datas/devdocs/redis/core-list/llen.md",
+      "updatedAt": "2026-03-10T08:50:02.347Z"
+    },
+    "lmove/index": {
+      "hash": "bb6fb234",
+      "file": "datas/devdocs/redis/core-list/lmove.md",
+      "updatedAt": "2026-03-10T08:50:02.353Z"
+    },
+    "lmpop/index": {
+      "hash": "da2c1ecd",
+      "file": "datas/devdocs/redis/core-list/lmpop.md",
+      "updatedAt": "2026-03-10T08:50:02.358Z"
+    },
+    "lolwut/index": {
+      "hash": "9239eb9e",
+      "file": "datas/devdocs/redis/core-server-managment/lolwut.md",
+      "updatedAt": "2026-03-10T08:50:02.362Z"
+    },
+    "lpop/index": {
+      "hash": "5e068adc",
+      "file": "datas/devdocs/redis/core-list/lpop.md",
+      "updatedAt": "2026-03-10T08:50:02.364Z"
+    },
+    "lpos/index": {
+      "hash": "36ff5012",
+      "file": "datas/devdocs/redis/core-list/lpos.md",
+      "updatedAt": "2026-03-10T08:50:02.369Z"
+    },
+    "lpush/index": {
+      "hash": "872c09bd",
+      "file": "datas/devdocs/redis/core-list/lpush.md",
+      "updatedAt": "2026-03-10T08:50:02.372Z"
+    },
+    "lpushx/index": {
+      "hash": "589c3903",
+      "file": "datas/devdocs/redis/core-list/lpushx.md",
+      "updatedAt": "2026-03-10T08:50:02.376Z"
+    },
+    "lrange/index": {
+      "hash": "13edc80e",
+      "file": "datas/devdocs/redis/core-list/lrange.md",
+      "updatedAt": "2026-03-10T08:50:02.380Z"
+    },
+    "lrem/index": {
+      "hash": "da6678ba",
+      "file": "datas/devdocs/redis/core-list/lrem.md",
+      "updatedAt": "2026-03-10T08:50:02.382Z"
+    },
+    "lset/index": {
+      "hash": "9f8734dd",
+      "file": "datas/devdocs/redis/core-list/lset.md",
+      "updatedAt": "2026-03-10T08:50:02.384Z"
+    },
+    "ltrim/index": {
+      "hash": "91eeeab1",
+      "file": "datas/devdocs/redis/core-list/ltrim.md",
+      "updatedAt": "2026-03-10T08:50:02.386Z"
+    },
+    "memory-doctor/index": {
+      "hash": "b85898c2",
+      "file": "datas/devdocs/redis/core-server-managment/memory doctor.md",
+      "updatedAt": "2026-03-10T08:50:02.389Z"
+    },
+    "memory-malloc-stats/index": {
+      "hash": "77d698ef",
+      "file": "datas/devdocs/redis/core-server-managment/memory malloc stats.md",
+      "updatedAt": "2026-03-10T08:50:02.391Z"
+    },
+    "memory-purge/index": {
+      "hash": "40cb8460",
+      "file": "datas/devdocs/redis/core-server-managment/memory purge.md",
+      "updatedAt": "2026-03-10T08:50:02.393Z"
+    },
+    "memory-stats/index": {
+      "hash": "e11bd829",
+      "file": "datas/devdocs/redis/core-server-managment/memory stats.md",
+      "updatedAt": "2026-03-10T08:50:02.395Z"
+    },
+    "memory-usage/index": {
+      "hash": "5eb33a",
+      "file": "datas/devdocs/redis/core-server-managment/memory usage.md",
+      "updatedAt": "2026-03-10T08:50:02.401Z"
+    },
+    "mget/index": {
+      "hash": "bc71a0df",
+      "file": "datas/devdocs/redis/core-string/mget.md",
+      "updatedAt": "2026-03-10T08:50:02.403Z"
+    },
+    "migrate/index": {
+      "hash": "7732e8",
+      "file": "datas/devdocs/redis/core-generic/migrate.md",
+      "updatedAt": "2026-03-10T08:50:02.407Z"
+    },
+    "module-list/index": {
+      "hash": "82f5faea",
+      "file": "datas/devdocs/redis/core-server-managment/module list.md",
+      "updatedAt": "2026-03-10T08:50:02.411Z"
+    },
+    "module-load/index": {
+      "hash": "8c3cc7ca",
+      "file": "datas/devdocs/redis/core-server-managment/module load.md",
+      "updatedAt": "2026-03-10T08:50:02.413Z"
+    },
+    "module-loadex/index": {
+      "hash": "a31debdf",
+      "file": "datas/devdocs/redis/core-server-managment/module loadex.md",
+      "updatedAt": "2026-03-10T08:50:02.416Z"
+    },
+    "module-unload/index": {
+      "hash": "1c2eeff0",
+      "file": "datas/devdocs/redis/core-server-managment/module unload.md",
+      "updatedAt": "2026-03-10T08:50:02.420Z"
+    },
+    "monitor/index": {
+      "hash": "39a9ac9c",
+      "file": "datas/devdocs/redis/core-server-managment/monitor.md",
+      "updatedAt": "2026-03-10T08:50:02.421Z"
+    },
+    "move/index": {
+      "hash": "e530a8d0",
+      "file": "datas/devdocs/redis/core-generic/move.md",
+      "updatedAt": "2026-03-10T08:50:02.424Z"
+    },
+    "mset/index": {
+      "hash": "372390e5",
+      "file": "datas/devdocs/redis/core-string/mset.md",
+      "updatedAt": "2026-03-10T08:50:02.426Z"
+    },
+    "msetnx/index": {
+      "hash": "ef1ccaa5",
+      "file": "datas/devdocs/redis/core-string/msetnx.md",
+      "updatedAt": "2026-03-10T08:50:02.427Z"
+    },
+    "multi/index": {
+      "hash": "61936014",
+      "file": "datas/devdocs/redis/core-transactions/multi.md",
+      "updatedAt": "2026-03-10T08:50:02.430Z"
+    },
+    "object-encoding/index": {
+      "hash": "21fc376",
+      "file": "datas/devdocs/redis/core-generic/object encoding.md",
+      "updatedAt": "2026-03-10T08:50:02.432Z"
+    },
+    "object-freq/index": {
+      "hash": "b7daa18c",
+      "file": "datas/devdocs/redis/core-generic/object freq.md",
+      "updatedAt": "2026-03-10T08:50:02.434Z"
+    },
+    "object-idletime/index": {
+      "hash": "c79e9918",
+      "file": "datas/devdocs/redis/core-generic/object idletime.md",
+      "updatedAt": "2026-03-10T08:50:02.435Z"
+    },
+    "object-refcount/index": {
+      "hash": "abc912b4",
+      "file": "datas/devdocs/redis/core-generic/object refcount.md",
+      "updatedAt": "2026-03-10T08:50:02.437Z"
+    },
+    "persist/index": {
+      "hash": "ce37b66e",
+      "file": "datas/devdocs/redis/core-generic/persist.md",
+      "updatedAt": "2026-03-10T08:50:02.438Z"
+    },
+    "pexpire/index": {
+      "hash": "c4f257f7",
+      "file": "datas/devdocs/redis/core-generic/pexpire.md",
+      "updatedAt": "2026-03-10T08:50:02.441Z"
+    },
+    "pexpireat/index": {
+      "hash": "2af8e21b",
+      "file": "datas/devdocs/redis/core-generic/pexpireat.md",
+      "updatedAt": "2026-03-10T08:50:02.444Z"
+    },
+    "pexpiretime/index": {
+      "hash": "ff2376ef",
+      "file": "datas/devdocs/redis/core-generic/pexpiretime.md",
+      "updatedAt": "2026-03-10T08:50:02.446Z"
+    },
+    "pfadd/index": {
+      "hash": "6e3a3c3c",
+      "file": "datas/devdocs/redis/core-hyperloglog/pfadd.md",
+      "updatedAt": "2026-03-10T08:50:02.459Z"
+    },
+    "pfcount/index": {
+      "hash": "426df85e",
+      "file": "datas/devdocs/redis/core-hyperloglog/pfcount.md",
+      "updatedAt": "2026-03-10T08:50:02.461Z"
+    },
+    "pfdebug/index": {
+      "hash": "a2552c1e",
+      "file": "datas/devdocs/redis/core-hyperloglog/pfdebug.md",
+      "updatedAt": "2026-03-10T08:50:02.464Z"
+    },
+    "pfmerge/index": {
+      "hash": "4dd15788",
+      "file": "datas/devdocs/redis/core-hyperloglog/pfmerge.md",
+      "updatedAt": "2026-03-10T08:50:02.465Z"
+    },
+    "pfselftest/index": {
+      "hash": "71929351",
+      "file": "datas/devdocs/redis/core-hyperloglog/pfselftest.md",
+      "updatedAt": "2026-03-10T08:50:02.467Z"
+    },
+    "ping/index": {
+      "hash": "f4a7232b",
+      "file": "datas/devdocs/redis/core-connection-management/ping.md",
+      "updatedAt": "2026-03-10T08:50:02.469Z"
+    },
+    "psetex/index": {
+      "hash": "194dd971",
+      "file": "datas/devdocs/redis/core-string/psetex.md",
+      "updatedAt": "2026-03-10T08:50:02.470Z"
+    },
+    "psubscribe/index": {
+      "hash": "acb530c4",
+      "file": "datas/devdocs/redis/core-pub-sub/psubscribe.md",
+      "updatedAt": "2026-03-10T08:50:02.473Z"
+    },
+    "psync/index": {
+      "hash": "94c88617",
+      "file": "datas/devdocs/redis/core-server-managment/psync.md",
+      "updatedAt": "2026-03-10T08:50:02.475Z"
+    },
+    "pttl/index": {
+      "hash": "d8669bc2",
+      "file": "datas/devdocs/redis/core-generic/pttl.md",
+      "updatedAt": "2026-03-10T08:50:02.478Z"
+    },
+    "publish/index": {
+      "hash": "1dcdb6d9",
+      "file": "datas/devdocs/redis/core-pub-sub/publish.md",
+      "updatedAt": "2026-03-10T08:50:02.480Z"
+    },
+    "pubsub-channels/index": {
+      "hash": "d5a46663",
+      "file": "datas/devdocs/redis/core-pub-sub/pubsub channels.md",
+      "updatedAt": "2026-03-10T08:50:02.482Z"
+    },
+    "pubsub-numpat/index": {
+      "hash": "a7be580f",
+      "file": "datas/devdocs/redis/core-pub-sub/pubsub numpat.md",
+      "updatedAt": "2026-03-10T08:50:02.483Z"
+    },
+    "pubsub-numsub/index": {
+      "hash": "a029dadf",
+      "file": "datas/devdocs/redis/core-pub-sub/pubsub numsub.md",
+      "updatedAt": "2026-03-10T08:50:02.484Z"
+    },
+    "pubsub-shardchannels/index": {
+      "hash": "dd31488b",
+      "file": "datas/devdocs/redis/core-pub-sub/pubsub shardchannels.md",
+      "updatedAt": "2026-03-10T08:50:02.485Z"
+    },
+    "pubsub-shardnumsub/index": {
+      "hash": "c738e115",
+      "file": "datas/devdocs/redis/core-pub-sub/pubsub shardnumsub.md",
+      "updatedAt": "2026-03-10T08:50:02.487Z"
+    },
+    "punsubscribe/index": {
+      "hash": "73638702",
+      "file": "datas/devdocs/redis/core-pub-sub/punsubscribe.md",
+      "updatedAt": "2026-03-10T08:50:02.488Z"
+    },
+    "quit/index": {
+      "hash": "d84c9188",
+      "file": "datas/devdocs/redis/core-connection-management/quit.md",
+      "updatedAt": "2026-03-10T08:50:02.489Z"
+    },
+    "randomkey/index": {
+      "hash": "361001f0",
+      "file": "datas/devdocs/redis/core-generic/randomkey.md",
+      "updatedAt": "2026-03-10T08:50:02.490Z"
+    },
+    "readonly/index": {
+      "hash": "5f9f3966",
+      "file": "datas/devdocs/redis/core-cluster-management/readonly.md",
+      "updatedAt": "2026-03-10T08:50:02.491Z"
+    },
+    "readwrite/index": {
+      "hash": "5fb3577c",
+      "file": "datas/devdocs/redis/core-cluster-management/readwrite.md",
+      "updatedAt": "2026-03-10T08:50:02.493Z"
+    },
+    "rename/index": {
+      "hash": "4b535ef",
+      "file": "datas/devdocs/redis/core-generic/rename.md",
+      "updatedAt": "2026-03-10T08:50:02.495Z"
+    },
+    "renamenx/index": {
+      "hash": "e63d476a",
+      "file": "datas/devdocs/redis/core-generic/renamenx.md",
+      "updatedAt": "2026-03-10T08:50:02.496Z"
+    },
+    "replconf/index": {
+      "hash": "575b14fd",
+      "file": "datas/devdocs/redis/core-server-managment/replconf.md",
+      "updatedAt": "2026-03-10T08:50:02.497Z"
+    },
+    "replicaof/index": {
+      "hash": "614da4fb",
+      "file": "datas/devdocs/redis/core-server-managment/replicaof.md",
+      "updatedAt": "2026-03-10T08:50:02.498Z"
+    },
+    "reset/index": {
+      "hash": "c2af6027",
+      "file": "datas/devdocs/redis/core-connection-management/reset.md",
+      "updatedAt": "2026-03-10T08:50:02.500Z"
+    },
+    "restore/index": {
+      "hash": "9bca6a9a",
+      "file": "datas/devdocs/redis/core-generic/restore.md",
+      "updatedAt": "2026-03-10T08:50:02.502Z"
+    },
+    "restore-asking/index": {
+      "hash": "d1a4d2cc",
+      "file": "datas/devdocs/redis/core-server-managment/restore asking.md",
+      "updatedAt": "2026-03-10T08:50:02.504Z"
+    },
+    "role/index": {
+      "hash": "eabbe284",
+      "file": "datas/devdocs/redis/core-server-managment/role.md",
+      "updatedAt": "2026-03-10T08:50:02.506Z"
+    },
+    "rpop/index": {
+      "hash": "7f00f084",
+      "file": "datas/devdocs/redis/core-list/rpop.md",
+      "updatedAt": "2026-03-10T08:50:02.508Z"
+    },
+    "rpoplpush/index": {
+      "hash": "e4eef073",
+      "file": "datas/devdocs/redis/core-list/rpoplpush.md",
+      "updatedAt": "2026-03-10T08:50:02.510Z"
+    },
+    "rpush/index": {
+      "hash": "d7e6d9fd",
+      "file": "datas/devdocs/redis/core-list/rpush.md",
+      "updatedAt": "2026-03-10T08:50:02.513Z"
+    },
+    "rpushx/index": {
+      "hash": "fb4b8a1b",
+      "file": "datas/devdocs/redis/core-list/rpushx.md",
+      "updatedAt": "2026-03-10T08:50:02.516Z"
+    },
+    "sadd/index": {
+      "hash": "56da33a8",
+      "file": "datas/devdocs/redis/core-set/sadd.md",
+      "updatedAt": "2026-03-10T08:50:02.518Z"
+    },
+    "save/index": {
+      "hash": "c2cd4370",
+      "file": "datas/devdocs/redis/core-server-managment/save.md",
+      "updatedAt": "2026-03-10T08:50:02.519Z"
+    },
+    "scan/index": {
+      "hash": "91eeb2df",
+      "file": "datas/devdocs/redis/core-generic/scan.md",
+      "updatedAt": "2026-03-10T08:50:02.520Z"
+    },
+    "scard/index": {
+      "hash": "7cfb37c9",
+      "file": "datas/devdocs/redis/core-set/scard.md",
+      "updatedAt": "2026-03-10T08:50:02.526Z"
+    },
+    "script-debug/index": {
+      "hash": "33039e6c",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/script debug.md",
+      "updatedAt": "2026-03-10T08:50:02.528Z"
+    },
+    "script-exists/index": {
+      "hash": "7e0ebd41",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/script exists.md",
+      "updatedAt": "2026-03-10T08:50:02.534Z"
+    },
+    "script-flush/index": {
+      "hash": "e3505eed",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/script flush.md",
+      "updatedAt": "2026-03-10T08:50:02.536Z"
+    },
+    "script-kill/index": {
+      "hash": "94ebabf6",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/script kill.md",
+      "updatedAt": "2026-03-10T08:50:02.550Z"
+    },
+    "script-load/index": {
+      "hash": "95cfb4e0",
+      "file": "datas/devdocs/redis/core-scripting-and-functions/script load.md",
+      "updatedAt": "2026-03-10T08:50:02.551Z"
+    },
+    "sdiff/index": {
+      "hash": "4cfba7a8",
+      "file": "datas/devdocs/redis/core-set/sdiff.md",
+      "updatedAt": "2026-03-10T08:50:02.556Z"
+    },
+    "sdiffstore/index": {
+      "hash": "a8103d7c",
+      "file": "datas/devdocs/redis/core-set/sdiffstore.md",
+      "updatedAt": "2026-03-10T08:50:02.557Z"
+    },
+    "select/index": {
+      "hash": "96ecaf85",
+      "file": "datas/devdocs/redis/core-connection-management/select.md",
+      "updatedAt": "2026-03-10T08:50:02.565Z"
+    },
+    "set/index": {
+      "hash": "6a869e65",
+      "file": "datas/devdocs/redis/core-string/set.md",
+      "updatedAt": "2026-03-10T08:50:02.572Z"
+    },
+    "setbit/index": {
+      "hash": "267e3599",
+      "file": "datas/devdocs/redis/core-bitmap/setbit.md",
+      "updatedAt": "2026-03-10T08:50:02.580Z"
+    },
+    "setex/index": {
+      "hash": "d0dddfcc",
+      "file": "datas/devdocs/redis/core-string/setex.md",
+      "updatedAt": "2026-03-10T08:50:02.585Z"
+    },
+    "setnx/index": {
+      "hash": "69ba63a8",
+      "file": "datas/devdocs/redis/core-string/setnx.md",
+      "updatedAt": "2026-03-10T08:50:02.589Z"
+    },
+    "setrange/index": {
+      "hash": "8273bfbd",
+      "file": "datas/devdocs/redis/core-string/setrange.md",
+      "updatedAt": "2026-03-10T08:50:02.595Z"
+    },
+    "shutdown/index": {
+      "hash": "f4978842",
+      "file": "datas/devdocs/redis/core-server-managment/shutdown.md",
+      "updatedAt": "2026-03-10T08:50:02.599Z"
+    },
+    "sinter/index": {
+      "hash": "3b65baf4",
+      "file": "datas/devdocs/redis/core-set/sinter.md",
+      "updatedAt": "2026-03-10T08:50:02.602Z"
+    },
+    "sintercard/index": {
+      "hash": "85269948",
+      "file": "datas/devdocs/redis/core-set/sintercard.md",
+      "updatedAt": "2026-03-10T08:50:02.603Z"
+    },
+    "sinterstore/index": {
+      "hash": "47ccbd08",
+      "file": "datas/devdocs/redis/core-set/sinterstore.md",
+      "updatedAt": "2026-03-10T08:50:02.605Z"
+    },
+    "sismember/index": {
+      "hash": "de44e4b",
+      "file": "datas/devdocs/redis/core-set/sismember.md",
+      "updatedAt": "2026-03-10T08:50:02.606Z"
+    },
+    "slaveof/index": {
+      "hash": "6387f2a2",
+      "file": "datas/devdocs/redis/core-server-managment/slaveof.md",
+      "updatedAt": "2026-03-10T08:50:02.607Z"
+    },
+    "slowlog-get/index": {
+      "hash": "f32e39d8",
+      "file": "datas/devdocs/redis/core-server-managment/slowlog get.md",
+      "updatedAt": "2026-03-10T08:50:02.609Z"
+    },
+    "slowlog-len/index": {
+      "hash": "5b6e56e2",
+      "file": "datas/devdocs/redis/core-server-managment/slowlog len.md",
+      "updatedAt": "2026-03-10T08:50:02.611Z"
+    },
+    "slowlog-reset/index": {
+      "hash": "d9190b1d",
+      "file": "datas/devdocs/redis/core-server-managment/slowlog reset.md",
+      "updatedAt": "2026-03-10T08:50:02.612Z"
+    },
+    "smembers/index": {
+      "hash": "8d4b1241",
+      "file": "datas/devdocs/redis/core-set/smembers.md",
+      "updatedAt": "2026-03-10T08:50:02.614Z"
+    },
+    "smismember/index": {
+      "hash": "55577c60",
+      "file": "datas/devdocs/redis/core-set/smismember.md",
+      "updatedAt": "2026-03-10T08:50:02.615Z"
+    },
+    "smove/index": {
+      "hash": "6075cd53",
+      "file": "datas/devdocs/redis/core-set/smove.md",
+      "updatedAt": "2026-03-10T08:50:02.617Z"
+    },
+    "sort/index": {
+      "hash": "874d68b2",
+      "file": "datas/devdocs/redis/core-generic/sort.md",
+      "updatedAt": "2026-03-10T08:50:02.619Z"
+    },
+    "sort_ro/index": {
+      "hash": "fc08ab4d",
+      "file": "datas/devdocs/redis/core-generic/sort_ro.md",
+      "updatedAt": "2026-03-10T08:50:02.622Z"
+    },
+    "spop/index": {
+      "hash": "3f399e5e",
+      "file": "datas/devdocs/redis/core-set/spop.md",
+      "updatedAt": "2026-03-10T08:50:02.624Z"
+    },
+    "spublish/index": {
+      "hash": "f5a7c18d",
+      "file": "datas/devdocs/redis/core-pub-sub/spublish.md",
+      "updatedAt": "2026-03-10T08:50:02.625Z"
+    },
+    "srandmember/index": {
+      "hash": "3670327a",
+      "file": "datas/devdocs/redis/core-set/srandmember.md",
+      "updatedAt": "2026-03-10T08:50:02.627Z"
+    },
+    "srem/index": {
+      "hash": "b3111d47",
+      "file": "datas/devdocs/redis/core-set/srem.md",
+      "updatedAt": "2026-03-10T08:50:02.628Z"
+    },
+    "sscan/index": {
+      "hash": "1af0861a",
+      "file": "datas/devdocs/redis/core-set/sscan.md",
+      "updatedAt": "2026-03-10T08:50:02.630Z"
+    },
+    "ssubscribe/index": {
+      "hash": "e2aaca48",
+      "file": "datas/devdocs/redis/core-pub-sub/ssubscribe.md",
+      "updatedAt": "2026-03-10T08:50:02.632Z"
+    },
+    "strlen/index": {
+      "hash": "4abb1bf",
+      "file": "datas/devdocs/redis/core-string/strlen.md",
+      "updatedAt": "2026-03-10T08:50:02.633Z"
+    },
+    "subscribe/index": {
+      "hash": "f9c9174c",
+      "file": "datas/devdocs/redis/core-pub-sub/subscribe.md",
+      "updatedAt": "2026-03-10T08:50:02.633Z"
+    },
+    "substr/index": {
+      "hash": "938fa37",
+      "file": "datas/devdocs/redis/core-string/substr.md",
+      "updatedAt": "2026-03-10T08:50:02.635Z"
+    },
+    "sunion/index": {
+      "hash": "a169d8da",
+      "file": "datas/devdocs/redis/core-set/sunion.md",
+      "updatedAt": "2026-03-10T08:50:02.636Z"
+    },
+    "sunionstore/index": {
+      "hash": "53e3ff1c",
+      "file": "datas/devdocs/redis/core-set/sunionstore.md",
+      "updatedAt": "2026-03-10T08:50:02.638Z"
+    },
+    "sunsubscribe/index": {
+      "hash": "8c352571",
+      "file": "datas/devdocs/redis/core-pub-sub/sunsubscribe.md",
+      "updatedAt": "2026-03-10T08:50:02.640Z"
+    },
+    "swapdb/index": {
+      "hash": "97c85f18",
+      "file": "datas/devdocs/redis/core-server-managment/swapdb.md",
+      "updatedAt": "2026-03-10T08:50:02.641Z"
+    },
+    "sync/index": {
+      "hash": "9d62d338",
+      "file": "datas/devdocs/redis/core-server-managment/sync.md",
+      "updatedAt": "2026-03-10T08:50:02.650Z"
+    },
+    "tdigest.add/index": {
+      "hash": "b7823f5c",
+      "file": "datas/devdocs/redis/stack-t-digest/tdigest.add.md",
+      "updatedAt": "2026-03-10T08:50:02.655Z"
+    },
+    "tdigest.byrank/index": {
+      "hash": "234a8b7d",
+      "file": "datas/devdocs/redis/stack-t-digest/tdigest.byrank.md",
+      "updatedAt": "2026-03-10T08:50:02.656Z"
+    },
+    "tdigest.byrevrank/index": {
+      "hash": "a825099d",
+      "file": "datas/devdocs/redis/stack-t-digest/tdigest.byrevrank.md",
+      "updatedAt": "2026-03-10T08:50:02.660Z"
+    },
+    "tdigest.cdf/index": {
+      "hash": "b1e54468",
+      "file": "datas/devdocs/redis/stack-t-digest/tdigest.cdf.md",
+      "updatedAt": "2026-03-10T08:50:02.664Z"
+    },
+    "tdigest.create/index": {
+      "hash": "c12c76a3",
+      "file": "datas/devdocs/redis/stack-t-digest/tdigest.create.md",
+      "updatedAt": "2026-03-10T08:50:02.666Z"
+    },
+    "tdigest.info/index": {
+      "hash": "d15e53e6",
+      "file": "datas/devdocs/redis/stack-t-digest/tdigest.info.md",
+      "updatedAt": "2026-03-10T08:50:02.668Z"
+    },
+    "tdigest.max/index": {
+      "hash": "87854788",
+      "file": "datas/devdocs/redis/stack-t-digest/tdigest.max.md",
+      "updatedAt": "2026-03-10T08:50:02.670Z"
+    },
+    "tdigest.merge/index": {
+      "hash": "a4780018",
+      "file": "datas/devdocs/redis/stack-t-digest/tdigest.merge.md",
+      "updatedAt": "2026-03-10T08:50:02.672Z"
+    },
+    "tdigest.min/index": {
+      "hash": "f513a1d2",
+      "file": "datas/devdocs/redis/stack-t-digest/tdigest.min.md",
+      "updatedAt": "2026-03-10T08:50:02.675Z"
+    },
+    "tdigest.quantile/index": {
+      "hash": "76589e7e",
+      "file": "datas/devdocs/redis/stack-t-digest/tdigest.quantile.md",
+      "updatedAt": "2026-03-10T08:50:02.677Z"
+    },
+    "tdigest.rank/index": {
+      "hash": "ba748c4b",
+      "file": "datas/devdocs/redis/stack-t-digest/tdigest.rank.md",
+      "updatedAt": "2026-03-10T08:50:02.679Z"
+    },
+    "tdigest.reset/index": {
+      "hash": "79b7c1b5",
+      "file": "datas/devdocs/redis/stack-t-digest/tdigest.reset.md",
+      "updatedAt": "2026-03-10T08:50:02.683Z"
+    },
+    "tdigest.revrank/index": {
+      "hash": "7db9202b",
+      "file": "datas/devdocs/redis/stack-t-digest/tdigest.revrank.md",
+      "updatedAt": "2026-03-10T08:50:02.684Z"
+    },
+    "tdigest.trimmed_mean/index": {
+      "hash": "657f77e",
+      "file": "datas/devdocs/redis/stack-t-digest/tdigest.trimmed_mean.md",
+      "updatedAt": "2026-03-10T08:50:02.692Z"
+    },
+    "time/index": {
+      "hash": "81063a40",
+      "file": "datas/devdocs/redis/core-server-managment/time.md",
+      "updatedAt": "2026-03-10T08:50:02.699Z"
+    },
+    "topk.add/index": {
+      "hash": "2498160f",
+      "file": "datas/devdocs/redis/stack-top-k/topk.add.md",
+      "updatedAt": "2026-03-10T08:50:02.704Z"
+    },
+    "topk.count/index": {
+      "hash": "90755466",
+      "file": "datas/devdocs/redis/stack-top-k/topk.count.md",
+      "updatedAt": "2026-03-10T08:50:02.707Z"
+    },
+    "topk.incrby/index": {
+      "hash": "a3d8badd",
+      "file": "datas/devdocs/redis/stack-top-k/topk.incrby.md",
+      "updatedAt": "2026-03-10T08:50:02.708Z"
+    },
+    "topk.info/index": {
+      "hash": "624b1a21",
+      "file": "datas/devdocs/redis/stack-top-k/topk.info.md",
+      "updatedAt": "2026-03-10T08:50:02.713Z"
+    },
+    "topk.list/index": {
+      "hash": "98e7c843",
+      "file": "datas/devdocs/redis/stack-top-k/topk.list.md",
+      "updatedAt": "2026-03-10T08:50:02.719Z"
+    },
+    "topk.query/index": {
+      "hash": "9ccbcb18",
+      "file": "datas/devdocs/redis/stack-top-k/topk.query.md",
+      "updatedAt": "2026-03-10T08:50:02.723Z"
+    },
+    "topk.reserve/index": {
+      "hash": "bfd5a2ad",
+      "file": "datas/devdocs/redis/stack-top-k/topk.reserve.md",
+      "updatedAt": "2026-03-10T08:50:02.726Z"
+    },
+    "touch/index": {
+      "hash": "f8f1984e",
+      "file": "datas/devdocs/redis/core-generic/touch.md",
+      "updatedAt": "2026-03-10T08:50:02.730Z"
+    },
+    "ts.add/index": {
+      "hash": "457bdaa",
+      "file": "datas/devdocs/redis/stack-time-series/ts.add.md",
+      "updatedAt": "2026-03-10T08:50:02.732Z"
+    },
+    "ts.alter/index": {
+      "hash": "1e08bba7",
+      "file": "datas/devdocs/redis/stack-time-series/ts.alter.md",
+      "updatedAt": "2026-03-10T08:50:02.737Z"
+    },
+    "ts.create/index": {
+      "hash": "662ad9f8",
+      "file": "datas/devdocs/redis/stack-time-series/ts.create.md",
+      "updatedAt": "2026-03-10T08:50:02.742Z"
+    },
+    "ts.createrule/index": {
+      "hash": "6f206f7d",
+      "file": "datas/devdocs/redis/stack-time-series/ts.createrule.md",
+      "updatedAt": "2026-03-10T08:50:02.746Z"
+    },
+    "ts.decrby/index": {
+      "hash": "9e822430",
+      "file": "datas/devdocs/redis/stack-time-series/ts.decrby.md",
+      "updatedAt": "2026-03-10T08:50:02.754Z"
+    },
+    "ts.del/index": {
+      "hash": "feb16aec",
+      "file": "datas/devdocs/redis/stack-time-series/ts.del.md",
+      "updatedAt": "2026-03-10T08:50:02.762Z"
+    },
+    "ts.deleterule/index": {
+      "hash": "65e00702",
+      "file": "datas/devdocs/redis/stack-time-series/ts.deleterule.md",
+      "updatedAt": "2026-03-10T08:50:02.778Z"
+    },
+    "ts.get/index": {
+      "hash": "6467edcb",
+      "file": "datas/devdocs/redis/stack-time-series/ts.get.md",
+      "updatedAt": "2026-03-10T08:50:02.780Z"
+    },
+    "ts.incrby/index": {
+      "hash": "916a412",
+      "file": "datas/devdocs/redis/stack-time-series/ts.incrby.md",
+      "updatedAt": "2026-03-10T08:50:02.786Z"
+    },
+    "ts.info/index": {
+      "hash": "97505840",
+      "file": "datas/devdocs/redis/stack-time-series/ts.info.md",
+      "updatedAt": "2026-03-10T08:50:02.792Z"
+    },
+    "ts.madd/index": {
+      "hash": "d579825b",
+      "file": "datas/devdocs/redis/stack-time-series/ts.madd.md",
+      "updatedAt": "2026-03-10T08:50:02.798Z"
+    },
+    "ts.mget/index": {
+      "hash": "51a35196",
+      "file": "datas/devdocs/redis/stack-time-series/ts.mget.md",
+      "updatedAt": "2026-03-10T08:50:02.802Z"
+    },
+    "ts.mrange/index": {
+      "hash": "be15455a",
+      "file": "datas/devdocs/redis/stack-time-series/ts.mrange.md",
+      "updatedAt": "2026-03-10T08:50:02.810Z"
+    },
+    "ts.mrevrange/index": {
+      "hash": "40246a85",
+      "file": "datas/devdocs/redis/stack-time-series/ts.mrevrange.md",
+      "updatedAt": "2026-03-10T08:50:02.830Z"
+    },
+    "ts.queryindex/index": {
+      "hash": "3e87220b",
+      "file": "datas/devdocs/redis/stack-time-series/ts.queryindex.md",
+      "updatedAt": "2026-03-10T08:50:02.859Z"
+    },
+    "ts.range/index": {
+      "hash": "da17d1a5",
+      "file": "datas/devdocs/redis/stack-time-series/ts.range.md",
+      "updatedAt": "2026-03-10T08:50:02.863Z"
+    },
+    "ts.revrange/index": {
+      "hash": "7b3c77c1",
+      "file": "datas/devdocs/redis/stack-time-series/ts.revrange.md",
+      "updatedAt": "2026-03-10T08:50:02.873Z"
+    },
+    "ttl/index": {
+      "hash": "16e86f3f",
+      "file": "datas/devdocs/redis/core-generic/ttl.md",
+      "updatedAt": "2026-03-10T08:50:02.883Z"
+    },
+    "type/index": {
+      "hash": "bb153e80",
+      "file": "datas/devdocs/redis/core-generic/type.md",
+      "updatedAt": "2026-03-10T08:50:02.886Z"
+    },
+    "unlink/index": {
+      "hash": "73955e05",
+      "file": "datas/devdocs/redis/core-generic/unlink.md",
+      "updatedAt": "2026-03-10T08:50:02.888Z"
+    },
+    "unsubscribe/index": {
+      "hash": "bbc70629",
+      "file": "datas/devdocs/redis/core-pub-sub/unsubscribe.md",
+      "updatedAt": "2026-03-10T08:50:02.890Z"
+    },
+    "unwatch/index": {
+      "hash": "8a3916a8",
+      "file": "datas/devdocs/redis/core-transactions/unwatch.md",
+      "updatedAt": "2026-03-10T08:50:02.892Z"
+    },
+    "wait/index": {
+      "hash": "1f48e3e",
+      "file": "datas/devdocs/redis/core-generic/wait.md",
+      "updatedAt": "2026-03-10T08:50:02.894Z"
+    },
+    "watch/index": {
+      "hash": "c3b1c77b",
+      "file": "datas/devdocs/redis/core-transactions/watch.md",
+      "updatedAt": "2026-03-10T08:50:02.897Z"
+    },
+    "xack/index": {
+      "hash": "98e1f4a0",
+      "file": "datas/devdocs/redis/core-stream/xack.md",
+      "updatedAt": "2026-03-10T08:50:02.898Z"
+    },
+    "xadd/index": {
+      "hash": "5580f1e3",
+      "file": "datas/devdocs/redis/core-stream/xadd.md",
+      "updatedAt": "2026-03-10T08:50:02.900Z"
+    },
+    "xautoclaim/index": {
+      "hash": "bc6b4b53",
+      "file": "datas/devdocs/redis/core-stream/xautoclaim.md",
+      "updatedAt": "2026-03-10T08:50:02.903Z"
+    },
+    "xclaim/index": {
+      "hash": "a36d4176",
+      "file": "datas/devdocs/redis/core-stream/xclaim.md",
+      "updatedAt": "2026-03-10T08:50:02.905Z"
+    },
+    "xdel/index": {
+      "hash": "ba9a9308",
+      "file": "datas/devdocs/redis/core-stream/xdel.md",
+      "updatedAt": "2026-03-10T08:50:02.918Z"
+    },
+    "xgroup-create/index": {
+      "hash": "725518eb",
+      "file": "datas/devdocs/redis/core-stream/xgroup create.md",
+      "updatedAt": "2026-03-10T08:50:02.920Z"
+    },
+    "xgroup-createconsumer/index": {
+      "hash": "542c2c62",
+      "file": "datas/devdocs/redis/core-stream/xgroup createconsumer.md",
+      "updatedAt": "2026-03-10T08:50:02.922Z"
+    },
+    "xgroup-delconsumer/index": {
+      "hash": "5b1bb531",
+      "file": "datas/devdocs/redis/core-stream/xgroup delconsumer.md",
+      "updatedAt": "2026-03-10T08:50:02.923Z"
+    },
+    "xgroup-destroy/index": {
+      "hash": "e7f69394",
+      "file": "datas/devdocs/redis/core-stream/xgroup destroy.md",
+      "updatedAt": "2026-03-10T08:50:02.925Z"
+    },
+    "xgroup-setid/index": {
+      "hash": "5b20c080",
+      "file": "datas/devdocs/redis/core-stream/xgroup setid.md",
+      "updatedAt": "2026-03-10T08:50:02.928Z"
+    },
+    "xinfo-consumers/index": {
+      "hash": "19d8fb16",
+      "file": "datas/devdocs/redis/core-stream/xinfo consumers.md",
+      "updatedAt": "2026-03-10T08:50:02.930Z"
+    },
+    "xinfo-groups/index": {
+      "hash": "c2cc2316",
+      "file": "datas/devdocs/redis/core-stream/xinfo groups.md",
+      "updatedAt": "2026-03-10T08:50:02.932Z"
+    },
+    "xinfo-stream/index": {
+      "hash": "23fa3677",
+      "file": "datas/devdocs/redis/core-stream/xinfo stream.md",
+      "updatedAt": "2026-03-10T08:50:02.937Z"
+    },
+    "xlen/index": {
+      "hash": "ec966a1a",
+      "file": "datas/devdocs/redis/core-stream/xlen.md",
+      "updatedAt": "2026-03-10T08:50:02.941Z"
+    },
+    "xpending/index": {
+      "hash": "a46e2191",
+      "file": "datas/devdocs/redis/core-stream/xpending.md",
+      "updatedAt": "2026-03-10T08:50:02.945Z"
+    },
+    "xrange/index": {
+      "hash": "4ce9c90",
+      "file": "datas/devdocs/redis/core-stream/xrange.md",
+      "updatedAt": "2026-03-10T08:50:02.954Z"
+    },
+    "xread/index": {
+      "hash": "3f2b8001",
+      "file": "datas/devdocs/redis/core-stream/xread.md",
+      "updatedAt": "2026-03-10T08:50:02.959Z"
+    },
+    "xreadgroup/index": {
+      "hash": "f47b414f",
+      "file": "datas/devdocs/redis/core-stream/xreadgroup.md",
+      "updatedAt": "2026-03-10T08:50:02.965Z"
+    },
+    "xrevrange/index": {
+      "hash": "aa43f88e",
+      "file": "datas/devdocs/redis/core-stream/xrevrange.md",
+      "updatedAt": "2026-03-10T08:50:02.973Z"
+    },
+    "xsetid/index": {
+      "hash": "91d7ae4e",
+      "file": "datas/devdocs/redis/core-stream/xsetid.md",
+      "updatedAt": "2026-03-10T08:50:02.975Z"
+    },
+    "xtrim/index": {
+      "hash": "85afc491",
+      "file": "datas/devdocs/redis/core-stream/xtrim.md",
+      "updatedAt": "2026-03-10T08:50:02.978Z"
+    },
+    "zadd/index": {
+      "hash": "fea312f1",
+      "file": "datas/devdocs/redis/core-sorted-set/zadd.md",
+      "updatedAt": "2026-03-10T08:50:02.985Z"
+    },
+    "zcard/index": {
+      "hash": "c4ede75a",
+      "file": "datas/devdocs/redis/core-sorted-set/zcard.md",
+      "updatedAt": "2026-03-10T08:50:02.989Z"
+    },
+    "zcount/index": {
+      "hash": "ed7534cc",
+      "file": "datas/devdocs/redis/core-sorted-set/zcount.md",
+      "updatedAt": "2026-03-10T08:50:02.991Z"
+    },
+    "zdiff/index": {
+      "hash": "e11e865",
+      "file": "datas/devdocs/redis/core-sorted-set/zdiff.md",
+      "updatedAt": "2026-03-10T08:50:02.994Z"
+    },
+    "zdiffstore/index": {
+      "hash": "2001811a",
+      "file": "datas/devdocs/redis/core-sorted-set/zdiffstore.md",
+      "updatedAt": "2026-03-10T08:50:02.996Z"
+    },
+    "zincrby/index": {
+      "hash": "5c16eb33",
+      "file": "datas/devdocs/redis/core-sorted-set/zincrby.md",
+      "updatedAt": "2026-03-10T08:50:03.000Z"
+    },
+    "zinter/index": {
+      "hash": "2d81b938",
+      "file": "datas/devdocs/redis/core-sorted-set/zinter.md",
+      "updatedAt": "2026-03-10T08:50:03.007Z"
+    },
+    "zintercard/index": {
+      "hash": "be6daff8",
+      "file": "datas/devdocs/redis/core-sorted-set/zintercard.md",
+      "updatedAt": "2026-03-10T08:50:03.009Z"
+    },
+    "zinterstore/index": {
+      "hash": "bca9cf35",
+      "file": "datas/devdocs/redis/core-sorted-set/zinterstore.md",
+      "updatedAt": "2026-03-10T08:50:03.011Z"
+    },
+    "zlexcount/index": {
+      "hash": "c0efa6f",
+      "file": "datas/devdocs/redis/core-sorted-set/zlexcount.md",
+      "updatedAt": "2026-03-10T08:50:03.013Z"
+    },
+    "zmpop/index": {
+      "hash": "7e9141e6",
+      "file": "datas/devdocs/redis/core-sorted-set/zmpop.md",
+      "updatedAt": "2026-03-10T08:50:03.015Z"
+    },
+    "zmscore/index": {
+      "hash": "2cc42aaa",
+      "file": "datas/devdocs/redis/core-sorted-set/zmscore.md",
+      "updatedAt": "2026-03-10T08:50:03.027Z"
+    },
+    "zpopmax/index": {
+      "hash": "df0d38a9",
+      "file": "datas/devdocs/redis/core-sorted-set/zpopmax.md",
+      "updatedAt": "2026-03-10T08:50:03.029Z"
+    },
+    "zpopmin/index": {
+      "hash": "e5a922b8",
+      "file": "datas/devdocs/redis/core-sorted-set/zpopmin.md",
+      "updatedAt": "2026-03-10T08:50:03.031Z"
+    },
+    "zrandmember/index": {
+      "hash": "8ee0a951",
+      "file": "datas/devdocs/redis/core-sorted-set/zrandmember.md",
+      "updatedAt": "2026-03-10T08:50:03.032Z"
+    },
+    "zrange/index": {
+      "hash": "21bace2",
+      "file": "datas/devdocs/redis/core-sorted-set/zrange.md",
+      "updatedAt": "2026-03-10T08:50:03.034Z"
+    },
+    "zrangebylex/index": {
+      "hash": "777392e1",
+      "file": "datas/devdocs/redis/core-sorted-set/zrangebylex.md",
+      "updatedAt": "2026-03-10T08:50:03.038Z"
+    },
+    "zrangebyscore/index": {
+      "hash": "da10cfc3",
+      "file": "datas/devdocs/redis/core-sorted-set/zrangebyscore.md",
+      "updatedAt": "2026-03-10T08:50:03.042Z"
+    },
+    "zrangestore/index": {
+      "hash": "fccb790a",
+      "file": "datas/devdocs/redis/core-sorted-set/zrangestore.md",
+      "updatedAt": "2026-03-10T08:50:03.045Z"
+    },
+    "zrank/index": {
+      "hash": "2c2002dd",
+      "file": "datas/devdocs/redis/core-sorted-set/zrank.md",
+      "updatedAt": "2026-03-10T08:50:03.047Z"
+    },
+    "zrem/index": {
+      "hash": "49bea762",
+      "file": "datas/devdocs/redis/core-sorted-set/zrem.md",
+      "updatedAt": "2026-03-10T08:50:03.050Z"
+    },
+    "zremrangebylex/index": {
+      "hash": "c679b02e",
+      "file": "datas/devdocs/redis/core-sorted-set/zremrangebylex.md",
+      "updatedAt": "2026-03-10T08:50:03.052Z"
+    },
+    "zremrangebyrank/index": {
+      "hash": "1555595d",
+      "file": "datas/devdocs/redis/core-sorted-set/zremrangebyrank.md",
+      "updatedAt": "2026-03-10T08:50:03.054Z"
+    },
+    "zremrangebyscore/index": {
+      "hash": "9ec12280",
+      "file": "datas/devdocs/redis/core-sorted-set/zremrangebyscore.md",
+      "updatedAt": "2026-03-10T08:50:03.056Z"
+    },
+    "zrevrange/index": {
+      "hash": "bfff0434",
+      "file": "datas/devdocs/redis/core-sorted-set/zrevrange.md",
+      "updatedAt": "2026-03-10T08:50:03.058Z"
+    },
+    "zrevrangebylex/index": {
+      "hash": "9559c000",
+      "file": "datas/devdocs/redis/core-sorted-set/zrevrangebylex.md",
+      "updatedAt": "2026-03-10T08:50:03.059Z"
+    },
+    "zrevrangebyscore/index": {
+      "hash": "f7f97744",
+      "file": "datas/devdocs/redis/core-sorted-set/zrevrangebyscore.md",
+      "updatedAt": "2026-03-10T08:50:03.060Z"
+    },
+    "zrevrank/index": {
+      "hash": "9f6590ec",
+      "file": "datas/devdocs/redis/core-sorted-set/zrevrank.md",
+      "updatedAt": "2026-03-10T08:50:03.062Z"
+    },
+    "zscan/index": {
+      "hash": "1e857601",
+      "file": "datas/devdocs/redis/core-sorted-set/zscan.md",
+      "updatedAt": "2026-03-10T08:50:03.064Z"
+    },
+    "zscore/index": {
+      "hash": "6c1d04eb",
+      "file": "datas/devdocs/redis/core-sorted-set/zscore.md",
+      "updatedAt": "2026-03-10T08:50:03.067Z"
+    },
+    "zunion/index": {
+      "hash": "6f56e499",
+      "file": "datas/devdocs/redis/core-sorted-set/zunion.md",
+      "updatedAt": "2026-03-10T08:50:03.068Z"
+    },
+    "zunionstore/index": {
+      "hash": "8328b16e",
+      "file": "datas/devdocs/redis/core-sorted-set/zunionstore.md",
+      "updatedAt": "2026-03-10T08:50:03.070Z"
+    }
+  }
+}

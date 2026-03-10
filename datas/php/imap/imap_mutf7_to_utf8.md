@@ -1,0 +1,34 @@
+# imap_mutf7_to_utf8
+
+Source: https://devdocs.io/php/function.imap-mutf7-to-utf8
+
+(PHP 5 >= 5.3.0, PHP 7, PHP 8)
+
+imap_mutf7_to_utf8 — Decode a modified UTF-7 string to UTF-8
+
+### Description
+
+```
+imap_mutf7_to_utf8(string $string): string|false
+```
+
+Decode a modified UTF-7 (as specified in RFC 2060, section 5.1.3) string to UTF-8.
+
+Note:
+
+This function is only available, if libcclient exports utf8_to_mutf7().
+
+### Parameters
+
+A string encoded in modified UTF-7.
+
+### Return Values
+
+Returns string converted to UTF-8, or false on failure.
+
+### See Also
+
+- imap_utf8_to_mutf7() - Encode a UTF-8 string to modified UTF-7
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.imap-mutf7-to-utf8.php

@@ -1,0 +1,68 @@
+# sodium_crypto_secretbox
+
+Source: https://devdocs.io/php/function.sodium-crypto-secretbox
+
+(PHP 7 >= 7.2.0, PHP 8)
+
+sodium_crypto_secretbox — Authenticated shared-key encryption
+
+### Description
+
+```
+sodium_crypto_secretbox(#[\SensitiveParameter] string $message, string $nonce, #[\SensitiveParameter] string $key): string
+```
+
+Encrypt a message with a symmetric (shared) key.
+
+### Parameters
+
+The plaintext message to encrypt.
+
+A number that must be only used once, per message. 24 bytes long. This is a large enough bound to generate randomly (i.e. random_bytes()).
+
+Encryption key (256-bit).
+
+### Return Values
+
+Returns the encrypted string.
+
+### Errors/Exceptions
+
+- If nonce has a length of bytes different than SODIUM_CRYPTO_SECRETBOX_NONCEBYTES (24 bytes), a SodiumException will be thrown.
+- If key has a length of bytes different than SODIUM_CRYPTO_SECRETBOX_KEYBYTES (32 bytes), a SodiumException will be thrown.
+- Throws a SodiumException on failure.
+
+### Examples
+
+Example #1 sodium_crypto_secretbox() example
+
+```
+<?php
+// The $key must be kept confidential
+$key = sodium_crypto_secretbox_keygen();
+// Do not reuse $nonce with the same key
+$nonce = random_bytes(SODIUM_CRYPTO_SECRETBOX_NONCEBYTES);
+$plaintext = "message to be encrypted";
+$ciphertext = sodium_crypto_secretbox($plaintext, $nonce, $key);
+
+var_dump(bin2hex($ciphertext));
+// The same nonce and key are required to decrypt the $ciphertext
+var_dump(sodium_crypto_secretbox_open($ciphertext, $nonce, $key));
+?>
+```
+
+The above example will output something similar to:
+
+```
+string(78) "3a1fa3e9f7b72ef8be51d40abf8e296c6899c185d07b18b4c93e7f26aa776d24c50852cd6b1076"
+string(23) "message to be encrypted"
+```
+
+### See Also
+
+- sodium_crypto_secretbox_open() - Authenticated shared-key decryption
+- sodium_crypto_secretbox_keygen() - Generate random key for sodium_crypto_secretbox
+- random_bytes() - Get cryptographically secure random bytes
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.sodium-crypto-secretbox.php

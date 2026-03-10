@@ -1,0 +1,57 @@
+# get_declared_interfaces
+
+Source: https://devdocs.io/php/function.get-declared-interfaces
+
+(PHP 5, PHP 7, PHP 8)
+
+get_declared_interfaces — Returns an array of all declared interfaces
+
+### Description
+
+```
+get_declared_interfaces(): array
+```
+
+Gets the declared interfaces.
+
+### Parameters
+
+This function has no parameters.
+
+### Return Values
+
+Returns an array of the names of the declared interfaces in the current script.
+
+### Examples
+
+Example #1 get_declared_interfaces() example
+
+```
+<?php
+print_r(get_declared_interfaces());
+?>
+```
+
+The above example will output something similar to:
+
+```
+Array
+(
+    [0] => Traversable
+    [1] => IteratorAggregate
+    [2] => Iterator
+    [3] => ArrayAccess
+    [4] => reflector
+    [5] => RecursiveIterator
+    [6] => SeekableIterator
+)
+```
+
+### See Also
+
+- interface_exists() - Checks if the interface has been defined
+- get_declared_classes() - Returns an array with the name of the defined classes
+- class_implements() - Return the interfaces which are implemented by the given class or interface
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.get-declared-interfaces.php

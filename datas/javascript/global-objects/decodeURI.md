@@ -1,0 +1,104 @@
+# decodeURI()
+
+Source: https://devdocs.io/javascript/global_objects/decodeuri
+
+The decodeURI() function decodes a Uniform Resource Identifier (URI) previously created by encodeURI() or a similar routine.
+
+## Try it
+
+```
+const uri = "https://mozilla.org/?x=шеллы";
+const encoded = encodeURI(uri);
+console.log(encoded);
+// Expected output: "https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B"
+
+try {
+  console.log(decodeURI(encoded));
+  // Expected output: "https://mozilla.org/?x=шеллы"
+} catch (e) {
+  // Catches a malformed URI
+  console.error(e);
+}
+```
+
+## Syntax
+
+```
+decodeURI(encodedURI)
+```
+
+### Parameters
+
+A complete, encoded Uniform Resource Identifier.
+
+### Return value
+
+A new string representing the unencoded version of the given encoded Uniform Resource Identifier (URI).
+
+### Exceptions
+
+Thrown if encodedURI contains a % not followed by two hexadecimal digits, or if the escape sequence does not encode a valid UTF-8 character.
+
+## Description
+
+decodeURI() is a function property of the global object.
+
+The decodeURI() function decodes the URI by treating each escape sequence in the form %XX as one UTF-8 code unit (one byte). In UTF-8, the number of leading 1 bits in the first byte, which may be 0 (for 1-byte ASCII characters), 2, 3, or 4, indicates the number of bytes in the character. So by reading the first escape sequence, decodeURI() can determine how many more escape sequences to consume. If decodeURI() fails to find the expected number of sequences, or if the escape sequences don't encode a valid UTF-8 character, a URIError is thrown.
+
+decodeURI() decodes all escape sequences, but if the escape sequence encodes one of the following characters, the escape sequence is preserved in the output string (because they are part of the URI syntax):
+
+```
+; / ? : @ & = + $ , #
+```
+
+## Examples
+
+### Decoding a Cyrillic URL
+
+```
+decodeURI(
+  "https://developer.mozilla.org/ru/docs/JavaScript_%D1%88%D0%B5%D0%BB%D0%BB%D1%8B",
+);
+// "https://developer.mozilla.org/ru/docs/JavaScript_шеллы"
+```
+
+### decodeURI() vs. decodeURIComponent()
+
+decodeURI() assumes the input is a full URI, so it does not decode characters that are part of the URI syntax.
+
+```
+decodeURI(
+  "https://developer.mozilla.org/docs/JavaScript%3A%20a_scripting_language",
+);
+// "https://developer.mozilla.org/docs/JavaScript%3A a_scripting_language"
+
+decodeURIComponent(
+  "https://developer.mozilla.org/docs/JavaScript%3A%20a_scripting_language",
+);
+// "https://developer.mozilla.org/docs/JavaScript: a_scripting_language"
+```
+
+### Catching errors
+
+```
+try {
+  const a = decodeURI("%E0%A4%A");
+} catch (e) {
+  console.error(e);
+}
+
+// URIError: malformed URI sequence
+```
+
+## Specifications
+
+## Browser compatibility
+
+## See also
+
+- decodeURIComponent()
+- encodeURI()
+- encodeURIComponent()
+
+© 2005–2025 MDN contributors.Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURI

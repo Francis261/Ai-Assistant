@@ -1,0 +1,54 @@
+# wincache_ucache_exists
+
+Source: https://devdocs.io/php/function.wincache-ucache-exists
+
+(PECL wincache >= 1.1.0)
+
+wincache_ucache_exists — Checks if a variable exists in the user cache
+
+### Description
+
+```
+wincache_ucache_exists(string $key): bool
+```
+
+Checks if a variable with the key exists in the user cache or not.
+
+### Parameters
+
+The key that was used to store the variable in the cache. key is case sensitive.
+
+### Return Values
+
+Returns true if variable with the key exitsts, otherwise returns false.
+
+### Examples
+
+Example #1 Using wincache_ucache_exists()
+
+```
+<?php
+if (!wincache_ucache_exists('green'))
+    wincache_ucache_set('green', 1);
+var_dump(wincache_ucache_exists('green'));
+?>
+```
+
+The above example will output:
+
+```
+bool(true)
+```
+
+### See Also
+
+- wincache_ucache_set() - Adds a variable in user cache and overwrites a variable if it already exists in the cache
+- wincache_ucache_add() - Adds a variable in user cache only if variable does not already exist in the cache
+- wincache_ucache_get() - Gets a variable stored in the user cache
+- wincache_ucache_clear() - Deletes entire content of the user cache
+- wincache_ucache_delete() - Deletes variables from the user cache
+- wincache_ucache_meminfo() - Retrieves information about user cache memory usage
+- wincache_ucache_info() - Retrieves information about data stored in the user cache
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.wincache-ucache-exists.php

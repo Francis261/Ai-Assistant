@@ -1,0 +1,61 @@
+# array_search
+
+Source: https://devdocs.io/php/function.array-search
+
+(PHP 4 >= 4.0.5, PHP 5, PHP 7, PHP 8)
+
+array_search — Searches the array for a given value and returns the first corresponding key if successful
+
+### Description
+
+```
+array_search(mixed $needle, array $haystack, bool $strict = false): int|string|false
+```
+
+Searches for needle in haystack.
+
+### Parameters
+
+The searched value.
+
+Note:
+
+If needle is a string, the comparison is done in a case-sensitive manner.
+
+The array.
+
+If the third parameter strict is set to true then the array_search() function will search for identical elements in the haystack. This means it will also perform a strict type comparison of the needle in the haystack, and objects must be the same instance.
+
+### Return Values
+
+Returns the key for needle if it is found in the array, false otherwise.
+
+If needle is found in haystack more than once, the first matching key is returned. To return the keys for all matching values, use array_keys() with the optional filter_value parameter instead.
+
+This function may return Boolean false, but may also return a non-Boolean value which evaluates to false. Please read the section on Booleans for more information. Use the === operator for testing the return value of this function.
+
+### Examples
+
+Example #1 array_search() example
+
+```
+<?php
+$array = array(0 => 'blue', 1 => 'red', 2 => 'green', 3 => 'red');
+
+$key = array_search('green', $array); // $key = 2;
+print_r($key);
+
+$key = array_search('red', $array);   // $key = 1;
+print_r($key);
+?>
+```
+
+### See Also
+
+- array_keys() - Return all the keys or a subset of the keys of an array
+- array_values() - Return all the values of an array
+- array_key_exists() - Checks if the given key or index exists in the array
+- in_array() - Checks if a value exists in an array
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.array-search.php

@@ -1,0 +1,53 @@
+# gmp_powm
+
+Source: https://devdocs.io/php/function.gmp-powm
+
+(PHP 4 >= 4.0.4, PHP 5, PHP 7, PHP 8)
+
+gmp_powm — Raise number into power with modulo
+
+### Description
+
+```
+gmp_powm(GMP|int|string $num, GMP|int|string $exponent, GMP|int|string $modulus): GMP
+```
+
+Calculate (num raised into power exponent) modulo modulus. If exponent is negative, result is undefined.
+
+### Parameters
+
+The base number.
+
+A GMP object, an int, or a string that can be interpreted as a number following the same logic as if the string was used in gmp_init() with automatic base detection (i.e. when base is equal to 0).
+
+The positive power to raise the num.
+
+A GMP object, an int, or a string that can be interpreted as a number following the same logic as if the string was used in gmp_init() with automatic base detection (i.e. when base is equal to 0).
+
+The modulo.
+
+A GMP object, an int, or a string that can be interpreted as a number following the same logic as if the string was used in gmp_init() with automatic base detection (i.e. when base is equal to 0).
+
+### Return Values
+
+The new (raised) number, as a GMP number.
+
+### Examples
+
+Example #1 gmp_powm() example
+
+```
+<?php
+$pow1 = gmp_powm("2", "31", "2147483649");
+echo gmp_strval($pow1) . "\n";
+?>
+```
+
+The above example will output:
+
+```
+2147483648
+```
+
+© 1997–2025 The PHP Documentation GroupLicensed under the Creative Commons Attribution License v3.0 or later.
+ https://www.php.net/manual/en/function.gmp-powm.php
