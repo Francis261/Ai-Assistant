@@ -14,6 +14,9 @@ const MODEL = "granite3.1-dense:8b"
 const EMBED_MODEL = "nomic-embed-text"
 const OLLAMA = "http://localhost:11434/api"
 const DATA_DIR = "./datas"
+const CHUNK_SIZE = 800
+const TOP_K = 6
+const CHAT_HISTORY_LIMIT = 6
 
 const limit = pLimit(5)
 const db = new Database("vectors.db")
@@ -29,38 +32,57 @@ CREATE TABLE IF NOT EXISTS vectors(
 `)
 
 /* -------------------------
- OLLAMA EMBEDDING
+ OLLAMA API HELPERS
 ------------------------- */
-async function embed(text){
-  const res = await fetch(`${OLLAMA}/embeddings`,{
+async function postJSON(url, body){
+  const res = await fetch(url,{
     method:"POST",
     headers:{"Content-Type":"application/json"},
-    body: JSON.stringify({model: EMBED_MODEL, prompt: text})
+    body: JSON.stringify(body)
   })
 
   if(!res.ok){
-    const body = await res.text()
-    throw new Error(`Embedding request failed: ${res.status} ${body}`)
+    const text = await res.text()
+    throw new Error(`${res.status} ${text}`)
   }
 
-  const data = await res.json()
-  if(!Array.isArray(data.embedding)){
-    throw new Error("Embedding response missing vector")
+  return res.json()
+}
+
+/* -------------------------
+ OLLAMA EMBEDDING
+------------------------- */
+async function embed(text){
+  try{
+    const legacy = await postJSON(`${OLLAMA}/embeddings`,{ model: EMBED_MODEL, prompt: text })
+    if(Array.isArray(legacy.embedding)){
+      return legacy.embedding
+    }
+  }
+  catch{}
+
+  const modern = await postJSON(`${OLLAMA}/embed`,{ model: EMBED_MODEL, input: text })
+  if(Array.isArray(modern.embeddings) && Array.isArray(modern.embeddings[0])){
+    return modern.embeddings[0]
   }
 
-  return data.embedding
+  throw new Error("Embedding response missing vector")
 }
 
 /* -------------------------
  OLLAMA GENERATE
 ------------------------- */
 async function generate(prompt){
-  const res = await fetch(`${OLLAMA}/generate`,{
-    method:"POST",
-    headers:{"Content-Type":"application/json"},
-    body: JSON.stringify({model: MODEL, prompt, stream:false})
+  const data = await postJSON(`${OLLAMA}/generate`,{
+    model: MODEL,
+    prompt,
+    stream:false
   })
-  const data = await res.json()
+
+  if(typeof data.response !== "string"){
+    throw new Error("Generate response missing text")
+  }
+
   return data.response
 }
 
@@ -89,10 +111,22 @@ function similarity(a,b){
   return dot/(magA*magB)
 }
 
+function keywordScore(query,text){
+  const qTokens = query.toLowerCase().split(/\W+/).filter(t=>t.length>2)
+  if(qTokens.length===0){ return 0 }
+
+  const lower = text.toLowerCase()
+  let hits = 0
+  for(const token of qTokens){
+    if(lower.includes(token)){ hits++ }
+  }
+  return hits / qTokens.length
+}
+
 /* -------------------------
  CHUNK TEXT
 ------------------------- */
-function chunkText(text,size=800){
+function chunkText(text,size=CHUNK_SIZE){
   const chunks=[]
   let i=0
   while(i<text.length){
@@ -122,7 +156,6 @@ function scanFiles(folder){
     const extOk = validFile(file)
     const pathLower = file.toLowerCase()
 
-    // skip junk folders
     const junkFolder = pathLower.includes("/test/") ||
                        pathLower.includes("/deps/") ||
                        pathLower.includes("/benchmark/") ||
@@ -130,7 +163,6 @@ function scanFiles(folder){
                        pathLower.includes("/docsify") ||
                        pathLower.includes("/doc/notes")
 
-    // only include source folders or main docs
     const includeFolder = pathLower.includes("/src/") ||
                           pathLower.includes("/lib/") ||
                           pathLower.includes("/doc/") ||
@@ -177,6 +209,7 @@ async function ingest(folder,{reset=false}={}){
       )
     )
   }
+
   console.log(chalk.green("Ingestion finished"))
 }
 
@@ -201,54 +234,93 @@ async function ingestAll({reset=false}={}){
 /* -------------------------
  SEARCH
 ------------------------- */
-async function search(query,k=4){
-  const qEmb = await embed(query)
-  const rows = db.prepare(`SELECT file,chunk,embedding FROM vectors`).all()
-
-  const scored = rows.map(r=>{
-    let emb
-    try{
-      emb = JSON.parse(r.embedding)
-    }
-    catch{
-      return null
-    }
-
-    const score = similarity(qEmb,emb)
-    if(score<0){
-      return null
-    }
-
-    return { file: r.file, chunk: r.chunk, score }
-  }).filter(Boolean)
-
-  scored.sort((a,b)=>b.score - a.score)
+function keywordSearch(query,k=4){
+  const rows = db.prepare(`SELECT file,chunk FROM vectors`).all()
+  const scored = rows.map(r=>({
+    file:r.file,
+    chunk:r.chunk,
+    score: keywordScore(query,r.chunk)
+  }))
+  .filter(r=>r.score>0)
+  .sort((a,b)=>b.score-a.score)
   return scored.slice(0,k)
+}
+
+async function search(query,k=4){
+  const rows = db.prepare(`SELECT file,chunk,embedding FROM vectors`).all()
+  if(rows.length===0){
+    return []
+  }
+
+  try{
+    const qEmb = await embed(query)
+    const scored = rows.map(r=>{
+      let emb
+      try{
+        emb = JSON.parse(r.embedding)
+      }
+      catch{
+        return null
+      }
+
+      const score = similarity(qEmb,emb)
+      if(score<0){
+        return null
+      }
+
+      return { file: r.file, chunk: r.chunk, score }
+    }).filter(Boolean)
+
+    scored.sort((a,b)=>b.score - a.score)
+    return scored.slice(0,k)
+  }
+  catch(err){
+    console.log(chalk.yellow(`Vector search unavailable (${err.message}). Falling back to keyword search.`))
+    return keywordSearch(query,k)
+  }
 }
 
 /* -------------------------
  RAG
 ------------------------- */
-async function askRAG(question){
-  const docs = await search(question,4)
-  let context = ""
-  if(docs.length>0){
-    context = docs.map(d=>`
-File: ${d.file}
+function formatHistory(history){
+  if(history.length===0){ return "(none)" }
+  return history.map(h=>`${h.role.toUpperCase()}: ${h.content}`).join("\n")
+}
 
-${d.chunk}
-    `).join("\n")
-  }
-  const prompt = `
-Use the context to answer the question.
+function buildPrompt({question,docs,history}){
+  const context = docs.length>0
+    ? docs.map((d,i)=>`[${i+1}] File: ${d.file}\n${d.chunk}`).join("\n\n")
+    : "(no matching context found)"
 
+  return `You are a precise coding assistant. Use the context snippets first.
+Rules:
+- If answer is in context, cite snippet numbers like [1], [2].
+- If uncertain, say what is missing.
+- Keep answer concise but complete.
+
+Conversation so far:
+${formatHistory(history.slice(-CHAT_HISTORY_LIMIT))}
+
+Context snippets:
 ${context}
 
-Question: ${question}
+User question:
+${question}
 
-Answer:
-  `
-  return generate(prompt)
+Answer:`
+}
+
+async function prepareRAG(question,history=[]){
+  const docs = await search(question,TOP_K)
+  const prompt = buildPrompt({question,docs,history})
+  return { prompt, docs }
+}
+
+async function askRAG(question,history=[]){
+  const payload = await prepareRAG(question,history)
+  const answer = await generate(payload.prompt)
+  return { answer, prompt: payload.prompt, docs: payload.docs }
 }
 
 /* -------------------------
@@ -256,16 +328,51 @@ Answer:
 ------------------------- */
 function chat(){
   const rl = readline.createInterface({ input:process.stdin, output:process.stdout })
+  const history = []
+  let active = true
+  rl.on("close",()=>{ active=false })
   console.log(chalk.cyan("\nAI Chat Mode (type exit)\n"))
 
   function ask(){
+    if(!active){ return }
     rl.question("> ",async(q)=>{
       if(q==="exit"){ rl.close(); return }
-      const res = await askRAG(q)
-      console.log(chalk.green("\n"+res+"\n"))
-      ask()
+
+      try{
+        const prepared = await prepareRAG(q,history)
+
+        console.log(chalk.magenta("\n--- Prompt sent to model ---\n"))
+        console.log(chalk.gray(prepared.prompt))
+
+        console.log(chalk.magenta("\n--- Retrieved context ---\n"))
+        if(prepared.docs.length===0){
+          console.log(chalk.yellow("No context found."))
+        }
+        else{
+          prepared.docs.forEach((d,i)=>{
+            console.log(chalk.yellow(`[${i+1}] ${d.file} (score=${d.score.toFixed(4)})`))
+            console.log(d.chunk.slice(0,220).replace(/\n/g," ")+"...")
+          })
+        }
+
+        const answer = await generate(prepared.prompt)
+
+        console.log(chalk.green("\n--- Model answer ---\n"))
+        console.log(chalk.green(answer+"\n"))
+
+        history.push({ role:"user", content:q })
+        history.push({ role:"assistant", content:answer })
+      }
+      catch(err){
+        console.log(chalk.red(`Chat failed: ${err.message}`))
+      }
+
+      if(active){
+        ask()
+      }
     })
   }
+
   ask()
 }
 
@@ -273,7 +380,17 @@ function chat(){
  SEARCH CLI
 ------------------------- */
 async function searchCLI(q){
+  if(!q){
+    console.log(chalk.red("Please provide a query: node ai.js search \"your query\""))
+    return
+  }
+
   const res = await search(q)
+  if(res.length===0){
+    console.log(chalk.yellow("No matching chunks found. Ingest data first."))
+    return
+  }
+
   for(const r of res){
     console.log("\nFile:",chalk.yellow(r.file))
     console.log(r.chunk.slice(0,300))
